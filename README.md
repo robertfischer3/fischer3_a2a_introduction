@@ -11,7 +11,10 @@ This documentation provides a comprehensive introduction to the Agent2Agent (A2A
 ## WARNING: 
 The entire project is for rudementary training only. Nothing is in this project is should be considered production quality.
 
-
+## 📊 View Presentation
+- [View Slides](https://robertfischer3.github.io/fischer3_a2a_introduction) (Live)
+- [Download PDF](docs/slides.pdf)
+- [Markdown Source](docs/SLIDES.md)
 
 ## 📚 Documentation Structure
 
