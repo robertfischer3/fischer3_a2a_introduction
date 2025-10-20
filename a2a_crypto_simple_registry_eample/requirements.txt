@@ -1,0 +1,19 @@
+# A2A Cryptocurrency Example Requirements
+# This example uses only Python standard library
+# Python 3.7+ required
+
+# No external dependencies needed!
+# The following are part of Python standard library:
+# - asyncio (async/await support)
+# - json (JSON serialization)
+# - socket (network communication)
+# - dataclasses (Python 3.7+)
+# - enum (enumerations)
+# - uuid (unique identifiers)
+# - datetime (timestamps)
+# - random (price generation)
+
+# Optional for future enhancements:
+# websockets==11.0  # For WebSocket support
+# aiohttp==3.9.0    # For HTTP/REST API
+# pydantic==2.5.0   # For advanced data validation

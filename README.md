@@ -8,6 +8,11 @@ robert@fischer3.net
 
 This documentation provides a comprehensive introduction to the Agent2Agent (A2A) protocol and its relationship with the Model Context Protocol (MCP).
 
+## WARNING: 
+The entire project is for rudementary training only. Nothing is in this project is should be considered production quality.
+
+
+
 ## 📚 Documentation Structure
 
 ### 1. [Introduction to Agent2Agent](./agent2agent_intro.md)

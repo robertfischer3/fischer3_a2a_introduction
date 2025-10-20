@@ -25,6 +25,9 @@ Agent2Agent is a **high-level orchestration protocol** that:
 - Capability advertisements
 - Service discovery mechanisms
 
+For more details on Agent Registry see [Agent Registry: How It Works →](./agent_registry_explanation.md)
+
+
 ### 2. Communication Layer
 - Message format standardization
 - Protocol negotiation
