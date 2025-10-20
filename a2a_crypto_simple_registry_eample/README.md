@@ -1,207 +1,438 @@
-# A2A Cryptocurrency Price Example
+# A2A Simple Agent Registry
+
+A lightweight Agent Registry implementation for the Agent2Agent (A2A) protocol using FastAPI. This registry enables service discovery, health monitoring, and capability-based agent lookup.
 
 ## Overview
 
-This is a simple implementation of the Agent2Agent (A2A) protocol demonstrating communication between a client application and an AI agent that provides cryptocurrency prices. The prices are **fictitious and for demonstration purposes only**.
-
-## Project Structure
-
-```
-a2a_crypto_example/
-├── client/
-│   └── a2a_client.py          # A2A client application
-├── server/
-│   └── crypto_agent_server.py # Cryptocurrency AI Agent server
-├── shared/
-│   └── a2a_protocol.py        # Shared A2A protocol definitions
-└── README.md                   # This file
-```
+The Agent Registry serves as a central directory where A2A agents can:
+- **Register** themselves with their capabilities
+- **Discover** other agents by capability
+- **Monitor** health status via heartbeats
+- **Query** agent details and endpoints
 
 ## Features
 
-### Cryptocurrency Agent Server
-- **Agent Card**: Provides agent identity and capabilities (no streaming/push notifications)
-- **Supported Cryptocurrencies**:
-  - Bitcoin (BTC): $100,000 - $150,000 USD
-  - Ethereum (ETH): $3,500 - $4,500 USD
-  - Ripple (XRP): $2.00 - $3.00 USD
-- **A2A Protocol Messages**: Handshake, Request/Response, Error handling
-- **Fictitious Prices**: All prices are randomly generated for demonstration
-
-### A2A Client
-- Interactive menu interface
-- Automated demo mode
-- Support for all A2A protocol messages
-- Error handling for unsupported currencies
-
-## A2A Protocol Implementation
-
-### Message Types
-- `HANDSHAKE` / `HANDSHAKE_ACK`: Initial connection and agent discovery
-- `REQUEST` / `RESPONSE`: Price queries and responses
-- `ERROR`: Error handling
-- `GOODBYE`: Clean disconnection
-
-### Request Methods
-- `GET_PRICE`: Get price for a specific cryptocurrency
-- `GET_SUPPORTED_CURRENCIES`: List available currencies
-- `GET_AGENT_INFO`: Get agent card information
-
-### Agent Card Structure
-```python
-{
-    "agent_id": "crypto-agent-001",
-    "name": "CryptoPriceAgent",
-    "version": "1.0.0",
-    "description": "AI Agent providing fictitious cryptocurrency prices",
-    "capabilities": ["price_query", "currency_list", "no_streaming"],
-    "supported_protocols": ["A2A/1.0"],
-    "metadata": {
-        "supported_currencies": ["BTC", "ETH", "XRP"],
-        "update_frequency": "on_request",
-        "data_type": "fictitious"
-    }
-}
-```
+✅ **Agent Registration** - Register agents with their Agent Cards  
+✅ **Capability-Based Discovery** - Find agents by specific capabilities  
+✅ **Health Monitoring** - Automatic health checks with heartbeat mechanism  
+✅ **RESTful API** - Standard HTTP API with automatic documentation  
+✅ **In-Memory Storage** - Fast, lightweight storage for training/development  
+✅ **Thread-Safe** - Concurrent request handling  
 
 ## Installation
 
-No external dependencies required! Uses only Python standard library (Python 3.7+).
+### Prerequisites
+- Python 3.8 or higher
+- pip package manager
 
-## Usage
-
-### Step 1: Start the Cryptocurrency Agent Server
-
-Open a terminal and run:
+### Install Dependencies
 
 ```bash
-cd a2a_crypto_example/server
-python crypto_agent_server.py
+# Navigate to the project directory
+cd a2a_crypto_simple_registry_example
+
+# Install required packages
+pip install -r requirements.txt
 ```
+
+## Quick Start
+
+### 1. Start the Registry Server
+
+```bash
+python registry_server.py
+```
+
+The server will start on `http://localhost:8000`
 
 You should see:
 ```
 ==================================================
-  Cryptocurrency Price Agent Server (A2A)
+  A2A Agent Registry Server
 ==================================================
 
-🚀 Crypto Agent Server started on 127.0.0.1:8888
-📋 Agent ID: crypto-agent-001
-💰 Supported currencies: BTC, ETH, XRP
-⚠️  Prices are fictitious for demonstration only
+🚀 Starting Agent Registry Server...
+💓 Health monitor initialized (check every 30s, stale after 90s)
+📦 Initialized in-memory agent storage
+💚 Health monitor started
+✅ Registry is ready
 ```
 
-### Step 2: Run the Client Application
+### 2. View API Documentation
 
-In a new terminal:
+Open your browser to:
+- **Interactive API Docs**: http://localhost:8000/docs
+- **Alternative Docs**: http://localhost:8000/redoc
+- **Registry Info**: http://localhost:8000/
+
+### 3. Register an Agent
+
+Run the example registration script:
 
 ```bash
-cd a2a_crypto_example/client
-python a2a_client.py
+python example_register.py
 ```
 
-For automated demo:
+Or use curl:
+
 ```bash
-python a2a_client.py --demo
+curl -X POST "http://localhost:8000/agents/register" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "agent_card": {
+      "agent_id": "test-agent-001",
+      "name": "TestAgent",
+      "version": "1.0.0",
+      "description": "A test agent",
+      "capabilities": ["test_capability"],
+      "supported_protocols": ["A2A/1.0"],
+      "metadata": {}
+    },
+    "endpoint": "localhost:9000"
+  }'
 ```
 
-### Interactive Client Options
+### 4. Discover Agents
 
-```
-Options:
-1. Get Bitcoin (BTC) price
-2. Get Ethereum (ETH) price
-3. Get Ripple (XRP) price
-4. Custom currency query
-5. Show all prices
-6. Quit
+Find agents by capability:
+
+```bash
+curl "http://localhost:8000/agents/discover?capability=get_price"
 ```
 
-## Example Output
+List all agents:
 
-### Server Log
-```
-📥 New connection from ('127.0.0.1', 54321)
-📨 Received: HANDSHAKE from client-20250101-120000
-📨 Received: REQUEST from client-20250101-120000
-💵 Generated price for BTC: $125432.00
+```bash
+curl "http://localhost:8000/agents"
 ```
 
-### Client Output
+## API Endpoints
+
+### Agent Management
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `POST` | `/agents/register` | Register a new agent |
+| `GET` | `/agents/discover` | Discover agents by capability |
+| `GET` | `/agents/{agent_id}` | Get specific agent details |
+| `PUT` | `/agents/{agent_id}/heartbeat` | Send heartbeat (health check) |
+| `DELETE` | `/agents/{agent_id}` | Unregister an agent |
+| `GET` | `/agents` | List all registered agents |
+
+### Monitoring
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/health` | Registry service health |
+| `GET` | `/stats` | Registry statistics |
+| `GET` | `/` | Registry information |
+
+## Usage Examples
+
+### Register an Agent (Python)
+
+```python
+import httpx
+import asyncio
+
+async def register():
+    agent_card = {
+        "agent_id": "my-agent-001",
+        "name": "MyAgent",
+        "version": "1.0.0",
+        "description": "My custom agent",
+        "capabilities": ["capability1", "capability2"],
+        "supported_protocols": ["A2A/1.0"],
+        "metadata": {"key": "value"}
+    }
+    
+    registration = {
+        "agent_card": agent_card,
+        "endpoint": "localhost:8888"
+    }
+    
+    async with httpx.AsyncClient() as client:
+        response = await client.post(
+            "http://localhost:8000/agents/register",
+            json=registration
+        )
+        print(response.json())
+
+asyncio.run(register())
 ```
-🔗 Connecting to localhost:8888...
-✅ Connected successfully
-🤝 Handshake complete with: CryptoPriceAgent
-   Agent: AI Agent providing fictitious cryptocurrency prices
 
-💰 Bitcoin Price: $125,432.00
-   ⚠️  This price is fictitious for demonstration only
+### Discover Agents (Python)
+
+```python
+import httpx
+import asyncio
+
+async def discover():
+    async with httpx.AsyncClient() as client:
+        response = await client.get(
+            "http://localhost:8000/agents/discover",
+            params={"capability": "get_price", "limit": 10}
+        )
+        
+        result = response.json()
+        print(f"Found {result['count']} agents:")
+        for agent in result['agents']:
+            card = agent['agent_card']
+            print(f"  - {card['name']} at {agent['endpoint']}")
+
+asyncio.run(discover())
 ```
 
-## Protocol Flow
+### Send Heartbeat (Python)
 
-1. **Connection**: Client connects to server via TCP socket
-2. **Handshake**: Exchange agent cards for capability discovery
-3. **Request**: Client sends price request for specific currency
-4. **Processing**: Server generates random price within defined range
-5. **Response**: Server sends price with disclaimer
-6. **Disconnect**: Clean goodbye message and connection closure
+```python
+import httpx
+import asyncio
 
-## Extending the Example
+async def heartbeat(agent_id: str):
+    async with httpx.AsyncClient() as client:
+        response = await client.put(
+            f"http://localhost:8000/agents/{agent_id}/heartbeat"
+        )
+        print(response.json())
 
-This simple example can be extended to:
+asyncio.run(heartbeat("my-agent-001"))
+```
 
-1. **Add More Currencies**: Extend the `price_ranges` dictionary
-2. **Implement Streaming**: Add WebSocket support for real-time updates
-3. **Add Authentication**: Implement agent authentication/authorization
-4. **Multiple Agents**: Create agent discovery and routing
-5. **Persistent Storage**: Add price history and trends
-6. **Real API Integration**: Connect to actual crypto price APIs
-7. **Advanced Features**:
-   - Price alerts and subscriptions
-   - Historical data queries
-   - Multi-agent aggregation
-   - Load balancing between multiple price agents
+## Health Monitoring
 
-## Key Learning Points
+The registry includes automatic health monitoring:
 
-1. **Agent Identity**: Each agent has a unique ID and capability card
-2. **Protocol Messages**: Structured communication using defined message types
-3. **Request/Response Pattern**: Synchronous communication model
-4. **Error Handling**: Graceful handling of unsupported operations
-5. **Clean Separation**: Protocol logic separate from business logic
+- **Heartbeat Interval**: Agents should send heartbeats every 30-60 seconds
+- **Stale Threshold**: Agents without heartbeats for 90 seconds are marked unhealthy
+- **Auto-Discovery**: Only healthy agents appear in discovery results (by default)
+- **Background Monitoring**: Health checks run automatically every 30 seconds
+
+### Keeping Your Agent Healthy
+
+Agents should implement a heartbeat loop:
+
+```python
+import asyncio
+import httpx
+
+async def heartbeat_loop(agent_id: str, interval: int = 30):
+    """Send periodic heartbeats to registry"""
+    async with httpx.AsyncClient() as client:
+        while True:
+            try:
+                await client.put(
+                    f"http://localhost:8000/agents/{agent_id}/heartbeat"
+                )
+                print(f"💓 Heartbeat sent")
+            except Exception as e:
+                print(f"⚠️ Heartbeat failed: {e}")
+            
+            await asyncio.sleep(interval)
+```
+
+## Integration with A2A Crypto Example
+
+To integrate with the existing crypto example:
+
+### 1. Modify Crypto Agent Server
+
+Add registration on startup:
+
+```python
+# In crypto_agent_server.py
+async def register_with_registry():
+    """Register this agent with the registry"""
+    agent_card = {
+        "agent_id": "crypto-agent-001",
+        "name": "CryptoPriceAgent",
+        "version": "1.0.0",
+        "description": "Cryptocurrency price agent",
+        "capabilities": ["get_price", "list_currencies"],
+        "supported_protocols": ["A2A/1.0"],
+        "metadata": {
+            "supported_currencies": ["BTC", "ETH", "XRP"]
+        }
+    }
+    
+    registration = {
+        "agent_card": agent_card,
+        "endpoint": "localhost:8888"
+    }
+    
+    async with httpx.AsyncClient() as client:
+        await client.post(
+            "http://localhost:8000/agents/register",
+            json=registration
+        )
+```
+
+### 2. Modify Client for Discovery
+
+```python
+# In a2a_client.py
+async def discover_and_connect():
+    """Discover crypto agent via registry"""
+    async with httpx.AsyncClient() as client:
+        # Discover agent
+        response = await client.get(
+            "http://localhost:8000/agents/discover",
+            params={"capability": "get_price"}
+        )
+        
+        agents = response.json()["agents"]
+        if not agents:
+            raise Exception("No crypto agents available")
+        
+        # Connect to first available agent
+        endpoint = agents[0]["endpoint"]
+        host, port = endpoint.split(":")
+        await connect(host, int(port))
+```
+
+## Architecture
+
+```
+┌─────────────────────────────────┐
+│     FastAPI Application         │
+│  (registry_server.py)           │
+├─────────────────────────────────┤
+│  REST API Endpoints             │
+│  - Register, Discover, Health   │
+└────────┬───────────┬────────────┘
+         │           │
+         ↓           ↓
+┌─────────────┐  ┌──────────────┐
+│  Storage    │  │ Health       │
+│  (memory)   │  │ Monitor      │
+│             │  │ (background) │
+└─────────────┘  └──────────────┘
+```
+
+## Configuration
+
+### Health Monitor Settings
+
+Edit `health_monitor.py`:
+
+```python
+# Check interval (seconds between health checks)
+check_interval = 30
+
+# Stale threshold (seconds without heartbeat = unhealthy)
+stale_threshold = 90
+```
+
+### Server Settings
+
+Edit `registry_server.py`:
+
+```python
+# Change host/port
+uvicorn.run(
+    app,
+    host="0.0.0.0",  # Listen on all interfaces
+    port=8000,       # Registry port
+    log_level="info"
+)
+```
+
+## Testing
+
+### Manual Testing
+
+1. Start the registry server
+2. Run `example_register.py` to register test agents
+3. Visit http://localhost:8000/docs to test API interactively
+4. Use curl or httpx to test endpoints
+
+### Automated Testing
+
+Create `test_registry.py`:
+
+```python
+import pytest
+from httpx import AsyncClient
+from registry_server import app
+
+@pytest.mark.asyncio
+async def test_register_agent():
+    async with AsyncClient(app=app, base_url="http://test") as client:
+        response = await client.post("/agents/register", json={
+            "agent_card": {
+                "agent_id": "test-001",
+                "name": "TestAgent",
+                "version": "1.0.0",
+                "description": "Test",
+                "capabilities": ["test"],
+                "supported_protocols": ["A2A/1.0"],
+                "metadata": {}
+            },
+            "endpoint": "localhost:9000"
+        })
+        assert response.status_code == 201
+```
+
+Run tests:
+```bash
+pip install pytest pytest-asyncio httpx
+pytest test_registry.py
+```
+
+## Limitations (Training Version)
+
+This is a simplified registry for training purposes:
+
+- ⚠️ **In-Memory Storage**: Data lost on restart (use SQLite/Redis for persistence)
+- ⚠️ **No Authentication**: No API keys or auth (add for production)
+- ⚠️ **Single Instance**: Not distributed (use Consul/etcd for HA)
+- ⚠️ **Basic Validation**: Minimal security checks (enhance for production)
+
+## Production Enhancements
+
+For production use, consider:
+
+1. **Persistent Storage**: PostgreSQL, MongoDB, or Redis
+2. **Authentication**: OAuth 2.0, API keys, mTLS
+3. **High Availability**: Multiple registry instances with consensus
+4. **Rate Limiting**: Prevent abuse
+5. **Monitoring**: Prometheus metrics, distributed tracing
+6. **Caching**: Redis for faster lookups
+7. **Security**: Input validation, certificate verification
+8. **Logging**: Structured logging to ELK/Splunk
 
 ## Troubleshooting
 
-### Connection Refused Error
-- Make sure the server is running before starting the client
-- Check if port 8888 is available
-- Verify firewall settings
+### Registry won't start
+- Check if port 8000 is available
+- Verify Python 3.8+ is installed
+- Ensure all dependencies are installed
 
-### Invalid Currency Error
-- The demo only supports BTC, ETH, and XRP
-- Currency symbols are case-insensitive
+### Can't register agent
+- Verify registry is running on http://localhost:8000
+- Check agent_card has required fields
+- Ensure capabilities list is not empty
 
-### Server Not Responding
-- Check server console for error messages
-- Ensure Python version is 3.7 or higher
-- Try restarting both server and client
+### Agent shows as unhealthy
+- Send heartbeats every 30-60 seconds
+- Check network connectivity to registry
+- Verify agent_id matches registration
 
-## Next Steps
-
-After understanding this basic example, you can:
-
-1. Implement more sophisticated message routing
-2. Add agent discovery mechanisms
-3. Create multi-agent workflows
-4. Integrate with Model Context Protocol (MCP) for tool access
-5. Build a full agent registry service
-6. Add security layers (TLS, authentication)
+### Discovery returns no agents
+- Agents might be unhealthy (check `/agents?include_unhealthy=true`)
+- Capability name might not match exactly
+- Agents might not be registered yet
 
 ## License
 
-This example is provided for educational purposes. Feel free to modify and extend it for your needs.
+This implementation is provided as part of the A2A protocol training materials for educational purposes.
 
-## Disclaimer
+## Next Steps
 
-⚠️ **All cryptocurrency prices in this example are fictitious and for demonstration purposes only.** This is not financial advice and should not be used for any real trading decisions.
+1. **Start the registry server**
+2. **Run the example registration script**
+3. **Modify the crypto agent to auto-register**
+4. **Update the client to use discovery**
+5. **Experiment with multiple agents**
+
+Happy agent orchestrating! 🤖✨
