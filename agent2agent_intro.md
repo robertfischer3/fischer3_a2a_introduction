@@ -27,7 +27,6 @@ Agent2Agent is a **high-level orchestration protocol** that:
 
 For more details on Agent Registry see [Agent Registry: How It Works →](./agent_registry_explanation.md)
 
-
 ### 2. Communication Layer
 - Message format standardization
 - Protocol negotiation
@@ -53,6 +52,8 @@ Every agent in the A2A ecosystem has:
 - **Capability manifest** describing services offered
 - **Authentication credentials** for secure communication
 - **Metadata** including version, owner, and constraints
+
+For more details on Agent Card Authentication see: [Agent Card Authentication Tags](./AGENT_CARD_AUTHENTICATION_TAGS.md)
 
 ### Message Types
 A2A defines standard message types:
