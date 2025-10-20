@@ -2,6 +2,10 @@
 
 ## Welcome to the Agent2Agent Protocol Introduction
 
+### Organized by Robert Fischer
+
+robert@fischer3.net
+
 This documentation provides a comprehensive introduction to the Agent2Agent (A2A) protocol and its relationship with the Model Context Protocol (MCP).
 
 ## 📚 Documentation Structure
