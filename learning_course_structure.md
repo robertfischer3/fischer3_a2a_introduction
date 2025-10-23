@@ -1,8 +1,8 @@
-# Proposed Hierarchical Documentation Structure
+# Proposed Hierarchical Documentation Structure Topic Map
 
 ## Overview
 
-This document outlines a new hierarchical structure for the Agent2Agent (A2A) and Model Context Protocol (MCP) documentation. The structure emphasizes progressive learning with summary pages leading to in-depth content.
+This document outlines a hierarchical structure for the Agent2Agent (A2A) and Model Context Protocol (MCP) documentation. The structure emphasizes progressive learning with summary pages leading to in-depth content.
 
 ---
 
