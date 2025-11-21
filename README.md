@@ -42,11 +42,11 @@ Unlike typical documentation, this project:
 Start here to understand the basic protocols and their purpose.
 
 #### A2A Protocol Fundamentals
-- [Introduction to Agent2Agent](./agent2agent_intro.md) - Core concepts and architecture
-- [Agent Cards Explained](./agent_card_explanation.md) - Agent identity and capability discovery
-- [Agent Registry Deep Dive](./agent_registry_explanation.md) - Service discovery mechanisms
-- [A2A Protocol Messages](./guide_to_the_a2a_protocol.md) - Message structure and types
-- [Streaming & Events Guide](./a2a_streaming_events_guide.md) - Real-time communication patterns
+- [Introduction to Agent2Agent](./docs/a2a/00_A2A_OVERVIEW.md) - Core concepts and architecture
+- [Agent Cards Explained](./docs/a2a/02_DISCOVERY/01_agent_cards.md) - Agent identity and capability discovery
+- [Agent Registry Deep Dive](./docs/a2a/02_DISCOVERY/02_agent_registry.md) - Service discovery mechanisms
+- [A2A Protocol Messages](./docs/a2a/04_COMMUNICATION/01_protocol_messages.md) - Message structure and types
+- [Streaming & Events Guide](./docs/a2a/04_COMMUNICATION/02_streaming_events.md) - Real-time communication patterns
 
 #### MCP Protocol Fundamentals
 - [MCP Overview](./references.md#model-context-protocol-mcp) - Tools and resources for AI agents
@@ -63,7 +63,7 @@ Start here to understand the basic protocols and their purpose.
 Learn to identify security vulnerabilities before writing code.
 
 #### Security Concepts
-- [Authentication Tags Guide](./AGENT_CARD_AUTHENTICATION_TAGS.md) - Agent identity verification
+- [Authentication Tags Guide](./docs/a2a/03_SECURITY/02_authentication_tags.md) - Agent identity verification
 - Threat modeling for multi-agent systems
 - Common attack vectors in distributed systems
 
@@ -360,8 +360,8 @@ pip install -r requirements.txt
 ```
 
 2. **Start with documentation**:
-- Read [Introduction to Agent2Agent](./agent2agent_intro.md)
-- Review [Security Concerns](./AGENT_CARD_AUTHENTICATION_TAGS.md)
+- Read [Introduction to Agent2Agent](./docs/a2a/00_A2A_OVERVIEW.md)
+- Review [Security Concerns](./docs/a2a/03_SECURITY/02_authentication_tags.md)
 
 3. **Run first example**:
 ```bash
