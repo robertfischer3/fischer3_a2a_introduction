@@ -464,7 +464,7 @@ While this is primarily an educational project, feedback and suggestions are wel
 ## 📜 Version & Updates
 
 - **Current Version**: 1.0 (Educational Release)
-- **Last Updated**: November 2024
+- **Last Updated**: November 2025
 - **Next Planned Update**: Q1 2025 (Advanced security topics)
 
 ---
