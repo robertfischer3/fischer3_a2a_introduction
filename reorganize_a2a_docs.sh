@@ -7,7 +7,7 @@
 # security-focused learning structure
 #
 # Author: Robert Fischer
-# Date: November 2024
+# Date: November 2025
 ################################################################################
 
 set -e  # Exit on error

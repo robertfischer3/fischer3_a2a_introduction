@@ -123,7 +123,7 @@ class HealthStatus(BaseModel):
             "example": {
                 "agent_id": "crypto-agent-001",
                 "status": "healthy",
-                "last_heartbeat": "2024-10-20T12:34:56.789Z"
+                "last_heartbeat": "2025-10-20T12:34:56.789Z"
             }
         }
 
@@ -151,8 +151,8 @@ class AgentInfo(BaseModel):
                     "metadata": {}
                 },
                 "endpoint": "localhost:8888",
-                "registered_at": "2024-10-20T12:00:00.000Z",
-                "last_heartbeat": "2024-10-20T12:34:56.789Z",
+                "registered_at": "2025-10-20T12:00:00.000Z",
+                "last_heartbeat": "2025-10-20T12:34:56.789Z",
                 "health_status": "healthy"
             }
         }

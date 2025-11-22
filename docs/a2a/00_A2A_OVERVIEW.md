@@ -447,7 +447,7 @@ YOU ARE HERE → 00_A2A_OVERVIEW.md (This document)
 ## 📝 Document Version
 
 - **Version**: 1.0
-- **Last Updated**: November 2024
+- **Last Updated**: November 2025
 - **Status**: Learning Project (Non-Production)
 - **Audience**: Developers, Security Engineers, AI Architects
 

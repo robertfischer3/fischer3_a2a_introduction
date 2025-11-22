@@ -613,7 +613,7 @@ Now that you understand agent identity:
 ---
 
 **Document Version**: 1.0  
-**Last Updated**: November 2024  
+**Last Updated**: November 2025  
 **Part of**: A2A Security Learning Project
 
 ---
