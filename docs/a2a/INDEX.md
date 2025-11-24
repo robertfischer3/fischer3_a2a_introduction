@@ -254,7 +254,7 @@ Technical reference materials.
 
 ### Recent Additions ✨
 
-**November 2024 - Security Documentation Sprint**:
+**November 2025 - Security Documentation Sprint**:
 - ✨ [Authentication Overview](./03_SECURITY/01_authentication_overview.md) - Trust models & authentication methods
 - ✨ [Threat Model](./03_SECURITY/03_threat_model.md) - STRIDE framework & 8 threats
 - ✨ [Agent Identity](./01_FUNDAMENTALS/02_agent_identity.md) - Identity fundamentals
@@ -332,7 +332,7 @@ This index is updated as new documentation is added. Check back regularly for:
 - Advanced patterns
 - Case studies
 
-**Last Updated**: November 2024  
+**Last Updated**: November 2025  
 **Next Update**: Q1 2025 (Advanced security topics)
 
 ---
