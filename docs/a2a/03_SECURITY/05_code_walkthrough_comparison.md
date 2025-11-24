@@ -1052,7 +1052,7 @@ Test your understanding:
 ---
 
 **Document Version**: 1.0  
-**Last Updated**: November 2025  
+**Last Updated**: November 2024  
 **Part of**: A2A Security Learning Project
 
 ---
