@@ -1,0 +1,12 @@
+# Requirements for Stage 4 - AI-Integrated Credit Agent
+
+# Google Gemini AI SDK
+google-generativeai>=0.3.0
+
+# Optional but recommended for production:
+# cryptography>=41.0.0  # For real RSA signatures
+# jsonschema>=4.20.0    # For schema validation
+# pydantic>=2.5.0       # For data models
+# structlog>=23.2.0     # For structured logging
+
+# Python 3.10+ required

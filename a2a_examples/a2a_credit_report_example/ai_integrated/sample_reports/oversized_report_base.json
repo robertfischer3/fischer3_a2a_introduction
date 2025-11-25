@@ -1,0 +1,19 @@
+{
+  "report_id": "CR-2025-HUGE",
+  "report_date": "2025-01-15T10:30:00Z",
+  "bureau": "Oversized Data Bureau",
+  "subject": {
+    "ssn": "999-99-9999",
+    "name": "Test Subject",
+    "dob": "1990-01-01",
+    "address": "Address that will be repeated many times to create a huge file",
+    "phone": "555-999-9999",
+    "email": "huge@example.com"
+  },
+  "credit_score": {
+    "score": 700,
+    "model": "FICO 8",
+    "date": "2025-01-15",
+    "factors": []
+  },
+  "accounts": [

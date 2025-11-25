@@ -1,0 +1,16 @@
+# Requirements for Credit Report Agent - Stage 2 (Improved)
+
+# Stage 2 still uses only Python standard library
+# No external dependencies required
+
+# Python 3.10+ required for:
+# - asyncio improvements
+# - Type hints
+# - pathlib enhancements
+# - hmac module (built-in)
+
+# Stage 3 will add:
+# - cryptography (RSA/ECC)
+# - jsonschema (validation)
+# - pydantic (data models)
+# - structlog (audit logging)

