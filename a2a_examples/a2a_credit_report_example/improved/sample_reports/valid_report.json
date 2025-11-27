@@ -1,0 +1,86 @@
+{
+  "report_id": "CR-2025-001",
+  "report_date": "2025-01-15T10:30:00Z",
+  "bureau": "Example Credit Bureau",
+  "subject": {
+    "ssn": "123-45-6789",
+    "name": "John Doe",
+    "dob": "1985-03-15",
+    "address": "123 Main Street, Apt 4B, Springfield, IL 62701",
+    "phone": "555-123-4567",
+    "email": "john.doe@example.com"
+  },
+  "credit_score": {
+    "score": 720,
+    "model": "FICO 8",
+    "date": "2025-01-15",
+    "factors": [
+      "Payment history is excellent",
+      "Credit utilization is moderate",
+      "Length of credit history is good"
+    ]
+  },
+  "accounts": [
+    {
+      "account_id": "CC-001",
+      "creditor": "Bank of Example",
+      "type": "credit_card",
+      "status": "open",
+      "opened": "2020-05-10",
+      "balance": 2500,
+      "credit_limit": 10000,
+      "payment_status": "current",
+      "payment_history": "Never late"
+    },
+    {
+      "account_id": "AUTO-002",
+      "creditor": "Auto Finance Corp",
+      "type": "auto_loan",
+      "status": "open",
+      "opened": "2023-08-15",
+      "balance": 18500,
+      "original_amount": 25000,
+      "payment_status": "current",
+      "monthly_payment": 450
+    },
+    {
+      "account_id": "MTG-003",
+      "creditor": "Home Lending Bank",
+      "type": "mortgage",
+      "status": "open",
+      "opened": "2019-03-01",
+      "balance": 280000,
+      "original_amount": 300000,
+      "payment_status": "current",
+      "monthly_payment": 1850
+    }
+  ],
+  "inquiries": [
+    {
+      "date": "2024-12-01",
+      "creditor": "Auto Finance Corp",
+      "type": "hard",
+      "purpose": "Auto loan application"
+    },
+    {
+      "date": "2024-11-15",
+      "creditor": "Credit Monitoring Service",
+      "type": "soft",
+      "purpose": "Account review"
+    }
+  ],
+  "public_records": [],
+  "collections": [],
+  "summary": {
+    "total_accounts": 3,
+    "open_accounts": 3,
+    "closed_accounts": 0,
+    "total_balance": 301000,
+    "available_credit": 7500,
+    "credit_utilization": 0.25,
+    "derogatory_marks": 0,
+    "total_inquiries": 2,
+    "hard_inquiries": 1,
+    "oldest_account_age_years": 5.7
+  }
+}

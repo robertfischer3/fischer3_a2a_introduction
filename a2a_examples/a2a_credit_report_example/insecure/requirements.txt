@@ -1,0 +1,15 @@
+# Requirements for Credit Report Agent - Stage 1 (Insecure)
+
+# This stage uses only Python standard library
+# No external dependencies required
+
+# Python 3.10+ required for:
+# - asyncio improvements
+# - Type hints
+# - pathlib enhancements
+
+# Future stages will add:
+# - cryptography (Stage 2, 3)
+# - jsonschema (Stage 3)
+# - pydantic (Stage 3)
+# - structlog (Stage 3)
