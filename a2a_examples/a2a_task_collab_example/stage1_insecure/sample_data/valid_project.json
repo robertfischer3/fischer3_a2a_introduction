@@ -1,0 +1,10 @@
+{
+  "name": "Website Redesign Project",
+  "description": "Complete redesign of company website with modern UI/UX",
+  "metadata": {
+    "priority": "high",
+    "deadline": "2025-03-01",
+    "budget": 50000,
+    "department": "Marketing"
+  }
+}
