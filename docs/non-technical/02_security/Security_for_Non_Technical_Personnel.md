@@ -14,10 +14,10 @@ AI agents collaborating through the Agent-to-Agent (A2A) Protocol face unique se
 
 **Key Takeaways:**
 - AI agent systems face 8 major threat categories
-- Security requires multiple defensive layers (defense-in-depth)
-- Authentication and authorization are non-negotiable
-- Input validation prevents many common attacks
-- Audit logging is essential for detection and compliance
+- Security requires multiple defensive layers (**defense-in-depth**)
+- **Authentication and authorization** are non-negotiable
+- **Input validation** prevents many common attacks
+- **Audit logging** is essential for detection and compliance
 
 ---
 
@@ -136,19 +136,20 @@ Security professionals use the STRIDE model to categorize threats. Here's how it
 
 ---
 
-## 3. Critical Security Threats {#critical-threats}
+## 3. Critical Security Threats (With Rationale) {#critical-threats}
 
-Let's examine the eight most serious threats to A2A systems in detail:
+Let's examine the eight most serious threats to A2A systems in detail, including the rationale behind the recommended controls.:
 
 ---
 
 ### Threat 1: Agent Impersonation (Spoofing)
 
 #### What It Is
+
 An attacker creates a fake agent or pretends to be a legitimate agent to gain unauthorized access.
 
 #### Real-World Analogy
-Imagine someone creates a fake ID badge and walks into your secure facility claiming to be the IT director. They gain access to sensitive areas and data.
+Imagine someone creates a fake ID badge and walks into your secure facility claiming to be the IT director. They gain access to sensitive areas and data because their identity was not verified.
 
 #### How It Happens in A2A Systems
 
@@ -159,7 +160,6 @@ Imagine someone creates a fake ID badge and walks into your secure facility clai
 3. If the system doesn't verify identity, it grants access
 4. Attacker now has administrative control
 ```
-
 #### Business Impact
 - **Data Theft:** Access to sensitive customer or business data
 - **System Compromise:** Ability to modify or delete critical information
@@ -169,7 +169,9 @@ Imagine someone creates a fake ID badge and walks into your secure facility clai
 **Severity:** CRITICAL  
 **Likelihood:** Medium (if authentication is weak)
 
-#### How to Prevent It
+#### How to Prevent It (with Rationale)
+
+![How to Prevent it](../../../images/Screenshot%20from%202025-12-06%2019-06-36.png "How to Prevent It (Rationale)")
 
 **1. Require Strong Authentication**
 Every agent must prove its identity using cryptographic signatures—like a digital passport that's nearly impossible to forge.
@@ -231,7 +233,9 @@ Agent B executes the transfer to the wrong account
 **Severity:** CRITICAL  
 **Likelihood:** Low (if using proper encryption)
 
-#### How to Prevent It
+#### How to Prevent It (with Rationale)
+
+![How to Prevent it](../../../images/How_to_prevent_threat2.png "How to Prevent It (Rationale)")
 
 **1. Encrypt All Communications (TLS 1.3)**
 Use Transport Layer Security to create an encrypted "tunnel" for agent communications.
@@ -264,10 +268,10 @@ For high-security agents, "pin" expected certificates to prevent substitution.
 ### Threat 3: Replay Attacks
 
 #### What It Is
-An attacker captures a legitimate message and resends it multiple times to cause harm.
+An attacker captures a legitimate message and resends it multiple times to cause harm, such as duplicating a financial transaction.
 
 #### Real-World Analogy
-Someone records you saying "Transfer $1,000 to charity," then plays it back 100 times to your bank, resulting in $100,000 being transferred.
+Someone records you saying "Transfer $1,000 to charity," then plays it back 100 times to your bank, resulting in $100,000 being transferred. Each playback appears legitimate because it was a real, authorized instruction.
 
 #### How It Happens in A2A Systems
 
@@ -295,7 +299,10 @@ of a real, authorized transaction
 **Severity:** CRITICAL  
 **Likelihood:** Medium
 
-#### How to Prevent It
+#### How to Prevent It (with Rationale)
+
+![How to Prevent it](../../../images/how_to_prevent_threat3.png "How to Prevent It (Rationale)")
+
 
 **1. Nonce-Based Validation**
 Include a unique "nonce" (number used once) with every message.
@@ -327,7 +334,7 @@ Include a timestamp and only accept recent requests (e.g., within 5 minutes).
 ### Threat 4: Privilege Escalation (Elevation of Privilege)
 
 #### What It Is
-An agent gains access to capabilities or data it shouldn't have, often by exploiting trust assumptions.
+An agent gains access to capabilities or data it shouldn't have, often by exploiting trust assumptions or vulnerabilities.
 
 #### Real-World Analogy
 A junior employee figures out how to gain access to executive-level systems and data, reading confidential strategic plans.
@@ -362,7 +369,9 @@ If not verified, system grants the unauthorized capabilities
 **Severity:** HIGH  
 **Likelihood:** Medium
 
-#### How to Prevent It
+#### How to Prevent It (with Rationale)
+
+![How to Prevent it](../../../images/how_it_prevent_threat4.png "How to Prevent It (Rationale)")
 
 **1. Never Trust Claimed Capabilities**
 Always verify against an authoritative, centralized source.
@@ -416,10 +425,10 @@ Have a Certificate Authority digitally sign each agent's capability list.
 ### Threat 5: Denial of Service (DoS)
 
 #### What It Is
-An attacker overwhelms the system with requests, making it unavailable for legitimate users.
+An attacker overwhelms the system with a flood of requests or data, making it unavailable for legitimate users.
 
 #### Real-World Analogy
-Someone calls your customer service line thousands of times per minute, blocking all legitimate customers from getting through.
+Someone calls your customer service line thousands of times per minute, blocking all legitimate customers from getting through. The service capacity is exhausted.
 
 #### How It Happens in A2A Systems
 
@@ -464,7 +473,9 @@ Attacker opens 1,000 connections:
 **Severity:** HIGH  
 **Likelihood:** HIGH (very common attack)
 
-#### How to Prevent It
+#### How to Prevent It (with Rationale)
+
+![How to Prevent it](../../../images/how_to_prevent_threat5.png "How to Prevent It (Rationale)")
 
 **1. Rate Limiting**
 Restrict how many requests each agent can make in a time window.
@@ -529,10 +540,10 @@ Don't rely on a single server—spread the load.
 ### Threat 6: Injection Attacks (Tampering)
 
 #### What It Is
-An attacker embeds malicious code or commands in data sent to an agent, causing it to execute unintended actions.
+An attacker embeds malicious code or commands into data sent to an agent, causing the agent to execute unintended actions, often leading to data breach or corruption.
 
 #### Real-World Analogy
-Someone submits a form with "John Doe; also delete all records" as their name. If the system doesn't validate inputs, it might execute the delete command.
+Someone submits a form with "John Doe; also delete all records" as their name. If the system doesn't validate the input, it might treat the malicious command as a valid instruction and execute it.
 
 #### How It Happens in A2A Systems
 
@@ -576,7 +587,9 @@ If AI agent doesn't filter inputs:
 **Severity:** CRITICAL  
 **Likelihood:** Medium
 
-#### How to Prevent It
+#### How to Prevent It (with Rationale)
+
+![How to Prevent it](../../../images/how_to_prevent_threat6.png "How to Prevent It (Rationale)")
 
 **1. Input Validation**
 Strictly validate all inputs before processing.
@@ -650,11 +663,10 @@ If detected → Reject request or sanitize input before sending to AI
 ### Threat 7: Information Disclosure
 
 #### What It Is
-Sensitive information is unintentionally exposed through error messages, logs, or responses.
+Sensitive information is unintentionally exposed through verbose error messages, detailed logging, or overly broad responses.
 
 #### Real-World Analogy
-A website error message displays: "Login failed for user 'admin' - password incorrect, SQL error on line 42 of /var/www/database.php"  
-This tells attackers: the username 'admin' exists, there's a SQL database, and where the code file is located.
+A website error message displays: "Login failed for user 'admin' - password incorrect, SQL error on line 42 of /var/www/database.php." This gives the attacker critical intelligence about the system's technology stack and file structure, helping them plan the next attack.
 
 #### How It Happens in A2A Systems
 
@@ -709,7 +721,9 @@ Response includes:
 **Severity:** MEDIUM to HIGH  
 **Likelihood:** HIGH (very common mistake)
 
-#### How to Prevent It
+#### Threat 7: How to Prevent It (with Rationale)
+
+![How to Prevent it](../../../images/how_to_prevent_threat7.png "How to Prevent It (Rationale)")
 
 **1. Generic Error Messages to Clients**
 Don't reveal system details in user-facing errors.
@@ -783,10 +797,10 @@ Keep detailed diagnostic logs separate from logs that might be shared.
 ### Threat 8: Session Hijacking
 
 #### What It Is
-An attacker steals or guesses a valid session token and uses it to impersonate a legitimate agent.
+An attacker steals or guesses a valid session token (the digital key used to maintain a logged-in state) and uses it to impersonate a legitimate agent.
 
 #### Real-World Analogy
-Someone steals your hotel room key card and can now access your room, pretending to be you.
+Someone steals your hotel room key card and can now access your room, pretending to be you, for as long as the card remains active.
 
 #### How It Happens in A2A Systems
 
@@ -808,7 +822,9 @@ Someone steals your hotel room key card and can now access your room, pretending
 **Severity:** MEDIUM  
 **Likelihood:** LOW (if using proper session management)
 
-#### How to Prevent It
+#### Threat 8: How to Prevent It (with Rationale)
+
+![How to Prevent it](../../../images/how_to_prevent_threat8.png "How to Prevent It (Rationale)")
 
 **1. Use Cryptographically Strong Session Tokens**
 Generate tokens that are impossible to guess.
@@ -871,6 +887,9 @@ Even if old token was stolen, it's now useless
 **Concept:** Never rely on a single security control. Implement multiple layers so if one fails, others still protect.
 
 **Real-World Analogy:**  
+
+Real-World Analogy: A bank doesn't just have a lock on the front door. It has a security guard outside, a lock on the front door, security cameras, an alarm system, a vault with a separate lock, time-delayed access, a security guard inside, and audit logs. If one layer fails (e.g., the front door lock is picked), the others still protect the assets.
+
 A bank doesn't just have a lock on the front door. It has:
 1. Security guard outside
 2. Lock on front door
@@ -881,66 +900,19 @@ A bank doesn't just have a lock on the front door. It has:
 7. Security guard inside
 8. Audit logs
 
-If one layer fails (lock picked), the others still protect the assets.
-
 ### The Security Layers for A2A Systems
 
-```
-┌─────────────────────────────────────────┐
-│  Layer 1: Network Security              │
-│  - TLS encryption                       │
-│  - Firewall rules                       │
-│  - DDoS protection                      │
-└──────────────┬──────────────────────────┘
-               │
-┌──────────────▼──────────────────────────┐
-│  Layer 2: Authentication                │
-│  - Signature verification               │
-│  - Certificate validation               │
-│  - Strong cryptography                  │
-└──────────────┬──────────────────────────┘
-               │
-┌──────────────▼──────────────────────────┐
-│  Layer 3: Authorization                 │
-│  - RBAC enforcement                     │
-│  - Capability validation                │
-│  - Least privilege                      │
-└──────────────┬──────────────────────────┘
-               │
-┌──────────────▼──────────────────────────┐
-│  Layer 4: Input Validation              │
-│  - Schema validation                    │
-│  - Injection detection                  │
-│  - Size limits                          │
-└──────────────┬──────────────────────────┘
-               │
-┌──────────────▼──────────────────────────┐
-│  Layer 5: Rate Limiting                 │
-│  - Per-agent limits                     │
-│  - Global limits                        │
-│  - Adaptive throttling                  │
-└──────────────┬──────────────────────────┘
-               │
-┌──────────────▼──────────────────────────┐
-│  Layer 6: Monitoring & Logging          │
-│  - Audit logs                           │
-│  - Anomaly detection                    │
-│  - Alerting                             │
-└──────────────┬──────────────────────────┘
-               │
-┌──────────────▼──────────────────────────┐
-│  Layer 7: Incident Response             │
-│  - Automated blocking                   │
-│  - Forensic analysis                    │
-│  - Recovery procedures                  │
-└─────────────────────────────────────────┘
-```
+This diagram illustrates how defensive controls build upon each other, making the system exponentially harder to breach. The key principle is that an attacker must bypass ALL layers to succeed.
+
+![Security Layers for A2A Systems](../../../images/security_ai_agent_collaboration.png "OSecurity Layers for A2A Systems")
 
 **Key Principle:** An attacker must bypass ALL layers to succeed. Each layer makes the attack exponentially harder.
 
 ---
 
 ## 5. Security Controls by Category {#security-controls}
+
+![Security Controls by Category](../../../images/security_controls_by_category.png "Security Controls by Category")
 
 ### Authentication Controls
 
@@ -1335,38 +1307,36 @@ When a security incident is detected, follow these steps:
 
 #### 1. **Preparation** (Before incidents occur)
 - Define incident response team and roles
-- Create playbooks for common scenarios
+- Create playbooks for common scenarios (e.g., "Compromised Agent" or "DoS Attack")
 - Establish communication channels
 - Test backup and recovery procedures
 
 #### 2. **Detection and Analysis**
-- Identify indicators of compromise
-- Determine scope of incident
+- Identify Indicators of Compromise (IOCs) (e.g., multiple failed logins, sudden spikes in traffic).
+- Determine the scope of the incident (how many agents/systems are affected).
 - Assess severity and impact
-- Gather evidence for investigation
+- Gather evidence for investigation (from secure, centralized logs).
 
 #### 3. **Containment**
 - **Short-term:** Isolate affected agents, block malicious IPs
-- **Long-term:** Apply patches, update rules, strengthen controls
+- **Long-term:** Apply patches, update firewall rules, and strengthen controls
 
 #### 4. **Eradication**
-- Remove malicious agents
-- Close security gaps
+- Remove malicious agents and close all security gaps that were exploited.
 - Patch vulnerabilities
-- Reset compromised credentials
+- Reset all compromised credentials to prevent re-entry.
 
 #### 5. **Recovery**
-- Restore from clean backups
-- Re-enable services gradually
+- Restore systems from **clean, verified backups**.
+- Gradually re-enable services and monitor for any signs of re-infection.
 - Monitor for signs of re-infection
 - Verify system integrity
 
 #### 6. **Post-Incident Activity**
-- Document lessons learned
-- Update security controls
-- Improve detection rules
+- Document lessons learned and update security controls and detection rules.
 - Train team on findings
 - Update incident response procedures
+- Notify affected customers and regulators, if required by law (e.g., GDPR requires notification within 72 hours).
 
 ---
 
