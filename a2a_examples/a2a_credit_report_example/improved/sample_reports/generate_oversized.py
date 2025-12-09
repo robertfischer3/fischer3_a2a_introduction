@@ -53,7 +53,7 @@ def generate_oversized_report():
         # Add inquiry for every 10th account
         if i % 10 == 0:
             inquiry = {
-                "date": "2024-12-01",
+                "date": "2025-12-01",
                 "creditor": f"Creditor {i}",
                 "type": "hard",
                 "purpose": f"Application number {i}"

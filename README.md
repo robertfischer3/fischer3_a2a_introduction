@@ -33,6 +33,7 @@ Unlike typical documentation, this project:
 - **Explains the risks** - Understand *why* vulnerabilities matter
 - **Demonstrates fixes** - See how to implement proper security controls
 - **Provides context** - In-depth articles explain complex security concepts
+- **Multiple learning paths** - Three complete example progressions covering different security domains
 
 ---
 
@@ -41,20 +42,137 @@ Unlike typical documentation, this project:
 ### For Complete Beginners
 1. **Read**: [A2A Overview](./docs/a2a/00_A2A_OVERVIEW.md) ← Start here!
 2. **Learn**: [Core Concepts](./docs/a2a/01_FUNDAMENTALS/01_core_concepts.md)
-3. **Study**: [Example 1 Security Analysis](./a2a_examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
-4. **Compare**: [Security Evolution Guide](./docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md)
+3. **Choose**: Pick an example domain that interests you (see examples below)
+4. **Study**: Begin with Stage 1 of your chosen example
 
 ### For Security-Focused Developers
 1. **Understand threats**: [Threat Model](./docs/a2a/03_SECURITY/03_threat_model.md)
 2. **Learn defense**: [Authentication Overview](./docs/a2a/03_SECURITY/01_authentication_overview.md)
-3. **See evolution**: [Code Walkthrough](./docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md)
-4. **Study examples**: Compare all three [Security Analysis documents](#-code-examples-with-security-journey)
+3. **Compare examples**: Review security analyses across all three example domains
+4. **Practice**: Work through attack scenarios in each stage
 
 ### For Protocol Implementers
 1. **Understand protocol**: [Core Concepts](./docs/a2a/01_FUNDAMENTALS/01_core_concepts.md)
 2. **Learn identity**: [Agent Identity](./docs/a2a/01_FUNDAMENTALS/02_agent_identity.md)
 3. **Master security**: [Authentication Tags](./docs/a2a/03_SECURITY/02_authentication_tags.md)
-4. **Use template**: [Example 3 (Secure)](./a2a_examples/a2a_crypto_example/security/)
+4. **Use templates**: Stage 3 implementations from any example as production templates
+
+---
+
+## 💻 Learning Examples - Three Complete Security Journeys
+
+The project includes **three comprehensive examples**, each focusing on different security domains while following the same progressive learning approach:
+
+### 🪙 Example 1: Cryptocurrency Price Agent
+**Focus**: Query Security & Basic A2A Protocol  
+**Location**: `a2a_examples/a2a_crypto_example/`
+
+**What You'll Learn**:
+- Core A2A protocol fundamentals
+- Basic authentication and authorization
+- Input validation and injection prevention
+- API security patterns
+- Real-time data security
+
+**Stages**:
+- **Stage 1 (Vulnerable)**: No security, basic A2A implementation
+- **Stage 2 (Improved)**: Basic registry and simple authentication
+- **Stage 3 (Secure)**: Full production security with cryptographic controls
+
+**Best For**: Beginners to A2A protocol, API developers, learning fundamental security patterns
+
+[View Crypto Agent README](./a2a_examples/a2a_crypto_example/README.md)
+
+---
+
+### 📊 Example 2: Credit Report Analysis Agent
+**Focus**: File Upload Security & PII Protection  
+**Location**: `a2a_examples/a2a_credit_report_example/`
+
+**What You'll Learn**:
+- File upload security and validation
+- PII protection (GDPR/HIPAA compliance)
+- 8-layer validation framework
+- Path traversal prevention
+- Magic byte validation
+- Secure file handling
+- AI integration security (Stage 4)
+
+**Stages**:
+- **Stage 1 (Insecure)**: Vulnerable file handling, no validation
+- **Stage 2 (Improved)**: Basic validation, limited PII protection
+- **Stage 3 (Secure)**: Production-ready file security
+- **Stage 4 (AI-Enhanced)**: Secure AI integration with Gemini
+
+**Best For**: Document processing systems, compliance-heavy applications, PII handling, AI security
+
+[View Credit Report README](./a2a_examples/a2a_credit_report_example/README.md)
+
+---
+
+### 🤝 Example 3: Task Collaboration System (NEW!)
+**Focus**: Session Management & Multi-Agent Coordination  
+**Location**: `a2a_examples/a2a_task_collab_example/`
+
+**What You'll Learn**:
+- **Session lifecycle management**
+- Session hijacking and fixation attacks
+- Stale permissions and state security
+- Multi-agent coordination patterns
+- Distributed session storage (Redis)
+- Web framework integration (Flask)
+- Long-running workflow security
+- Concurrent session handling
+
+**System Architecture**:
+```
+[Coordinator Agent] ← Manages projects and sessions
+    ↓
+[Worker Agents] ← Execute specialized tasks
+    ↓
+[Audit Agent] ← Monitors all activities
+```
+
+**Stages**:
+- **Stage 1 (Insecure)**: 25+ vulnerabilities, TCP-based
+- **Stage 2 (Improved)**: Partial fixes, HMAC authentication
+- **Stage 3 (Secure)**: Production SessionManager, RSA authentication
+- **Stage 4 (Distributed)**: Redis-backed distributed sessions
+- **Stage 5 (Web Framework)**: Flask integration with JWT
+
+**Best For**: Collaborative systems, project management, web applications, distributed systems, session-heavy applications
+
+**Unique Features**:
+- ✅ Dedicated SessionManager class (reusable)
+- ✅ Multiple session types (coordinator, worker, audit)
+- ✅ Rich state management (projects, tasks, permissions)
+- ✅ True multi-agent collaboration
+- ✅ Attack demonstrations built into client
+- ✅ Distributed and web framework patterns
+
+[View Task Collaboration README](./a2a_examples/a2a_task_collab_example/README.md)  
+[View Quick Reference Guide](./a2a_examples/a2a_task_collab_example/QUICK_REFERENCE.md)
+
+---
+
+## 📊 Security Domain Coverage Matrix
+
+| Security Topic | Crypto Agent | Credit Report | Task Collab |
+|----------------|--------------|---------------|-------------|
+| **A2A Protocol Basics** | ⭐⭐⭐ | ⭐⭐ | ⭐⭐ |
+| **Input Validation** | ⭐⭐ | ⭐⭐⭐ | ⭐⭐ |
+| **Authentication** | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
+| **Authorization** | ⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
+| **Session Security** | ⭐ | ⭐ | ⭐⭐⭐⭐ |
+| **State Management** | - | ⭐ | ⭐⭐⭐⭐ |
+| **File Security** | - | ⭐⭐⭐⭐ | - |
+| **PII Protection** | - | ⭐⭐⭐⭐ | - |
+| **Multi-Agent Patterns** | ⭐ | - | ⭐⭐⭐⭐ |
+| **Distributed Systems** | - | - | ⭐⭐⭐ |
+| **Web Security** | - | - | ⭐⭐⭐ |
+| **AI Security** | - | ⭐⭐⭐ | - |
+
+**Legend**: ⭐ = Coverage depth (more stars = more comprehensive)
 
 ---
 
@@ -62,243 +180,95 @@ Unlike typical documentation, this project:
 
 ### 🎓 **[Complete Documentation Index](./docs/a2a/INDEX.md)** ← Browse all docs
 
-### Core Documentation Phases
+### Core Documentation
 
 #### **Phase 1: Foundation Concepts** 🔰
-Start here to understand the basic protocols and their purpose.
-
-**A2A Protocol Fundamentals**:
 - [📖 A2A Overview](./docs/a2a/00_A2A_OVERVIEW.md) - **Start your learning journey**
 - [Core Concepts](./docs/a2a/01_FUNDAMENTALS/01_core_concepts.md) - Protocol architecture
-- [Agent Identity](./docs/a2a/01_FUNDAMENTALS/02_agent_identity.md) - ✨ How agents identify themselves
+- [Agent Identity](./docs/a2a/01_FUNDAMENTALS/02_agent_identity.md) - How agents identify themselves
 - [Agent Cards](./docs/a2a/02_DISCOVERY/01_agent_cards.md) - Agent capability discovery
 - [Agent Registry](./docs/a2a/02_DISCOVERY/02_agent_registry.md) - Service discovery mechanisms
+
+#### **Phase 2: Security Mastery** 🔐
+- [Authentication Overview](./docs/a2a/03_SECURITY/01_authentication_overview.md) - Trust models & methods
+- [Authentication Tags](./docs/a2a/03_SECURITY/02_authentication_tags.md) - Agent identity verification
+- [Threat Model](./docs/a2a/03_SECURITY/03_threat_model.md) - Attack vectors & mitigations
+- [Security Comparison Guide](./docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md) - Example progression analysis
+
+#### **Phase 3: Protocol Communication** 📡
 - [Protocol Messages](./docs/a2a/04_COMMUNICATION/01_protocol_messages.md) - Message structure and types
 - [Streaming & Events](./docs/a2a/04_COMMUNICATION/02_streaming_events.md) - Real-time communication
 
-**MCP Protocol Fundamentals**:
-- [MCP Overview](./references.md#model-context-protocol-mcp) - Tools and resources for AI agents
-- Integration patterns with A2A
-- When to use MCP vs A2A
-
 ---
 
-#### **Phase 2: Security Awareness** 🔍
-Learn to identify security vulnerabilities before writing code.
+## 🎓 Recommended Learning Paths
 
-**Security Fundamentals**:
-- [Authentication Overview](./docs/a2a/03_SECURITY/01_authentication_overview.md) - ✨ **Trust models & methods**
-- [Authentication Tags](./docs/a2a/03_SECURITY/02_authentication_tags.md) - Agent identity verification
-- [Threat Model](./docs/a2a/03_SECURITY/03_threat_model.md) - ✨ **Attack vectors & mitigations**
+### Complete Security Education (8-10 weeks)
 
-**Security Deep Dives**:
-Each article explains a security concept in detail with code examples.
+**Week 1-2: Foundation + Query Security**
+- Read A2A fundamentals documentation
+- Complete Cryptocurrency Agent (Stages 1-3)
+- Master basic A2A protocol and API security
 
----
+**Week 3-5: File & Privacy Security**
+- Complete Credit Report Agent (Stages 1-4)
+- Master file upload security and validation
+- Learn PII protection and compliance patterns
+- Explore AI integration security
 
-#### **Phase 3: Progressive Implementation** 💻
-Walk through examples that demonstrate security evolution.
+**Week 6-8: Session & State Security**
+- Complete Task Collaboration Agent (Stages 1-3)
+- Master session management and binding
+- Learn multi-agent coordination patterns
+- Understand state security
 
-##### Example 1: Basic Implementation (Vulnerable) ❌
-**Location**: `a2a_examples/a2a_crypto_example/`  
-**Security Rating**: 0/10
+**Week 9-10: Advanced Topics (Optional)**
+- Task Collaboration Stage 4 (Distributed systems)
+- Task Collaboration Stage 5 (Web frameworks)
+- Cross-example security comparison
+- Build your own secure agent system
 
-**What You'll Learn**:
-- Basic A2A protocol implementation
-- Simple agent communication
-- **Security Concerns Highlighted**:
-  - ❌ No input validation
-  - ❌ No authentication
-  - ❌ No rate limiting
-  - ❌ Hardcoded credentials
-  - ❌ No encryption
+### Quick Introduction (3-5 days)
 
-**Key Resources**:
-- [Example 1 README](./a2a_examples/a2a_crypto_example/README.md)
-- [Security Analysis](./a2a_examples/a2a_crypto_example/SECURITY_ANALYSIS.md) - ✨ **Detailed vulnerability breakdown**
+**Day 1: Foundation**
+- A2A Overview and core concepts
+- Choose example based on interest
 
----
+**Day 2-3: Basic Security**
+- Complete Stage 1 of chosen example
+- Study security analysis
+- Try attack demonstrations
 
-##### Example 2: With Registry (Improved) ⚠️
-**Location**: `a2a_examples/a2a_crypto_simple_registry_example_1/`  
-**Security Rating**: 4/10
+**Day 4-5: Secure Implementation**
+- Complete Stages 2-3 of chosen example
+- Compare security evolution
+- Understand production patterns
 
-**What You'll Learn**:
-- Adding service discovery
-- Implementing basic authentication
-- **Security Improvements**:
-  - ✅ Basic agent card validation
-  - ✅ Simple signature verification
-  - ⚠️ Still has issues (documented in code)
+### Specialized Learning Paths
 
-**Key Resources**:
-- [Example 2 README](./a2a_examples/a2a_crypto_simple_registry_example_1/README.md)
-- [Security Analysis](./a2a_examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md) - ✨ **Incremental improvements explained**
+**For API Developers**
+→ Cryptocurrency Agent (focus on query security)
 
-**Security Analysis**: Shows incremental security improvements but highlights remaining gaps.
+**For File Processing Systems**
+→ Credit Report Agent (focus on upload security)
 
----
+**For Web Application Developers**
+→ Task Collaboration Agent (focus on sessions)
 
-##### Example 3: Production Security (Secure) ✅
-**Location**: `a2a_examples/a2a_crypto_example/security/`  
-**Security Rating**: 9/10
+**For Multi-Agent Systems**
+→ Task Collaboration Agent (focus on coordination)
 
-**What You'll Learn**:
-- Production-ready security architecture
-- Modular security components
-- **Full Security Controls**:
-  - ✅ Complete input validation
-  - ✅ Cryptographic signatures
-  - ✅ Replay attack prevention
-  - ✅ Rate limiting
-  - ✅ Audit logging
-  - ✅ Role-based access control
+**For AI Integration**
+→ Credit Report Agent Stage 4 (focus on AI security)
 
-**Key Resources**:
-- [Security Module README](./a2a_examples/a2a_crypto_example/security/README.md)
-- [Security Analysis](./a2a_examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md) - ✨ **Production patterns explained**
-
-**Architecture**: Demonstrates separation of concerns:
-```
-security/
-├── constants.py          # Security configurations
-├── secure_agent_card.py  # Secure identity model
-├── validator.py          # Comprehensive validation
-├── manager.py           # Lifecycle management
-└── audit_logger.py      # Security monitoring
-```
-
----
-
-#### **Phase 4: Understanding Security Evolution** 🛡️
-Compare implementations to understand the security journey.
-
-**Security Comparison Guide**:
-- [Code Walkthrough Comparison](./docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md) - ✨ **Side-by-side analysis**
-
-This comprehensive guide shows:
-- Line-by-line comparison of all 3 examples
-- Exactly what changes between vulnerable → secure
-- Why each security control matters
-- Attack scenarios for each vulnerability
-- Practice exercises to test your understanding
-
-**Key Features**:
-- 📊 Security progression matrix
-- 🔍 10+ vulnerability deep dives
-- 💡 Attack scenario demonstrations
-- ✅ Security best practices
-- 🎯 Interactive exercises
-
----
-
-## 📊 Security Maturity Progression
-
-Track your understanding across the examples:
-
-| Security Control | Example 1 | Example 2 | Example 3 |
-|------------------|-----------|-----------|-----------|
-| Input Validation | ❌ None | ⚠️ Basic | ✅ Comprehensive |
-| Authentication | ❌ None | ⚠️ Simple | ✅ Strong PKI |
-| Authorization | ❌ None | ⚠️ Partial | ✅ RBAC |
-| Replay Protection | ❌ None | ❌ None | ✅ Nonce-based |
-| Rate Limiting | ❌ None | ❌ None | ✅ Token bucket |
-| Audit Logging | ❌ None | ⚠️ Minimal | ✅ Complete |
-| Encryption | ❌ None | ⚠️ Transport only | ✅ End-to-end |
-| Signature Verification | ❌ None | ⚠️ Basic | ✅ Full PKI |
-
-**Progress Metrics**:
-- Example 1 → 2: **↗️ 40% improvement** (0/10 → 4/10)
-- Example 2 → 3: **↗️ 125% improvement** (4/10 → 9/10)
-- Example 1 → 3: **↗️ 900% improvement** (0/10 → 9/10)
-
----
-
-## 🎓 Recommended Learning Sequences
-
-### For Security-Focused Developers (4 weeks)
-
-**Week 1: Foundation**
-- Read all [A2A fundamentals](./docs/a2a/01_FUNDAMENTALS/)
-- Understand [MCP integration](./a2a_mcp_integration.md)
-- Review [threat landscape](./docs/a2a/03_SECURITY/03_threat_model.md)
-
-**Week 2: Vulnerability Awareness**
-- Study [Example 1](./a2a_examples/a2a_crypto_example/) (vulnerable code)
-- Read [Security Analysis 1](./a2a_examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
-- Identify security flaws yourself
-
-**Week 3: Incremental Security**
-- Study [Example 2](./a2a_examples/a2a_crypto_simple_registry_example_1/) (improved code)
-- Read [Security Analysis 2](./a2a_examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-- Compare with Example 1
-- Understand trade-offs
-
-**Week 4: Production Security**
-- Study [Example 3](./a2a_examples/a2a_crypto_example/security/) (secure implementation)
-- Read [Security Analysis 3](./a2a_examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md)
-- Review [Code Walkthrough](./docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md)
-- Implement in practice project
-
----
-
-### For Protocol Implementers (5 days)
-
-**Day 1: Protocol Basics**
-- [A2A Overview](./docs/a2a/00_A2A_OVERVIEW.md)
-- [Core Concepts](./docs/a2a/01_FUNDAMENTALS/01_core_concepts.md)
-- [Agent Identity](./docs/a2a/01_FUNDAMENTALS/02_agent_identity.md)
-
-**Day 2: Discovery & Communication**
-- [Agent Cards](./docs/a2a/02_DISCOVERY/01_agent_cards.md)
-- [Agent Registry](./docs/a2a/02_DISCOVERY/02_agent_registry.md)
-- [Protocol Messages](./docs/a2a/04_COMMUNICATION/01_protocol_messages.md)
-
-**Day 3: Security Foundation**
-- [Authentication Overview](./docs/a2a/03_SECURITY/01_authentication_overview.md)
-- [Authentication Tags](./docs/a2a/03_SECURITY/02_authentication_tags.md)
-- Study Example 1 to understand vulnerabilities
-
-**Day 4: Security Implementation**
-- [Threat Model](./docs/a2a/03_SECURITY/03_threat_model.md)
-- Study Example 2 for incremental improvements
-- Review [Code Walkthrough](./docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md)
-
-**Day 5: Production Patterns**
-- Study Example 3 security module
-- Use as template for your implementation
-- Test security controls
-
----
-
-### For Security Auditors (Red Team)
-
-**Reconnaissance Phase**
-- Read [Threat Model](./docs/a2a/03_SECURITY/03_threat_model.md)
-- Study attack vectors
-- Review STRIDE framework application
-
-**Analysis Phase**
-- Audit Example 1 independently
-- Compare findings with [Security Analysis 1](./a2a_examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
-- Identify any missed vulnerabilities
-
-**Exploitation Phase**
-- Attempt to exploit Example 2
-- Document bypasses
-- Compare with [Security Analysis 2](./a2a_examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-
-**Defense Review**
-- Test Example 3 defenses
-- Attempt to bypass security controls
-- Review [Security Analysis 3](./a2a_examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md)
-- Provide recommendations
+**For Distributed Systems**
+→ Task Collaboration Agent Stage 4-5 (focus on scaling)
 
 ---
 
 ## 🔐 Key Security Principles Demonstrated
 
-Throughout the examples, you'll see these principles in action:
+Throughout all examples, you'll see these principles in action:
 
 1. **Defense in Depth** - Multiple layers of security controls
 2. **Principle of Least Privilege** - Agents only get capabilities they need
@@ -307,6 +277,9 @@ Throughout the examples, you'll see these principles in action:
 5. **Audit Everything** - Comprehensive logging for security events
 6. **Input Validation** - Never trust external data
 7. **Cryptographic Verification** - Prove identity and integrity
+8. **Session Binding** - Tie sessions to agent identity
+9. **State Protection** - Encrypt and validate state transitions
+10. **Rate Limiting** - Prevent resource exhaustion
 
 ---
 
@@ -321,6 +294,12 @@ By completing this project, you will be able to:
 - ✅ Identify and mitigate common vulnerabilities
 - ✅ Implement cryptographic security controls
 - ✅ Build production-ready agent systems
+- ✅ Handle file uploads securely
+- ✅ Protect PII and comply with regulations
+- ✅ Manage sessions and state securely
+- ✅ Coordinate multiple agents safely
+- ✅ Scale to distributed systems
+- ✅ Integrate AI services securely
 
 ### Security Skills
 - ✅ Recognize security anti-patterns in code
@@ -329,49 +308,57 @@ By completing this project, you will be able to:
 - ✅ Design secure authentication/authorization
 - ✅ Monitor and audit security events
 - ✅ Apply zero-trust principles
+- ✅ Prevent common attacks (injection, traversal, hijacking, etc.)
+- ✅ Validate and sanitize all inputs
+- ✅ Implement secure session management
+- ✅ Protect sensitive data (PII, state, files)
 
 ---
 
 ## 🛠️ Getting Started
 
 ### Prerequisites
-- Python 3.10 or higher
-- Basic understanding of:
-  - Async programming
-  - HTTP/REST APIs
-  - JSON data formats
-  - Basic cryptography concepts
+
+```bash
+# Python 3.10 or higher
+python --version
+
+# Basic understanding of:
+# - Async programming
+# - HTTP/REST APIs
+# - JSON data formats
+# - Basic cryptography concepts
+```
 
 ### Installation
 
-**Clone and setup**:
 ```bash
-git clone <repository-url>
-cd <project-directory>
+# Clone repository
+git clone https://github.com/robertfischer3/fischer3_a2a_introduction.git
+cd fischer3_a2a_introduction
+
+# Create virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+
+# Install dependencies (example-specific)
+# See individual example READMEs for specific requirements
 ```
 
-**Organize documentation** (if needed):
-```bash
-chmod +x organize_documentation.sh
-./organize_documentation.sh
-```
+### Choose Your Example
 
-**Start learning**:
 ```bash
-# Read the overview
-cat docs/a2a/00_A2A_OVERVIEW.md
-
-# Or browse the index
-cat docs/a2a/INDEX.md
-```
-
-**Run first example**:
-```bash
+# Example 1: Cryptocurrency Agent
 cd a2a_examples/a2a_crypto_example
-python insecure_agent.py  # See vulnerabilities in action
+python insecure_agent.py
+
+# Example 2: Credit Report Agent
+cd a2a_examples/a2a_credit_report_example/stage1_insecure
+python server.py
+
+# Example 3: Task Collaboration Agent
+cd a2a_examples/a2a_task_collab_example/stage1_insecure
+python server/task_coordinator.py
 ```
 
 ---
@@ -386,9 +373,12 @@ python insecure_agent.py  # See vulnerabilities in action
 - [View Slides](https://robertfischer3.github.io/fischer3_a2a_introduction)
 - [Markdown Source](docs/SLIDES.md)
 
-### Internal Documentation
-- [Complete Documentation Index](./docs/a2a/INDEX.md)
-- [Reorganization Plan](./A2A_REORGANIZATION_PLAN.md)
+### Example Comparisons
+- [Detailed Example Comparison](./a2a_examples/a2a_task_collab_example/task_collab_comparision.md)
+- [Session Security Cheat Sheet](./a2a_examples/a2a_task_collab_example/A2A_SESSION_SECURITY_CHEAT_SHEET.md)
+
+### Utility Tools
+- [UV Python Environment Guide](./side_topic_guidance/uv/UV_COMPLETE_GUIDE.md) - Modern Python dependency management
 
 ---
 
@@ -407,28 +397,61 @@ python insecure_agent.py  # See vulnerabilities in action
 │       ├── 04_COMMUNICATION/          # Protocol messages
 │       └── 05_REFERENCE/              # Technical reference
 │
-├── 💻 Progressive Examples
-│   ├── a2a_crypto_example/                    # Example 1: Vulnerable
-│   │   ├── README.md
-│   │   ├── SECURITY_ANALYSIS.md               # ✨ Vulnerability breakdown
-│   │   └── security/                          # Example 3: Secure version
-│   │       ├── README.md
-│   │       ├── SECURITY_ANALYSIS.md           # ✨ Production patterns
-│   │       ├── secure_agent_card.py
-│   │       ├── validator.py
-│   │       ├── manager.py
-│   │       └── audit_logger.py
-│   │
-│   └── a2a_crypto_simple_registry_example_1/  # Example 2: Improved
-│       ├── README.md
-│       ├── SECURITY_ANALYSIS.md               # ✨ Incremental improvements
-│       └── partially_secure_agent.py
+├── 💻 Example 1: Cryptocurrency Agent
+│   └── a2a_examples/a2a_crypto_example/
+│       ├── Stage 1: Vulnerable baseline
+│       ├── Stage 2: Registry + basic auth
+│       └── Stage 3: Production security
+│
+├── 💻 Example 2: Credit Report Agent
+│   └── a2a_examples/a2a_credit_report_example/
+│       ├── stage1_insecure/          # Vulnerable file handling
+│       ├── stage2_improved/          # Basic validation
+│       ├── stage3_secure/            # Production security
+│       └── stage4_ai/                # AI integration
+│
+├── 💻 Example 3: Task Collaboration System ✨ NEW
+│   └── a2a_examples/a2a_task_collab_example/
+│       ├── stage1_insecure/          # 25+ vulnerabilities
+│       ├── stage2_improved/          # Partial fixes
+│       ├── stage3_secure/            # SessionManager
+│       ├── stage4_distributed/       # Redis integration
+│       └── stage5_web_framework/     # Flask + JWT
+│
+├── 🛠️ MCP Examples
+│   └── mcp_examples/
+│       └── mcp_server_example/       # Basic MCP server
+│
+├── 🔧 Utilities
+│   └── side_topic_guidance/
+│       └── uv/                       # Python environment tools
 │
 └── 🎨 Presentation Materials
     └── docs/
         ├── slides.pdf
         └── SLIDES.md
 ```
+
+---
+
+## 📊 Project Statistics
+
+### Documentation
+- **Total Documentation Files**: 20+
+- **Security Deep Dives**: 5 comprehensive guides
+- **Learning Paths**: 3 complete progressions
+
+### Examples
+- **Total Stages**: 13 progressive implementations
+- **Lines of Code**: 10,000+ (across all stages)
+- **Vulnerabilities Demonstrated**: 75+ unique security issues
+- **Attack Scenarios**: 30+ with demonstrations
+
+### Coverage
+- **A2A Protocol**: Complete implementation
+- **MCP Integration**: Basic to advanced
+- **Security Topics**: 15+ domains covered
+- **Real-World Patterns**: Distributed, web, AI, multi-agent
 
 ---
 
@@ -441,50 +464,30 @@ Follow the phases sequentially, completing exercises at each stage.
 Jump to specific security topics or implementation patterns as needed.
 
 ### As a Template
-Use Example 3 as a starting point for your own secure implementations.
+Use Stage 3 implementations from any example as starting points for production systems.
 
 ### As a Security Audit Tool
-Review your code against the security concerns highlighted in examples.
+Review your code against the security concerns highlighted across examples.
 
----
-
-## 📊 Documentation Progress
-
-| Section | Complete | Planned | Progress |
-|---------|----------|---------|----------|
-| Overview | 1 | 0 | ✅ 100% |
-| Fundamentals | 2 | 2 | 🟡 50% |
-| Discovery | 2 | 1 | 🟢 67% |
-| **Security** | **4** | **1** | 🟢 **80%** |
-| Communication | 2 | 1 | 🟡 67% |
-| Reference | 0 | 3 | 🔴 0% |
-| **Total** | **11** | **8** | 🟡 **58%** |
-
-**Recent additions**: ✨
-- Authentication Overview
-- Threat Model  
-- Agent Identity
-- Code Walkthrough Comparison
-- 3 Security Analysis documents
+### As a Comparison Tool
+Compare how different security challenges are addressed across domains.
 
 ---
 
 ## ⚖️ Legal & Ethical Considerations
 
 ### Important Notes
-
 1. **Educational Purpose Only**: Code is intentionally simplified
 2. **Not Production-Ready**: Requires hardening for real use
 3. **No Warranty**: Use at your own risk
 4. **Security Disclosure**: Found a real vulnerability? Report responsibly
 
 ### Responsible Use
-
 - Don't use vulnerable examples in production
 - Always implement proper security controls
 - Follow industry best practices
 - Obtain proper security reviews
-- Comply with applicable regulations
+- Comply with applicable regulations (GDPR, HIPAA, etc.)
 
 ---
 
@@ -496,7 +499,6 @@ Review your code against the security concerns highlighted in examples.
 ### Contributing
 
 While this is primarily an educational project, feedback and suggestions are welcome:
-
 - Report issues or unclear documentation
 - Suggest additional security topics to cover
 - Share your learning experiences
@@ -506,24 +508,43 @@ While this is primarily an educational project, feedback and suggestions are wel
 
 ## 📝 Version & Updates
 
-- **Current Version**: 1.0 (Educational Release)
-- **Last Updated**: November 2025
+- **Current Version**: 2.0 (Expanded Edition)
+- **Last Updated**: December 2025
 - **Recent Updates**:
-  - ✨ Added comprehensive security documentation (Nov 2025)
-  - ✨ Created security analysis for all 3 examples
-  - ✨ Added threat model and authentication guides
-  - ✨ Reorganized documentation structure
-- **Next Planned Update**: Q1 2025 (Advanced security topics)
+  + ✨ Added Task Collaboration example with 5 stages (Dec 2025)
+  + ✨ Added comprehensive security documentation (Nov 2025)
+  + ✨ Created security analysis for all examples
+  + ✨ Added threat model and authentication guides
+  + ✨ Reorganized documentation structure
+- **Next Planned Update**: Q1 2025 (Advanced integration patterns)
+
+### Changelog
+
+**v2.0 (December 2025)**:
+- Added complete Task Collaboration example (5 stages)
+- Comprehensive session management teaching
+- Multi-agent coordination patterns
+- Distributed system patterns (Redis)
+- Web framework integration (Flask)
+- 25+ new vulnerabilities demonstrated
+- SessionManager reusable component
+
+**v1.0 (November 2025)**:
+- Initial release with 2 examples
+- Cryptocurrency and Credit Report agents
+- Complete security documentation
+- 50+ vulnerabilities across examples
 
 ---
 
 ## 🙏 Acknowledgments
 
 This project builds upon:
-- The Model Context Protocol specification
+- The Model Context Protocol specification by Anthropic
 - The Agent2Agent protocol design
 - Community feedback and best practices
 - Real-world security incidents and lessons learned
+- Industry standards (OWASP, CWE, GDPR, HIPAA)
 
 ---
 
@@ -534,18 +555,21 @@ See individual files for specific licensing information.
 
 ---
 
-**Remember**: The journey from vulnerable to secure code is the learning path itself.  
-Take your time, understand each security concern, and practice implementing proper controls.
-
-**Happy Learning! 🚀🔐**
-
----
-
 ## 🎯 Quick Navigation
 
 - 📖 [Documentation Index](./docs/a2a/INDEX.md)
 - 🚀 [A2A Overview](./docs/a2a/00_A2A_OVERVIEW.md)
 - 🔒 [Security Guide](./docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md)
-- 💻 [Example 1](./a2a_examples/a2a_crypto_example/)
-- 💻 [Example 2](./a2a_examples/a2a_crypto_simple_registry_example_1/)
-- 💻 [Example 3](./a2a_examples/a2a_crypto_example/security/)
+- 💻 [Crypto Example](./a2a_examples/a2a_crypto_example/)
+- 💻 [Credit Report Example](./a2a_examples/a2a_credit_report_example/)
+- 💻 [Task Collaboration Example](./a2a_examples/a2a_task_collab_example/) ✨ NEW
+- 📊 [Example Comparison](./a2a_examples/a2a_task_collab_example/task_collab_comparision.md)
+
+---
+
+**Remember**: The journey from vulnerable to secure code is the learning path itself.  
+Take your time, understand each security concern, and practice implementing proper controls.
+
+**Three Examples. Complete Coverage. Production-Ready Patterns.**
+
+**Happy Learning! 🚀🔐**
