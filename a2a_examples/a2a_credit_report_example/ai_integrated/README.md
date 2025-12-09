@@ -173,7 +173,7 @@ ai_rate_limiter.check_ai_rate_limit("agent-001")
     "timestamp": "2025-01-15T10:30:00Z",
     "event_type": "ai_decision",
     "agent_id": "analyst-001",
-    "report_id": "CR-2024-001",
+    "report_id": "CR-2025-001",
     "input": {
         "credit_score": 720,
         "account_summary": {...}
@@ -259,7 +259,7 @@ message = {
 # Response:
 {
     "status": "success",
-    "report_id": "CR-2024-001",
+    "report_id": "CR-2025-001",
     "warnings": [...]
 }
 ```
@@ -272,14 +272,14 @@ message = {
     "sender_id": "analyst-001",
     "auth_tag": {...},
     "payload": {
-        "report_id": "CR-2024-001"
+        "report_id": "CR-2025-001"
     }
 }
 
 # Response:
 {
     "status": "success",
-    "report_id": "CR-2024-001",
+    "report_id": "CR-2025-001",
     "ai_decision": {
         "decision": "APPROVE",
         "reason": "Strong credit score (720) with low utilization",

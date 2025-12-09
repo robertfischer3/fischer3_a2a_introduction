@@ -57,13 +57,13 @@
   ],
   "inquiries": [
     {
-      "date": "2024-12-01",
+      "date": "2025-12-01",
       "creditor": "Auto Finance Corp",
       "type": "hard",
       "purpose": "Auto loan application"
     },
     {
-      "date": "2024-11-15",
+      "date": "2025-11-15",
       "creditor": "Credit Monitoring Service",
       "type": "soft",
       "purpose": "Account review"
