@@ -1,0 +1,207 @@
+# A2A Protocol Documentation
+site_name: Agent-to-Agent (A2A) Protocol
+site_description: Comprehensive documentation for secure agent-to-agent communication
+site_author: A2A Protocol Working Group
+site_url: https://your-domain.github.io/a2a-protocol/
+
+# Repository
+repo_name: your-org/a2a-protocol
+repo_url: https://github.com/your-org/a2a-protocol
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2025 A2A Protocol Working Group
+
+# Theme Configuration
+theme:
+  name: material
+  language: en
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/robot
+
+# Extra Configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-org/a2a-protocol
+      name: GitHub Repository
+  version:
+    provider: mike
+    default: latest
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve by opening an issue.
+
+# Extensions
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.'
+  - tags:
+      tags_file: tags.md
+  - minify:
+      minify_html: true
+
+# Navigation
+nav:
+  - Home: index.md
+  
+  - Getting Started:
+    - Quick Start: guides/quickstart.md
+    - Installation: guides/installation.md
+    - First Agent: guides/first-agent.md
+  
+  - A2A Protocol:
+    - Overview: a2a/00_A2A_OVERVIEW.md
+    - Fundamentals:
+      - Core Concepts: a2a/01_FUNDAMENTALS/01_core_concepts.md
+      - Agent Identity: a2a/01_FUNDAMENTALS/02_agent_identity.md
+      - Message Types: a2a/01_FUNDAMENTALS/03_message_types.md
+    - Discovery:
+      - Agent Cards: a2a/02_DISCOVERY/01_agent_cards.md
+      - Registry Patterns: a2a/02_DISCOVERY/02_registry_patterns.md
+      - Capability Matching: a2a/02_DISCOVERY/03_capability_matching.md
+    - Security:
+      - Authentication Overview: a2a/03_SECURITY/01_authentication_overview.md
+      - Authentication Tags: a2a/03_SECURITY/02_authentication_tags.md
+      - Threat Model: a2a/03_SECURITY/03_threat_model.md
+      - Security Best Practices: a2a/03_SECURITY/04_security_best_practices.md
+      - Code Walkthrough: a2a/03_SECURITY/05_code_walkthrough_comparison.md
+    - Communication:
+      - Protocol Messages: a2a/04_COMMUNICATION/01_protocol_messages.md
+      - Streaming & Events: a2a/04_COMMUNICATION/02_streaming_events.md
+      - Error Handling: a2a/04_COMMUNICATION/03_error_handling.md
+      - Message Validation: a2a/04_COMMUNICATION/04_message_validation_patterns.md
+    - Reference:
+      - Message Schemas: a2a/05_REFERENCE/01_message_schemas.md
+      - Capability Vocabulary: a2a/05_REFERENCE/02_capability_vocabulary.md
+      - Protocol Versions: a2a/05_REFERENCE/03_protocol_versions.md
+  
+  - Examples:
+    - Overview: examples/index.md
+    - Crypto Price Agent:
+      - Stage 1 (Vulnerable): examples/crypto-stage1.md
+      - Stage 2 (Improved): examples/crypto-stage2.md
+      - Stage 3 (Secure): examples/crypto-stage3.md
+    - Credit Report Agent:
+      - Stage 1 (Vulnerable): examples/credit-stage1.md
+      - Stage 3 (Secure): examples/credit-stage3.md
+    - Task Collaboration:
+      - Stage 1 (Vulnerable): examples/task-stage1.md
+      - Stage 2 (Improved): examples/task-stage2.md
+      - Stage 3 (Secure): examples/task-stage3.md
+  
+  - Guides:
+    - How-To Guides: guides/index.md
+    - Creating Presentations: guides/presentation-guide.md
+    - Running Examples: guides/running-examples.md
+    - Security Checklist: guides/security-checklist.md
+  
+  - Supplementary:
+    - Tools & Utilities: supplementary/index.md
+    - UV Package Manager: supplementary/tools/uv-guide.md
+    - Link Checker: supplementary/tools/link-checker.md
+  
+  - About:
+    - Project Info: about/index.md
+    - Contributing: about/contributing.md
+    - License: about/license.md
+    - Changelog: about/changelog.md
+
+# Extra CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Extra JavaScript
+extra_javascript:
+  - javascripts/extra.js
