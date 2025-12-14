@@ -45,3 +45,6 @@ htmlcov/
 # Misc
 *.log
 .env
+
+# MkDocs
+/site/

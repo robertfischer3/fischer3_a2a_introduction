@@ -46,7 +46,7 @@ This document covers comprehensive validation patterns for A2A messages:
 
 Production A2A implementations should validate messages through **multiple independent layers**. Each layer catches different classes of issues:
 
-![Alt text](../../../images/eight_layer_validation_model.png "Optional title")
+![Alt text](/docs/images/diagrams/eight_layer_validation_model.png "Optional title")
 
 **Why 8 layers?** Each layer is simple and focused. If one layer has a bug, others still protect you. This is **defense-in-depth**.
 

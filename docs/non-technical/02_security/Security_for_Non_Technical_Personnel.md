@@ -171,7 +171,7 @@ Imagine someone creates a fake ID badge and walks into your secure facility clai
 
 #### How to Prevent It (with Rationale)
 
-![How to Prevent it](../../../images/Screenshot%20from%202025-12-06%2019-06-36.png "How to Prevent It (Rationale)")
+![How to Prevent it](/docs/images/security/how_to_prevent_threat1.png "How to Prevent It (Rationale)")
 
 **1. Require Strong Authentication**
 Every agent must prove its identity using cryptographic signatures—like a digital passport that's nearly impossible to forge.
@@ -235,7 +235,7 @@ Agent B executes the transfer to the wrong account
 
 #### How to Prevent It (with Rationale)
 
-![How to Prevent it](../../../images/How_to_prevent_threat2.png "How to Prevent It (Rationale)")
+![How to Prevent it](/docs/images/security/How_to_prevent_threat2.png "How to Prevent It (Rationale)")
 
 **1. Encrypt All Communications (TLS 1.3)**
 Use Transport Layer Security to create an encrypted "tunnel" for agent communications.
@@ -301,7 +301,7 @@ of a real, authorized transaction
 
 #### How to Prevent It (with Rationale)
 
-![How to Prevent it](../../../images/how_to_prevent_threat3.png "How to Prevent It (Rationale)")
+![How to Prevent it](/docs/images/security/how_to_prevent_threat3.png "How to Prevent It (Rationale)")
 
 
 **1. Nonce-Based Validation**
@@ -371,7 +371,7 @@ If not verified, system grants the unauthorized capabilities
 
 #### How to Prevent It (with Rationale)
 
-![How to Prevent it](../../../images/how_it_prevent_threat4.png "How to Prevent It (Rationale)")
+![How to Prevent it](/docs/images/security/how_it_prevent_threat4.png "How to Prevent It (Rationale)")
 
 **1. Never Trust Claimed Capabilities**
 Always verify against an authoritative, centralized source.
@@ -475,7 +475,7 @@ Attacker opens 1,000 connections:
 
 #### How to Prevent It (with Rationale)
 
-![How to Prevent it](../../../images/how_to_prevent_threat5.png "How to Prevent It (Rationale)")
+![How to Prevent it](/docs/images/security/how_to_prevent_threat5.png "How to Prevent It (Rationale)")
 
 **1. Rate Limiting**
 Restrict how many requests each agent can make in a time window.
@@ -589,7 +589,7 @@ If AI agent doesn't filter inputs:
 
 #### How to Prevent It (with Rationale)
 
-![How to Prevent it](../../../images/how_to_prevent_threat6.png "How to Prevent It (Rationale)")
+![How to Prevent it](/docs/images/security/how_to_prevent_threat6.png "How to Prevent It (Rationale)")
 
 **1. Input Validation**
 Strictly validate all inputs before processing.
@@ -723,7 +723,7 @@ Response includes:
 
 #### Threat 7: How to Prevent It (with Rationale)
 
-![How to Prevent it](../../../images/how_to_prevent_threat7.png "How to Prevent It (Rationale)")
+![How to Prevent it](/docs/images/security/how_to_prevent_threat7.png "How to Prevent It (Rationale)")
 
 **1. Generic Error Messages to Clients**
 Don't reveal system details in user-facing errors.
@@ -824,7 +824,7 @@ Someone steals your hotel room key card and can now access your room, pretending
 
 #### Threat 8: How to Prevent It (with Rationale)
 
-![How to Prevent it](../../../images/how_to_prevent_threat8.png "How to Prevent It (Rationale)")
+![How to Prevent it](/docs/images/security/how_to_prevent_threat8.png "How to Prevent It (Rationale)")
 
 **1. Use Cryptographically Strong Session Tokens**
 Generate tokens that are impossible to guess.
@@ -904,7 +904,7 @@ A bank doesn't just have a lock on the front door. It has:
 
 This diagram illustrates how defensive controls build upon each other, making the system exponentially harder to breach. The key principle is that an attacker must bypass ALL layers to succeed.
 
-![Security Layers for A2A Systems](../../../images/security_ai_agent_collaboration.png "OSecurity Layers for A2A Systems")
+![Security Layers for A2A Systems](/docs/images/diagrams/security_ai_agent_collaboration.png "OSecurity Layers for A2A Systems")
 
 **Key Principle:** An attacker must bypass ALL layers to succeed. Each layer makes the attack exponentially harder.
 
@@ -912,7 +912,7 @@ This diagram illustrates how defensive controls build upon each other, making th
 
 ## 5. Security Controls by Category {#security-controls}
 
-![Security Controls by Category](../../../images/security_controls_by_category.png "Security Controls by Category")
+![Security Controls by Category](/docs/images/security/security_controls_by_category.png "Security Controls by Category")
 
 ### Authentication Controls
 
