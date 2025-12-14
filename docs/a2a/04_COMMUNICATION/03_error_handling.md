@@ -6,7 +6,7 @@
 > **Completion Time**: 45-60 minutes
 
 ## Navigation
-← Previous: [Streaming & Events](./02_streaming_events.md) | Next: [Message Schemas](../05_REFERENCE/message_schemas.md) →  
+← Previous: [Streaming & Events](./02_streaming_events.md) | Next: [Message Schemas](../05_REFERENCE/01_message_schemas.md) →  
 ↑ Up: [A2A Overview](../00_A2A_OVERVIEW.md)
 
 ---
@@ -854,7 +854,7 @@ with error_response_time.labels(error_code='RATE_LIMIT_EXCEEDED').time():
 ## 🔗 Related Documentation
 
 - [Protocol Messages](./01_protocol_messages.md) - Message structure
-- [Message Schemas](../05_REFERENCE/message_schemas.md) - JSON schemas
+- [Message Schemas](../05_REFERENCE/01_message_schemas.md) - JSON schemas
 - [Security Best Practices](../03_SECURITY/04_security_best_practices.md) - Security considerations
 - [Threat Model](../03_SECURITY/03_threat_model.md) - Attack scenarios
 

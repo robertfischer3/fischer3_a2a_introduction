@@ -6,7 +6,7 @@
 > **Completion Time**: 45-60 minutes
 
 ## Navigation
-← Previous: [Message Validation Patterns](../04_COMMUNICATION/04_message_validation_patterns.md) | Next: [Capability Vocabulary](./capability_vocabulary.md) →  
+← Previous: [Message Validation Patterns](../04_COMMUNICATION/04_message_validation_patterns.md) | Next: [Capability Vocabulary](./02_capability_vocabulary.md) →  
 ↑ Up: [A2A Overview](../00_A2A_OVERVIEW.md)
 
 ---

@@ -1018,9 +1018,9 @@ async def handle_admin_request(self, message):
 - [Security Best Practices](./04_security_best_practices.md) - Implementation guide
 
 ### Code References
-- [Example 1 Code](../../a2a_examples/a2a_crypto_example/)
-- [Example 2 Code](../../a2a_examples/a2a_crypto_simple_registry_example_1/)
-- [Example 3 Code](../../a2a_examples/a2a_crypto_example/security/)
+- [Example 1 Code](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/)
+- [Example 2 Code](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_simple_registry_example_1/)
+- [Example 3 Code](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/security/)
 
 ### Next Steps
 1. Review each example's code in detail

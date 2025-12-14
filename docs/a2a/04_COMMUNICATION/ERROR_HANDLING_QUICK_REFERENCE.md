@@ -274,8 +274,8 @@ finally:
 - **Message Format**: [Protocol Messages](./01_protocol_messages.md)
 - **Security**: [Security Best Practices](../03_SECURITY/04_security_best_practices.md)
 - **Examples**: 
-  - [Crypto Agent Stage 1](../../a2a_examples/a2a_crypto_example/) - No error handling
-  - [Crypto Agent Stage 3](../../a2a_examples/a2a_crypto_example/security/) - Production error handling
+  - [Crypto Agent Stage 1](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/) - No error handling
+  - [Crypto Agent Stage 3](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/security/) - Production error handling
 
 ---
 

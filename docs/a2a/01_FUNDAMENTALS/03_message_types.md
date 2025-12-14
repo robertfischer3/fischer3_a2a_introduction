@@ -6,7 +6,7 @@
 > **Completion Time**: 45-60 minutes
 
 ## Navigation
-← Previous: [Error Handling](../04_COMMUNICATION/03_error_handling.md) | Next: [Capability Vocabulary](./capability_vocabulary.md) →  
+← Previous: [Error Handling](../04_COMMUNICATION/03_error_handling.md) | Next: [Capability Vocabulary](../05_REFERENCE/02_capability_vocabulary.md) →  
 ↑ Up: [A2A Overview](../00_A2A_OVERVIEW.md)
 
 ---
@@ -1136,7 +1136,7 @@ def validate_with_json_schema(message: dict) -> bool:
 - [Protocol Messages Overview](../04_COMMUNICATION/01_protocol_messages.md) - Message types and usage
 - [Authentication Tags](../03_SECURITY/02_authentication_tags.md) - Security enhancement
 - [Error Handling](../04_COMMUNICATION/03_error_handling.md) - Error response patterns
-- [Capability Vocabulary](./capability_vocabulary.md) - Standard capability names
+- [Capability Vocabulary](../05_REFERENCE/02_capability_vocabulary.md) - Standard capability names
 
 ---
 
@@ -1181,7 +1181,7 @@ You've learned:
 - ✅ Testing approaches for validation
 
 **Next Steps**:
-1. Study [Capability Vocabulary](./capability_vocabulary.md) for standard capability names
+1. Study [Capability Vocabulary](../05_REFERENCE/02_capability_vocabulary.md) for standard capability names
 2. Review [Authentication Tags](../03_SECURITY/02_authentication_tags.md) for security
 3. Practice implementing validators for your agents
 
