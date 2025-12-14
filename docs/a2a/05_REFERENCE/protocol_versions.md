@@ -6,7 +6,7 @@
 > **Completion Time**: 30-45 minutes
 
 ## Navigation
-← Previous: [Capability Vocabulary](./capability_vocabulary.md) | Next: [Back to Overview](../00_A2A_OVERVIEW.md) →  
+← Previous: [Capability Vocabulary](./02_capability_vocabulary.md) | Next: [Back to Overview](../00_A2A_OVERVIEW.md) →  
 ↑ Up: [A2A Overview](../00_A2A_OVERVIEW.md)
 
 ---
@@ -780,8 +780,8 @@ When creating new protocol versions:
 ## 🔗 Related Documentation
 
 - [Agent Cards](../02_DISCOVERY/01_agent_cards.md) - How versions are declared
-- [Capability Vocabulary](./capability_vocabulary.md) - Version-specific capabilities
-- [Message Schemas](./message_schemas.md) - Schema versioning
+- [Capability Vocabulary](./02_capability_vocabulary.md) - Version-specific capabilities
+- [Message Schemas](./01_message_schemas.md) - Schema versioning
 - [Core Concepts](../01_FUNDAMENTALS/01_core_concepts.md) - Protocol basics
 
 ---

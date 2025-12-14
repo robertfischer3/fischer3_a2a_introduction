@@ -6,7 +6,7 @@
 > **Completion Time**: 60-90 minutes
 
 ## Navigation
-← Previous: [Error Handling](./03_error_handling.md) | Next: [Message Schemas](../05_REFERENCE/message_schemas.md) →  
+← Previous: [Error Handling](./03_error_handling.md) | Next: [Message Schemas](../05_REFERENCE/01_message_schemas.md) →  
 ↑ Up: [A2A Overview](../00_A2A_OVERVIEW.md)
 
 ---
@@ -1539,7 +1539,7 @@ def validate_uuid(value):
 
 - [Error Handling](./03_error_handling.md) - What to do when validation fails
 - [Protocol Messages](./01_protocol_messages.md) - Message structure
-- [Message Schemas](../05_REFERENCE/message_schemas.md) - Complete schemas
+- [Message Schemas](../05_REFERENCE/01_message_schemas.md) - Complete schemas
 - [Security Best Practices](../03_SECURITY/04_security_best_practices.md) - Security context
 - [Threat Model](../03_SECURITY/03_threat_model.md) - Attack scenarios
 

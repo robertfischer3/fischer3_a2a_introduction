@@ -342,7 +342,7 @@ def is_card_valid(agent_card):
 ```
 
 ---
-![A2A Processes Diagram](images/A2AProcesses-Page-2.drawio.png)
+![A2A Processes Diagram](../../images/security/A2AProcesses-Page-2.drawio.png)
 
 ## Complete Example: Secure Agent Card
 

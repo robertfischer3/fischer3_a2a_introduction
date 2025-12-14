@@ -1705,7 +1705,7 @@ Within this learning project:
    - Comprehensive security controls
    - Defense in depth strategies
 
-5. [Credit Report Example - Stage 3](../../a2a_examples/a2a_credit_report_example/secure/)
+5. [Credit Report Example - Stage 3](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_credit_report_example/secure/)
    - Production-grade security implementation
    - Includes session management code
 

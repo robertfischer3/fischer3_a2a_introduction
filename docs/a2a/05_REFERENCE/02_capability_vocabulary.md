@@ -6,7 +6,7 @@
 > **Completion Time**: 30-45 minutes
 
 ## Navigation
-← Previous: [Message Schemas](./message_schemas.md) | Next: [Protocol Versions](./protocol_versions.md) →  
+← Previous: [Message Schemas](./01_message_schemas.md) | Next: [Protocol Versions](./protocol_versions.md) →  
 ↑ Up: [A2A Overview](../00_A2A_OVERVIEW.md)
 
 ---
@@ -852,7 +852,7 @@ When discovering agents, check:
 
 - [Agent Cards](../02_DISCOVERY/01_agent_cards.md) - How capabilities are declared
 - [Capability Matching](../02_DISCOVERY/03_capability_matching.md) - How agents discover compatible partners
-- [Message Schemas](./message_schemas.md) - Message structure including agent cards
+- [Message Schemas](./01_message_schemas.md) - Message structure including agent cards
 - [Security Best Practices](../03_SECURITY/04_security_best_practices.md) - Security implications
 
 ---
