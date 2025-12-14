@@ -357,7 +357,7 @@ Clear record of which agent did what. Essential for auditing and accountability.
 
 Think of it like organizing a conference:
 
-![The Multi-Agent System Stack](../../../images/agent_collaboration_diagram.png "The Multi-Agent System Stack")
+![The Multi-Agent System Stack](/docs/images/diagrams/agent_collaboration_diagram.png "The Multi-Agent System Stack")
 
 **A2A Protocol is the "how"** - It defines:
 - How agents find each other (registry)

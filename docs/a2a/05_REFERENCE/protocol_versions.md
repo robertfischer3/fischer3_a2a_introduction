@@ -108,7 +108,7 @@ Increment for backward-compatible bug fixes:
 
 ### Version Timeline
 
-![Alt text](../../../images/a2a_protocol_timeline.png "A2A Protocol Timeline")
+![Alt text](/docs/images/diagrams/a2a_protocol_timeline.png "A2A Protocol Timeline")
 ---
 
 ## 🔄 Change Types
