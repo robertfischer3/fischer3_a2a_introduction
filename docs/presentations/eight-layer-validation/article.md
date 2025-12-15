@@ -734,4 +734,5 @@ The stakes are high. A single validation gap can compromise an entire agent netw
 
 ---
 
-**About the Author**: This article was developed for security professionals who need to understand and advocate for comprehensive validation in agent-to-agent systems without requiring programming expertise. The eight-layer framework is based on production security implementations in financial services, healthcare, and government sectors.
+**About the Author**: Robert Fischer (fischer3.net) MS Cyber Security, MLA Software Engineering
+Contact at robert@fischer3.net

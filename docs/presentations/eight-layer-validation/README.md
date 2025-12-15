@@ -603,9 +603,9 @@ For understanding the broader A2A context:
 - Keep materials current as AI security landscape evolves
 ---
 
-**Last Updated**: December 2024  
-**Maintained By**: [Your Security Team]  
-**Questions?**: [security-team@your-org.com]
+**Last Updated**: December 2025
+**Maintained By**: Robert Fischer
+**Questions?**: robert@fischer3.net
 
 ---
 
