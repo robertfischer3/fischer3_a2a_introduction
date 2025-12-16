@@ -10,7 +10,7 @@ repo_url: https://github.com/robertfischer3/fischer3_a2a_introduction
 edit_uri: edit/main/docs/
 
 # Copyright
-copyright: Copyright &copy; 2025 fischer³ (fischer3.net)
+copyright: Copyright &copy; 2025 fischer³ (fischer3.net), MIT License
 
 # Theme Configuration
 theme:
