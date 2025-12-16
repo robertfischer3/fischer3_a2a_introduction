@@ -10,7 +10,7 @@ repo_url: https://github.com/robertfischer3/fischer3_a2a_introduction
 edit_uri: edit/main/docs/
 
 # Copyright
-copyright: Copyright &copy; 2025 fischer³ (fischer3.net)
+copyright: Copyright &copy; 2025 fischer³ (fischer3.net), MIT License
 
 # Theme Configuration
 theme:
@@ -186,7 +186,19 @@ nav:
     - Creating Presentations: guides/presentation-guide.md
     - Running Examples: guides/running-examples.md
     - Security Checklist: guides/security-checklist.md
-  
+    - Implementation Patterns: guides/implementation-patterns.md
+    - Security:
+        - Eight-Layer Validation (Technical): a2a/04_COMMUNICATION/04_message_validation_patterns.md
+        - Eight-Layer Validation (Presentation): presentations/eight-layer-validation/slides.md
+        - Security Checklist: presentations/eight-layer-validation/checklist.md
+
+  - Presentations:
+      - Overview: presentations/index.md
+      - Eight-Layer Input Validation:
+          - Article: presentations/eight-layer-validation/article.md
+          - Slides: presentations/eight-layer-validation/slides.md
+          - Checklist: presentations/eight-layer-validation/checklist.md
+          
   - Supplementary:
     - Tools & Utilities: supplementary/index.md
     - UV Package Manager: supplementary/tools/uv-guide.md

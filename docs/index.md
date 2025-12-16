@@ -1,10 +1,11 @@
-# A2A Protocol Documentation
+# fischer³ A2A Protocol Learning Documentation
 
 <div class="hero" markdown>
 
-# Agent-to-Agent (A2A) Protocol
+# Agent-to-Agent (A2A) Protocol Security
 
-**Secure, standardized communication between AI agents**
+
+**For Secure, standardized communication between AI agents**
 
 [Get Started](#quick-start){ .md-button .md-button--primary }
 [View Protocol](a2a/00_A2A_OVERVIEW.md){ .md-button }
@@ -58,6 +59,23 @@ The **Agent-to-Agent (A2A) Protocol** is a standardized communication framework 
 
 ---
 
+## 🎯 Project Purpose
+
+This learning project provides a structured path for developers to understand:
+
+1. **Model Context Protocol (MCP)** - Connecting AI agents to tools and resources
+2. **Agent2Agent Protocol (A2A)** - Enabling multi-agent communication and orchestration
+3. **Security Concerns** - Identifying vulnerabilities in protocol implementations
+4. **Secure Implementation** - Building production-ready systems with proper security controls
+
+### What Makes This Different?
+
+Unlike typical documentation, this project:
+- **Shows vulnerable code first** - Learn to recognize security anti-patterns
+- **Explains the risks** - Understand *why* vulnerabilities matter
+- **Demonstrates fixes** - See how to implement proper security controls
+- **Provides context** - In-depth articles explain complex security concepts
+- **Multiple learning paths** - Three complete example progressions covering different security domains
 ## 🚀 Quick Start
 
 Get up and running with A2A Protocol in minutes:
