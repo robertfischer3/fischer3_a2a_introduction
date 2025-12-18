@@ -3,7 +3,7 @@ name: Deploy Documentation
 on:
   push:
     branches:
-      - main_a2a
+      - main
 
 permissions:
   contents: write
@@ -26,5 +26,3 @@ jobs:
       
       - name: Build and deploy
         run: mkdocs gh-deploy --force
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
