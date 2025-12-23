@@ -79,35 +79,7 @@ Before diving deeper, let's define the essential terms. Don't worry about memori
 
 Now that we know the terms, let's see how everything fits together. This diagram shows the complete MCP ecosystem from your AI application down to the actual external services. Take a moment to follow the flow from top to bottom - this is the architecture we'll be building throughout this guide.
 
-```
-┌──────────────────────────────────────────────────┐
-│                                                   │
-│              AI Application (Host)                │
-│         (ChatGPT, Claude, Custom Agent)          │
-│                                                   │
-└────────────────────┬─────────────────────────────┘
-                     │
-                     │ Uses MCP Client SDK
-                     │
-            ┌────────▼────────┐
-            │   MCP Client    │
-            │  (Inside Host)  │
-            └────────┬────────┘
-                     │
-                     │ MCP Protocol (JSON-RPC)
-                     │ Over Transport (stdio/HTTP/etc)
-                     │
-         ┌───────────┼───────────┬─────────────┐
-         │           │           │             │
-    ┌────▼───┐  ┌───▼────┐  ┌───▼────┐   ┌───▼────┐
-    │Server 1│  │Server 2│  │Server 3│   │Server N│
-    │(Weather│  │  (DB)  │  │ (Files)│   │  (API) │
-    └────┬───┘  └───┬────┘  └───┬────┘   └───┬────┘
-         │          │           │             │
-         ▼          ▼           ▼             ▼
-     [Weather]   [MySQL]    [Docs]        [Search]
-       API       Database   Folder          Engine
-```
+!["The Big Picture"](/docs/images/diagrams/mcp_the_big_picture.png "The Big Picture")
 
 ### MCP's Role in the Ecosystem
 
@@ -297,43 +269,8 @@ Great! Now you understand the message format. But how does a connection actually
 
 Every MCP connection follows this lifecycle. You'll see this pattern in every client implementation:
 
-```
-┌──────────────────────────────────────────────────┐
-│              CONNECTION LIFECYCLE                 │
-└──────────────────────────────────────────────────┘
+!["Connection Life Cycle"](/docs/images/diagrams/mcp_connection_lifecycle_01.png "MCP Connection Lifecycle")
 
-1. CONNECT
-   Client starts server process (stdio)
-   or connects to HTTP endpoint
-          │
-          ▼
-2. INITIALIZE
-   Client → Server: initialize request
-   - Client capabilities
-   - Client info
-          │
-          ▼
-3. SERVER RESPONSE
-   Server → Client: initialize response
-   - Server capabilities
-   - Server info
-   - Protocol version
-          │
-          ▼
-4. INITIALIZED
-   Client → Server: initialized notification
-   Connection ready for use
-          │
-          ▼
-5. ACTIVE USE
-   Client calls tools/reads resources
-   Server responds
-          │
-          ▼
-6. SHUTDOWN
-   Client disconnects
-   Server process exits (stdio)
-```
 
 ### Step-by-Step Example
 
@@ -536,40 +473,7 @@ Let's zoom out and look at the big picture of how MCP systems are structured. Un
 
 A typical MCP server has these components:
 
-```
-┌───────────────────────────────────────────┐
-│           MCP SERVER                       │
-├───────────────────────────────────────────┤
-│                                            │
-│  ┌──────────────────────────────────┐    │
-│  │   Transport Layer                 │    │
-│  │   (stdio/HTTP/etc)                │    │
-│  └─────────────┬─────────────────────┘    │
-│                │                           │
-│  ┌─────────────▼─────────────────────┐    │
-│  │   Protocol Handler                 │    │
-│  │   (JSON-RPC parsing/routing)       │    │
-│  └─────────────┬─────────────────────┘    │
-│                │                           │
-│       ┌────────┼────────┐                 │
-│       │        │        │                 │
-│  ┌────▼───┐ ┌─▼────┐ ┌─▼──────┐          │
-│  │ Tools  │ │Resrc │ │Prompts │          │
-│  │Manager │ │Mangr │ │Manager │          │
-│  └────┬───┘ └─┬────┘ └─┬──────┘          │
-│       │       │        │                  │
-│  ┌────▼───────▼────────▼───────┐         │
-│  │   Business Logic             │         │
-│  │   (Your actual functionality)│         │
-│  └──────────────┬────────────────┘        │
-│                 │                          │
-│  ┌──────────────▼────────────────┐        │
-│  │   External Services            │        │
-│  │   (APIs, DBs, Files, etc)      │        │
-│  └────────────────────────────────┘        │
-│                                            │
-└───────────────────────────────────────────┘
-```
+!["MCP Server"](/docs/images/diagrams/mcp_server_components_01.png "MCP Server")
 
 ### MCP Client Architecture
 
