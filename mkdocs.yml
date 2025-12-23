@@ -170,6 +170,7 @@ nav:
   - Examples:
     - Overview: examples/index.md
     - Crypto Price Agent:
+      - Crypto Price Agent Overview: examples/cypto_agent_overview.md
       - Stage 1 (Vulnerable): examples/crypto-stage1.md
       - Stage 2 (Improved): examples/crypto-stage2.md
       - Stage 3 (Secure): examples/crypto-stage3.md
