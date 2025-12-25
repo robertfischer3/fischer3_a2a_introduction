@@ -245,42 +245,17 @@
 ## 🏗️ Architecture Comparison
 
 ### Cryptocurrency Agent
-```
-[Client] ←TCP→ [Price Oracle Agent]
-                    ↓
-              [Price Generator]
-              (stateless queries)
-```
+
+![Cryptocurrency Agent](/docs/images/diagrams/cryptocurrency_agent_01.png)
 
 ### Credit Report Agent
-```
-[Client] ←TCP→ [Analysis Agent]
-                    ↓
-              [File Storage]
-              [Analysis Engine]
-              [PII Sanitizer]
-              [AI Service] (Stage 4)
-```
+
+!["Credit Report Agent"](/docs/images/diagrams/credit_report_agent_01.png "Credit Report Agent")
+
 
 ### Task Collaboration Agent (NEW)
-```
-                [Coordinator Agent]
-                    ↓
-        ┌───────────┼───────────┐
-        ↓           ↓           ↓
-    [Worker 1]  [Worker 2]  [Worker 3]
-        ↓           ↓           ↓
-    [Session    [Session    [Session
-     Manager]    Manager]    Manager]
-        ↓           ↓           ↓
-    [Project State Distributed Store] (Stage 4)
-        ↓
-    [Redis / Database]
 
-    Stage 5: Add Flask Web Layer
-        ↓
-    [Web Dashboard] ←HTTP→ [Flask API] ↔ [Coordinator]
-```
+!["Task Collaboration Agent"](/docs/images/diagrams/task_collaboration_agent_01.png "Task Collaboration Agent")
 
 ---
 
@@ -313,27 +288,8 @@
 
 ## 📈 Complexity Progression
 
-### Cryptocurrency Agent: LINEAR
-```
-Stage 1 (Simple) → Stage 2 (Medium) → Stage 3 (Complex)
-Complexity: ▁▃▅
-```
+!["Complexity Progression"](/docs/images/diagrams/complexity_progression_01.png "Complexity Progression")
 
-### Credit Report Agent: LINEAR + AI
-```
-Stage 1 (Simple) → Stage 2 (Medium) → Stage 3 (Complex) → Stage 4 (+ AI)
-Complexity: ▁▃▅▆
-```
-
-### Task Collaboration Agent: BRANCHING
-```
-Stage 1 (Simple) → Stage 2 (Medium) → Stage 3 (Complex)
-                                            ↓
-                                      Stage 4 (Distributed)
-                                            ↓
-                                      Stage 5 (Web Framework)
-Complexity: ▁▃▅██
-```
 
 **Unique**: Task Collab has branching complexity, allowing learners to:
 - Stop at Stage 3 for solid socket-based security
