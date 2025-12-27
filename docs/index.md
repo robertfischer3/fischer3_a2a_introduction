@@ -9,7 +9,7 @@
 
 [Get Started](#quick-start){ .md-button .md-button--primary }
 [View Protocol](a2a/00_A2A_OVERVIEW.md){ .md-button }
-[Browse Examples](../a2a_examples/){ .md-button }
+[Browse Examples](examples/index.md){ .md-button }
 
 </div>
 
