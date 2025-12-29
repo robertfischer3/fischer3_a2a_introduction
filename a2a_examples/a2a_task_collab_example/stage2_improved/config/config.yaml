@@ -1,0 +1,148 @@
+# Stage 2 Configuration
+# Security settings for Task Collaboration Agent
+
+# Server Configuration
+server:
+  host: "localhost"
+  port: 9000
+  # ❌ Stage 2: No TLS (plain TCP)
+  # tls_enabled: false  # Stage 3: will be true
+  max_connections: 100
+
+# Session Management
+session:
+  # ✅ Idle timeout (user inactive)
+  idle_timeout_seconds: 1800  # 30 minutes
+  
+  # ❌ Stage 2: No absolute timeout
+  # ✅ Stage 3: Will add absolute timeout
+  # absolute_timeout_seconds: 86400  # 24 hours
+  
+  # ❌ Stage 2: No concurrent session limits
+  # ✅ Stage 3: Will limit concurrent sessions
+  # max_sessions_per_user: 3
+  
+  # Session cleanup interval
+  cleanup_interval_seconds: 300  # 5 minutes
+
+# Authentication
+authentication:
+  # Provider type
+  provider: "simple"  # Stage 2: simple auth
+  # provider: "oauth"  # Stage 4: OAuth/OIDC
+  
+  # User storage
+  users_file: "config/users.json"
+  
+  # Password requirements
+  password:
+    min_length: 8
+    require_uppercase: true
+    require_lowercase: true
+    require_digit: true
+    require_special: false
+    
+  # Bcrypt cost factor
+  bcrypt_rounds: 12
+  
+  # ❌ Stage 2: No MFA
+  # ✅ Stage 3: Will enable MFA
+  # mfa:
+  #   enabled: true
+  #   totp_issuer: "TaskCollaborationAgent"
+  
+  # ❌ Stage 2: No rate limiting
+  # ✅ Stage 3: Will add rate limiting
+  # rate_limiting:
+  #   enabled: true
+  #   max_attempts: 5
+  #   window_seconds: 300  # 5 minutes
+
+# Authorization
+authorization:
+  # ✅ Stage 2: Basic owner checks
+  # ❌ Stage 2: No full RBAC
+  # ✅ Stage 3: Full RBAC implementation
+  
+  # Available roles
+  roles:
+    - user
+    - coordinator
+    - admin
+  
+  # Default role for new users
+  default_role: "user"
+
+# Resource Limits (DoS Prevention)
+limits:
+  # Message size
+  max_message_size_bytes: 1048576  # 1 MB
+  
+  # Per-user quotas
+  max_projects_per_user: 100
+  max_tasks_per_project: 1000
+  
+  # ❌ Stage 2: No rate limiting on requests
+  # ✅ Stage 3: Will add request rate limits
+  # max_requests_per_minute: 60
+
+# Audit Logging
+audit:
+  # ✅ Stage 2: Basic in-memory logging
+  enabled: true
+  max_entries: 1000  # Keep last 1000 entries
+  
+  # ❌ Stage 2: Not written to file
+  # ✅ Stage 3: Will write to file
+  # log_file: "logs/audit.log"
+  
+  # Events to log
+  log_events:
+    - login_success
+    - login_failure
+    - logout
+    - project_created
+    - task_created
+    - task_claimed
+    - unauthorized_access
+    - invalid_session
+
+# Security Headers (Future)
+# ❌ Stage 2: No security headers (plain TCP)
+# ✅ Stage 3: Will add TLS and security headers
+# security_headers:
+#   strict_transport_security: true
+#   content_security_policy: true
+
+# Monitoring (Future)
+# ❌ Stage 2: No monitoring
+# ✅ Stage 3: Will add monitoring
+# monitoring:
+#   enabled: true
+#   metrics_port: 9001
+#   health_check_port: 9002
+
+---
+# Stage 2 Security Status
+#
+# ✅ Implemented:
+#   - Authentication (bcrypt)
+#   - Session management (UUID4, idle timeout)
+#   - Basic authorization (owner checks)
+#   - Input size limits
+#   - Audit logging (in-memory)
+#
+# ❌ Still Missing (Stage 3):
+#   - TLS encryption
+#   - Rate limiting
+#   - Replay protection
+#   - Absolute session timeout
+#   - IP enforcement
+#   - MFA
+#   - Full RBAC
+#   - State encryption
+#
+# Security Rating: 4/10 ⚠️
+# Production Ready: NO
+# For Learning: YES
+---
