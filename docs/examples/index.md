@@ -1,393 +1,339 @@
-# A2A Protocol Examples
+# Examples Overview
 
-> 🎓 **Learn by Doing**: Progressive security examples that take you from beginner to expert
-
----
-
-## 👋 Welcome!
-
-You're about to embark on a hands-on learning journey through the Agent2Agent (A2A) protocol. These examples are designed to teach you secure multi-agent systems through **progressive learning** - starting with vulnerable code and gradually building up to production-ready implementations.
-
-**Why this approach?** Because understanding what's *wrong* is just as important as knowing what's *right*. By seeing vulnerabilities firsthand, you'll develop the security mindset needed for building real-world systems.
-
-> 💡 **Learning Philosophy**: We believe the best way to learn security is to:
-> 1. See what breaks
-> 2. Understand why it breaks  
-> 3. Learn how to fix it
-> 4. Build it right from the start
+Welcome to the A2A Security Examples! This section contains hands-on examples that demonstrate secure agent-to-agent communication patterns, with a focus on progressive security learning.
 
 ---
 
-## 🎯 Choose Your Learning Path
+## 🎯 Purpose
 
-Each example follows a **3-stage progression** from vulnerable to secure. Pick the example that interests you most, or work through all of them for comprehensive coverage!
+These examples are designed to teach security through progressive stages, from intentionally vulnerable implementations to production-ready systems. Each example focuses on different security challenges and compliance requirements.
 
 ---
 
 ## 📚 Available Examples
 
-### 🪙 Cryptocurrency Price Agent
+### 1. Credit Report Analysis Agent
 
-**Focus**: Basic A2A Protocol, Query Security, Authentication  
-**Difficulty**: ⭐ Beginner-Friendly  
-**Time**: 6-8 hours (all stages)  
-**Best For**: Your first A2A agent
+**Focus**: File Upload Security & PII Protection
 
-**What You'll Learn**:
-- A2A protocol fundamentals
-- Request/response patterns
-- Authentication evolution (none → HMAC → Ed25519)
-- Replay attack prevention
-- Rate limiting strategies
+A comprehensive 4-stage progression demonstrating secure handling of sensitive financial documents and personally identifiable information (PII).
 
-**The Journey**:
-```
-Stage 1: Vulnerable (0/10)    →  Stage 2: Improved (4/10)    →  Stage 3: Secure (9/10)
-❌ No security                   ⚠️ Partial security             ✅ Production-ready
-15+ vulnerabilities             Some fixes, still exploitable   Complete defense in depth
-2-3 hours                        2-3 hours                       3-4 hours
-```
+**Path**: `a2a_examples/a2a_credit_report_example/`
 
-**Start Here**: [Crypto Agent Overview](./crypto_agent_example.md)
+#### Stages:
 
-**Quick Links**:
-- [Stage 1 - Vulnerable](./crypto-stage1.md) - Learn to spot vulnerabilities
-- [Stage 2 - Improved](./crypto-stage2.md) - Understand why partial security fails
-- [Stage 3 - Secure](./crypto-stage3.md) - Build production-grade systems
+| Stage | Description | Security Rating | Time | Status |
+|-------|-------------|-----------------|------|--------|
+| **[Stage 1: Insecure](./credit-stage1.md)** | 30+ vulnerabilities, no security | 0/10 ❌ | 3-4 hours | Educational Only |
+| **[Stage 2: Improved](./credit-stage2.md)** | Partial fixes, 15+ remaining issues | 4/10 ⚠️ | 4-6 hours | Not Production Ready |
+| **[Stage 3: Secure](./credit-stage3.md)** | Production-grade, full compliance | 10/10 ✅ | 6-8 hours | Production Ready |
+| **[Stage 4: AI-Integrated](./credit-stage4.md)** | Secure AI/ML integration | 10/10 ✅ | 6-8 hours | Enterprise Ready |
 
-**Why Start Here?**
-- Simplest example (just price queries)
-- No complex business logic
-- Perfect for learning A2A basics
-- Transferable patterns
+**Key Learning Topics**:
+- 8-layer file validation framework
+- Field-level PII encryption
+- FCRA/GDPR compliance
+- Secure AI model integration
+- Differential privacy
+- Explainable AI (XAI)
+
+**Regulatory Focus**: FCRA, GDPR, GLBA
+
+**Total Study Time**: 19-26 hours
 
 ---
 
-### 💳 Credit Report Analysis Agent
+### 2. Cryptocurrency Price Agent
 
-**Focus**: File Upload Security, PII Protection, GDPR/HIPAA Compliance  
-**Difficulty**: ⭐⭐ Intermediate  
-**Time**: 8-12 hours (all stages + AI)  
-**Best For**: Document processing, sensitive data handling
+**Focus**: API Security & Real-time Data Handling
 
-**What You'll Learn**:
-- File upload security (magic bytes, size limits, path traversal)
-- 8-layer validation framework
-- PII protection and masking
-- Regulatory compliance (GDPR, HIPAA)
-- Secure AI integration (Stage 4 bonus!)
+Demonstrates secure integration with external APIs, rate limiting, and data validation for a cryptocurrency price monitoring agent.
 
-**The Journey**:
-```
-Stage 1: Insecure (0/10)  →  Stage 2: Improved (4/10)  →  Stage 3: Secure (9/10)  →  Stage 4: AI (9/10)
-❌ Dangerous file handling   ⚠️ Basic validation         ✅ Production validation    ✅ Secure AI integration
-26 vulnerabilities           Some fixes                  Complete security           Gemini AI + security
-3-4 hours                    2-3 hours                   3-4 hours                   2-3 hours
-```
+**Path**: `a2a_examples/a2a_crypto_example/`
 
-**Start Here**: [Credit Report Example](./credit_report_example.md)
+**Key Learning Topics**:
+- Secure API key management
+- Rate limiting and throttling
+- Input/output validation
+- Error handling and retry logic
+- MCP protocol implementation
 
-**Quick Links**:
-- Stage 1 - Insecure (file upload dangers)
-- Stage 2 - Improved (partial validation)
-- Stage 3 - Secure (production file handling)
-- Stage 4 - AI Enhanced (secure LLM integration)
+**Study Time**: 2-3 hours
 
-**Why Choose This?**
-- Real-world file handling patterns
-- Compliance requirements
-- PII protection techniques
-- AI security (Stage 4)
+**[View Documentation](./crypto-overview.md)**
 
 ---
 
-### 🤝 Task Collaboration System
+### 3. Task Collaboration System
 
-**Focus**: Session Management, Multi-Agent Coordination, State Management  
-**Difficulty**: ⭐⭐⭐ Advanced  
-**Time**: 12-16 hours (all stages)  
-**Best For**: Multi-agent systems, stateful applications
+**Focus**: Session Management & Multi-Agent Coordination
 
-**What You'll Learn**:
-- Session management security
-- Multi-agent coordination patterns
-- Distributed systems (Redis)
-- Web framework integration (Flask)
-- State management security
+A multi-stage example focusing on session security, authentication, and coordinating multiple agents securely.
 
-**The Journey**:
-```
-Stage 1: Insecure     →  Stage 2: Improved     →  Stage 3: Secure        →  Stage 4: Distributed  →  Stage 5: Web Framework
-❌ No session security   ⚠️ Basic improvements   ✅ SessionManager       ✅ Redis-backed         ✅ Flask + JWT
-25+ vulnerabilities      20 fixes, 15 remain     All vulnerabilities     High availability       Production web app
-3-4 hours                3-4 hours               3-4 hours               2-3 hours               2-3 hours
-```
+**Path**: `a2a_examples/a2a_task_collab_example/`
 
-**Start Here**: [Task Collaboration Example](./task_collaboration_example.md)
+**Stages**:
+- Stage 1: Insecure (25+ vulnerabilities)
+- Stage 2: Improved (partial fixes)
+- Stage 3: Secure (production-ready)
+- Stage 4: Distributed (Redis-backed)
+- Stage 5: Web Framework (Flask integration)
 
-**Quick Links**:
-- Stage 1 - Insecure (session vulnerabilities)
-- Stage 2 - Improved (partial fixes)
-- Stage 3 - Secure (SessionManager pattern)
-- Stage 4 - Distributed (Redis integration)
-- Stage 5 - Web Framework (Flask + JWT + CSRF)
+**Key Learning Topics**:
+- Session management and binding
+- Multi-factor authentication
+- RBAC authorization
+- State encryption
+- Distributed session storage
 
-**Why Choose This?**
-- Most comprehensive example
-- Real distributed systems
-- Web framework patterns
-- Advanced coordination
+**Study Time**: 15-22 hours
+
+**[View Documentation](./task-stage1.md)**
 
 ---
 
-## 🗺️ Learning Paths by Goal
+## 🗺️ Learning Paths
 
-### Path 1: Quick Start (Weekend Project)
+### Path 1: File Security & Compliance (Credit Report Example)
 
-**Goal**: Understand A2A basics and get something running
+**Recommended For**: 
+- Developers handling sensitive documents
+- Compliance-focused applications
+- Healthcare and financial systems
 
-**Recommended**:
-1. [Crypto Example - Stage 1](./crypto-stage1.md) (3 hours)
-2. [Crypto Example - Stage 3](./crypto-stage3.md) (4 hours)
-3. Build your own agent using Stage 3 as template (4 hours)
+**Progression**:
+1. Start with [Credit Report Stage 1](./credit-stage1.md) - Learn file upload vulnerabilities
+2. Progress through [Stage 2](./credit-stage2.md) - Understand why partial security fails
+3. Master [Stage 3](./credit-stage3.md) - Implement production security
+4. Advanced: [Stage 4](./credit-stage4.md) - Add secure AI capabilities
 
-**Total**: ~11 hours  
-**Outcome**: Working secure A2A agent
-
----
-
-### Path 2: Security Focus (1 Week)
-
-**Goal**: Master security patterns across different domains
-
-**Recommended**:
-1. Crypto Example (all stages) - 8 hours
-2. Credit Report Example (stages 1-3) - 10 hours
-3. Task Collaboration (stages 1-3) - 12 hours
-
-**Total**: ~30 hours  
-**Outcome**: Deep security expertise
+**Duration**: 19-26 hours total
 
 ---
 
-### Path 3: Complete Mastery (2-3 Weeks)
+### Path 2: API Integration & Real-time Systems
 
-**Goal**: Become an A2A security expert
+**Recommended For**:
+- Integrating with external services
+- Building real-time monitoring agents
+- Learning MCP protocol basics
 
-**Recommended**:
-1. All Crypto stages + exercises - 12 hours
-2. All Credit Report stages (including AI) - 14 hours
-3. All Task Collaboration stages - 16 hours
-4. Build 2-3 your own secure agents - 20 hours
+**Progression**:
+1. Start with Crypto Price Agent
+2. Understand API security patterns
+3. Implement rate limiting
+4. Apply to Credit Report Stage 3
 
-**Total**: ~62 hours  
-**Outcome**: Expert-level knowledge
+**Duration**: 8-11 hours
 
 ---
 
-### Path 4: Specific Domain (Flexible)
+### Path 3: Complete Security Journey
 
-**Goal**: Learn security for your specific use case
+**Recommended For**:
+- Security professionals
+- System architects
+- Anyone seeking comprehensive understanding
 
-**Choose Based on Your Needs**:
-- **API/Query Security** → Crypto Example
-- **File Uploads/PII** → Credit Report Example
-- **Sessions/State Management** → Task Collaboration Example
-- **AI Integration** → Credit Report Stage 4
-- **Distributed Systems** → Task Collaboration Stages 4-5
+**Progression**:
+1. Credit Report Stages 1-3 (understanding fundamentals)
+2. Task Collaboration Stages 1-3 (session security)
+3. Crypto Agent (API patterns)
+4. Credit Report Stage 4 (AI security)
+
+**Duration**: 40+ hours
 
 ---
 
 ## 📊 Example Comparison Matrix
 
-| Feature | Crypto | Credit Report | Task Collaboration |
-|---------|--------|---------------|-------------------|
-| **Difficulty** | ⭐ Beginner | ⭐⭐ Intermediate | ⭐⭐⭐ Advanced |
-| **Time** | 6-8 hours | 8-12 hours | 12-16 hours |
-| **Stages** | 3 | 4 | 5 |
-| **Focus** | Authentication | File Security | Session Mgmt |
-| **Best For** | First project | Document handling | Multi-agent systems |
-| **Vulnerabilities** | 15+ | 26+ | 25+ |
-| **Key Lessons** | Crypto, Replay attacks | PII, Validation | Sessions, Coordination |
-| **Production Ready?** | Stage 3 ✅ | Stage 3 ✅ | Stage 3+ ✅ |
-| **Code Lines** | ~2,000 | ~3,000 | ~4,000 |
-| **Tests Included** | ✅ | ✅ | ✅ |
-| **Docker Support** | ❌ | ❌ | ✅ |
-| **AI Integration** | ❌ | ✅ (Stage 4) | ❌ |
-| **Web Framework** | ❌ | ❌ | ✅ (Stage 5) |
+| Feature | Credit Report | Crypto Agent | Task Collab |
+|---------|--------------|--------------|-------------|
+| **Primary Focus** | File Upload & PII | API Integration | Session Management |
+| **Stages** | 4 | 3 | 5 |
+| **Difficulty** | ⭐⭐⭐ Advanced | ⭐⭐ Intermediate | ⭐⭐⭐⭐ Expert |
+| **Compliance** | FCRA, GDPR | Basic | RBAC, Audit |
+| **Encryption** | Field-level | Transport | Full stack |
+| **AI Integration** | ✅ Stage 4 | ❌ | ❌ |
+| **Multi-Agent** | ❌ | ❌ | ✅ |
+| **Total Hours** | 19-26 | 2-3 | 15-22 |
 
 ---
 
-## 🎓 What You'll Learn Across All Examples
+## 🎓 By Skill Level
 
-### Core A2A Protocol
-- Agent identity and capabilities
-- Message structure and routing
-- Request/response patterns
-- Streaming events
-- Service discovery
-- Agent registry
+### Beginners (New to Security)
+**Start Here**: 
+- Credit Report Stage 1
+- Crypto Price Agent
 
-### Authentication & Authorization
-- No auth → HMAC → Ed25519 progression
-- Shared secrets vs public-key crypto
-- Signature verification
-- Key management
-- Client authorization
-- Permission systems
+**Why**: Clear vulnerabilities, straightforward attacks, foundational concepts
 
-### Attack Prevention
-- Replay attacks (nonces + timestamps)
-- Injection attacks (SQL, command, XSS)
-- Path traversal
-- Session hijacking/fixation
-- CSRF attacks
-- Rate limiting bypass
-- DoS attacks
+**Time**: 5-7 hours
 
-### Validation
-- Type validation
-- Size validation
-- Format validation
-- Content validation
-- Semantic validation
-- Business logic validation
-- 8-layer defense in depth
+---
 
-### Secure Design Patterns
-- Modular security architecture
-- Separation of concerns
-- Defense in depth
-- Fail securely
-- Principle of least privilege
-- Secure by default
+### Intermediate (Some Security Knowledge)
+**Start Here**:
+- Credit Report Stage 2
+- Task Collaboration Stage 1-2
 
-### Production Considerations
-- TLS/HTTPS
-- Monitoring and alerting
-- Audit logging
+**Why**: Understand partial security, defense-in-depth, common mistakes
+
+**Time**: 10-15 hours
+
+---
+
+### Advanced (Security Practitioners)
+**Start Here**:
+- Credit Report Stage 3
+- Task Collaboration Stage 3
+
+**Why**: Production patterns, compliance implementation, comprehensive controls
+
+**Time**: 14-20 hours
+
+---
+
+### Expert (Security Architects)
+**Focus On**:
+- Credit Report Stage 4 (AI security)
+- Task Collaboration Stage 4-5 (distributed systems)
+
+**Why**: Cutting-edge security patterns, AI integration, scaling considerations
+
+**Time**: 12-16 hours
+
+---
+
+## 🔍 By Security Topic
+
+### Want to Learn About...
+
+**File Upload Security** → [Credit Report Stage 1-3](./credit-stage1.md)
+- Magic byte validation
+- Path traversal prevention
+- Virus scanning integration
+- 8-layer validation framework
+
+**PII Protection** → [Credit Report Stage 1-3](./credit-stage1.md)
+- Field-level encryption
+- Data minimization
+- Secure logging practices
+- Compliance requirements
+
+**API Security** → [Crypto Price Agent](./crypto-overview.md)
+- Secure key management
+- Rate limiting
+- Input/output validation
 - Error handling
-- Key rotation
-- Compliance (GDPR, HIPAA)
-- Performance optimization
-- Deployment strategies
+
+**Authentication** → [Credit Report Stage 2-3](./credit-stage2.md), [Task Collaboration](./task-stage1.md)
+- Password hashing (bcrypt)
+- Multi-factor authentication (TOTP)
+- OAuth/OIDC integration
+- Session management
+
+**Encryption** → [Credit Report Stage 3](./credit-stage3.md)
+- AES-256-GCM
+- Field-level encryption
+- Key management
+- Transport security (TLS)
+
+**AI Security** → [Credit Report Stage 4](./credit-stage4.md)
+- Differential privacy
+- Model security
+- Explainable AI
+- Adversarial defense
+
+**Compliance** → [Credit Report All Stages](./credit-stage1.md)
+- FCRA requirements
+- GDPR implementation
+- Audit logging
+- Data retention
+
+**Session Management** → [Task Collaboration](./task-stage1.md)
+- Session binding
+- State encryption
+- Timeout management
+- Distributed sessions
 
 ---
 
-## 🛠️ Prerequisites
+## 🚀 Quick Start
 
-### Required Knowledge
-- **Python**: Intermediate level (functions, classes, async)
-- **HTTP**: Basic understanding (requests, responses, headers)
-- **JSON**: Comfortable reading and writing
-- **Command Line**: Can navigate and run commands
+### 1. Choose Your Example
 
-### Nice to Have
-- Basic cryptography concepts
-- Experience with APIs
-- Understanding of web security
-- Docker knowledge (for some examples)
+Based on your needs:
+- **Learning file security?** → Credit Report
+- **API integration?** → Crypto Agent  
+- **Session security?** → Task Collaboration
 
-### System Requirements
-- **Python 3.8+**
-- **pip** for package management
-- **Redis** (optional, can use mock)
-- **Text Editor** or IDE
-- **Terminal/Command Line**
+### 2. Start at the Right Level
 
-### Time Commitment
-- **Minimum**: 1-2 hours per stage
-- **Recommended**: Take your time, do exercises
-- **Ideal**: Spread learning over multiple sessions
+- **Never done security before?** → Stage 1
+- **Some experience?** → Stage 2
+- **Production experience?** → Stage 3
+- **Expert level?** → Stage 4
 
----
+### 3. Set Up Your Environment
 
-## 💪 How to Use These Examples
+```bash
+# Clone the repository
+git clone https://github.com/robertfischer3/fischer3_a2a_introduction.git
+cd fischer3_a2a_introduction
 
-### For Individual Learners
+# Navigate to your chosen example
+cd a2a_examples/a2a_credit_report_example/insecure
 
-**Step 1: Choose Your Example**
-Start with Crypto (easiest) or pick based on your domain.
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-**Step 2: Work Through Stages Sequentially**
-Don't skip! Stage 1 → 2 → 3 builds understanding.
+# Install dependencies
+pip install -r requirements.txt
 
-**Step 3: Do the Exercises**
-Hands-on practice cements learning.
+# Run the example
+python server.py
+```
 
-**Step 4: Build Your Own**
-Apply patterns to a new domain.
+### 4. Read the Documentation
 
-### For Instructors
-
-**Week 1: Introduction**
-- Crypto Example Stage 1
-- Live vulnerability demos
+Each stage has comprehensive documentation:
+- Overview and learning objectives
+- Architecture diagrams
+- Vulnerability analysis (Stages 1-2)
+- Security controls (Stages 3-4)
 - Attack demonstrations
+- Code examples
+- Running instructions
 
-**Week 2: Improvements**
-- Crypto Example Stage 2
-- Why partial security fails
-- Critical thinking exercises
+### 5. Complete the Exercises
 
-**Week 3: Production Patterns**
-- Crypto Example Stage 3
-- Security module deep dives
-- Code review practice
+- Run attack demonstrations
+- Identify vulnerabilities
+- Compare stages
+- Implement fixes
+- Test security controls
 
-**Week 4: Advanced Topics**
-- Choose Credit Report or Task Collaboration
-- Domain-specific security
-- Real-world scenarios
+---
 
-**Week 5: Capstone Project**
-- Students build secure agents
-- Peer code review
-- Security presentations
+## 📋 Example Structure
 
-### For Teams
+All examples follow a consistent structure:
 
-**Sprint 1: Assessment**
-- Everyone does Crypto Stage 1
-- Team identifies vulnerabilities in existing systems
-- Document findings
-
-**Sprint 2: Planning**
-- Review Crypto Stage 3 patterns
-- Adapt to team's tech stack
-- Create security roadmap
-
-**Sprint 3: Implementation**
-- Apply patterns to team's systems
-- Use examples as reference
-- Conduct peer reviews
-
-**Sprint 4: Testing & Deployment**
-- Security testing
-- Penetration testing
-- Deploy improvements
-
-### For Self-Study
-
-**Morning (Theory)**:
-- Read the stage documentation
-- Understand the concepts
-- Review code examples
-
-**Afternoon (Practice)**:
-- Run the code
-- Try the exercises
-- Experiment with attacks
-
-**Evening (Reflection)**:
-- What did you learn?
-- What surprised you?
-- How would you apply this?
-
-**Weekend (Build)**:
-- Create your own agent
-- Apply the patterns
-- Share with community
+```
+example_name/
+├── stageX_name/
+│   ├── server.py              # Main application
+│   ├── requirements.txt       # Dependencies
+│   ├── README.md             # Stage-specific docs
+│   ├── config/               # Configuration
+│   ├── tests/                # Test suite
+│   └── demos/                # Attack demonstrations
+└── docs/
+    └── SECURITY_ANALYSIS.md  # Detailed security analysis
+```
 
 ---
 
@@ -395,165 +341,155 @@ Apply patterns to a new domain.
 
 You'll know you've mastered an example when you can:
 
-✅ **Explain** the vulnerabilities in Stage 1  
-✅ **Demonstrate** attacks against Stage 1 code  
-✅ **Critique** why Stage 2 improvements aren't enough  
-✅ **Implement** Stage 3 security patterns  
-✅ **Adapt** patterns to your own projects  
-✅ **Teach** others using the examples  
+- [ ] Identify all vulnerabilities in Stage 1
+- [ ] Run attack demonstrations successfully
+- [ ] Explain why each vulnerability matters
+- [ ] Understand the security controls in Stage 3
+- [ ] Implement similar controls in your own code
+- [ ] Pass the stage's security checklist
 
 ---
 
 ## 📚 Additional Resources
 
-### Before You Start
-- [A2A Protocol Overview](/docs/a2a/00_A2A_OVERVIEW.md)
-- [Core Concepts](/docs/a2a/01_FUNDAMENTALS/01_core_concepts.md)
-- [Agent Identity](/docs/a2a/01_FUNDAMENTALS/02_agent_identity.md)
+### Documentation
+- [A2A Protocol Overview](../a2a/00_A2A_OVERVIEW.md)
+- [Security Best Practices](../a2a/03_SECURITY/04_security_best_practices.md)
+- [8-Layer Validation Framework](../presentations/eight-layer-validation/article.md)
+- [Authentication Overview](../a2a/03_SECURITY/01_authentication_overview.md)
 
-### Security Deep Dives
-- [Authentication Overview](/docs/a2a/03_SECURITY/01_authentication_overview.md)
-- [Authentication Tags](/docs/a2a/03_SECURITY/02_authentication_tags.md)
-- [Threat Model](/docs/a2a/03_SECURITY/03_threat_model.md)
-- [Security Best Practices](/docs/a2a/03_SECURITY/04_security_best_practices.md)
+### External Resources
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+- [FCRA Guidelines](https://www.ftc.gov/legal-library/browse/statutes/fair-credit-reporting-act)
+- [GDPR Requirements](https://gdpr.eu/)
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 
-### Protocol Details
-- [Protocol Messages](/docs/a2a/04_COMMUNICATION/01_protocol_messages.md)
-- [Streaming Events](/docs/a2a/04_COMMUNICATION/02_streaming_events.md)
-- [Agent Cards](/docs/a2a/02_DISCOVERY/01_agent_cards.md)
-- [Agent Registry](/docs/a2a/02_DISCOVERY/02_agent_registry.md)
-
-### Integration
-- [MCP Fundamentals](/docs/mcp_fundamentals.md)
-- [A2A + MCP Integration](/docs/integration_summary.md)
+### Tools & Libraries
+- [ClamAV](https://www.clamav.net/) - Virus scanning
+- [Cryptography](https://cryptography.io/) - Python crypto library
+- [python-magic](https://github.com/ahupp/python-magic) - File type detection
+- [PyOTP](https://pyauth.github.io/pyotp/) - MFA implementation
 
 ---
 
-## 🤝 Community & Support
+## 🤝 Contributing
 
-### Get Help
+Found an issue or want to add an example?
 
-**Stuck on something?**
-1. Re-read the relevant section
-2. Check the FAQ in each stage
-3. Review the code comments
-4. Try the exercise again
-5. Ask for help (details below)
+1. Check existing examples for patterns
+2. Follow the stage progression model
+3. Include comprehensive documentation
+4. Add attack demonstrations
+5. Submit a pull request
 
-**Found a bug?**
-- Open an issue with reproduction steps
-- Include error messages
-- Share your environment details
-
-**Have suggestions?**
-- We'd love to hear them!
-- What worked well?
-- What was confusing?
-- What should we add?
-
-### Contribute
-
-**Ways to Contribute**:
-- Fix typos or improve clarity
-- Add more exercises
-- Create translations
-- Share your implementations
-- Help other learners
-
-**Guidelines**:
-- Keep the progressive learning approach
-- Maintain the supportive tone
-- Include practical examples
-- Test all code changes
+See [Contributing Guidelines](../../CONTRIBUTING.md) for details.
 
 ---
 
 ## ⚠️ Important Disclaimers
 
-### Educational Use Only
+### Security
+- ⚠️ Stage 1 examples are **intentionally vulnerable** for educational purposes
+- ❌ **Never use Stage 1 or Stage 2 code in production**
+- ✅ Only Stage 3+ implementations are production-ready
 
-**These examples are for learning.** Stage 1 and 2 code contains intentional vulnerabilities.
+### Legal
+- 🔒 Do not test attacks against real systems without permission
+- 📜 Unauthorized access to credit reports is illegal under FCRA
+- 🌍 Respect all applicable laws and regulations
+- ⚖️ Use synthetic data only in examples
 
-**DO**:
-- ✅ Use for education and training
-- ✅ Study the vulnerabilities
-- ✅ Practice secure coding
-- ✅ Use Stage 3 as template
-
-**DON'T**:
-- ❌ Deploy Stage 1 or 2 to production
-- ❌ Use with real sensitive data
-- ❌ Connect to public networks (Stages 1-2)
-- ❌ Skip vulnerability analysis
-
-### Legal Notice
-
-This documentation and code are provided for educational purposes. The authors and contributors:
-- Make no warranties about fitness for production use
-- Are not liable for security breaches from misuse
-- Recommend security audits before deployment
-- Encourage responsible disclosure of vulnerabilities
-
-**Use at your own risk.**
+### Testing
+- ✅ Use only in isolated test environments
+- ✅ Use synthetic/dummy data
+- ✅ Do not use real PII
+- ✅ Do not connect to production systems
 
 ---
 
-## 🎉 Ready to Start?
+## 🆘 Getting Help
 
-Choose your adventure:
+### For Example-Specific Questions
+1. Check the example's README.md
+2. Review the stage documentation
+3. Look at the code comments
+4. Try the demos/tests
 
-### 🪙 [Start with Crypto Example →](./crypto_agent_example.md)
-Perfect for beginners, covers A2A fundamentals
+### For General Questions
+- Course discussion forums
+- Office hours
+- Teaching assistant support
+- GitHub Issues
 
-### 💳 [Try Credit Report Example →](./credit_report_example.md)
-File security and PII protection
-
-### 🤝 [Explore Task Collaboration →](./task_collaboration_example.md)
-Advanced multi-agent patterns
-
----
-
-## 📊 Your Progress
-
-Track your learning journey:
-
-```
-Crypto Example:
-[ ] Stage 1 - Vulnerable
-[ ] Stage 2 - Improved
-[ ] Stage 3 - Secure
-[ ] Built my own secure agent
-
-Credit Report Example:
-[ ] Stage 1 - Insecure
-[ ] Stage 2 - Improved
-[ ] Stage 3 - Secure
-[ ] Stage 4 - AI Enhanced
-
-Task Collaboration Example:
-[ ] Stage 1 - Insecure
-[ ] Stage 2 - Improved
-[ ] Stage 3 - Secure
-[ ] Stage 4 - Distributed
-[ ] Stage 5 - Web Framework
-
-Mastery:
-[ ] Can identify vulnerabilities quickly
-[ ] Can explain security trade-offs
-[ ] Can implement production patterns
-[ ] Can teach others
-[ ] Built 3+ secure agents
-```
+### For Security Issues
+If you discover a real security vulnerability in the teaching materials:
+- **Do not** disclose publicly
+- Email: security@[your-domain]
+- Provide: example name, stage, description, steps to reproduce
 
 ---
 
-**Document Version**: 1.0  
-**Last Updated**: December 2024  
-**Maintained By**: Robert Fischer (robert@fischer3.net)  
-**Examples Location**: `/a2a_examples/`
+## 📈 Progress Tracking
+
+Track your progress through the examples:
+
+### Credit Report Agent
+- [ ] Stage 1: Insecure
+- [ ] Stage 2: Improved
+- [ ] Stage 3: Secure
+- [ ] Stage 4: AI-Integrated
+
+### Crypto Price Agent
+- [ ] Basic Implementation
+- [ ] Security Hardening
+- [ ] Production Deployment
+
+### Task Collaboration System
+- [ ] Stage 1: Insecure
+- [ ] Stage 2: Improved
+- [ ] Stage 3: Secure
+- [ ] Stage 4: Distributed
+- [ ] Stage 5: Web Framework
 
 ---
 
-**Let's build secure multi-agent systems together!** 🚀
+## 🎓 Certification Mapping
 
-> 💡 **Remember**: Security is learned, not innate. Everyone starts somewhere. You're in the right place! Happy learning! 🎓
+These examples support preparation for:
+
+- **CompTIA Security+**: Cryptography, network security, access control
+- **CEH (Certified Ethical Hacker)**: Attack techniques, vulnerability identification
+- **CISSP**: Security engineering, access control, cryptography
+- **Cloud Security**: API security, distributed systems
+
+---
+
+## 🔄 Updates & Roadmap
+
+**Current Version**: 2.0 (January 2026)
+
+**Recent Updates**:
+- ✅ Added Credit Report Agent (4 stages)
+- ✅ Added AI security integration (Stage 4)
+- ✅ Enhanced documentation
+- ✅ Added attack demonstrations
+
+**Coming Soon**:
+- Healthcare Data Agent (HIPAA compliance)
+- Blockchain Integration Security
+- IoT Device Security Patterns
+- More AI/ML security examples
+
+---
+
+## 📞 Contact
+
+**Project Maintainer**: Robert Fischer  
+**Email**: robert@fischer3.net  
+**Project**: A2A Security Learning Examples
+
+---
+
+**Last Updated**: January 2026  
+**Version**: 2.0  
+**License**: MIT (Educational Use)
