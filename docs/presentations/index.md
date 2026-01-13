@@ -69,6 +69,81 @@ A comprehensive presentation package explaining the eight-layer defense-in-depth
 
 ---
 
+### Securing AI Agent Collaboration: Comprehensive Security Framework
+
+**Status**: ✅ Complete  
+**Last Updated**: December 2025  
+**Difficulty**: Intermediate to Advanced  
+**Duration**: 60-180 minutes (depending on format)
+
+**What It Is**:  
+A comprehensive security framework for AI agent collaboration systems with specific focus on Agent-to-Agent (A2A) protocols. Based on a three-stage security analysis demonstrating the progression from insecure (25+ vulnerabilities) to partially secured (10+ vulnerabilities) to comprehensively secured (0 vulnerabilities). Designed specifically for non-technical security professionals working with Google Gemini and similar AI agent platforms.
+
+**Who Should Use This**:
+- ✅ Security professionals (non-programming) conducting agent security reviews
+- ✅ Cloud security teams evaluating AI agent deployments
+- ✅ Enterprise architects designing secure agent systems
+- ✅ Compliance teams preparing for audits (PCI-DSS, HIPAA, GDPR, SOX)
+- ✅ Executives making security investment decisions for AI initiatives
+
+**What's Included**:
+- **[Article](agent-security/agent_security_article_enhanced.md)** (30,000 words) - Comprehensive narrative guide with extensive pre/post-implementation guidance
+- **[Slides](agent-security/agent_security_slide_deck.md)** (36 slides + 8 backup) - Professional presentation for security reviews and training
+- **[Checklist](agent-security/security_checklist.md)** (200+ items) - Implementation and audit checklist organized by phase
+- **[README](agent-security/README.md)** - Complete usage guide with customization instructions
+
+**Key Topics Covered**:
+- **The Story of Three Implementations**: Insecure → Partial Security → Comprehensive Security
+- **Eight-Layer Validation Framework**: Transport Security, Authentication, Session Management, Authorization, Message Integrity, Replay Protection, Rate Limiting, Input Validation
+- **Pre-Implementation Planning**: Trust boundaries, operations criticality, data classification, threat modeling
+- **Post-Implementation Operations**: Monitoring, testing, incident response, documentation
+- **Compliance Mapping**: PCI-DSS, GDPR, HIPAA, SOX requirements
+- **Real-World Examples**: Attack scenarios, cost-benefit analysis, case studies
+
+**The Eight Security Layers**:
+1. **Layer 1 - Transport Security**: TLS 1.3, mutual TLS, certificate management
+2. **Layer 2 - Authentication**: Multi-factor authentication, enterprise IdP integration
+3. **Layer 3 - Session Management**: Cryptographic tokens, binding, timeouts
+4. **Layer 4 - Authorization**: Role-based access control (RBAC), real-time checks
+5. **Layer 5 - Message Integrity**: HMAC signatures, constant-time verification
+6. **Layer 6 - Replay Protection**: Nonces, timestamps, time synchronization
+7. **Layer 7 - Rate Limiting**: Token bucket, brute force prevention
+8. **Layer 8 - Input Validation**: Comprehensive field validation, allowlists
+
+**Use Cases**:
+- 🔍 **Agent Security Assessments** - Complete 200+ item checklist for thorough evaluation
+- 📖 **Security Team Training** - 60-75 minute presentation with non-technical focus
+- 💼 **Executive Briefings** - Business case for comprehensive security (ROI: 2,200%-5,800%)
+- 🏢 **Design Reviews** - Pre-implementation planning guidance with trust boundaries
+- 🔎 **Compliance Audits** - Mapping to PCI-DSS, GDPR, HIPAA, SOX requirements
+- 📋 **Incident Response** - Security runbooks and compromise scenarios
+
+**Unique Features**:
+- ✅ **Evidence-Based**: Based on actual three-stage security implementation analysis
+- ✅ **Non-Programmer Friendly**: Designed for security professionals without coding background
+- ✅ **Conversation Tools**: Specific prompts for engaging architects and developers
+- ✅ **Comprehensive Checklists**: Pre-implementation, implementation (all 8 layers), post-implementation
+- ✅ **Real ROI Data**: Cost-benefit analysis showing 2,200%-5,800% return on investment
+- ✅ **Compliance Ready**: Direct mapping to major regulatory frameworks
+
+**Quick Start**:
+1. **For understanding the framework**: Start with the [article](agent-security/agent_security_article_enhanced.md) Executive Summary
+2. **For presenting to teams**: Use the [slides](agent-security/agent_security_slide_deck.md) (copy into Google Slides)
+3. **For security reviews**: Jump to the [checklist](agent-security/security_checklist.md)
+4. **For implementation guidance**: Read the [README](agent-security/README.md) phases section
+
+**Key Differentiators from Eight-Layer Input Validation**:
+- **Broader Scope**: Covers entire security lifecycle (pre-implementation → ongoing operations)
+- **Three-Stage Analysis**: Shows real progression from insecure to secure with vulnerability counts
+- **Non-Technical Focus**: Designed for security professionals who don't write code
+- **Cross-functional Tools**: Checklists for Security + Architects + Developers conversations
+- **Compliance Emphasis**: Extensive mapping to PCI-DSS, GDPR, HIPAA, SOX
+- **Business Case**: ROI analysis, cost-benefit data, real-world impact examples
+
+**[📖 Learn More →](agent-security/README.md)**
+
+---
+
 ## 🎯 How to Use These Presentations
 
 ### For Security Professionals
@@ -429,7 +504,16 @@ For understanding the broader context:
 
 ## 🔄 Version History and Updates
 
-### Current Version: 1.0
+### Current Version: 2.0
+
+**Securing AI Agent Collaboration: Comprehensive Security Framework**
+- Initial release: December 2025
+- Three-stage security analysis (Insecure → Partial → Comprehensive)
+- Eight-layer validation framework with extensive implementation guidance
+- 200+ item security checklist organized by phase
+- Pre/post-implementation planning and operations
+- Compliance mapping (PCI-DSS, GDPR, HIPAA, SOX)
+- Non-technical security professional focus
 
 **Eight-Layer Input Validation for Agent-to-Agent Security**
 - Initial release: December 2024
@@ -455,11 +539,14 @@ For understanding the broader context:
 
 ### Upcoming Presentations (Planned)
 
-**Q1 2025**:
+**Recently Completed** ✅:
+- **Securing AI Agent Collaboration** - Comprehensive security framework (December 2025)
+
+**Q1 2026**:
 - **Agent Authentication Deep Dive** - Cryptographic authentication patterns
 - **Threat Modeling for AI Agents** - Comprehensive threat analysis workshop
 
-**Q1 2025**:
+**Q2 2026**:
 - **Multi-Agent Orchestration Security** - Securing agent swarms and workflows
 - **AI Agent Incident Response** - Handling security incidents in AI systems
 
@@ -552,6 +639,12 @@ For understanding the broader context:
 
 ## 📖 Quick Links
 
+### Securing AI Agent Collaboration Package (New!)
+- **[📄 Article](agent-security/agent_security_article_enhanced.md)** - 30,000-word comprehensive guide
+- **[📊 Slides](agent-security/agent_security_slide_deck.md)** - 36-slide presentation + 8 backup slides
+- **[✅ Checklist](agent-security/security_checklist.md)** - 200+ item security assessment
+- **[📖 README](agent-security/README.md)** - Complete usage and customization guide
+
 ### Eight-Layer Input Validation Package
 - **[📄 Article](eight-layer-validation/article.md)** - Comprehensive written guide
 - **[📊 Slides](eight-layer-validation/slides.md)** - 30-slide presentation
@@ -570,4 +663,6 @@ For understanding the broader context:
 
 ---
 
-**Ready to improve your AI agent security? Start with the [Eight-Layer Validation package](eight-layer-validation/README.md).**
+**Ready to improve your AI agent security?**
+- **New to agent security?** Start with the [Securing AI Agent Collaboration package](agent-security/README.md) for a comprehensive framework
+- **Focused on input validation?** Use the [Eight-Layer Validation package](eight-layer-validation/README.md) for detailed validation guidance
