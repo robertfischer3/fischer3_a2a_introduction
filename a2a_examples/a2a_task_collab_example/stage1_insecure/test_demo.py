@@ -295,7 +295,7 @@ def main():
     """Run all demonstrations"""
     print("╔═══════════════════════════════════════════════════╗")
     print("║  Task Collaboration - Security Demo               ║")
-    print("║  ⚠️  Educational Purposes Only                    ║")
+    print("║  ⚠️  Educational Purposes Only                     ║")
     print("╚═══════════════════════════════════════════════════╝")
     print()
     print("This script demonstrates:")

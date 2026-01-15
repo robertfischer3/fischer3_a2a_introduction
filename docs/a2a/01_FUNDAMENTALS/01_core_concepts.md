@@ -23,26 +23,7 @@ The **Agent2Agent (A2A) Protocol** is a high-level orchestration protocol that s
 
 Think of A2A as the "language and etiquette" that agents use to work together:
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    User Request                         │
-│             "What's the Bitcoin price trend?"           │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-         ┌───────────────────────┐
-         │  Orchestrator Agent   │ ◄─┐
-         │  (Coordinates work)   │   │
-         └──────────┬────────────┘   │
-                    │                │ A2A Protocol
-          ┌─────────┼─────────┐      │ (Who talks to whom,
-          │         │         │      │  how they identify,
-          ▼         ▼         ▼      │  what they can do)
-    ┌─────────┐ ┌────────┐ ┌────────┴───┐
-    │ Crypto  │ │ Chart  │ │  Analysis  │
-    │ Agent   │ │ Agent  │ │  Agent     │
-    └─────────┘ └────────┘ └────────────┘
-```
+![What is A2A](/docs/images/diagrams/what_is_agent2agent_protocol_big_picture.jpg "What is A2A")
 
 **A2A handles the "who"** - Which agents exist? What can they do? How do they find each other? How do they prove their identity?
 
@@ -446,8 +427,8 @@ YOU ARE HERE → 00_A2A_OVERVIEW.md (This document)
 
 ## 📝 Document Version
 
-- **Version**: 1.0
-- **Last Updated**: November 2025
+- **Version**: 1.1
+- **Last Updated**: January 2026
 - **Status**: Learning Project (Non-Production)
 - **Audience**: Developers, Security Engineers, AI Architects
 
@@ -475,7 +456,7 @@ Begin at the beginning with core concepts and terminology.
 ### 🔐 [Jump to Security →](./03_SECURITY/01_authentication_overview.md)
 If you already know agent basics, start with security concerns.
 
-### 💻 [Explore Code Examples →](../a2a_examples/)
+### 💻 [Explore Code Examples →](../../examples/index.md)
 Prefer learning by reading code? Start with the examples.
 
 ---
