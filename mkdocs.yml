@@ -182,6 +182,10 @@ nav:
       - Stage 1 (Vulnerable): examples/task-stage1.md
       - Stage 2 (Improved): examples/task-stage2.md
       - Stage 3 (Secure): examples/task-stage3.md
+    - Adversarial Agents:
+      - Stage 1 (Vulnerable): examples/stage1-adversarial.md
+      - Stage 2 (Partial): examples/stage2-adversarial.md
+      - Stage 3 (Secure): examples/stage3-adversarial.md
   
   - Guides:
     - How-To Guides: guides/index.md
