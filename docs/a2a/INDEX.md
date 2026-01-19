@@ -87,8 +87,8 @@ Technical reference materials.
 
 | Resource | Description |
 |----------|-------------|
-| [Example 1 README](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/README.md) | Implementation overview |
-| [Security Analysis](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/SECURITY_ANALYSIS.md) | Detailed vulnerability breakdown |
+| [Example 1 README](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_example/README.md) | Implementation overview |
+| [Security Analysis](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_example/SECURITY_ANALYSIS.md) | Detailed vulnerability breakdown |
 
 **What You'll Learn**:
 - ❌ No input validation
@@ -132,8 +132,8 @@ Technical reference materials.
 
 | Resource | Description |
 |----------|-------------|
-| [Example 3 README](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/security/README.md) | Security module overview |
-| [Security Analysis](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md) | Production patterns explained |
+| [Example 3 README](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_examplesecurity/README.md) | Security module overview |
+| [Security Analysis](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_examplesecurity/SECURITY_ANALYSIS.md) | Production patterns explained |
 
 **What You'll Learn**:
 - ✅ Comprehensive input validation (8 layers)
@@ -158,8 +158,8 @@ Technical reference materials.
 3. ✅ [Agent Identity](./01_FUNDAMENTALS/02_agent_identity.md) - Understand identity (30 min)
 4. ✅ [Agent Cards](./02_DISCOVERY/01_agent_cards.md) - Discovery mechanism (30 min)
 5. ✅ [Protocol Messages](./04_COMMUNICATION/01_protocol_messages.md) - Message structure (30 min)
-6. ✅ [Example 1 README](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/README.md) - See basic implementation (1 hour)
-7. ✅ [Example 1 Security Analysis](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/SECURITY_ANALYSIS.md) - Learn vulnerabilities (1 hour)
+6. ✅ [Example 1 README](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_exampleREADME.md) - See basic implementation (1 hour)
+7. ✅ [Example 1 Security Analysis](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_exampleSECURITY_ANALYSIS.md) - Learn vulnerabilities (1 hour)
 
 **Outcome**: Understand A2A basics and common security mistakes
 
@@ -171,7 +171,7 @@ Technical reference materials.
 **Day 1: Foundation & Threats**
 1. ✅ [Authentication Overview](./03_SECURITY/01_authentication_overview.md) - Trust models (2 hours)
 2. ✅ [Threat Model](./03_SECURITY/03_threat_model.md) - Attack vectors (2 hours)
-3. ✅ [Example 1 Security Analysis](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/SECURITY_ANALYSIS.md) - Vulnerability study (1 hour)
+3. ✅ [Example 1 Security Analysis](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_exampleSECURITY_ANALYSIS.md) - Vulnerability study (1 hour)
 
 **Day 2: Evolution & Patterns**
 4. ✅ [Code Walkthrough Comparison](./03_SECURITY/05_code_walkthrough_comparison.md) - See progression (3 hours)
@@ -179,8 +179,8 @@ Technical reference materials.
 6. ✅ [Authentication Tags](./03_SECURITY/02_authentication_tags.md) - Technical details (1 hour)
 
 **Day 3: Production Implementation**
-7. ✅ [Example 3 Security Analysis](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md) - Production patterns (2 hours)
-8. 💻 Study [Example 3 code](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/security/) - Implementation review (2 hours)
+7. ✅ [Example 3 Security Analysis](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_examplesecurity/SECURITY_ANALYSIS.md) - Production patterns (2 hours)
+8. 💻 Study [Example 3 code](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_examplesecurity/) - Implementation review (2 hours)
 9. 🎯 Practice: Implement security module for your project (2+ hours)
 
 **Outcome**: Able to implement production-grade secure A2A systems
@@ -223,7 +223,7 @@ Technical reference materials.
 
 **Phase 2: Vulnerability Identification**
 3. 🔍 Audit Example 1 independently - Find flaws (2 hours)
-4. ✅ Compare with [Security Analysis 1](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/SECURITY_ANALYSIS.md) - Validate findings (30 min)
+4. ✅ Compare with [Security Analysis 1](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_exampleSECURITY_ANALYSIS.md) - Validate findings (30 min)
 
 **Phase 3: Bypass Techniques**
 5. 🔍 Attempt to exploit Example 2 - Test defenses (2 hours)
@@ -231,7 +231,7 @@ Technical reference materials.
 
 **Phase 4: Defense Review**
 7. 🔍 Test Example 3 defenses - Find weaknesses (3 hours)
-8. ✅ Review [Security Analysis 3](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md) - Best practices (1 hour)
+8. ✅ Review [Security Analysis 3](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_examplesecurity/SECURITY_ANALYSIS.md) - Best practices (1 hour)
 
 **Outcome**: Comprehensive security audit methodology for A2A systems
 
@@ -259,9 +259,9 @@ Technical reference materials.
 - ✨ [Threat Model](./03_SECURITY/03_threat_model.md) - STRIDE framework & 8 threats
 - ✨ [Agent Identity](./01_FUNDAMENTALS/02_agent_identity.md) - Identity fundamentals
 - ✨ [Code Walkthrough Comparison](./03_SECURITY/05_code_walkthrough_comparison.md) - Side-by-side evolution
-- ✨ [Security Analysis (Example 1)](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/SECURITY_ANALYSIS.md) - Vulnerability breakdown
+- ✨ [Security Analysis (Example 1)](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_exampleSECURITY_ANALYSIS.md) - Vulnerability breakdown
 - ✨ [Security Analysis (Example 2)](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md) - Incremental improvements
-- ✨ [Security Analysis (Example 3)](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md) - Production patterns
+- ✨ [Security Analysis (Example 3)](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_examplesecurity/SECURITY_ANALYSIS.md) - Production patterns
 
 **Impact**: Security documentation now 80% complete with comprehensive coverage
 
@@ -282,9 +282,9 @@ Technical reference materials.
 - 💬 [Messages](./04_COMMUNICATION/01_protocol_messages.md)
 
 ### Code Examples
-- ❌ [Example 1: Vulnerable](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/)
+- ❌ [Example 1: Vulnerable](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_example)
 - ⚠️ [Example 2: Improved](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_simple_registry_example_1/)
-- ✅ [Example 3: Secure](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/security/)
+- ✅ [Example 3: Secure](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_examplesecurity/)
 
 ---
 
@@ -350,7 +350,7 @@ Found something unclear? Have suggestions?
 
 **Beginners**: Start → [A2A Overview](./00_A2A_OVERVIEW.md)  
 **Security Focus**: Start → [Threat Model](./03_SECURITY/03_threat_model.md)  
-**Implementers**: Start → [Example 3 README](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_example/security/README.md)
+**Implementers**: Start → [Example 3 README](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_examplesecurity/README.md)
 
 **Happy Learning! 🎓🔐**
 
