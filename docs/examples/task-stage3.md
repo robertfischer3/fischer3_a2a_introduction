@@ -30,8 +30,34 @@ This stage focuses on **comprehensive security implementation** and **zero-trust
 ---
 
 ## Architecture
+
 ![Task Collaboration Architecture](/docs/images/diagrams/Task_collaboration_architecture.jpg "Task Collaboration Architecture")
 
+```
+Client (TLS 1.3)
+  ↓
+Rate Limiter ✅
+  ↓
+MFA Authentication ✅
+  ↓
+Session Manager ✅
+  ├─ 256-bit random IDs
+  ├─ Full session binding
+  ├─ State encryption
+  └─ Dual timeouts
+  ↓
+RBAC Authorization ✅
+  ↓
+Coordinator (TLS)
+  ├─ Nonce validator ✅
+  ├─ Message integrity ✅
+  └─ Audit logger ✅
+  ↓
+Worker Agents (mTLS) ✅
+  ├─ Certificate auth
+  ├─ Input validation
+  └─ Secure execution
+```
 
 ### Components
 

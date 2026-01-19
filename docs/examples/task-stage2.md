@@ -28,8 +28,23 @@ This stage focuses on understanding **why partial security measures fail** in mu
 ---
 
 ## Architecture
+
 ![Task Collaboration Agent - Stage 2](/docs/images/diagrams/task_collaboration_stage2_improved.jpg)
-validation)
+
+```
+Client
+  ↓ TCP (still no TLS)
+Password Auth ✅
+  ↓
+Coordinator
+  ├─ UUID4 sessions ✅
+  ├─ Basic timeouts ✅
+  ├─ Owner checks ⚠️
+  └─ HMAC signatures ⚠️
+  ↓
+Worker Agents
+  (Basic validation)
+```
 
 ### Components
 
