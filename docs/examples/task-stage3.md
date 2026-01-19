@@ -31,6 +31,8 @@ This stage focuses on **comprehensive security implementation** and **zero-trust
 
 ## Architecture
 
+![Task Collaboration Architecture](/docs/images/diagrams/Task_collaboration_architecture.jpg "Task Collaboration Architecture")
+
 ```
 Client (TLS 1.3)
   ↓

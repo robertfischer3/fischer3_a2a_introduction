@@ -1,0 +1,8 @@
+# Stage 1: Insecure Implementation Requirements
+# Python 3.8 or higher required
+
+# No external dependencies required for Stage 1!
+# Uses only Python standard library
+
+# Optional for better output formatting:
+# colorama==0.4.6  # For colored terminal output (optional)

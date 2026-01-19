@@ -29,6 +29,8 @@ This stage focuses on understanding **why partial security measures fail** in mu
 
 ## Architecture
 
+![Task Collaboration Agent - Stage 2](/docs/images/diagrams/task_collaboration_stage2_improved.jpg)
+
 ```
 Client
   ↓ TCP (still no TLS)
