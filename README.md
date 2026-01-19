@@ -65,7 +65,7 @@ The project includes **three comprehensive examples**, each focusing on differen
 
 ### 🪙 Example 1: Cryptocurrency Price Agent
 **Focus**: Query Security & Basic A2A Protocol  
-**Location**: `a2a_examples/a2a_crypto_example/`
+**Location**: `examples/a2a_crypto_example/`
 
 **What You'll Learn**:
 - Core A2A protocol fundamentals
@@ -81,13 +81,13 @@ The project includes **three comprehensive examples**, each focusing on differen
 
 **Best For**: Beginners to A2A protocol, API developers, learning fundamental security patterns
 
-[View Crypto Agent README](./a2a_examples/a2a_crypto_example/README.md)
+[View Crypto Agent README](./examples/a2a_crypto_example/README.md)
 
 ---
 
 ### 📊 Example 2: Credit Report Analysis Agent
 **Focus**: File Upload Security & PII Protection  
-**Location**: `a2a_examples/a2a_credit_report_example/`
+**Location**: `examples/a2a_credit_report_example/`
 
 **What You'll Learn**:
 - File upload security and validation
@@ -106,13 +106,13 @@ The project includes **three comprehensive examples**, each focusing on differen
 
 **Best For**: Document processing systems, compliance-heavy applications, PII handling, AI security
 
-[View Credit Report README](./a2a_examples/a2a_credit_report_example/README.md)
+[View Credit Report README](./examples/a2a_credit_report_example/README.md)
 
 ---
 
 ### 🤝 Example 3: Task Collaboration System (NEW!)
 **Focus**: Session Management & Multi-Agent Coordination  
-**Location**: `a2a_examples/a2a_task_collab_example/`
+**Location**: `examples/a2a_task_collab_example/`
 
 **What You'll Learn**:
 - **Session lifecycle management**
@@ -150,8 +150,8 @@ The project includes **three comprehensive examples**, each focusing on differen
 - ✅ Attack demonstrations built into client
 - ✅ Distributed and web framework patterns
 
-[View Task Collaboration README](./a2a_examples/a2a_task_collab_example/README.md)  
-[View Quick Reference Guide](./a2a_examples/a2a_task_collab_example/QUICK_REFERENCE.md)
+[View Task Collaboration README](./examples/a2a_task_collab_example/README.md)  
+[View Quick Reference Guide](./examples/a2a_task_collab_example/QUICK_REFERENCE.md)
 
 ---
 
@@ -349,15 +349,15 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 ```bash
 # Example 1: Cryptocurrency Agent
-cd a2a_examples/a2a_crypto_example
+cd examples/a2a_crypto_example
 python insecure_agent.py
 
 # Example 2: Credit Report Agent
-cd a2a_examples/a2a_credit_report_example/stage1_insecure
+cd examples/a2a_credit_report_example/stage1_insecure
 python server.py
 
 # Example 3: Task Collaboration Agent
-cd a2a_examples/a2a_task_collab_example/stage1_insecure
+cd examples/a2a_task_collab_example/stage1_insecure
 python server/task_coordinator.py
 ```
 
@@ -374,8 +374,8 @@ python server/task_coordinator.py
 - [Markdown Source](docs/SLIDES.md)
 
 ### Example Comparisons
-- [Detailed Example Comparison](./a2a_examples/a2a_task_collab_example/task_collab_comparision.md)
-- [Session Security Cheat Sheet](./a2a_examples/a2a_task_collab_example/A2A_SESSION_SECURITY_CHEAT_SHEET.md)
+- [Detailed Example Comparison](./examples/a2a_task_collab_example/task_collab_comparision.md)
+- [Session Security Cheat Sheet](./examples/a2a_task_collab_example/A2A_SESSION_SECURITY_CHEAT_SHEET.md)
 
 ### Utility Tools
 - [UV Python Environment Guide](./side_topic_guidance/uv/UV_COMPLETE_GUIDE.md) - Modern Python dependency management
@@ -398,20 +398,20 @@ python server/task_coordinator.py
 │       └── 05_REFERENCE/              # Technical reference
 │
 ├── 💻 Example 1: Cryptocurrency Agent
-│   └── a2a_examples/a2a_crypto_example/
+│   └── examples/a2a_crypto_example/
 │       ├── Stage 1: Vulnerable baseline
 │       ├── Stage 2: Registry + basic auth
 │       └── Stage 3: Production security
 │
 ├── 💻 Example 2: Credit Report Agent
-│   └── a2a_examples/a2a_credit_report_example/
+│   └── examples/a2a_credit_report_example/
 │       ├── stage1_insecure/          # Vulnerable file handling
 │       ├── stage2_improved/          # Basic validation
 │       ├── stage3_secure/            # Production security
 │       └── stage4_ai/                # AI integration
 │
 ├── 💻 Example 3: Task Collaboration System ✨ NEW
-│   └── a2a_examples/a2a_task_collab_example/
+│   └── examples/a2a_task_collab_example/
 │       ├── stage1_insecure/          # 25+ vulnerabilities
 │       ├── stage2_improved/          # Partial fixes
 │       ├── stage3_secure/            # SessionManager
@@ -560,10 +560,10 @@ See individual files for specific licensing information.
 - 📖 [Documentation Index](./docs/a2a/INDEX.md)
 - 🚀 [A2A Overview](./docs/a2a/00_A2A_OVERVIEW.md)
 - 🔒 [Security Guide](./docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md)
-- 💻 [Crypto Example](./a2a_examples/a2a_crypto_example/)
-- 💻 [Credit Report Example](./a2a_examples/a2a_credit_report_example/)
-- 💻 [Task Collaboration Example](./a2a_examples/a2a_task_collab_example/) ✨ NEW
-- 📊 [Example Comparison](./a2a_examples/a2a_task_collab_example/task_collab_comparision.md)
+- 💻 [Crypto Example](./examples/a2a_crypto_example/)
+- 💻 [Credit Report Example](./examples/a2a_credit_report_example/)
+- 💻 [Task Collaboration Example](./examples/a2a_task_collab_example/) ✨ NEW
+- 📊 [Example Comparison](./examples/a2a_task_collab_example/task_collab_comparision.md)
 
 ---
 

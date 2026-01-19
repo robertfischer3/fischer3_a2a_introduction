@@ -2,7 +2,7 @@
 
 > **Security Status**: ✅ **PRODUCTION-READY**  
 > **Purpose**: Reference implementation with comprehensive security  
-> **Location**: `a2a_examples/a2a_crypto_example/security/`
+> **Location**: `examples/a2a_crypto_example/security/`
 
 ---
 

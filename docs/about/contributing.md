@@ -116,9 +116,9 @@ Before contributing, please:
    - [Threat Model](docs/a2a/03_SECURITY/03_threat_model.md)
 
 2. **Review existing examples:**
-   - [Crypto Price Agent](a2a_examples/a2a_crypto_example/)
-   - [Credit Report Agent](a2a_examples/a2a_credit_report_example/)
-   - [Task Collaboration Agent](a2a_examples/a2a_task_collab_example/)
+   - [Crypto Price Agent](examples/a2a_crypto_example/)
+   - [Credit Report Agent](examples/a2a_credit_report_example/)
+   - [Task Collaboration Agent](examples/a2a_task_collab_example/)
 
 3. **Set up your development environment:**
    ```bash
@@ -674,7 +674,7 @@ When appropriate, we'll cite contributors in:
 **Before asking:**
 1. Check the [documentation](docs/a2a/INDEX.md)
 2. Search [existing issues](https://github.com/robertfischer3/fischer3_a2a_introduction/issues)
-3. Review [examples](a2a_examples/)
+3. Review [examples](examples/)
 
 **Where to ask:**
 - **General questions**: Open a [Discussion](https://github.com/robertfischer3/fischer3_a2a_introduction/discussions)
@@ -771,9 +771,9 @@ Your contributions make this project better for everyone. We appreciate your tim
 - [Code Walkthrough](docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md)
 
 ### Example Projects
-- [Crypto Price Agent](a2a_examples/a2a_crypto_example/)
-- [Credit Report Agent](a2a_examples/a2a_credit_report_example/)
-- [Task Collaboration Agent](a2a_examples/a2a_task_collab_example/)
+- [Crypto Price Agent](examples/a2a_crypto_example/)
+- [Credit Report Agent](examples/a2a_credit_report_example/)
+- [Task Collaboration Agent](examples/a2a_task_collab_example/)
 
 ### External Resources
 - [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)

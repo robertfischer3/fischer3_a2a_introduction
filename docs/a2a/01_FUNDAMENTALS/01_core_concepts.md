@@ -294,19 +294,19 @@ This project includes three progressive implementations:
 
 ### Example 1: Basic (Intentionally Vulnerable)
 - **Purpose**: Learn to recognize security flaws
-- **Location**: `a2a_examples/a2a_crypto_example/`
+- **Location**: `examples/a2a_crypto_example/`
 - **Security**: ❌ Minimal to none
 - **Use Case**: Study only, never deploy
 
 ### Example 2: Improved (Partial Security)
 - **Purpose**: Understand incremental hardening
-- **Location**: `a2a_examples/a2a_crypto_simple_registry_example_1/`
+- **Location**: `examples/a2a_crypto_simple_registry_example_1/`
 - **Security**: ⚠️ Better but incomplete
 - **Use Case**: Learning trade-offs
 
 ### Example 3: Secure (Production-Ready)
 - **Purpose**: Production-grade security
-- **Location**: `a2a_examples/a2a_crypto_example/security/`
+- **Location**: `examples/a2a_crypto_example/security/`
 - **Security**: ✅ Comprehensive controls
 - **Use Case**: Template for real implementations
 
@@ -359,8 +359,8 @@ This project includes three progressive implementations:
 - [Markdown Source](../docs/SLIDES.md)
 
 ### Code Examples
-- [Crypto Agent Examples](../a2a_examples/) - All three security levels
-- [Security Module](../a2a_examples/a2a_crypto_example/security/) - Production reference
+- [Crypto Agent Examples](../examples/) - All three security levels
+- [Security Module](../examples/a2a_crypto_example/security/) - Production reference
 
 ---
 

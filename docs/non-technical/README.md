@@ -210,7 +210,7 @@ Your feedback helps us improve these resources for everyone.
 - Diagrams and flowcharts throughout the technical documentation
 
 **Real-World Examples:**
-- Security analysis documents in `a2a_examples/` folders
+- Security analysis documents in `examples/` folders
 - Show practical implementations (more technical)
 
 **Industry Standards:**

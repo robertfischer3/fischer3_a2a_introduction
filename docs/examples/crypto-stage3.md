@@ -145,7 +145,7 @@ pip install uvicorn       # ASGI server
 
 Or use the requirements file:
 ```bash
-cd a2a_examples/a2a_crypto_example/security
+cd examples/a2a_crypto_example/security
 pip install -r requirements.txt
 ```
 
@@ -178,7 +178,7 @@ export USE_MOCK_REDIS=true
 Stage 3 uses public/private key pairs (not shared secrets!):
 
 ```bash
-cd a2a_examples/a2a_crypto_example/security
+cd examples/a2a_crypto_example/security
 python3 generate_keys.py
 ```
 
@@ -1423,11 +1423,11 @@ Ready to deploy? Here's your checklist:
 
 ### Code Files
 
-- [Secure Server](/a2a_examples/a2a_crypto_example/security/secure_crypto_server.py)
-- [Authentication Module](/a2a_examples/a2a_crypto_example/security/authentication.py)
-- [Replay Protection](/a2a_examples/a2a_crypto_example/security/replay_protection.py)
-- [Validation Module](/a2a_examples/a2a_crypto_example/security/validation.py)
-- [Rate Limiter](/a2a_examples/a2a_crypto_example/security/rate_limit.py)
+- [Secure Server](/examples/a2a_crypto_example/security/secure_crypto_server.py)
+- [Authentication Module](/examples/a2a_crypto_example/security/authentication.py)
+- [Replay Protection](/examples/a2a_crypto_example/security/replay_protection.py)
+- [Validation Module](/examples/a2a_crypto_example/security/validation.py)
+- [Rate Limiter](/examples/a2a_crypto_example/security/rate_limit.py)
 
 ---
 
@@ -1575,7 +1575,7 @@ This is a significant achievement. Many developers never reach this level of sec
 **Stage**: 3 of 3 (Production-Ready)  
 **Last Updated**: December 2024  
 **Maintained By**: Robert Fischer (robert@fischer3.net)  
-**Code Location**: `/a2a_examples/a2a_crypto_example/security/`
+**Code Location**: `/examples/a2a_crypto_example/security/`
 
 ---
 

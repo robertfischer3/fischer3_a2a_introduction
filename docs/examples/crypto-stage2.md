@@ -130,7 +130,7 @@ pip install requests  # For HTTP client
 
 **Terminal 1:**
 ```bash
-cd a2a_examples/a2a_crypto_simple_registry_example_1
+cd examples/a2a_crypto_simple_registry_example_1
 python3 registry_server.py
 ```
 
@@ -155,7 +155,7 @@ INFO:     Uvicorn running on http://0.0.0.0:8000
 
 **Terminal 2:**
 ```bash
-cd a2a_examples/a2a_crypto_simple_registry_example_1
+cd examples/a2a_crypto_simple_registry_example_1
 python3 crypto_agent_with_auth.py
 ```
 
@@ -193,7 +193,7 @@ Waiting for authenticated requests...
 
 **Terminal 3:**
 ```bash
-cd a2a_examples/a2a_crypto_simple_registry_example_1
+cd examples/a2a_crypto_simple_registry_example_1
 python3 authenticated_client.py
 ```
 
@@ -1093,9 +1093,9 @@ Because:
 
 ### Code Files
 
-- [Registry Server](/a2a_examples/a2a_crypto_simple_registry_example_1/registry_server.py)
-- [Authenticated Agent](/a2a_examples/a2a_crypto_simple_registry_example_1/crypto_agent_with_auth.py)
-- [Authenticated Client](/a2a_examples/a2a_crypto_simple_registry_example_1/authenticated_client.py)
+- [Registry Server](/examples/a2a_crypto_simple_registry_example_1/registry_server.py)
+- [Authenticated Agent](/examples/a2a_crypto_simple_registry_example_1/crypto_agent_with_auth.py)
+- [Authenticated Client](/examples/a2a_crypto_simple_registry_example_1/authenticated_client.py)
 
 ---
 
@@ -1187,7 +1187,7 @@ Many systems in production are at Stage 2 level. Now you can identify them and p
 **Stage**: 2 of 3 (Improved)  
 **Last Updated**: December 2025 
 **Maintained By**: Robert Fischer (robert@fischer3.net)  
-**Code Location**: `/a2a_examples/a2a_crypto_simple_registry_example_1/`
+**Code Location**: `/examples/a2a_crypto_simple_registry_example_1/`
 
 ---
 

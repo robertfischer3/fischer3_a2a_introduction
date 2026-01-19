@@ -2,7 +2,7 @@
 
 > **Security Status**: ❌ **VULNERABLE - DO NOT USE IN PRODUCTION**  
 > **Purpose**: Educational - Learn to recognize security flaws  
-> **Location**: `a2a_examples/a2a_crypto_example/`
+> **Location**: `examples/a2a_crypto_example/`
 
 ---
 
@@ -448,8 +448,8 @@ Use this checklist to identify similar issues in your code:
 
 ### Compare with Secure Versions
 - [Security Comparison Guide](../../docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md)
-- [Example 2 Analysis](../../a2a_examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-- [Example 3 Security Module](../../a2a_examples/a2a_crypto_example/security/README.md)
+- [Example 2 Analysis](../../examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
+- [Example 3 Security Module](../../examples/a2a_crypto_example/security/README.md)
 
 ### Deep Dive Topics
 - [Authentication Tags](../../docs/a2a/03_SECURITY/02_authentication_tags.md)

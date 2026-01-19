@@ -58,7 +58,7 @@ By completing Stage 1, you will understand:
 
 ```bash
 # Navigate to Stage 1 directory
-cd a2a_examples/a2a_task_collab_example/stage1_insecure/
+cd examples/a2a_task_collab_example/stage1_insecure/
 
 # No dependencies needed - uses only Python standard library
 ```

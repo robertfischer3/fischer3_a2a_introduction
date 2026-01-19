@@ -25,17 +25,17 @@ This document provides a **side-by-side comparison** of three progressive implem
 ## 📚 The Three Examples
 
 ### Example 1: Basic Implementation (Vulnerable) ❌
-**Location**: `a2a_examples/a2a_crypto_example/`  
+**Location**: `examples/a2a_crypto_example/`  
 **Status**: Intentionally insecure for educational purposes  
 **Purpose**: Learn to recognize vulnerabilities
 
 ### Example 2: Registry Integration (Improved) ⚠️
-**Location**: `a2a_examples/a2a_crypto_simple_registry_example_1/`  
+**Location**: `examples/a2a_crypto_simple_registry_example_1/`  
 **Status**: Some security, but incomplete  
 **Purpose**: Understand incremental improvements
 
 ### Example 3: Security Module (Secure) ✅
-**Location**: `a2a_examples/a2a_crypto_example/security/`  
+**Location**: `examples/a2a_crypto_example/security/`  
 **Status**: Production-ready security architecture  
 **Purpose**: Reference implementation
 
@@ -1019,7 +1019,7 @@ async def handle_admin_request(self, message):
 
 ### Code References
 - [Example 1 Code](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_example)
-- [Example 2 Code](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_simple_registry_example_1/)
+- [Example 2 Code](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examplesa2a_crypto_simple_registry_example_1/)
 - [Example 3 Code](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_example/security/)
 
 ### Next Steps

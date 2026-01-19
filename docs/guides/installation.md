@@ -187,7 +187,7 @@ Coming soon! Docker configuration for containerized deployments.
 ### For Crypto Example
 
 ```bash
-cd a2a_examples/a2a_crypto_simple_registry_example_1
+cd examples/a2a_crypto_simple_registry_example_1
 
 # Install example-specific dependencies
 pip install -r requirements.txt
@@ -198,7 +198,7 @@ uv pip install -r requirements.txt
 ### For Credit Report Example
 
 ```bash
-cd a2a_examples/a2a_credit_report_example
+cd examples/a2a_credit_report_example
 
 # Install dependencies
 pip install pydantic cryptography
@@ -209,7 +209,7 @@ uv pip install pydantic cryptography
 ### For Task Collaboration Example
 
 ```bash
-cd a2a_examples/a2a_task_collab_example
+cd examples/a2a_task_collab_example
 
 # Install dependencies
 pip install fastapi uvicorn websockets

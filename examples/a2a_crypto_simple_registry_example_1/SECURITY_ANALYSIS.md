@@ -2,7 +2,7 @@
 
 > **Security Status**: ⚠️ **IMPROVED BUT INCOMPLETE**  
 > **Purpose**: Educational - Learn incremental security improvements  
-> **Location**: `a2a_examples/a2a_crypto_simple_registry_example_1/`
+> **Location**: `examples/a2a_crypto_simple_registry_example_1/`
 
 ---
 

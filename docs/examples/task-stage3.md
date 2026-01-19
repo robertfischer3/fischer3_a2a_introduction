@@ -1,6 +1,6 @@
 # Task Collaboration Agent - Stage 3: Secure
 
-> **Path**: `a2a_examples/a2a_task_collab_example/stage3_secure`
+> **Path**: `examples/a2a_task_collab_example/stage3_secure`
 
 ## Overview
 
@@ -749,7 +749,7 @@ class TamperProofAuditLogger:
 ### Setup
 
 ```bash
-cd a2a_examples/a2a_task_collab_example/stage3_secure
+cd examples/a2a_task_collab_example/stage3_secure
 
 # Install dependencies
 pip install -r requirements.txt

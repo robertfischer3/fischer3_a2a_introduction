@@ -1,6 +1,6 @@
 # Credit Report Agent - Stage 4: AI-Integrated
 
-> **Path**: `a2a_examples/a2a_credit_report_example/ai_integrated`
+> **Path**: `examples/a2a_credit_report_example/ai_integrated`
 
 ## Overview
 
@@ -702,7 +702,7 @@ class PrivacyBudget:
 ### Setup
 
 ```bash
-cd a2a_examples/a2a_credit_report_example/ai_integrated
+cd examples/a2a_credit_report_example/ai_integrated
 
 # Install AI dependencies
 pip install -r requirements.txt

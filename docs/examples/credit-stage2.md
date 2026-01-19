@@ -1,6 +1,6 @@
 # Credit Report Agent - Stage 2: Improved
 
-> **Path**: `a2a_examples/a2a_credit_report_example/improved`
+> **Path**: `examples/a2a_credit_report_example/improved`
 
 ## Overview
 
@@ -392,7 +392,7 @@ for report_id in range(10000):
 
 ### Setup
 ```bash
-cd a2a_examples/a2a_credit_report_example/improved
+cd examples/a2a_credit_report_example/improved
 pip install -r requirements.txt
 python server.py
 ```

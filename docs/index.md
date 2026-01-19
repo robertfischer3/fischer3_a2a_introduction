@@ -53,7 +53,7 @@ The **Agent-to-Agent (A2A) Protocol** is a standardized communication framework 
 
     Complete validation patterns, error handling, and real-world examples demonstrating secure implementations.
 
-    [:octicons-arrow-right-24: Examples](../a2a_examples/)
+    [:octicons-arrow-right-24: Examples](../examples/)
 
 </div>
 
@@ -132,7 +132,7 @@ Choose your path based on your background and goals:
 1. [A2A Overview](a2a/00_A2A_OVERVIEW.md) - Get the big picture
 2. [Security Best Practices](a2a/03_SECURITY/04_security_best_practices.md) - Critical security patterns
 3. [Message Validation](a2a/04_COMMUNICATION/04_message_validation_patterns.md) - 8-layer defense
-4. [Code Examples](../a2a_examples/) - Learn from working implementations
+4. [Code Examples](../examples/) - Learn from working implementations
 
 **Time**: 4-6 hours
 
@@ -143,7 +143,7 @@ Choose your path based on your background and goals:
 1. [Threat Model](a2a/03_SECURITY/03_threat_model.md) - Attack vectors
 2. [Authentication Tags](a2a/03_SECURITY/02_authentication_tags.md) - Crypto verification
 3. [Code Walkthrough](a2a/03_SECURITY/05_code_walkthrough_comparison.md) - Vulnerable vs Secure
-4. [Security Analysis](../a2a_examples/a2a_crypto_example/stage1_insecure/SECURITY_ANALYSIS.md) - Real vulnerability breakdowns
+4. [Security Analysis](../examples/a2a_crypto_example/stage1_insecure/SECURITY_ANALYSIS.md) - Real vulnerability breakdowns
 
 **Time**: 6-8 hours
 
@@ -182,17 +182,17 @@ Complete A2A specification with examples and best practices.
 ### Practical Examples
 Three complete implementations showing evolution from vulnerable to secure.
 
-- [**Crypto Price Agent**](../a2a_examples/a2a_crypto_example/)
+- [**Crypto Price Agent**](../examples/a2a_crypto_example/)
   - Stage 1: Vulnerable baseline
   - Stage 2: Registry + basic auth
   - Stage 3: Production security
 
-- [**Credit Report Agent**](../a2a_examples/a2a_credit_report_example/)
+- [**Credit Report Agent**](../examples/a2a_credit_report_example/)
   - Stage 1: Vulnerable file handling
   - Stage 3: Production security
   - Stage 4: AI integration
 
-- [**Task Collaboration**](../a2a_examples/a2a_task_collab_example/)
+- [**Task Collaboration**](../examples/a2a_task_collab_example/)
   - Stage 1: 25+ vulnerabilities
   - Stage 3: SessionManager
   - Stage 5: Web framework
@@ -295,17 +295,17 @@ Defense-in-depth with 8 validation layers:
 
 Each example includes multiple stages showing security evolution:
 
-**[Cryptocurrency Price Agent](../a2a_examples/a2a_crypto_example/)**
+**[Cryptocurrency Price Agent](../examples/a2a_crypto_example/)**
 - Stage 1: Demonstrates 15+ common vulnerabilities
 - Stage 2: Adds registry and basic authentication
 - Stage 3: Production-grade security
 
-**[Credit Report Agent](../a2a_examples/a2a_credit_report_example/)**
+**[Credit Report Agent](../examples/a2a_credit_report_example/)**
 - Focuses on PII protection and file validation
 - Shows 8-layer validation pattern
 - Includes AI integration example
 
-**[Task Collaboration System](../a2a_examples/a2a_task_collab_example/)**
+**[Task Collaboration System](../examples/a2a_task_collab_example/)**
 - Multi-agent coordination patterns
 - Session management deep dive
 - Distributed systems (Redis)
@@ -374,7 +374,7 @@ This documentation is released under the MIT License.
 Ready to dive in? Here's where to go:
 
 [Start Learning →](a2a/00_A2A_OVERVIEW.md){ .md-button .md-button--primary }
-[Browse Examples →](../a2a_examples/){ .md-button }
+[Browse Examples →](../examples/){ .md-button }
 [View Documentation Index →](a2a/INDEX.md){ .md-button }
 
 </div>

@@ -45,7 +45,7 @@ pip install httpx asyncio
 The registry is the central directory where agents register themselves.
 
 ```bash
-cd a2a_examples/a2a_crypto_simple_registry_example_1/registry
+cd examples/a2a_crypto_simple_registry_example_1/registry
 python registry_server.py
 ```
 
@@ -63,7 +63,7 @@ Keep this terminal running.
 In a **new terminal**, start the cryptocurrency price agent:
 
 ```bash
-cd a2a_examples/a2a_crypto_simple_registry_example_1/server
+cd examples/a2a_crypto_simple_registry_example_1/server
 python crypto_agent_server.py
 ```
 
@@ -82,7 +82,7 @@ Keep this terminal running.
 In a **third terminal**, run the client to interact with the agent:
 
 ```bash
-cd a2a_examples/a2a_crypto_simple_registry_example_1/client
+cd examples/a2a_crypto_simple_registry_example_1/client
 python a2a_client.py
 ```
 
@@ -235,7 +235,7 @@ Try these to learn more:
 ## Getting Help
 
 - 📖 **Documentation**: Browse the [complete documentation](../a2a/INDEX.md)
-- 💬 **Examples**: Explore the [example projects](../../a2a_examples/)
+- 💬 **Examples**: Explore the [example projects](../../examples/)
 - 🔒 **Security**: Read the [security guides](../a2a/03_SECURITY/01_authentication_overview.md)
 
 ---

@@ -1,6 +1,6 @@
 # Credit Report Agent - Stage 1: Insecure
 
-> **Path**: `a2a_examples/a2a_credit_report_example/insecure`
+> **Path**: `examples/a2a_credit_report_example/insecure`
 
 ## Overview
 
@@ -219,7 +219,7 @@ while True:
 
 ### Setup
 ```bash
-cd a2a_examples/a2a_credit_report_example/insecure
+cd examples/a2a_credit_report_example/insecure
 pip install -r requirements.txt
 python server.py
 ```

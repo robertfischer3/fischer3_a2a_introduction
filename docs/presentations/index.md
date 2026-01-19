@@ -429,7 +429,7 @@ These presentations are designed to be customized:
 ### Technical Implementation
 For developers implementing validation:
 - **[Message Validation Patterns](../a2a/04_COMMUNICATION/04_message_validation_patterns.md)** - Technical implementation guide
-- **[Code Examples](../../a2a_examples/)** - Working code examples
+- **[Code Examples](../../examples/)** - Working code examples
 - **[API Reference](../a2a/05_REFERENCE/01_message_schemas.md)** - Message schemas
 
 ### Security Documentation
@@ -654,7 +654,7 @@ For understanding the broader context:
 ### Related Documentation
 - **[🔒 Security](../a2a/03_SECURITY/)** - A2A security documentation
 - **[💬 Communication](../a2a/04_COMMUNICATION/)** - A2A messaging patterns
-- **[📚 Examples](../../a2a_examples/)** - Working code examples
+- **[📚 Examples](../../examples/)** - Working code examples
 
 ---
 

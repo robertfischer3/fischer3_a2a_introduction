@@ -80,7 +80,7 @@ Technical reference materials.
 ## 💻 Code Examples with Security Analysis
 
 ### Example 1: Vulnerable Implementation ❌
-**Location**: `../../a2a_examples/a2a_crypto_example/`  
+**Location**: `../../examples/a2a_crypto_example/`  
 **Security Rating**: 0/10
 
 **Purpose**: Educational - learn to identify vulnerabilities
@@ -102,15 +102,15 @@ Technical reference materials.
 ---
 
 ### Example 2: Improved Implementation ⚠️
-**Location**: `../../a2a_examples/a2a_crypto_simple_registry_example_1/`  
+**Location**: `../../examples/a2a_crypto_simple_registry_example_1/`  
 **Security Rating**: 4/10
 
 **Purpose**: Educational - understand incremental improvements
 
 | Resource | Description |
 |----------|-------------|
-| [Example 2 README](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_simple_registry_example_1/README.md) | Implementation overview |
-| [Security Analysis](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md) | Incremental improvements documented |
+| [Example 2 README](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examplesa2a_crypto_simple_registry_example_1/README.md) | Implementation overview |
+| [Security Analysis](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examplesa2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md) | Incremental improvements documented |
 
 **What You'll Learn**:
 - ✅ Basic input validation added
@@ -125,7 +125,7 @@ Technical reference materials.
 ---
 
 ### Example 3: Production-Ready Implementation ✅
-**Location**: `../../a2a_examples/a2a_crypto_example/security/`  
+**Location**: `../../examples/a2a_crypto_example/security/`  
 **Security Rating**: 9/10
 
 **Purpose**: Production reference - template for secure implementations
@@ -175,7 +175,7 @@ Technical reference materials.
 
 **Day 2: Evolution & Patterns**
 4. ✅ [Code Walkthrough Comparison](./03_SECURITY/05_code_walkthrough_comparison.md) - See progression (3 hours)
-5. ✅ [Example 2 Security Analysis](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md) - Incremental improvements (1 hour)
+5. ✅ [Example 2 Security Analysis](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examplesa2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md) - Incremental improvements (1 hour)
 6. ✅ [Authentication Tags](./03_SECURITY/02_authentication_tags.md) - Technical details (1 hour)
 
 **Day 3: Production Implementation**
@@ -227,7 +227,7 @@ Technical reference materials.
 
 **Phase 3: Bypass Techniques**
 5. 🔍 Attempt to exploit Example 2 - Test defenses (2 hours)
-6. ✅ Compare with [Security Analysis 2](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md) - Learn bypasses (30 min)
+6. ✅ Compare with [Security Analysis 2](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examplesa2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md) - Learn bypasses (30 min)
 
 **Phase 4: Defense Review**
 7. 🔍 Test Example 3 defenses - Find weaknesses (3 hours)
@@ -260,7 +260,7 @@ Technical reference materials.
 - ✨ [Agent Identity](./01_FUNDAMENTALS/02_agent_identity.md) - Identity fundamentals
 - ✨ [Code Walkthrough Comparison](./03_SECURITY/05_code_walkthrough_comparison.md) - Side-by-side evolution
 - ✨ [Security Analysis (Example 1)](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_exampleSECURITY_ANALYSIS.md) - Vulnerability breakdown
-- ✨ [Security Analysis (Example 2)](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md) - Incremental improvements
+- ✨ [Security Analysis (Example 2)](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examplesa2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md) - Incremental improvements
 - ✨ [Security Analysis (Example 3)](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_examplesecurity/SECURITY_ANALYSIS.md) - Production patterns
 
 **Impact**: Security documentation now 80% complete with comprehensive coverage
@@ -283,7 +283,7 @@ Technical reference materials.
 
 ### Code Examples
 - ❌ [Example 1: Vulnerable](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_example)
-- ⚠️ [Example 2: Improved](https://github.com/your-org/a2a-protocol/tree/main/a2a_examples/a2a_crypto_simple_registry_example_1/)
+- ⚠️ [Example 2: Improved](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examplesa2a_crypto_simple_registry_example_1/)
 - ✅ [Example 3: Secure](https://github.com/robertfischer3/fischer3_a2a_introduction/tree/main/examples/a2a_crypto_examplesecurity/)
 
 ---

@@ -347,7 +347,7 @@ See how they work together in practice:
 ### Want to See Code?
 Explore working examples:
 
-👉 **[A2A Examples →](./a2a_examples/)** - Agent-to-agent code  
+👉 **[A2A Examples →](./examples/)** - Agent-to-agent code  
 👉 **[MCP Examples →](./mcp_examples/)** - Tool integration code
 
 ### Building Production Systems?

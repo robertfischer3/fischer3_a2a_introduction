@@ -75,7 +75,7 @@ python3 --version
 ### Step 1: Navigate to Stage 1 Code
 
 ```bash
-cd a2a_examples/a2a_crypto_example/insecure
+cd examples/a2a_crypto_example/insecure
 ls
 ```
 
@@ -922,9 +922,9 @@ Want to learn more about specific vulnerabilities?
 
 ### Code Files
 
-- [Full Security Analysis](/a2a_examples/a2a_crypto_example/SECURITY_ANALYSIS.md) - All 15+ vulnerabilities
-- [Stage 1 Server Code](/a2a_examples/a2a_crypto_example/insecure/crypto_price_server.py)
-- [Stage 1 Client Code](/a2a_examples/a2a_crypto_example/insecure/crypto_client.py)
+- [Full Security Analysis](/examples/a2a_crypto_example/SECURITY_ANALYSIS.md) - All 15+ vulnerabilities
+- [Stage 1 Server Code](/examples/a2a_crypto_example/insecure/crypto_price_server.py)
+- [Stage 1 Client Code](/examples/a2a_crypto_example/insecure/crypto_client.py)
 
 ---
 
@@ -1004,7 +1004,7 @@ You've completed Stage 1! You now:
 **Stage**: 1 of 3 (Vulnerable)  
 **Last Updated**: December 2025  
 **Maintained By**: Robert Fischer (robert@fischer3.net)  
-**Code Location**: `/a2a_examples/a2a_crypto_example/insecure/`
+**Code Location**: `/examples/a2a_crypto_example/insecure/`
 
 ---
 

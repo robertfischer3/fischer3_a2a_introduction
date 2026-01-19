@@ -1,6 +1,6 @@
 # Task Collaboration Agent - Stage 2: Improved
 
-> **Path**: `a2a_examples/a2a_task_collab_example/stage2_improved`
+> **Path**: `examples/a2a_task_collab_example/stage2_improved`
 
 ## Overview
 
@@ -615,7 +615,7 @@ session_theft()
 ### Setup
 
 ```bash
-cd a2a_examples/a2a_task_collab_example/stage2_improved
+cd examples/a2a_task_collab_example/stage2_improved
 
 # Install dependencies
 pip install -r requirements.txt

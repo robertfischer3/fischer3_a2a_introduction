@@ -522,7 +522,7 @@ A: Layers 7 (Schema) and 8 (Business Logic) apply to outputs. Validate that AI r
 
 For developers implementing the eight-layer framework:
 - **Technical Guide**: `/docs/a2a/04_COMMUNICATION/04_message_validation_patterns.md`
-- **Code Examples**: `/a2a_examples/` directory
+- **Code Examples**: `/examples/` directory
 - **API Reference**: `/docs/a2a/05_REFERENCE/01_message_schemas.md`
 
 ### Security Documentation

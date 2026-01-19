@@ -18,7 +18,7 @@ These examples are designed to teach security through progressive stages, from i
 
 A comprehensive 4-stage progression demonstrating secure handling of sensitive financial documents and personally identifiable information (PII).
 
-**Path**: `a2a_examples/a2a_credit_report_example/`
+**Path**: `examples/a2a_credit_report_example/`
 
 #### Stages:
 
@@ -49,7 +49,7 @@ A comprehensive 4-stage progression demonstrating secure handling of sensitive f
 
 Demonstrates secure integration with external APIs, rate limiting, and data validation for a cryptocurrency price monitoring agent.
 
-**Path**: `a2a_examples/a2a_crypto_example/`
+**Path**: `examples/a2a_crypto_example/`
 
 **Key Learning Topics**:
 - Secure API key management
@@ -70,7 +70,7 @@ Demonstrates secure integration with external APIs, rate limiting, and data vali
 
 A multi-stage example focusing on session security, authentication, and coordinating multiple agents securely.
 
-**Path**: `a2a_examples/a2a_task_collab_example/`
+**Path**: `examples/a2a_task_collab_example/`
 
 **Stages**:
 - Stage 1: Insecure (25+ vulnerabilities)
@@ -284,7 +284,7 @@ git clone https://github.com/robertfischer3/fischer3_a2a_introduction.git
 cd fischer3_a2a_introduction
 
 # Navigate to your chosen example
-cd a2a_examples/a2a_credit_report_example/insecure
+cd examples/a2a_credit_report_example/insecure
 
 # Create virtual environment
 python -m venv venv

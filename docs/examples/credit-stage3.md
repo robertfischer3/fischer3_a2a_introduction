@@ -1,6 +1,6 @@
 # Credit Report Agent - Stage 3: Secure
 
-> **Path**: `a2a_examples/a2a_credit_report_example/secure`
+> **Path**: `examples/a2a_credit_report_example/secure`
 
 ## Overview
 
@@ -538,7 +538,7 @@ def get_report(user_id, report_id):
 
 ### Setup
 ```bash
-cd a2a_examples/a2a_credit_report_example/secure
+cd examples/a2a_credit_report_example/secure
 
 # Install dependencies
 pip install -r requirements.txt

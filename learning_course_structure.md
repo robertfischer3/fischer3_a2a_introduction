@@ -128,7 +128,7 @@ project-root/
 │   ├── references.md              ✅ EXISTS
 │   └── index.md                   ✅ EXISTS
 │
-├── a2a_examples/                  # A2A code examples
+├── examples/                  # A2A code examples
 │   ├── a2a_crypto_example/       ✅ EXISTS (Stage 1: Vulnerable)
 │   ├── a2a_crypto_simple_registry_example_1/  ✅ EXISTS (Stage 2: Improved)
 │   ├── a2a_credit_report_example/  ✅ EXISTS (Multi-stage security)

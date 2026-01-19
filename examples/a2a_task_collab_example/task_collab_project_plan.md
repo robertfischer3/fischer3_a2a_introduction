@@ -27,7 +27,7 @@ This project teaches session security through a **Task Collaboration System** wh
 ## 🏗️ Project Structure
 
 ```
-a2a_examples/a2a_task_collab_example/
+examples/a2a_task_collab_example/
 │
 ├── README.md                          # Main project overview
 ├── QUICK_REFERENCE.md                 # Quick navigation guide

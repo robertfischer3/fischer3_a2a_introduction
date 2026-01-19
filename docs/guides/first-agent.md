@@ -678,7 +678,7 @@ Update the agent card:
 
 - **[A2A Protocol Overview](../a2a/00_A2A_OVERVIEW.md)** - Deep dive into the protocol
 - **[Security Best Practices](../a2a/03_SECURITY/04_security_best_practices.md)** - Secure your agent
-- **[Example Projects](../../a2a_examples/)** - More complete examples
+- **[Example Projects](../../examples/)** - More complete examples
 
 ---
 

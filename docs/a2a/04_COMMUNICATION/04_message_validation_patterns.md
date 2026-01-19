@@ -133,7 +133,7 @@ except ValidationError as e:
 ### Real Example: Credit Report Agent (Stage 3)
 
 ```python
-# From: a2a_examples/a2a_credit_report_example/secure/security/validation.py
+# From: examples/a2a_credit_report_example/secure/security/validation.py
 
 MAX_FILE_SIZE = 5 * 1024 * 1024  # 5MB
 
@@ -391,7 +391,7 @@ def validate_with_json_schema(message: dict) -> None:
 ### Real Example: Credit Report Agent (Stage 3)
 
 ```python
-# From: a2a_examples/a2a_credit_report_example/secure/security/validation.py
+# From: examples/a2a_credit_report_example/secure/security/validation.py
 
 def _validate_structure(report: dict):
     """Layer 7: Validate report has required structure"""
@@ -610,7 +610,7 @@ RangeValidator.validate_percentage(interest_rate, 'interest_rate')
 ### Real Example: Credit Report Agent (Stage 3)
 
 ```python
-# From: a2a_examples/a2a_credit_report_example/secure/security/validation.py
+# From: examples/a2a_credit_report_example/secure/security/validation.py
 
 def _validate_ranges(report: dict) -> list:
     """Layer 8: Validate business logic and ranges"""
@@ -763,7 +763,7 @@ display_text = InputSanitizer.sanitize_for_html(user_content)
 ### Real Example: Credit Report Agent (Stage 3)
 
 ```python
-# From: a2a_examples/a2a_credit_report_example/secure/security/validation.py
+# From: examples/a2a_credit_report_example/secure/security/validation.py
 
 def _sanitize_filename(filename: str) -> str:
     """Layer 5: Sanitize filename to prevent path traversal"""
@@ -921,7 +921,7 @@ validator.validate_state_transition('draft', 'submitted')
 ### Real Example: Task Collaboration Agent (Stage 3)
 
 ```python
-# From: a2a_examples/a2a_task_collab_example/stage3_secure/
+# From: examples/a2a_task_collab_example/stage3_secure/
 
 def validate_task_assignment(project_id: str, worker_id: str):
     """Validate business rules for task assignment"""
@@ -1061,7 +1061,7 @@ def validate_message_security(message: dict):
 ### Real Example: Crypto Agent (Stage 3)
 
 ```python
-# From: a2a_examples/a2a_crypto_example/security/validator.py
+# From: examples/a2a_crypto_example/security/validator.py
 
 def validate_authentication(message: dict) -> None:
     """Validate message authentication"""
@@ -1550,20 +1550,20 @@ def validate_uuid(value):
 Study these implementations for practical patterns:
 
 **Credit Report Agent (Stage 3)** - ✅ Best example
-- Location: `a2a_examples/a2a_credit_report_example/secure/security/validation.py`
+- Location: `examples/a2a_credit_report_example/secure/security/validation.py`
 - Features: Complete 8-layer file validation
 - Lines: 400+ lines of production validation code
 
 **Task Collaboration Agent (Stage 3)** - ✅ Good example
-- Location: `a2a_examples/a2a_task_collab_example/stage3_secure/security/validation.py`
+- Location: `examples/a2a_task_collab_example/stage3_secure/security/validation.py`
 - Features: Business logic validation, state validation
 
 **Crypto Agent (Stage 3)** - ✅ Minimal but secure
-- Location: `a2a_examples/a2a_crypto_example/security/validator.py`
+- Location: `examples/a2a_crypto_example/security/validator.py`
 - Features: Basic validation for simple queries
 
 **Credit Report Agent (Stage 1)** - ❌ Anti-patterns
-- Location: `a2a_examples/a2a_credit_report_example/insecure/`
+- Location: `examples/a2a_credit_report_example/insecure/`
 - Study this to learn what NOT to do
 - 26 validation vulnerabilities documented
 

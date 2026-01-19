@@ -191,7 +191,7 @@ graph LR
 2. [Security Checklist](security-checklist.md)
 3. [Code Walkthrough](../a2a/03_SECURITY/05_code_walkthrough_comparison.md)
 4. [Running Examples](running-examples.md)
-5. [Stage 1 Security Analysis](../../a2a_examples/a2a_crypto_example/stage1_insecure/SECURITY_ANALYSIS.md)
+5. [Stage 1 Security Analysis](../../examples/a2a_crypto_example/stage1_insecure/SECURITY_ANALYSIS.md)
 
 **Time**: 6-8 hours
 
@@ -213,7 +213,7 @@ graph LR
 1. [A2A Overview](../a2a/00_A2A_OVERVIEW.md)
 2. [Agent Registry](../a2a/02_DISCOVERY/02_agent_registry.md)
 3. [Protocol Messages](../a2a/04_COMMUNICATION/01_protocol_messages.md)
-4. [Task Collaboration Example](../../a2a_examples/a2a_task_collab_example/)
+4. [Task Collaboration Example](../../examples/a2a_task_collab_example/)
 5. [Security Best Practices](../a2a/03_SECURITY/04_security_best_practices.md)
 
 **Time**: 8-10 hours
@@ -231,7 +231,7 @@ graph LR
 ### Web Development
 
 - [Quick Start](quickstart.md) - FastAPI-based registry
-- [Task Collaboration Example](../../a2a_examples/a2a_task_collab_example/stage5_web_framework/) - Web interface
+- [Task Collaboration Example](../../examples/a2a_task_collab_example/stage5_web_framework/) - Web interface
 
 ### DevOps
 
@@ -249,9 +249,9 @@ graph LR
 - [Security Documentation](../a2a/03_SECURITY/01_authentication_overview.md)
 
 ### Example Projects
-- [Crypto Price Agent](../../a2a_examples/a2a_crypto_example/)
-- [Credit Report Agent](../../a2a_examples/a2a_credit_report_example/)
-- [Task Collaboration Agent](../../a2a_examples/a2a_task_collab_example/)
+- [Crypto Price Agent](../../examples/a2a_crypto_example/)
+- [Credit Report Agent](../../examples/a2a_credit_report_example/)
+- [Task Collaboration Agent](../../examples/a2a_task_collab_example/)
 
 ### Tools & Utilities
 - [UV Package Manager](../supplementary/tools/uv-guide.md)

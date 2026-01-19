@@ -1,6 +1,6 @@
 # Task Collaboration Agent - Stage 1: Insecure
 
-> **Path**: `a2a_examples/a2a_task_collab_example/stage1_insecure`
+> **Path**: `examples/a2a_task_collab_example/stage1_insecure`
 
 ## Overview
 
@@ -506,7 +506,7 @@ tcpdump -r capture.pcap -A | grep -A 10 "session-"
 ### Setup
 
 ```bash
-cd a2a_examples/a2a_task_collab_example/stage1_insecure
+cd examples/a2a_task_collab_example/stage1_insecure
 
 # Install dependencies
 pip install -r requirements.txt
