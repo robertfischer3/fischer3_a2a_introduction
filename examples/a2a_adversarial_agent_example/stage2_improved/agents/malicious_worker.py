@@ -214,8 +214,15 @@ class MaliciousWorker:
         time.sleep(1)
         
         print_section("Step 2: Craft Malicious Status Update with Hidden Data")
-        
+
+        #=====================================================
+        #CRITICAL WARNING: NEVER, EVER DO THIS IN PRODUCTION!
+        # Never hide sensitive data in nested structures!
+        # NEVER, EVER place any SECRETS, PASSWORDS, KEYS, or PII in code!
+        # This is a SIMULATED attack for educational purposes ONLY.
         # Create stolen data (simulated sensitive information)
+        #=====================================================
+        
         stolen_data = {
             "customer_records": [
                 {
