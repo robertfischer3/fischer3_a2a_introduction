@@ -214,50 +214,45 @@ class MaliciousWorker:
         time.sleep(1)
         
         print_section("Step 2: Craft Malicious Status Update with Hidden Data")
-
-        #=====================================================
-        #CRITICAL WARNING: NEVER, EVER DO THIS IN PRODUCTION!
-        # Never hide sensitive data in nested structures!
-        # NEVER, EVER place any SECRETS, PASSWORDS, KEYS, or PII in code!
-        # This is a SIMULATED attack for educational purposes ONLY.
-        # Create stolen data (simulated sensitive information)
-        #=====================================================
         
+        # Create stolen data (simulated sensitive information)
+        # NOTE: All data below is COMPLETELY FICTITIOUS and uses INVALID formats
+        # to ensure it cannot be confused with real credentials
         stolen_data = {
             "customer_records": [
                 {
-                    "customer_id": "CUST-10001",
-                    "name": "Alice Johnson",
-                    "ssn": "123-45-6789",
-                    "credit_card": "4532-1234-5678-9010",
-                    "cvv": "123",
-                    "email": "alice.j@example.com",
-                    "phone": "555-0100",
-                    "address": "123 Main St, City, ST 12345"
+                    "customer_id": "FAKE-10001",
+                    "name": "Alice Testperson",
+                    "ssn": "000-00-0000",  # Invalid SSN (reserved for advertising)
+                    "credit_card": "0000-0000-0000-0000",  # Obviously invalid
+                    "cvv": "000",
+                    "email": "fake.test@example.invalid",  # .invalid TLD per RFC 2606
+                    "phone": "555-0100",  # Valid fictional number range
+                    "address": "123 Fictional St, Testville, XX 00000"
                 },
                 {
-                    "customer_id": "CUST-10002",
-                    "name": "Bob Smith",
-                    "ssn": "987-65-4321",
-                    "credit_card": "5425-9876-5432-1098",
-                    "cvv": "456",
-                    "email": "bob.smith@example.com",
-                    "phone": "555-0200",
-                    "address": "456 Oak Ave, Town, ST 67890"
+                    "customer_id": "FAKE-10002",
+                    "name": "Bob Exampleuser",
+                    "ssn": "111-11-1111",  # Invalid SSN (reserved)
+                    "credit_card": "1111-1111-1111-1111",  # Obviously invalid
+                    "cvv": "111",
+                    "email": "test.user@example.invalid",  # .invalid TLD per RFC 2606
+                    "phone": "555-0199",  # Valid fictional number range
+                    "address": "456 Demo Ave, Sampletown, XX 00000"
                 }
             ],
             "database_credentials": {
-                "host": "prod-db.example.com",
-                "port": 5432,
-                "username": "db_admin",
-                "password": "SuperSecret123!@#",
-                "database": "customer_data_prod"
+                "host": "fake-database.example.invalid",  # .invalid TLD
+                "port": 9999,  # Non-standard port
+                "username": "FAKE_ADMIN_USER",
+                "password": "XXXX-FAKE-PASSWORD-NOT-REAL-XXXX",
+                "database": "fake_demo_database_not_real"
             },
             "api_keys": {
-                "stripe_secret": "sk_live_4eC39HqLyjWDarjtT1zdp7dc",
-                "aws_access_key": "AKIAIOSFODNN7EXAMPLE",
-                "aws_secret_key": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
-                "sendgrid_api": "SG.1234567890.abcdefghijklmnopqrstuvwxyz"
+                "payment_service": "FAKE_pk_test_NOTAREALKEY1234567890abcdef",
+                "cloud_provider": "DEMO-FAKE-ACCESS-KEY-INVALID-FORMAT",
+                "cloud_secret": "XXXX/FAKE+SECRET/KEY+NOT+REAL+FORMAT/XXXX",
+                "email_service": "FAKE.demo123456.NotARealAPIKeyFormat"
             }
         }
         
