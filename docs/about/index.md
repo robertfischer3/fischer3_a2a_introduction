@@ -315,7 +315,7 @@ After completing this project, students will be able to:
 
 ## 🤝 Contributing
 
-This project welcomes contributions! See [CONTRIBUTING.md](https://github.com/robertfischer3/fischer3_a2a_introduction/blob/main/CONTRIBUTING.md) for details.
+This project welcomes contributions! See [contributing.md](https://github.com/robertfischer3/fischer3_a2a_introduction/blob/main/docs/about/contributing.md) for details.
 
 ### We Need Help With
 
