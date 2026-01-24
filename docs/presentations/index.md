@@ -640,10 +640,10 @@ For understanding the broader context:
 ## 📖 Quick Links
 
 ### Securing AI Agent Collaboration Package (New!)
-- **[📄 Article](agent-security/agent_security_article_enhanced.md)** - 30,000-word comprehensive guide
-- **[📊 Slides](agent-security/agent_security_slide_deck.md)** - 36-slide presentation + 8 backup slides
-- **[✅ Checklist](agent-security/security_checklist.md)** - 200+ item security assessment
-- **[📖 README](agent-security/README.md)** - Complete usage and customization guide
+- **[📄 Article](agent_security_artical_enhanced/article)** - 30,000-word comprehensive guide
+- **[📊 Slides](agent_security_artical_enhanced/agent_security_slide_deck.md)** - 36-slide presentation + 8 backup slides
+- **[✅ Checklist](agent_security_artical_enhanced/security_checklist.md)** - 200+ item security assessment
+- **[📖 README](agent_security_artical_enhanced/README.md)** - Complete usage and customization guide
 
 ### Eight-Layer Input Validation Package
 - **[📄 Article](eight-layer-validation/article.md)** - Comprehensive written guide

@@ -180,7 +180,7 @@ Complete A2A specification with examples and best practices.
 <div markdown>
 
 ### Practical Examples
-Three complete implementations showing evolution from vulnerable to secure.
+Four complete implementations showing evolution from vulnerable to secure.
 
 - [**Crypto Price Agent**](../examples/a2a_crypto_example/)
   - Stage 1: Vulnerable baseline
@@ -197,7 +197,10 @@ Three complete implementations showing evolution from vulnerable to secure.
   - Stage 3: SessionManager
   - Stage 5: Web framework
 
-</div>
+- [**Adversarial Agent**](../examples/a2a_adversarial_agent_example/)
+  - Stage 1: 5 attacks succeed
+  - Stage 2: Partial defenses
+  - Stage 3: Automated quarantine
 
 </div>
 
