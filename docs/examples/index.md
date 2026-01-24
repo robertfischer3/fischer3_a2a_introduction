@@ -8,6 +8,8 @@ Welcome to the A2A Security Examples! This section contains hands-on examples th
 
 These examples are designed to teach security through progressive stages, from intentionally vulnerable implementations to production-ready systems. Each example focuses on different security challenges and compliance requirements.
 
+**Four comprehensive examples** covering API security, file handling, session management, and adversarial defense.
+
 ---
 
 ## 📚 Available Examples
@@ -92,6 +94,35 @@ A multi-stage example focusing on session security, authentication, and coordina
 
 ---
 
+### 4. Adversarial Agent System
+
+**Focus**: Adversarial Attacks & Multi-Agent Defense
+
+A 3-stage progression demonstrating how malicious agents can attack multi-agent systems and comprehensive defense mechanisms to detect and prevent such attacks.
+
+**Path**: `examples/a2a_adversarial_agent_example/`
+
+**Stages**:
+- Stage 1: Insecure (5 attacks succeed)
+- Stage 2: Improved (partial defenses)
+- Stage 3: Secure (comprehensive defense)
+
+**Key Learning Topics**:
+- Data exfiltration prevention
+- Permission escalation detection
+- Task injection prevention
+- Credit stealing mitigation
+- State poisoning defense
+- Behavioral analysis
+- Anomaly detection
+- Automated quarantine
+
+**Study Time**: 8-12 hours
+
+**[View Documentation](./adversarial-stage1.md)**
+
+---
+
 ## 🗺️ Learning Paths
 
 ### Path 1: File Security & Compliance (Credit Report Example)
@@ -138,8 +169,8 @@ A multi-stage example focusing on session security, authentication, and coordina
 **Progression**:
 1. Credit Report Stages 1-3 (understanding fundamentals)
 2. Task Collaboration Stages 1-3 (session security)
-3. Crypto Agent (API patterns)
-4. Credit Report Stage 4 (AI security)
+3. Adversarial Agent Stages 1-3 (attack detection and defense)
+4. Advanced stages (distributed systems, AI integration)
 
 **Duration**: 40+ hours
 
@@ -147,16 +178,18 @@ A multi-stage example focusing on session security, authentication, and coordina
 
 ## 📊 Example Comparison Matrix
 
-| Feature | Credit Report | Crypto Agent | Task Collab |
-|---------|--------------|--------------|-------------|
-| **Primary Focus** | File Upload & PII | API Integration | Session Management |
-| **Stages** | 4 | 3 | 5 |
-| **Difficulty** | ⭐⭐⭐ Advanced | ⭐⭐ Intermediate | ⭐⭐⭐⭐ Expert |
-| **Compliance** | FCRA, GDPR | Basic | RBAC, Audit |
-| **Encryption** | Field-level | Transport | Full stack |
-| **AI Integration** | ✅ Stage 4 | ❌ | ❌ |
-| **Multi-Agent** | ❌ | ❌ | ✅ |
-| **Total Hours** | 19-26 | 2-3 | 15-22 |
+| Feature | Credit Report | Crypto Agent | Task Collab | Adversarial Agent |
+|---------|--------------|--------------|-------------|-------------------|
+| **Primary Focus** | File Upload & PII | API Integration | Session Management | Adversarial Defense |
+| **Stages** | 4 | 3 | 5 | 3 |
+| **Difficulty** | ⭐⭐⭐ Advanced | ⭐⭐ Intermediate | ⭐⭐⭐⭐ Expert | ⭐⭐⭐ Advanced |
+| **Compliance** | FCRA, GDPR | Basic | RBAC, Audit | Zero-Trust |
+| **Encryption** | Field-level | Transport | Full stack | Transport + JWT |
+| **AI Integration** | ✅ Stage 4 | ❌ | ❌ | ❌ |
+| **Multi-Agent** | ❌ | ❌ | ✅ | ✅ |
+| **Attack Types** | File-based | Query-based | Session-based | Multi-vector |
+| **Defense Focus** | Prevention | Prevention | Prevention | Detection + Response |
+| **Total Hours** | 19-26 | 2-3 | 15-22 | 8-12 |
 
 ---
 
@@ -258,6 +291,11 @@ A multi-stage example focusing on session security, authentication, and coordina
 - Timeout management
 - Distributed sessions
 
+**Adversarial Defense** → [Adversarial Agent Stage 1-3](./adversarial-stage1.md)
+- Data exfiltration prevention
+- Permission escalation detection
+- Behavioral anomaly detection
+- Automated quarantine systems
 ---
 
 ## 🚀 Quick Start

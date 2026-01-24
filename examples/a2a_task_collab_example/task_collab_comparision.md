@@ -1,19 +1,24 @@
-# Example Comparison: Task Collaboration vs Existing Examples
+# Example Comparison: Four A2A Security Learning Projects
+
+This document compares all **four** example projects in this repository: **Cryptocurrency Agent**, **Credit Report Agent**, **Task Collaboration Agent**, and **Adversarial Agent System**.
+
+---
 
 ## 📊 Quick Comparison Matrix
 
-| Aspect | Cryptocurrency Agent | Credit Report Agent | **Task Collaboration Agent** (NEW) |
-|--------|---------------------|--------------------|------------------------------------|
-| **Domain** | Financial data queries | File upload & analysis | Multi-agent coordination |
-| **Primary Focus** | Query validation, streaming | File handling, PII protection | **Session management, state security** |
-| **Data Type** | Simple queries | Complex files (JSON) | Projects and tasks (stateful) |
-| **Sensitivity** | Low (public prices) | High (PII, SSN) | Medium (business data, permissions) |
-| **State Complexity** | Low (stateless queries) | Medium (file processing) | **High (ongoing projects, context)** |
-| **Session Needs** | Minimal | File upload sessions | **Complex, long-running sessions** |
-| **Transport** | TCP sockets → WebSocket | TCP sockets | TCP sockets → **Flask (Stage 5)** |
-| **Stages** | 3 (insecure → improved → secure) | 4 (+ AI security) | **5 (+ distributed + Flask)** |
-| **Security Rating** | 0 → 4 → 9 | 0 → 4 → 9 → 9 | 0 → 4 → 9 → 9 → 9 |
-| **Unique Teaching** | API security, streaming | File uploads, PII, AI | **Sessions, state, web framework** |
+| Aspect | Cryptocurrency | Credit Report | Task Collaboration | Adversarial Agent |
+|--------|---------------|---------------|-------------------|-------------------|
+| **Domain** | Financial data queries | File upload & analysis | Multi-agent coordination | Attack & defense |
+| **Primary Focus** | Query validation, streaming | File handling, PII protection | Session management, state security | Adversarial defense |
+| **Data Type** | Simple queries | Complex files (JSON) | Projects and tasks (stateful) | Multi-agent messages |
+| **Sensitivity** | Low (public prices) | High (PII, SSN) | Medium (business data) | High (system state) |
+| **State Complexity** | Low (stateless queries) | Medium (file processing) | High (ongoing projects, context) | High (agent behavior) |
+| **Session Needs** | Minimal | File upload sessions | Complex, long-running sessions | Multi-agent sessions |
+| **Transport** | TCP → WebSocket | TCP | TCP → Flask | TCP |
+| **Stages** | 3 (0 → 4 → 9) | 4 (0 → 4 → 9 → 9) | 5 (0 → 4 → 9 → 9 → 9) | 3 (0 → 4 → 9) |
+| **Security Rating** | 0 → 4 → 9 | 0 → 4 → 9 → 9 | 0 → 4 → 9 → 9 → 9 | 0 → 4 → 9 |
+| **Unique Teaching** | API security, streaming | File uploads, PII, AI | Sessions, state, web | Attack detection, defense |
+| **Study Time** | 2-3 hours | 19-26 hours | 17-22 hours | 8-12 hours |
 
 ---
 
@@ -26,7 +31,7 @@
 - ✅ Rate limiting for APIs
 - ✅ Authentication for "public" data
 - ✅ WebSocket streaming patterns
-- ✅ Registry and discovery
+- ✅ Registry and discovery basics
 
 **Security Themes**:
 - Query manipulation attacks
@@ -41,7 +46,7 @@
 ### Credit Report Agent: File Handling & Privacy
 
 **Best For Teaching**:
-- ✅ File upload security (26 vulnerabilities!)
+- ✅ File upload security (26+ vulnerabilities!)
 - ✅ 8-layer validation framework
 - ✅ PII protection (GDPR/HIPAA)
 - ✅ RBAC authorization
@@ -58,7 +63,7 @@
 
 ---
 
-### Task Collaboration Agent (NEW): Sessions & State
+### Task Collaboration Agent: Sessions & State
 
 **Best For Teaching**:
 - ✅ **Session lifecycle management**
@@ -80,19 +85,42 @@
 
 ---
 
+### Adversarial Agent: Attack Detection & Defense
+
+**Best For Teaching**:
+- ✅ **Data exfiltration prevention**
+- ✅ **Permission escalation detection**
+- ✅ **Task injection attacks**
+- ✅ **Credit stealing mitigation**
+- ✅ **State poisoning defense**
+- ✅ **Behavioral analysis**
+- ✅ **Automated quarantine systems**
+
+**Security Themes**:
+- Malicious agent detection
+- Anomaly-based security
+- Deep nested validation
+- Behavioral analysis
+- Automated response systems
+- Multi-agent trust models
+
+**Use Cases**: Multi-agent systems, autonomous agents, high-security environments, zero-trust architectures
+
+---
+
 ## 🔍 Detailed Feature Comparison
 
 ### Session Management
 
-| Feature | Crypto Agent | Credit Report | **Task Collab** |
-|---------|-------------|---------------|----------------|
-| **Session Complexity** | Simple | Medium | **Complex** |
-| **Session Types** | Query sessions | Upload sessions | **Project, worker, audit sessions** |
-| **Session Duration** | Short (seconds) | Medium (minutes) | **Long (hours/days)** |
-| **State Management** | Minimal | File metadata | **Rich project context** |
-| **Session Attacks Shown** | Basic | Session → file mapping | **Hijacking, fixation, stale state** |
-| **Session Validation** | None → Basic → Full | None → Basic → Full | **None → Basic → Full → Distributed** |
-| **Dedicated Session Module** | No | No | **Yes (SessionManager class)** |
+| Feature | Crypto | Credit Report | Task Collab | Adversarial |
+|---------|--------|---------------|-------------|-------------|
+| **Session Complexity** | Simple | Medium | **Complex** | **Complex** |
+| **Session Types** | Query sessions | Upload sessions | **Project, worker, audit** | **Multiple agent types** |
+| **Session Duration** | Short (seconds) | Medium (minutes) | **Long (hours/days)** | Medium (task-bound) |
+| **State Management** | Minimal | File metadata | **Rich project context** | **Agent behavior state** |
+| **Session Attacks Shown** | Basic | Session → file mapping | **Hijacking, fixation, stale** | **All + poisoning** |
+| **Session Validation** | None → Basic → Full | None → Basic → Full | **None → Basic → Full → Distributed** | None → Basic → Full |
+| **Dedicated Session Module** | No | No | **Yes (SessionManager)** | No |
 
 **Winner for Session Teaching**: ✅ **Task Collaboration**
 
@@ -100,13 +128,14 @@
 
 ### Authentication & Authorization
 
-| Feature | Crypto Agent | Credit Report | **Task Collab** |
-|---------|-------------|---------------|----------------|
-| **Auth Complexity** | Simple | Medium | **Medium** |
-| **Auth Methods** | None → Signatures | None → HMAC → RSA | **None → HMAC → RSA + JWT (Flask)** |
-| **Authorization** | Basic | RBAC (4 roles) | **RBAC (4 roles) + session-bound** |
-| **Replay Protection** | Stage 3 | Stage 3 | **Stage 3 + explained in Stage 1** |
-| **Identity Verification** | Agent cards | Agent cards | **Agent cards + session binding** |
+| Feature | Crypto | Credit Report | Task Collab | Adversarial |
+|---------|--------|---------------|-------------|-------------|
+| **Auth Complexity** | Simple | Medium | Medium | **Medium** |
+| **Auth Methods** | None → Signatures | None → HMAC → RSA | None → HMAC → RSA + JWT | **None → JWT → RSA** |
+| **Authorization** | Basic | RBAC (4 roles) | RBAC (4 roles) + session-bound | **RBAC + capability-based** |
+| **Replay Protection** | Stage 3 | Stage 3 | Stage 3 + explained | **Stage 3 + nonce** |
+| **Identity Verification** | Agent cards | Agent cards | Agent cards + session binding | **Agent cards + behavioral** |
+| **MFA Support** | No | Stage 3 (TOTP) | Stage 3 (TOTP) | No |
 
 **Winner for Auth Teaching**: Tie (Credit Report & Task Collab)
 
@@ -114,70 +143,83 @@
 
 ### State & Data Management
 
-| Feature | Crypto Agent | Credit Report | **Task Collab** |
-|---------|-------------|---------------|----------------|
-| **State Complexity** | Low (stateless) | Medium (file state) | **High (project state)** |
-| **State Persistence** | None | File storage | **Session-bound + distributed** |
-| **State Security** | N/A | Basic | **Encryption + integrity** |
-| **State Synchronization** | N/A | Single-threaded | **Multi-agent coordination** |
-| **State Evolution** | N/A | File updates | **Project lifecycle** |
+| Feature | Crypto | Credit Report | Task Collab | Adversarial |
+|---------|--------|---------------|-------------|-------------|
+| **State Complexity** | Low (stateless) | Medium (file state) | **High (project state)** | **High (agent state)** |
+| **State Persistence** | None | File storage | **Session-bound + distributed** | Database (SQLite) |
+| **State Security** | N/A | Basic | **Encryption + integrity** | **Integrity + validation** |
+| **State Synchronization** | N/A | Single-threaded | **Multi-agent coordination** | **Multi-agent coordination** |
+| **State Evolution** | N/A | File updates | **Project lifecycle** | **Agent behavior tracking** |
+| **State Attacks** | N/A | Minimal | **Session state attacks** | **State poisoning** |
 
-**Winner for State Teaching**: ✅ **Task Collaboration**
+**Winner for State Teaching**: Tie (Task Collab & Adversarial)
 
 ---
 
 ### Multi-Agent Patterns
 
-| Feature | Crypto Agent | Credit Report | **Task Collab** |
-|---------|-------------|---------------|----------------|
-| **Agent Types** | 1 (price oracle) | 1 (analyzer) | **3 (coordinator, worker, audit)** |
-| **Agent Interaction** | Client ↔ Server | Client ↔ Server | **Coordinator ↔ Multiple Workers** |
-| **Collaboration** | None | None | **Task assignment & completion** |
-| **Registry** | Stage 2 (simple) | No | **Coordinator as registry** |
-| **Discovery** | Basic | None | **Worker registration** |
+| Feature | Crypto | Credit Report | Task Collab | Adversarial |
+|---------|--------|---------------|-------------|-------------|
+| **Agent Types** | 1 (price oracle) | 1 (analyzer) | **3 (coordinator, worker, audit)** | **3 (manager, worker, malicious)** |
+| **Agent Interaction** | Client ↔ Server | Client ↔ Server | **Coordinator ↔ Multiple Workers** | **Manager ↔ Workers (adversarial)** |
+| **Collaboration** | None | None | **Task assignment & completion** | **Adversarial scenarios** |
+| **Registry** | Stage 2 (simple) | No | **Coordinator as registry** | **Manager as registry** |
+| **Discovery** | Basic | None | **Worker registration** | **Agent registration** |
+| **Trust Model** | Implicit | Implicit | **Session-based** | **Zero-trust with verification** |
 
-**Winner for Multi-Agent Teaching**: ✅ **Task Collaboration**
+**Winner for Multi-Agent Teaching**: Tie (Task Collab & Adversarial)
 
 ---
 
 ### Advanced Topics
 
-| Feature | Crypto Agent | Credit Report | **Task Collab** |
-|---------|-------------|---------------|----------------|
-| **Streaming** | WebSocket (planned) | No | No |
-| **AI Integration** | No | Stage 4 (Gemini) | No |
-| **Distributed Systems** | No | No | **Stage 4 (Redis)** |
-| **Web Framework** | No | No | **Stage 5 (Flask)** |
-| **File Handling** | No | ✅ Core focus | Project files (minor) |
-| **PII Protection** | No | ✅ Core focus | No |
+| Feature | Crypto | Credit Report | Task Collab | Adversarial |
+|---------|--------|---------------|-------------|-------------|
+| **Streaming** | WebSocket (planned) | No | No | No |
+| **AI Integration** | No | **Stage 4 (Gemini)** | No | No |
+| **Distributed Systems** | No | No | **Stage 4 (Redis)** | No |
+| **Web Framework** | No | No | **Stage 5 (Flask)** | No |
+| **File Handling** | No | **✅ Core focus** | Project files (minor) | No |
+| **PII Protection** | No | **✅ Core focus** | No | No |
+| **Behavioral Analysis** | No | No | No | **✅ Core focus** |
+| **Automated Defense** | No | No | No | **✅ Core focus** |
+
+**Winners**: Credit Report (AI, Files, PII), Task Collab (Distributed, Web), Adversarial (Behavioral, Defense)
 
 ---
 
-## 🎓 Recommended Learning Path
+## 🎓 Recommended Learning Paths
 
 ### For Complete Security Education
 
-**Path 1: Foundation**
+**Path 1: Foundation** (2-3 hours)
 1. **Cryptocurrency Agent** (Stages 1-3)
    - Learn basic A2A protocol
    - Understand query security
    - See progressive security
 
-**Path 2: File & Privacy**
+**Path 2: File & Privacy** (19-26 hours)
 2. **Credit Report Agent** (Stages 1-4)
    - Master file upload security
    - Understand PII protection
    - Learn 8-layer validation
    - See AI integration security
 
-**Path 3: Sessions & State**
-3. **Task Collaboration Agent** (Stages 1-5) ← NEW
+**Path 3: Sessions & State** (17-22 hours)
+3. **Task Collaboration Agent** (Stages 1-5)
    - Master session management
    - Understand state security
    - Learn distributed patterns
    - See web framework integration
 
-**Total Time**: ~40-50 hours for complete mastery
+**Path 4: Adversarial Defense** (8-12 hours)
+4. **Adversarial Agent System** (Stages 1-3) ← NEW
+   - Understand attack patterns
+   - Learn behavioral analysis
+   - Implement anomaly detection
+   - Build automated defenses
+
+**Total Time**: ~50-60 hours for complete mastery
 
 ---
 
@@ -196,7 +238,7 @@
 → **Credit Report Agent**
 
 **Need to Learn**: Multi-Agent Coordination?
-→ **Task Collaboration Agent** ✅
+→ **Task Collaboration Agent** or **Adversarial Agent** ✅
 
 **Need to Learn**: Web Application Security?
 → **Task Collaboration Agent (Stage 5)** ✅
@@ -204,200 +246,305 @@
 **Need to Learn**: Distributed Systems?
 → **Task Collaboration Agent (Stage 4)** ✅
 
----
+**Need to Learn**: Adversarial Defense?
+→ **Adversarial Agent System** ✅
 
-## 💡 Why Add Task Collaboration Example?
+**Need to Learn**: Attack Detection?
+→ **Adversarial Agent System** ✅
 
-### Fills Critical Gaps
+**Need to Learn**: Behavioral Analysis?
+→ **Adversarial Agent System** ✅
 
-**Gap 1: Session Security**
-- Existing examples touch sessions lightly
-- No dedicated session management teaching
-- Session vulnerabilities not thoroughly explored
-- **Solution**: Task Collab focuses entirely on sessions
-
-**Gap 2: Long-Running State**
-- Existing examples are transactional
-- No complex state management
-- State security not emphasized
-- **Solution**: Task Collab has rich, evolving state
-
-**Gap 3: Multi-Agent Coordination**
-- Existing examples are single-agent
-- No agent-to-agent collaboration
-- Coordinator patterns not shown
-- **Solution**: Task Collab shows true multi-agent interaction
-
-**Gap 4: Web Framework Integration**
-- Existing examples use raw sockets only
-- No web framework patterns
-- HTTP-specific security not covered
-- **Solution**: Task Collab Stage 5 adds Flask
-
-**Gap 5: Distributed Systems**
-- Existing examples are single-instance
-- No distributed session patterns
-- Scaling not addressed
-- **Solution**: Task Collab Stage 4 adds Redis + multi-instance
-
----
-
-## 🏗️ Architecture Comparison
-
-### Cryptocurrency Agent
-
-![Cryptocurrency Agent](/docs/images/diagrams/cryptocurrency_agent_01.png)
-
-### Credit Report Agent
-
-!["Credit Report Agent"](/docs/images/diagrams/credit_report_agent_01.png "Credit Report Agent")
-
-
-### Task Collaboration Agent (NEW)
-
-!["Task Collaboration Agent"](/docs/images/diagrams/task_collaboration_agent_01.png "Task Collaboration Agent")
-
----
-
-## 🎯 Target Audiences
-
-### Cryptocurrency Agent
-**Best For**:
-- Beginners to A2A protocol
-- API developers
-- Real-time data engineers
-- Those learning streaming patterns
-
-### Credit Report Agent
-**Best For**:
-- Security professionals (comprehensive)
-- Compliance officers (PII focus)
-- File upload developers
-- AI integration developers
-
-### Task Collaboration Agent (NEW)
-**Best For**:
-- **Session security specialists**
-- **Web application developers**
-- **Multi-agent system architects**
-- **Distributed system engineers**
-- **DevOps (Stage 4 - Redis, Docker)**
-- **Full-stack developers (Stage 5 - Flask)**
-
----
-
-## 📈 Complexity Progression
-
-!["Complexity Progression"](/docs/images/diagrams/complexity_progression_01.png "Complexity Progression")
-
-
-**Unique**: Task Collab has branching complexity, allowing learners to:
-- Stop at Stage 3 for solid socket-based security
-- Continue to Stage 4 for distributed systems
-- Continue to Stage 5 for web frameworks
+**Need to Learn**: AI Integration Security?
+→ **Credit Report Agent (Stage 4)** ✅
 
 ---
 
 ## 🔑 Key Differentiators
 
-### What Task Collaboration Brings
+### What Each Example Uniquely Brings
 
-1. **Session-First Design**
-   - Sessions are the PRIMARY focus
-   - Not just a side concern
-   - Complete lifecycle demonstrated
+#### Cryptocurrency Agent
+1. **Streaming focus** - WebSocket patterns
+2. **Public data security** - Securing "open" information
+3. **Simple starting point** - Fastest to complete
+4. **Registry basics** - Agent discovery patterns
 
-2. **Multiple Session Types**
-   - Coordinator sessions (long-running)
-   - Worker sessions (task-bound)
-   - Audit sessions (read-only, persistent)
+#### Credit Report Agent
+1. **File-first design** - File uploads are PRIMARY focus
+2. **8-layer validation** - Comprehensive framework
+3. **PII protection** - GDPR/HIPAA compliance patterns
+4. **AI integration** - Stage 4 shows secure ML
+5. **Compliance depth** - Regulatory requirements
 
-3. **True Multi-Agent**
-   - Multiple workers collaborating
-   - Coordinator managing state
-   - Real agent-to-agent messaging
+#### Task Collaboration Agent
+1. **Session-first design** - Sessions are PRIMARY focus
+2. **Multiple session types** - Coordinator, worker, audit
+3. **True multi-agent** - Agent-to-agent collaboration
+4. **State evolution** - Projects/tasks lifecycle
+5. **Distributed + Web** - Redis integration + Flask
+6. **SessionManager class** - Reusable implementation
 
-4. **State Evolution**
-   - Projects created, updated, completed
-   - Tasks assigned, in-progress, done
-   - Permissions change over time
-
-5. **Distributed + Web**
-   - Only example with Redis integration
-   - Only example with Flask
-   - Shows scalability patterns
-
-6. **Attack Variety**
-   - Hijacking, fixation, replay
-   - Stale state attacks
-   - Concurrent session abuse
-   - CSRF, JWT attacks (Stage 5)
+#### Adversarial Agent System ← NEW
+1. **Attack-first design** - Adversarial scenarios are PRIMARY focus
+2. **5 attack types** - Comprehensive threat coverage
+3. **Behavioral analysis** - Anomaly detection patterns
+4. **Automated quarantine** - Self-defending systems
+5. **Zero-trust model** - Verification at every step
+6. **Deep nested validation** - Recursive payload checking
 
 ---
 
-## 🎓 Educational Value Matrix
+## 🎭 Attack Scenario Coverage
 
-| Learning Goal | Crypto | Credit | **Task Collab** |
-|--------------|--------|--------|----------------|
-| **A2A Protocol Basics** | ✅✅✅ | ✅✅ | ✅✅ |
-| **Input Validation** | ✅✅ | ✅✅✅ | ✅✅ |
-| **Authentication** | ✅✅ | ✅✅✅ | ✅✅✅ |
-| **Authorization** | ✅ | ✅✅✅ | ✅✅✅ |
-| **Session Security** | ✅ | ✅ | **✅✅✅✅** |
-| **State Management** | - | ✅ | **✅✅✅✅** |
-| **File Security** | - | ✅✅✅✅ | - |
-| **PII Protection** | - | ✅✅✅✅ | - |
-| **Multi-Agent** | ✅ | - | **✅✅✅✅** |
-| **Distributed Systems** | - | - | **✅✅✅** |
-| **Web Security** | - | - | **✅✅✅** |
-| **AI Security** | - | ✅✅✅ | - |
+| Attack Type | Crypto | Credit Report | Task Collab | Adversarial |
+|------------|--------|---------------|-------------|-------------|
+| **Injection Attacks** | ✅ Query injection | ✅ Path traversal | ✅ Session injection | ✅ Task injection |
+| **Authentication Bypass** | ✅ Shown | ✅ Shown | ✅ Shown | ✅ Shown |
+| **Authorization Bypass** | ✅ Basic | ✅ Role escalation | ✅ Stale permissions | **✅ Self-escalation** |
+| **Session Attacks** | ⚠️ Basic | ⚠️ Basic | **✅ Comprehensive** | ✅ Advanced |
+| **State Manipulation** | ❌ N/A | ⚠️ Limited | ✅ Shown | **✅ State poisoning** |
+| **Data Exfiltration** | ❌ N/A | ✅ PII leakage | ⚠️ Limited | **✅ Comprehensive** |
+| **DoS Attacks** | ✅ Query flooding | ✅ File bombs | ⚠️ Limited | ⚠️ Limited |
+| **Replay Attacks** | ✅ Stage 3 | ✅ Stage 3 | **✅ Demonstrated** | **✅ Token replay** |
+| **Credit Stealing** | ❌ N/A | ❌ N/A | ❌ N/A | **✅ Core scenario** |
+| **AI Attacks** | ❌ N/A | **✅ Prompt injection** | ❌ N/A | ❌ N/A |
 
-**Legend**: ✅ = Coverage level (more = better)
+**Most Comprehensive Attack Coverage**: ✅ **Adversarial Agent**
+
+---
+
+## 🏗️ Architecture Patterns
+
+### Complexity Progression
+
+```
+Cryptocurrency (Simple)
+├── Stage 1: Basic TCP
+├── Stage 2: + Registry
+└── Stage 3: + Crypto
+
+Credit Report (Complex)
+├── Stage 1: Basic TCP
+├── Stage 2: + Validation
+├── Stage 3: + Encryption + RBAC
+└── Stage 4: + AI Security
+
+Task Collaboration (Most Complex)
+├── Stage 1: Basic TCP
+├── Stage 2: + Auth + Sessions
+├── Stage 3: + SessionManager + Full Security
+├── Stage 4: + Redis (Distributed)
+└── Stage 5: + Flask (Web)
+
+Adversarial Agent (Defense Focus)
+├── Stage 1: No defense (5 attacks succeed)
+├── Stage 2: + JWT + Basic RBAC (partial defense)
+└── Stage 3: + Behavioral Analysis + Auto-quarantine (complete defense)
+```
+
+**Unique**: 
+- Task Collab has branching complexity (can stop at Stage 3, 4, or 5)
+- Adversarial focuses on defense mechanisms, not just prevention
+- Credit Report has most comprehensive file security
+- Crypto is fastest to complete
+
+---
+
+## 📚 Educational Value Matrix
+
+| Learning Goal | Crypto | Credit | Task Collab | Adversarial |
+|--------------|--------|--------|-------------|-------------|
+| **A2A Protocol Basics** | ✅✅✅ | ✅✅ | ✅✅ | ✅✅ |
+| **Input Validation** | ✅✅ | ✅✅✅✅ | ✅✅ | ✅✅✅✅ |
+| **Authentication** | ✅✅ | ✅✅✅ | ✅✅✅ | ✅✅✅ |
+| **Authorization** | ✅ | ✅✅✅✅ | ✅✅✅✅ | ✅✅✅✅ |
+| **Session Security** | ✅ | ✅ | **✅✅✅✅** | ✅✅✅ |
+| **State Management** | - | ✅ | **✅✅✅✅** | ✅✅✅ |
+| **File Security** | - | **✅✅✅✅** | - | - |
+| **PII Protection** | - | **✅✅✅✅** | - | - |
+| **Multi-Agent** | ✅ | - | **✅✅✅✅** | **✅✅✅✅** |
+| **Distributed Systems** | - | - | **✅✅✅** | - |
+| **Web Security** | - | - | **✅✅✅** | - |
+| **AI Security** | - | **✅✅✅** | - | - |
+| **Attack Detection** | - | - | ✅ | **✅✅✅✅** |
+| **Behavioral Analysis** | - | - | - | **✅✅✅✅** |
+| **Automated Defense** | - | - | - | **✅✅✅✅** |
+
+**Legend**: ✅ = Coverage level (more ✅ = better coverage)
+
+---
+
+## 💡 Why Have Four Examples?
+
+### Coverage Completeness
+
+**Before (3 examples)**:
+- Query security ✅
+- File security ✅
+- Session security ✅
+- Adversarial defense ❌ **GAP**
+- Behavioral analysis ❌ **GAP**
+- Automated quarantine ❌ **GAP**
+
+**After (4 examples)**:
+- Query security ✅
+- File security ✅
+- Session security ✅
+- Adversarial defense ✅ **FILLED**
+- Behavioral analysis ✅ **FILLED**
+- Automated quarantine ✅ **FILLED**
+
+### Real-World Completeness
+
+Each example addresses a different **real-world security concern**:
+
+1. **Cryptocurrency**: "How do I secure my API?"
+2. **Credit Report**: "How do I handle sensitive files?"
+3. **Task Collaboration**: "How do I manage user sessions?"
+4. **Adversarial**: "How do I defend against malicious agents?"
+
+### Learning Progression
+
+The four examples follow natural learning progression:
+
+1. **Cryptocurrency** (Start here)
+   - Simplest example
+   - Core A2A concepts
+   - 2-3 hours
+
+2. **Credit Report** (Deep dive)
+   - Complex validation
+   - Compliance focus
+   - 19-26 hours
+
+3. **Task Collaboration** (Advanced patterns)
+   - Session mastery
+   - Distributed systems
+   - 17-22 hours
+
+4. **Adversarial** (Defense focus)
+   - Attack scenarios
+   - Behavioral security
+   - 8-12 hours
+
+**Total**: ~50-60 hours for complete A2A security mastery
 
 ---
 
 ## 🚀 Recommended Usage
 
-### Use All Three Together
+### Sequential Learning (Recommended)
 
-**Week 1-2**: Cryptocurrency Agent
+**Week 1**: Cryptocurrency Agent (2-3 hours)
 - Learn A2A protocol fundamentals
 - Understand basic security progression
 - Practice vulnerability identification
 
-**Week 3-5**: Credit Report Agent
+**Weeks 2-4**: Credit Report Agent (19-26 hours)
 - Deep dive into file security
 - Master PII protection
 - Learn comprehensive validation
 - See AI integration (optional Stage 4)
 
-**Week 6-8**: Task Collaboration Agent
+**Weeks 5-7**: Task Collaboration Agent (17-22 hours)
 - Master session security
 - Understand state management
 - Learn multi-agent patterns
 - Optional: Distributed systems (Stage 4)
 - Optional: Web frameworks (Stage 5)
 
+**Week 8**: Adversarial Agent System (8-12 hours)
+- Understand attack patterns
+- Learn behavioral analysis
+- Implement anomaly detection
+- Build automated defenses
+
 **Total**: 8 weeks for complete A2A security mastery
+
+---
+
+### Topic-Based Learning (Alternative)
+
+**Focus on API Security** (2-3 hours):
+- Cryptocurrency Agent only
+
+**Focus on Compliance** (19-26 hours):
+- Credit Report Agent (all stages)
+
+**Focus on Web Applications** (17-22 hours):
+- Task Collaboration Agent (especially Stage 5)
+
+**Focus on Multi-Agent Systems** (25-34 hours):
+- Task Collaboration Agent (Stages 1-3)
+- Adversarial Agent System (Stages 1-3)
+
+**Focus on Advanced Threats** (8-12 hours):
+- Adversarial Agent System (all stages)
+
+---
+
+## 📊 Time Investment Summary
+
+| Example | Minimum | Complete | With Optional |
+|---------|---------|----------|---------------|
+| **Cryptocurrency** | 2 hours | 3 hours | 3 hours |
+| **Credit Report** | 12 hours | 19 hours | 26 hours (with AI) |
+| **Task Collaboration** | 10 hours | 17 hours | 22 hours (with all stages) |
+| **Adversarial** | 6 hours | 8 hours | 12 hours |
+| **TOTAL** | **30 hours** | **47 hours** | **63 hours** |
+
+---
+
+## 🎯 Which Example Should I Start With?
+
+### Choose Based on Your Background
+
+**I'm new to security**:
+→ Start with **Cryptocurrency Agent** (simplest, fastest)
+
+**I work with sensitive documents**:
+→ Start with **Credit Report Agent** (file security focus)
+
+**I build web applications**:
+→ Start with **Task Collaboration Agent** (web framework integration)
+
+**I'm concerned about malicious agents**:
+→ Start with **Adversarial Agent** (attack & defense focus)
+
+**I want comprehensive understanding**:
+→ **Do all four in order** (50-60 hours)
 
 ---
 
 ## 💭 Summary
 
-The Task Collaboration Agent example:
+The four examples together provide:
 
-✅ **Complements** (not duplicates) existing examples  
-✅ **Fills gaps** in session and state security teaching  
-✅ **Extends** to distributed and web patterns  
-✅ **Follows** the same proven stage progression  
-✅ **Adds** new attack scenarios not covered elsewhere  
-✅ **Provides** reusable SessionManager implementation  
-✅ **Shows** real multi-agent coordination  
+✅ **Complete A2A security coverage** - All major topics  
+✅ **Progressive complexity** - From simple to advanced  
+✅ **Complementary focus** - Each fills unique gaps  
+✅ **Real-world scenarios** - Practical use cases  
+✅ **Reusable patterns** - Production-ready code  
+✅ **Attack demonstrations** - See vulnerabilities in action  
+✅ **Defense implementations** - See security controls working  
+✅ **50-60 hours of learning** - Comprehensive education  
 
-**Result**: Complete A2A security education covering all major topics.
+**Result**: Complete A2A security education covering:
+- ✅ Query security (Crypto)
+- ✅ File security (Credit Report)
+- ✅ Session security (Task Collab)
+- ✅ Adversarial defense (Adversarial)
+- ✅ PII protection (Credit Report)
+- ✅ Multi-agent coordination (Task Collab + Adversarial)
+- ✅ Distributed systems (Task Collab Stage 4)
+- ✅ Web frameworks (Task Collab Stage 5)
+- ✅ AI integration (Credit Report Stage 4)
+- ✅ Behavioral analysis (Adversarial Stage 3)
 
 ---
 
-**Document**: Example Comparison  
-**Version**: 1.0  
-**Created**: December 2025
+**Document**: Four-Example Comparison  
+**Version**: 2.0  
+**Updated**: January 2026  
+**Examples Covered**: Cryptocurrency, Credit Report, Task Collaboration, Adversarial Agent

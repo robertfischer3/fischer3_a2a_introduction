@@ -1,0 +1,77 @@
+examples:
+  - id: crypto
+    name: Cryptocurrency Price Agent
+    focus: API Integration & Query Security
+    path: examples/a2a_crypto_example/
+    stages: 3
+    difficulty: "⭐⭐ Intermediate"
+    compliance: Basic
+    encryption: Transport
+    ai_integration: false
+    multi_agent: false
+    attack_types: Query-based
+    defense_focus: Prevention
+    hours_min: 2
+    hours_max: 3
+    unique_features:
+      - WebSocket streaming
+      - Rate limiting
+      - Registry basics
+    
+  - id: credit_report
+    name: Credit Report Analysis Agent
+    focus: File Upload Security & PII Protection
+    path: examples/a2a_credit_report_example/
+    stages: 4
+    difficulty: "⭐⭐⭐ Advanced"
+    compliance: "FCRA, GDPR"
+    encryption: Field-level
+    ai_integration: true
+    ai_stage: 4
+    multi_agent: false
+    attack_types: File-based
+    defense_focus: Prevention
+    hours_min: 19
+    hours_max: 26
+    unique_features:
+      - 8-layer validation
+      - PII protection
+      - Compliance focus
+    
+  - id: task_collab
+    name: Task Collaboration System
+    focus: Session Management & Multi-Agent Coordination
+    path: examples/a2a_task_collab_example/
+    stages: 5
+    difficulty: "⭐⭐⭐⭐ Expert"
+    compliance: "RBAC, Audit"
+    encryption: Full stack
+    ai_integration: false
+    multi_agent: true
+    attack_types: Session-based
+    defense_focus: Prevention
+    hours_min: 15
+    hours_max: 22
+    unique_features:
+      - SessionManager class
+      - Redis distributed sessions
+      - Flask web framework
+    
+  - id: adversarial
+    name: Adversarial Agent System
+    focus: Adversarial Defense & Attack Detection
+    path: examples/a2a_adversarial_agent_example/
+    stages: 3
+    difficulty: "⭐⭐⭐ Advanced"
+    compliance: Zero-Trust
+    encryption: Transport + JWT
+    ai_integration: false
+    multi_agent: true
+    attack_types: Multi-vector
+    defense_focus: Detection + Response
+    hours_min: 8
+    hours_max: 12
+    unique_features:
+      - Behavioral analysis
+      - Automated quarantine
+      - 5 attack scenarios

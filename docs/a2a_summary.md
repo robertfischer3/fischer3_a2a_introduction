@@ -163,17 +163,17 @@ Technical specifications and standards.
 
 This project includes three implementations that progress from vulnerable to secure:
 
-1. **[Example 1: Vulnerable](./examples/a2a_crypto_example/)** ❌
+1. **[Example 1: Vulnerable](./examples/crypto-stage1.md)** ❌
    - Learn to identify security flaws
    - Study only, never deploy
    - 26 documented vulnerabilities
 
-2. **[Example 2: Improved](./examples/a2a_crypto_simple_registry_example_1/)** ⚠️
+2. **[Example 2: Improved](./examples/crypto-stage2.md)** ⚠️
    - Understand incremental hardening
    - Still has limitations (replay attacks, weak crypto)
    - Learning trade-offs
 
-3. **[Example 3: Secure](./examples/a2a_crypto_example/security/)** ✅
+3. **[Example 3: Secure](./examples/crypto-stage3.md)** ✅
    - Production-grade security
    - Comprehensive controls
    - Template for real implementations
