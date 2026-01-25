@@ -367,11 +367,11 @@ for i in range(10000):
 ## 🔗 Related Documentation
 
 ### This Stage
-- [SECURITY_ANALYSIS.md](./SECURITY_ANALYSIS.md) - Detailed analysis of improvements and remaining issues
+- [SECURITY_ANALYSIS.md](../../a2a_crypto_example/SECURITY_ANALYSIS.md) - Detailed analysis of improvements and remaining issues
 
 ### Other Stages
 - [Stage 1 - Insecure](../insecure/README.md) - The vulnerable baseline
-- [Stage 3 - Secure](../secure/README.md) - Production-ready implementation (coming soon)
+- [Stage 3 - Secure](../../../README.md) - Production-ready implementation (coming soon)
 
 ### Comparative
 - [Security Evolution Guide](../../docs/SECURITY_EVOLUTION.md) - Side-by-side comparison

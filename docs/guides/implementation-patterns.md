@@ -219,4 +219,4 @@ class ServiceMeshAgent:
 
 ---
 
-## Next: [References & Resources →](./references.md)
+## Next: [References & Resources →](../references.md)

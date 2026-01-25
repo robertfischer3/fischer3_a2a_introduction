@@ -645,7 +645,7 @@ Stage 4 adds AI-powered analysis while maintaining all Stage 3 security.
 
 ## Resources
 
-- [8-Layer Validation Details](../../presentations/eight-layer-validation/article.md)
+- [8-Layer Validation Details](../presentations/eight-layer-validation/article.md)
 - [FCRA Compliance Guide](https://www.ftc.gov/legal-library/browse/statutes/fair-credit-reporting-act)
 - [GDPR Requirements](https://gdpr.eu/)
 - [Stage 2: Improved ←](./credit-stage2.md)

@@ -18,7 +18,7 @@ This security education project has grown beyond one person.
 Robert Fischer (robert@fischer3.net)
 
 ## How to Help
-[See CONTRIBUTING.md](/docs/about/contributing.md)
+[See CONTRIBUTING.md](contributing.md)
 ```
 
 **Post This**:

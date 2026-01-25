@@ -58,22 +58,22 @@ This documentation is organized into progressive sections that build on each oth
 ### Phase 1: 📘 Fundamentals (Start Here!)
 Understand the core concepts before diving into implementation.
 
-1. **[Core Concepts](./01_FUNDAMENTALS/01_core_concepts.md)**
+1. **[Core Concepts](01_core_concepts.md)**
    - What problems does A2A solve?
    - Key terminology and definitions
    - Basic architecture patterns
 
-2. **[Agent Identity](./01_FUNDAMENTALS/02_agent_identity.md)**
+2. **[Agent Identity](02_agent_identity.md)**
    - How agents identify themselves
    - UUID vs human-readable names
    - Identity in distributed systems
 
-3. **[Message Types](./01_FUNDAMENTALS/03_message_types.md)**
+3. **[Message Types](03_message_types.md)**
    - Request/Response pattern
    - Handshake and negotiation
    - Event streaming
 
-4. **[Conversation Flows](./01_FUNDAMENTALS/04_conversation_flows.md)**
+4. **[Conversation Flows](04_conversation_flows.md)**
    - Discovery → Negotiation → Execution
    - Multi-turn conversations
    - State management
@@ -83,17 +83,17 @@ Understand the core concepts before diving into implementation.
 ### Phase 2: 🔍 Discovery & Registration
 Learn how agents find each other in a distributed system.
 
-1. **[Agent Cards](./02_DISCOVERY/01_agent_cards.md)**
+1. **[Agent Cards](../02_DISCOVERY/01_agent_cards.md)**
    - Structure of an Agent Card
    - Capability declarations
    - Metadata and versioning
 
-2. **[Agent Registry](./02_DISCOVERY/02_agent_registry.md)**
+2. **[Agent Registry](../02_DISCOVERY/02_agent_registry.md)**
    - Centralized vs distributed registries
    - Service discovery patterns
    - Health monitoring and heartbeats
 
-3. **[Capability Matching](./02_DISCOVERY/03_capability_matching.md)**
+3. **[Capability Matching](../02_DISCOVERY/03_capability_matching.md)**
    - How to query for specific capabilities
    - Ranking and selection algorithms
    - Fallback strategies
@@ -110,22 +110,22 @@ This is where we focus on security vulnerabilities and solutions.
 > 3. ✅ Proper secure implementation
 > 4. 🔍 How to test and validate
 
-1. **[Authentication Overview](./03_SECURITY/01_authentication_overview.md)**
+1. **[Authentication Overview](../03_SECURITY/01_authentication_overview.md)**
    - Why agent authentication is hard
    - Trust models in distributed systems
    - PKI and certificate chains
 
-2. **[Authentication Tags](./03_SECURITY/02_authentication_tags.md)**
+2. **[Authentication Tags](../03_SECURITY/02_authentication_tags.md)**
    - How agents prove their identity
    - Signature verification
    - Nonce-based replay protection
 
-3. **[Threat Model](./03_SECURITY/03_threat_model.md)**
+3. **[Threat Model](../03_SECURITY/03_threat_model.md)**
    - Common attack vectors
    - Malicious agent scenarios
    - Defense-in-depth strategies
 
-4. **[Security Best Practices](./03_SECURITY/04_security_best_practices.md)**
+4. **[Security Best Practices](../03_SECURITY/04_security_best_practices.md)**
    - Input validation
    - Rate limiting
    - Audit logging
@@ -136,17 +136,17 @@ This is where we focus on security vulnerabilities and solutions.
 ### Phase 4: 💬 Communication Patterns
 Master the actual message exchange between agents.
 
-1. **[Protocol Messages](./04_COMMUNICATION/01_protocol_messages.md)**
+1. **[Protocol Messages](../04_COMMUNICATION/01_protocol_messages.md)**
    - JSON message structure
    - TextPart, DataPart, FilePart
    - Message routing
 
-2. **[Streaming & Events](./04_COMMUNICATION/02_streaming_events.md)**
+2. **[Streaming & Events](../04_COMMUNICATION/02_streaming_events.md)**
    - Server-Sent Events (SSE)
    - Real-time updates
    - Push vs pull patterns
 
-3. **[Error Handling](./04_COMMUNICATION/03_error_handling.md)**
+3. **[Error Handling](../04_COMMUNICATION/03_error_handling.md)**
    - Standard error codes
    - Graceful degradation
    - Recovery strategies
@@ -156,17 +156,17 @@ Master the actual message exchange between agents.
 ### Phase 5: 📚 Reference Materials
 Quick lookup for specifications and standards.
 
-1. **[Message Schemas](./05_REFERENCE/01_message_schemas.md)**
+1. **[Message Schemas](../05_REFERENCE/01_message_schemas.md)**
    - JSON Schema definitions
    - Validation rules
    - Version compatibility
 
-2. **[Capability Vocabulary](./05_REFERENCE/02_capability_vocabulary.md)**
+2. **[Capability Vocabulary](../05_REFERENCE/02_capability_vocabulary.md)**
    - Standard capability names
    - Custom capability guidelines
    - Capability hierarchies
 
-3. **[Protocol Versions](./05_REFERENCE/protocol_versions.md)**
+3. **[Protocol Versions](../05_REFERENCE/protocol_versions.md)**
    - Version history
    - Breaking vs non-breaking changes
    - Migration guides
@@ -349,14 +349,14 @@ This project includes three progressive implementations:
 ## 📖 Additional Resources
 
 ### Official Documentation
-- [Current README](../index.md) - Project overview
+- [Current README](../../index.md) - Project overview
 - [A2A + MCP Integration](../a2a_mcp_integration.md) - How protocols work together
 - [Implementation Patterns](../implementation_patterns.md) - Architectural guidance
 
 ### Presentations & Slides
 - [Live Slides](https://robertfischer3.github.io/fischer3_a2a_introduction)
 - [PDF Version](../docs/slides.pdf)
-- [Markdown Source](../docs/SLIDES.md)
+- [Markdown Source](../../presentations/eight-layer-validation/slides.md)
 
 ### Code Examples
 - [Crypto Agent Examples](../examples/) - All three security levels
@@ -393,17 +393,17 @@ YOU ARE HERE → 00_A2A_OVERVIEW.md (This document)
 ### Next Steps:
 
 1. **Complete Beginner?**
-   - Start with [Core Concepts](./01_FUNDAMENTALS/01_core_concepts.md)
+   - Start with [Core Concepts](01_core_concepts.md)
    - Read linearly through Fundamentals
    - Don't skip ahead
 
 2. **Familiar with Agent Systems?**
    - Skim Fundamentals
-   - Focus on [Security](./03_SECURITY/01_authentication_overview.md)
+   - Focus on [Security](../03_SECURITY/01_authentication_overview.md)
    - Study code examples
 
 3. **Security Professional?**
-   - Jump to [Threat Model](./03_SECURITY/03_threat_model.md)
+   - Jump to [Threat Model](../03_SECURITY/03_threat_model.md)
    - Review vulnerable code (Example 1)
    - Test secure implementation (Example 3)
 
@@ -412,7 +412,7 @@ YOU ARE HERE → 00_A2A_OVERVIEW.md (This document)
 ## 📬 Getting Help
 
 ### Questions?
-- Check the [References](../references.md) for links to specifications
+- Check the [References](../../references.md) for links to specifications
 - Review code examples for practical implementations
 - Look for inline security annotations in example code
 
@@ -450,10 +450,10 @@ Before moving to the next section, ensure you understand:
 
 Ready to dive deeper? Choose your path:
 
-### 📘 [Start with Fundamentals →](./01_FUNDAMENTALS/01_core_concepts.md)
+### 📘 [Start with Fundamentals →](01_core_concepts.md)
 Begin at the beginning with core concepts and terminology.
 
-### 🔐 [Jump to Security →](./03_SECURITY/01_authentication_overview.md)
+### 🔐 [Jump to Security →](../03_SECURITY/01_authentication_overview.md)
 If you already know agent basics, start with security concerns.
 
 ### 💻 [Explore Code Examples →](../../examples/index.md)

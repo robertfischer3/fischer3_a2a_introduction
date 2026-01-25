@@ -126,7 +126,7 @@ Build your own MCP servers and clients.
 ### 🔐 Security & Best Practices
 Ensure secure tool access and proper validation.
 
-- **[Tool Validation Patterns](./docs/a2a/04_COMMUNICATION/04_message_validation_patterns.md)** - Input validation for tools
+- **[Tool Validation Patterns](a2a/04_COMMUNICATION/04_message_validation_patterns.md)** - Input validation for tools
 - **[Security Considerations](./mcp_fundamentals.md#security)** - Authentication, sandboxing, rate limiting
 
 ---
@@ -149,7 +149,7 @@ Explore working MCP implementations:
    - No API key required for testing
    - Step-by-step tutorial
 
-3. **[MCP Server Template](./mcp_examples/your_first_mcp_server/simple_mcp_server.py)** ✅
+3. **[MCP Server Template](../mcp_examples/your_first_mcp_server/simple_mcp_server.py)** ✅
    - Ready-to-customize template
    - Follows best practices
    - Includes documentation
@@ -304,8 +304,8 @@ Learn how MCP and A2A work together:
 - **[MCP Inspector](https://github.com/modelcontextprotocol/inspector)** - Tool for testing MCP servers
 
 ### Learning Resources
-- **[Ubuntu Quick Start](./docs/supplementary/tools/UBUNTU_QUICKSTART.md)** - Local testing without Claude Desktop
-- **[References](./docs/references.md)** - Papers, articles, and additional resources
+- **[Ubuntu Quick Start](supplementary/tools/UBUNTU_QUICKSTART.md)** - Local testing without Claude Desktop
+- **[References](references.md)** - Papers, articles, and additional resources
 
 ---
 

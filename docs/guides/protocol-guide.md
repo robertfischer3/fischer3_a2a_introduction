@@ -480,7 +480,7 @@ This layered approach maintains human readability for debugging while supporting
 
 ## Additional Resources
 
-- [Agent2Agent Introduction](./agent2agent_intro.md)
+- [Agent2Agent Introduction](../../agent2agent_intro.md)
 - [A2A and MCP Integration](./a2a_mcp_integration.md)
 - [A2A Streaming Events Guide](./a2a_streaming_events_guide.md)
 - [Implementation Patterns](./implementation_patterns.md)

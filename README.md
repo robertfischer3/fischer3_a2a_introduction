@@ -377,7 +377,7 @@ python server/task_coordinator.py
 - [Session Security Cheat Sheet](./examples/a2a_task_collab_example/A2A_SESSION_SECURITY_CHEAT_SHEET.md)
 
 ### Utility Tools
-- [UV Python Environment Guide](./side_topic_guidance/uv/UV_COMPLETE_GUIDE.md) - Modern Python dependency management
+- [UV Python Environment Guide](docs/supplementary/tools/UV_COMPLETE_GUIDE.md) - Modern Python dependency management
 
 ---
 

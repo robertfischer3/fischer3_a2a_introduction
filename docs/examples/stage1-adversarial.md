@@ -376,7 +376,7 @@ A: None. That's the point.
 **Created by**: Robert Fischer (robert@fischer3.net)  
 **License**: MIT - Educational use  
 **Status**: Complete ✅  
-**Part of**: [Multi-Agent Security Education Project](../../index.md)
+**Part of**: [Multi-Agent Security Education Project](../index.md)
 
 ---
 

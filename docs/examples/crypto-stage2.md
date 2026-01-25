@@ -1087,13 +1087,13 @@ Because:
 
 ### Related Documentation
 
-- [A2A Security Best Practices](/docs/a2a/03_SECURITY/04_security_best_practices.md)
-- [Authentication Deep Dive](/docs/a2a/03_SECURITY/01_authentication_overview.md)
-- [Threat Model](/docs/a2a/03_SECURITY/03_threat_model.md)
+- [A2A Security Best Practices](../a2a/03_SECURITY/04_security_best_practices.md)
+- [Authentication Deep Dive](../a2a/03_SECURITY/01_authentication_overview.md)
+- [Threat Model](../a2a/03_SECURITY/03_threat_model.md)
 
 ### Code Files
 
-- [Registry Server](/examples/a2a_crypto_simple_registry_example_1/registry_server.py)
+- [Registry Server](../../examples/a2a_crypto_simple_registry_example_1/registry/registry_server.py)
 - [Authenticated Agent](/examples/a2a_crypto_simple_registry_example_1/crypto_agent_with_auth.py)
 - [Authenticated Client](/examples/a2a_crypto_simple_registry_example_1/authenticated_client.py)
 

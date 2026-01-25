@@ -89,8 +89,8 @@ A comprehensive security framework for AI agent collaboration systems with speci
 **What's Included**:
 - **[Article](agent-security/agent_security_article_enhanced.md)** (30,000 words) - Comprehensive narrative guide with extensive pre/post-implementation guidance
 - **[Slides](agent-security/agent_security_slide_deck.md)** (36 slides + 8 backup) - Professional presentation for security reviews and training
-- **[Checklist](agent-security/security_checklist.md)** (200+ items) - Implementation and audit checklist organized by phase
-- **[README](agent-security/README.md)** - Complete usage guide with customization instructions
+- **[Checklist](agent_security_article_enhanced/security_checklist.md)** (200+ items) - Implementation and audit checklist organized by phase
+- **[README](../../README.md)** - Complete usage guide with customization instructions
 
 **Key Topics Covered**:
 - **The Story of Three Implementations**: Insecure → Partial Security → Comprehensive Security
@@ -129,8 +129,8 @@ A comprehensive security framework for AI agent collaboration systems with speci
 **Quick Start**:
 1. **For understanding the framework**: Start with the [article](agent-security/agent_security_article_enhanced.md) Executive Summary
 2. **For presenting to teams**: Use the [slides](agent-security/agent_security_slide_deck.md) (copy into Google Slides)
-3. **For security reviews**: Jump to the [checklist](agent-security/security_checklist.md)
-4. **For implementation guidance**: Read the [README](agent-security/README.md) phases section
+3. **For security reviews**: Jump to the [checklist](agent_security_article_enhanced/security_checklist.md)
+4. **For implementation guidance**: Read the [README](../../README.md) phases section
 
 **Key Differentiators from Eight-Layer Input Validation**:
 - **Broader Scope**: Covers entire security lifecycle (pre-implementation → ongoing operations)
@@ -140,7 +140,7 @@ A comprehensive security framework for AI agent collaboration systems with speci
 - **Compliance Emphasis**: Extensive mapping to PCI-DSS, GDPR, HIPAA, SOX
 - **Business Case**: ROI analysis, cost-benefit data, real-world impact examples
 
-**[📖 Learn More →](agent-security/README.md)**
+**[📖 Learn More →](../../README.md)**
 
 ---
 
@@ -642,8 +642,8 @@ For understanding the broader context:
 ### Securing AI Agent Collaboration Package (New!)
 - **[📄 Article](agent_security_artical_enhanced/article)** - 30,000-word comprehensive guide
 - **[📊 Slides](agent_security_artical_enhanced/agent_security_slide_deck.md)** - 36-slide presentation + 8 backup slides
-- **[✅ Checklist](agent_security_artical_enhanced/security_checklist.md)** - 200+ item security assessment
-- **[📖 README](agent_security_artical_enhanced/README.md)** - Complete usage and customization guide
+- **[✅ Checklist](agent_security_article_enhanced/security_checklist.md)** - 200+ item security assessment
+- **[📖 README](../../README.md)** - Complete usage and customization guide
 
 ### Eight-Layer Input Validation Package
 - **[📄 Article](eight-layer-validation/article.md)** - Comprehensive written guide
@@ -664,5 +664,5 @@ For understanding the broader context:
 ---
 
 **Ready to improve your AI agent security?**
-- **New to agent security?** Start with the [Securing AI Agent Collaboration package](agent-security/README.md) for a comprehensive framework
+- **New to agent security?** Start with the [Securing AI Agent Collaboration package](../../README.md) for a comprehensive framework
 - **Focused on input validation?** Use the [Eight-Layer Validation package](eight-layer-validation/README.md) for detailed validation guidance

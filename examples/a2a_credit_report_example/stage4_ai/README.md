@@ -559,7 +559,7 @@ print(safe_data)
 ### Previous Stages
 - [Stage 1 - Insecure](../insecure/README.md) - Vulnerable baseline
 - [Stage 2 - Improved](../improved/README.md) - Partial security
-- [Stage 3 - Secure](../secure/README.md) - Production security base
+- [Stage 3 - Secure](../../../README.md) - Production security base
 
 ---
 

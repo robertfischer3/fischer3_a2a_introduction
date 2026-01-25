@@ -2,18 +2,18 @@
 
 > **Learning Path**: MCP Deep Dive  
 > **Difficulty**: Intermediate  
-> **Prerequisites**: [MCP Summary](../mcp_summary.md)  
+> **Prerequisites**: [MCP Summary](mcp_summary.md)  
 > **Estimated Time**: 45-60 minutes
 
 ## Navigation
-← Previous: [MCP Summary](../mcp_summary.md) | Next: [MCP Tools Deep Dive](../mcp_tools_deep_dive.md) →  
-↑ Up: [Documentation Index](../index.md)
+← Previous: [MCP Summary](mcp_summary.md) | Next: [MCP Tools Deep Dive](../mcp_tools_deep_dive.md) →  
+↑ Up: [Documentation Index](index.md)
 
 ---
 
 ## 👋 Welcome!
 
-If you're here, you've already read the [MCP Summary](../mcp_summary.md) and want to understand how MCP really works under the hood. Great choice! This document will take you from "I know what MCP is" to "I can build with MCP."
+If you're here, you've already read the [MCP Summary](mcp_summary.md) and want to understand how MCP really works under the hood. Great choice! This document will take you from "I know what MCP is" to "I can build with MCP."
 
 Don't worry if some concepts seem complex at first - we'll break everything down step by step. Think of this as a guided tour through the MCP protocol, with plenty of examples along the way.
 

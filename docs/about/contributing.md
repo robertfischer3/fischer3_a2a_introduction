@@ -111,9 +111,9 @@ We welcome ideas for:
 Before contributing, please:
 
 1. **Read the core documentation:**
-   - [A2A Overview](docs/a2a/00_A2A_OVERVIEW.md)
-   - [Security Best Practices](docs/a2a/03_SECURITY/04_security_best_practices.md)
-   - [Threat Model](docs/a2a/03_SECURITY/03_threat_model.md)
+   - [A2A Overview](../a2a/00_A2A_OVERVIEW.md)
+   - [Security Best Practices](../a2a/03_SECURITY/04_security_best_practices.md)
+   - [Threat Model](../a2a/03_SECURITY/03_threat_model.md)
 
 2. **Review existing examples:**
    - [Crypto Price Agent](examples/a2a_crypto_example/)
@@ -672,7 +672,7 @@ When appropriate, we'll cite contributors in:
 ### Getting Help
 
 **Before asking:**
-1. Check the [documentation](docs/a2a/INDEX.md)
+1. Check the [documentation](../index.md)
 2. Search [existing issues](https://github.com/robertfischer3/fischer3_a2a_introduction/issues)
 3. Review [examples](examples/)
 
@@ -765,10 +765,10 @@ Your contributions make this project better for everyone. We appreciate your tim
 ## 📚 Additional Resources
 
 ### Essential Reading
-- [A2A Overview](docs/a2a/00_A2A_OVERVIEW.md)
-- [Security Best Practices](docs/a2a/03_SECURITY/04_security_best_practices.md)
-- [Threat Model](docs/a2a/03_SECURITY/03_threat_model.md)
-- [Code Walkthrough](docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md)
+- [A2A Overview](../a2a/00_A2A_OVERVIEW.md)
+- [Security Best Practices](../a2a/03_SECURITY/04_security_best_practices.md)
+- [Threat Model](../a2a/03_SECURITY/03_threat_model.md)
+- [Code Walkthrough](../a2a/03_SECURITY/05_code_walkthrough_comparison.md)
 
 ### Example Projects
 - [Crypto Price Agent](examples/a2a_crypto_example/)

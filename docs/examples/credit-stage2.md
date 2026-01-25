@@ -473,7 +473,7 @@ Stage 3 implements production-grade security with comprehensive protections.
 
 ## Resources
 
-- [8-Layer Validation Framework](../../presentations/eight-layer-validation/article.md)
+- [8-Layer Validation Framework](../presentations/eight-layer-validation/article.md)
 - [Stage 1: Insecure ←](./credit-stage1.md)
 - [Stage 3: Secure →](./credit-stage3.md)
 - [OWASP Secure Coding Practices](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/)

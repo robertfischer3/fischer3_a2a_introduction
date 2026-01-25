@@ -522,7 +522,7 @@ ai_integrated/
 ### Previous Stages
 - [Stage 1](../insecure/README.md) - Vulnerable baseline (0/10)
 - [Stage 2](../improved/README.md) - Partial security (4/10)
-- [Stage 3](../secure/README.md) - Production security (9/10)
+- [Stage 3](../../../README.md) - Production security (9/10)
 
 ### Comparative
 - [Security Evolution Guide](../../docs/SECURITY_EVOLUTION.md) - Full comparison
