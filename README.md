@@ -152,29 +152,9 @@ The project includes **three comprehensive examples**, each focusing on differen
 
 [View Task Collaboration README](./examples/a2a_task_collab_example/README.md)  
 [View Quick Reference Guide](./examples/a2a_task_collab_example/task_collab_quickstart.md)
+[View Quick Reference Guide](./examples/a2a_task_collab_example/task_collab_quickstart.md)
 
----
-# Examples Overview
 
-## TEST
-
-We have **{{ example_count() }}** comprehensive examples covering different security domains.
-
-**Total Study Time**: {{ total_study_hours() }} hours
-
-## 🎯 Quick Navigation
-
-{{ example_quick_nav() }}
-
-## 📊 Example Comparison Matrix
-
-{{ example_comparison_table() }}
-
-## 📚 All Examples
-
-{{ example_list_bullets() }}
-
----
 
 ## 📊 Example Comparison Matrix
 
@@ -385,9 +365,11 @@ python server/task_coordinator.py
 ### Official Documentation
 - [Model Context Protocol Specification](https://modelcontextprotocol.io)
 - [Agent2Agent Protocol Design](./docs/references.md)
+- [Agent2Agent Protocol Design](./docs/references.md)
 
 ### Presentation Materials
 - [View Slides](https://robertfischer3.github.io/fischer3_a2a_introduction)
+- [Markdown Source](docs/presentations/eight-layer-validation/slides.md)
 - [Markdown Source](docs/presentations/eight-layer-validation/slides.md)
 
 ### Example Comparisons
@@ -434,6 +416,12 @@ python server/task_coordinator.py
 │       ├── stage3_secure/            # SessionManager
 │       ├── stage4_distributed/       # Redis integration
 │       └── stage5_web_framework/     # Flask + JWT
+|
+├── 💻 Example 4: Adversarial Agent ✨ NEW
+│   └── examples/a2a_adversarial_agent_example/
+│       ├── stage1_insecure/         # 25+ vulnerabilities
+│       ├── stage2_improved/         # Partial fixes
+│       ├── stage3_secure/            
 |
 ├── 💻 Example 4: Adversarial Agent ✨ NEW
 │   └── examples/a2a_adversarial_agent_example/
@@ -587,11 +575,14 @@ See individual files for specific licensing information.
 - 💻 [Credit Report Example](./examples/a2a_credit_report_example/)
 - 💻 [Task Collaboration Example](./examples/a2a_task_collab_example/)
 - 💻 [Adversarial Agent Example](./examples/a2a_adversarial_agent_example/) ✨ NEW
+- 💻 [Task Collaboration Example](./examples/a2a_task_collab_example/)
+- 💻 [Adversarial Agent Example](./examples/a2a_adversarial_agent_example/) ✨ NEW
 - 📊 [Example Comparison](./examples/a2a_task_collab_example/task_collab_comparision.md)
 ---
 
 **Remember**: The journey from vulnerable to secure code is the learning path itself.  
 Take your time, understand each security concern, and practice implementing proper controls.
 
+**Four Examples. Complete Coverage. Production-Ready Patterns.**
 **Four Examples. Complete Coverage. Production-Ready Patterns.**
 **Happy Learning! 🚀🔐**
