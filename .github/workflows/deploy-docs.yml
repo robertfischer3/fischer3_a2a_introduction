@@ -23,6 +23,9 @@ jobs:
         run: |
           pip install mkdocs-material
           pip install mkdocs-minify-plugin
+          pip installmkdocs-macros-plugin
+          pip install mkdocs-git-revision-date-localized-plugin
+
       
       - name: Build and deploy
         run: mkdocs gh-deploy --force
