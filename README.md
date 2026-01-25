@@ -154,43 +154,7 @@ The project includes **three comprehensive examples**, each focusing on differen
 [View Quick Reference Guide](./examples/a2a_task_collab_example/task_collab_quickstart.md)
 [View Quick Reference Guide](./examples/a2a_task_collab_example/task_collab_quickstart.md)
 
----
-# Examples Overview
 
-## TEST
-
-We have **{{ example_count() }}** comprehensive examples covering different security domains.
-
-**Total Study Time**: {{ total_study_hours() }} hours
-
-## 🎯 Quick Navigation
-
-{{ example_quick_nav() }}
-
-## 📊 Example Comparison Matrix
-
-{{ example_comparison_table() }}
-
-## 📚 All Examples
-
-{{ example_list_bullets() }}
-
----
-
-## 📊 Example Comparison Matrix
-
-| Feature | Credit Report | Crypto Agent | Task Collab | Adversarial Agent |
-|---------|--------------|--------------|-------------|-------------------|
-| **Primary Focus** | File Upload & PII | API Integration | Session Management | Adversarial Defense |
-| **Stages** | 4 | 3 | 5 | 3 |
-| **Difficulty** | ⭐⭐⭐ Advanced | ⭐⭐ Intermediate | ⭐⭐⭐⭐ Expert | ⭐⭐⭐ Advanced |
-| **Compliance** | FCRA, GDPR | Basic | RBAC, Audit | Zero-Trust |
-| **Encryption** | Field-level | Transport | Full stack | Transport + JWT |
-| **AI Integration** | ✅ Stage 4 | ❌ | ❌ | ❌ |
-| **Multi-Agent** | ❌ | ❌ | ✅ | ✅ |
-| **Attack Types** | File-based | Query-based | Session-based | Multi-vector |
-| **Defense Focus** | Prevention | Prevention | Prevention | Detection + Response |
-| **Total Hours** | 19-26 | 2-3 | 15-22 | 8-12 |
 
 ## 📊 Example Comparison Matrix
 
