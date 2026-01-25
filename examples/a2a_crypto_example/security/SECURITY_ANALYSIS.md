@@ -782,15 +782,15 @@ from cryptography.hazmat.primitives import hashes
 ## 🔗 Related Documentation
 
 ### Security Series
-- [Example 1 Analysis](../a2a_crypto_example/SECURITY_ANALYSIS.md) - Vulnerable baseline
-- [Example 2 Analysis](../a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md) - Incremental improvements
+- [Example 1 Analysis](../SECURITY_ANALYSIS.md) - Vulnerable baseline
+- [Example 2 Analysis](../SECURITY_ANALYSIS.md) - Incremental improvements
 - [Example 3 Analysis](This document) - Production security ✅
 
 ### Deep Dives
-- [Code Walkthrough Comparison](../../docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md)
-- [Authentication Overview](../../docs/a2a/03_SECURITY/01_authentication_overview.md)
-- [Threat Model](../../docs/a2a/03_SECURITY/03_threat_model.md)
-- [Security Best Practices](../../docs/a2a/03_SECURITY/04_security_best_practices.md)
+- [Code Walkthrough Comparison](../../../docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md)
+- [Authentication Overview](../../../docs/a2a/03_SECURITY/01_authentication_overview.md)
+- [Threat Model](../../../docs/a2a/03_SECURITY/03_threat_model.md)
+- [Security Best Practices](../../../docs/a2a/03_SECURITY/04_security_best_practices.md)
 
 ---
 

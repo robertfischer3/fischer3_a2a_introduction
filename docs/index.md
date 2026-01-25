@@ -143,7 +143,7 @@ Choose your path based on your background and goals:
 1. [Threat Model](a2a/03_SECURITY/03_threat_model.md) - Attack vectors
 2. [Authentication Tags](a2a/03_SECURITY/02_authentication_tags.md) - Crypto verification
 3. [Code Walkthrough](a2a/03_SECURITY/05_code_walkthrough_comparison.md) - Vulnerable vs Secure
-4. [Security Analysis](../examples/a2a_crypto_example/stage1_insecure/SECURITY_ANALYSIS.md) - Real vulnerability breakdowns
+4. [Security Analysis](../examples/a2a_crypto_example/SECURITY_ANALYSIS.md) - Real vulnerability breakdowns
 
 **Time**: 6-8 hours
 

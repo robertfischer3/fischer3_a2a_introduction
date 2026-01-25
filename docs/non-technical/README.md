@@ -206,7 +206,7 @@ Your feedback helps us improve these resources for everyone.
 - [A2A Overview](../a2a/00_A2A_OVERVIEW.md) - Bridge between non-technical and technical
 
 **Visual Learning:**
-- [Presentation Slides](../SLIDES.md) - Visual overview of concepts
+- [Presentation Slides](../presentations/eight-layer-validation/slides.md) - Visual overview of concepts
 - Diagrams and flowcharts throughout the technical documentation
 
 **Real-World Examples:**

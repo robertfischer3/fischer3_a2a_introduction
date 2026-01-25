@@ -542,7 +542,7 @@ Built with and inspired by:
 
 ### For Learners
 
-1. **Start with Stage 1**: [Adversarial Agents - Vulnerable](examples/stage1-adversarial.md)
+1. **Start with Stage 1**: [Adversarial Agents - Vulnerable](../examples/stage1-adversarial.md)
 2. **Run the attacks**: Clone and execute
 3. **Understand the code**: Read and experiment
 4. **Progress to Stage 2**: See partial security

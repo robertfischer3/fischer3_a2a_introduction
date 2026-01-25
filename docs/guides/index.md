@@ -191,7 +191,7 @@ graph LR
 2. [Security Checklist](security-checklist.md)
 3. [Code Walkthrough](../a2a/03_SECURITY/05_code_walkthrough_comparison.md)
 4. [Running Examples](running-examples.md)
-5. [Stage 1 Security Analysis](../../examples/a2a_crypto_example/stage1_insecure/SECURITY_ANALYSIS.md)
+5. [Stage 1 Security Analysis](../../examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
 
 **Time**: 6-8 hours
 

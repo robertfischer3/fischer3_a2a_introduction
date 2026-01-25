@@ -433,5 +433,5 @@ By understanding these patterns, you can build responsive, efficient agent syste
 
 - Explore the [A2A Cryptocurrency Example](../a2a_crypto_example/) to see basic agent communication
 - Learn about [Agent Cards](./agent_card_explanation.md) for capability discovery
-- Review [Security Best Practices](../a2a_crypto_example/security/README.md) for production deployments
+- Review [Security Best Practices](../../README.md) for production deployments
 - Implement streaming in your own agents using the patterns shown here

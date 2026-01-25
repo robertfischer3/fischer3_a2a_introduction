@@ -833,8 +833,8 @@ After studying this analysis, you should understand:
 ## 🔗 Related Resources
 
 ### Documentation
-- [Stage 2 - Improved Implementation](../improved/SECURITY_ANALYSIS.md)
-- [Stage 3 - Secure Implementation](../secure/SECURITY_ANALYSIS.md)
+- [Stage 2 - Improved Implementation](../../a2a_crypto_example/SECURITY_ANALYSIS.md)
+- [Stage 3 - Secure Implementation](../../a2a_crypto_example/SECURITY_ANALYSIS.md)
 - [Security Best Practices](../../../docs/a2a/03_SECURITY/04_security_best_practices.md)
 
 ### External References

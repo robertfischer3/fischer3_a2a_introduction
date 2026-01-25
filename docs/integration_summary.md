@@ -353,7 +353,7 @@ Explore working examples:
 ### Building Production Systems?
 Study security and best practices:
 
-👉 **[A2A Security →](./docs/a2a/03_SECURITY/01_authentication_overview.md)**  
+👉 **[A2A Security →](a2a/03_SECURITY/01_authentication_overview.md)**  
 👉 **[Architecture Patterns →](./architecture_patterns.md)**
 
 ---
@@ -361,7 +361,7 @@ Study security and best practices:
 ## 📚 Additional Resources
 
 ### Official Documentation
-- **[A2A Protocol Documentation](./docs/a2a/00_A2A_OVERVIEW.md)** - Complete A2A guide
+- **[A2A Protocol Documentation](a2a/00_A2A_OVERVIEW.md)** - Complete A2A guide
 - **[MCP Official Website](https://modelcontextprotocol.io)** - MCP specification and docs
 
 ### Integration Guides
@@ -370,7 +370,7 @@ Study security and best practices:
 
 ### Learning Resources
 - **[Quick Start Guide](./quick_start.md)** - Get started with both protocols
-- **[References](./docs/references.md)** - Papers, articles, and external resources
+- **[References](references.md)** - Papers, articles, and external resources
 
 ---
 

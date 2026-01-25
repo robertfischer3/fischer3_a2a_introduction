@@ -121,39 +121,39 @@ Ready to learn more? Explore these in-depth topics:
 ### 🎓 Fundamentals
 Get a solid foundation before diving into implementation.
 
-- **[Core Concepts](./docs/a2a/01_FUNDAMENTALS/01_core_concepts.md)** - What problems does A2A solve? Key terminology and patterns
-- **[Agent Identity](./docs/a2a/01_FUNDAMENTALS/02_agent_identity.md)** - How agents identify themselves in distributed systems
-- **[Message Types](./docs/a2a/01_FUNDAMENTALS/03_message_types.md)** - Request/Response, Handshake, Event streaming
-- **[Conversation Flows](./docs/a2a/01_FUNDAMENTALS/04_conversation_flows.md)** - Discovery → Negotiation → Execution patterns
+- **[Core Concepts](a2a/01_FUNDAMENTALS/01_core_concepts.md)** - What problems does A2A solve? Key terminology and patterns
+- **[Agent Identity](a2a/01_FUNDAMENTALS/02_agent_identity.md)** - How agents identify themselves in distributed systems
+- **[Message Types](a2a/01_FUNDAMENTALS/03_message_types.md)** - Request/Response, Handshake, Event streaming
+- **[Conversation Flows](a2a/01_FUNDAMENTALS/04_conversation_flows.md)** - Discovery → Negotiation → Execution patterns
 
 ### 🔍 Discovery & Registration
 Learn how agents find each other dynamically.
 
-- **[Agent Cards](./docs/a2a/02_DISCOVERY/01_agent_cards.md)** - Structure, capabilities, and metadata
-- **[Agent Registry](./docs/a2a/02_DISCOVERY/02_agent_registry.md)** - Centralized vs distributed registries, health monitoring
-- **[Capability Matching](./docs/a2a/02_DISCOVERY/03_capability_matching.md)** - Query patterns, ranking, fallback strategies
+- **[Agent Cards](a2a/02_DISCOVERY/01_agent_cards.md)** - Structure, capabilities, and metadata
+- **[Agent Registry](a2a/02_DISCOVERY/02_agent_registry.md)** - Centralized vs distributed registries, health monitoring
+- **[Capability Matching](a2a/02_DISCOVERY/03_capability_matching.md)** - Query patterns, ranking, fallback strategies
 
 ### 🔐 Security (CRITICAL!)
 Understand attack vectors and security best practices.
 
-- **[Authentication Overview](./docs/a2a/03_SECURITY/01_authentication_overview.md)** - Trust models, PKI, certificate chains
-- **[Authentication Tags](./docs/a2a/03_SECURITY/02_authentication_tags.md)** - Cryptographic signing and verification
-- **[Threat Model](./docs/a2a/03_SECURITY/03_threat_model.md)** - Attack vectors specific to agent systems
-- **[Security Best Practices](./docs/a2a/03_SECURITY/04_security_best_practices.md)** - Production-grade security patterns
+- **[Authentication Overview](a2a/03_SECURITY/01_authentication_overview.md)** - Trust models, PKI, certificate chains
+- **[Authentication Tags](a2a/03_SECURITY/02_authentication_tags.md)** - Cryptographic signing and verification
+- **[Threat Model](a2a/03_SECURITY/03_threat_model.md)** - Attack vectors specific to agent systems
+- **[Security Best Practices](a2a/03_SECURITY/04_security_best_practices.md)** - Production-grade security patterns
 
 ### 💬 Communication Patterns
 Master the message protocol and data exchange.
 
-- **[Protocol Messages](./docs/a2a/04_COMMUNICATION/01_protocol_messages.md)** - TextPart, DataPart, FilePart, JSON formats
-- **[Streaming & Events](./docs/a2a/04_COMMUNICATION/02_streaming_events.md)** - Server-Sent Events, real-time updates
-- **[Error Handling](./docs/a2a/04_COMMUNICATION/03_error_handling.md)** - Robust error management patterns
+- **[Protocol Messages](a2a/04_COMMUNICATION/01_protocol_messages.md)** - TextPart, DataPart, FilePart, JSON formats
+- **[Streaming & Events](a2a/04_COMMUNICATION/02_streaming_events.md)** - Server-Sent Events, real-time updates
+- **[Error Handling](a2a/04_COMMUNICATION/03_error_handling.md)** - Robust error management patterns
 
 ### 📖 Reference Materials
 Technical specifications and standards.
 
-- **[Message Schemas](./docs/a2a/05_REFERENCE/01_message_schemas.md)** - JSON schema definitions
-- **[Capability Vocabulary](./docs/a2a/05_REFERENCE/02_capability_vocabulary.md)** - Standard capability names
-- **[Protocol Versions](./docs/a2a/05_REFERENCE/03_protocol_versions.md)** - Version compatibility guide
+- **[Message Schemas](a2a/05_REFERENCE/01_message_schemas.md)** - JSON schema definitions
+- **[Capability Vocabulary](a2a/05_REFERENCE/02_capability_vocabulary.md)** - Standard capability names
+- **[Protocol Versions](a2a/05_REFERENCE/03_protocol_versions.md)** - Version compatibility guide
 
 ---
 
@@ -182,7 +182,7 @@ This project includes three implementations that progress from vulnerable to sec
 
 - **[Live Slides](https://robertfischer3.github.io/fischer3_a2a_introduction)** - Interactive presentation
 - **[Eight-Layer Validation](./docs/presentations/eight-layer-validation/)** - Security framework
-- **[Presentation Index](./docs/presentations/index.md)** - All presentation materials
+- **[Presentation Index](index.md)** - All presentation materials
 
 ---
 
@@ -235,7 +235,7 @@ This project includes three implementations that progress from vulnerable to sec
 ### New to A2A?
 Start with the fundamentals to build a solid foundation:
 
-👉 **[Begin with Core Concepts →](./docs/a2a/01_FUNDAMENTALS/01_core_concepts.md)**
+👉 **[Begin with Core Concepts →](a2a/01_FUNDAMENTALS/01_core_concepts.md)**
 
 ### Want Hands-On Learning?
 Explore the progressive code examples:
@@ -250,16 +250,16 @@ Jump straight into the quick start guide:
 ### Security Professional?
 Go directly to security topics:
 
-👉 **[Security Threat Model →](./docs/a2a/03_SECURITY/03_threat_model.md)**
+👉 **[Security Threat Model →](a2a/03_SECURITY/03_threat_model.md)**
 
 ---
 
 ## 📚 Additional Resources
 
-- **[Full A2A Overview](./docs/a2a/00_A2A_OVERVIEW.md)** - Comprehensive introduction
+- **[Full A2A Overview](a2a/00_A2A_OVERVIEW.md)** - Comprehensive introduction
 - **[A2A + MCP Integration](./docs/a2a/a2a_mcp_integration.md)** - How protocols work together
 - **[Implementation Patterns](./docs/a2a/implementation_patterns.md)** - Architectural guidance
-- **[References](./docs/references.md)** - External documentation and papers
+- **[References](references.md)** - External documentation and papers
 
 ---
 

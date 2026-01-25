@@ -915,14 +915,14 @@ Want to learn more about specific vulnerabilities?
 
 ### Related Documentation
 
-- [A2A Overview](/docs/a2a/00_A2A_OVERVIEW.md) - Protocol basics
-- [Security Best Practices](/docs/a2a/03_SECURITY/04_security_best_practices.md) - What to do instead
-- [Threat Model](/docs/a2a/03_SECURITY/03_threat_model.md) - Understanding attackers
-- [Authentication Overview](/docs/a2a/03_SECURITY/01_authentication_overview.md) - How to authenticate
+- [A2A Overview](../a2a/00_A2A_OVERVIEW.md) - Protocol basics
+- [Security Best Practices](../a2a/03_SECURITY/04_security_best_practices.md) - What to do instead
+- [Threat Model](../a2a/03_SECURITY/03_threat_model.md) - Understanding attackers
+- [Authentication Overview](../a2a/03_SECURITY/01_authentication_overview.md) - How to authenticate
 
 ### Code Files
 
-- [Full Security Analysis](/examples/a2a_crypto_example/SECURITY_ANALYSIS.md) - All 15+ vulnerabilities
+- [Full Security Analysis](../../examples/a2a_crypto_example/SECURITY_ANALYSIS.md) - All 15+ vulnerabilities
 - [Stage 1 Server Code](/examples/a2a_crypto_example/insecure/crypto_price_server.py)
 - [Stage 1 Client Code](/examples/a2a_crypto_example/insecure/crypto_client.py)
 
@@ -983,7 +983,7 @@ Stage 2 will show you:
 Want variety?
 - [Credit Report Example](./credit_report_example.md) - File upload security
 - [Task Collaboration Example](./task_collaboration_example.md) - Session management
-- [MCP Fundamentals](/docs/mcp_fundamentals.md) - Learn Model Context Protocol
+- [MCP Fundamentals](../mcp_fundamentals.md) - Learn Model Context Protocol
 
 ---
 

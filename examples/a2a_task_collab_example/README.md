@@ -148,7 +148,7 @@ Unlike simple request-response patterns, this project demonstrates:
 **Study Time**: 4-5 hours  
 **Files**: `stage3_secure/`
 
-[📖 Read Stage 3 Documentation](./stage3_secure/README.md)
+[📖 Read Stage 3 Documentation](../../README.md)
 
 ---
 
@@ -173,7 +173,7 @@ Unlike simple request-response patterns, this project demonstrates:
 **Study Time**: 3-4 hours  
 **Files**: `stage4_distributed/`
 
-[📖 Read Stage 4 Documentation](./stage4_distributed/README.md)
+[📖 Read Stage 4 Documentation](../../README.md)
 
 ---
 
@@ -201,7 +201,7 @@ Unlike simple request-response patterns, this project demonstrates:
 **Study Time**: 4-5 hours  
 **Files**: `stage5_web/`
 
-[📖 Read Stage 5 Documentation](./stage5_web/README.md)
+[📖 Read Stage 5 Documentation](../../README.md)
 
 ---
 
@@ -462,7 +462,7 @@ By completing this project, you will be able to:
 ## 🛠️ Additional Resources
 
 ### Documentation
-- [Quick Reference Guide](./QUICK_REFERENCE.md) - Fast navigation and commands
+- [Quick Reference Guide](../a2a_credit_report_example/QUICK_REFERENCE.md) - Fast navigation and commands
 - [Session Security Cheat Sheet](./A2A_SESSION_SECURITY_CHEAT_SHEET.md) - Security patterns
 - [Project Plan](./task_collab_project_plan.md) - Complete implementation plan
 - [Example Comparison](./task_collab_comparision.md) - Compare with other examples
@@ -532,7 +532,7 @@ Found an issue or want to improve the project?
 4. Add attack demonstrations where appropriate
 5. Submit a pull request
 
-See [Contributing Guidelines](../../CONTRIBUTING.md) for details.
+See [Contributing Guidelines](../../docs/about/contributing.md) for details.
 
 ---
 
@@ -547,7 +547,7 @@ See individual files for specific licensing information.
 ## 🎓 Next Steps
 
 1. **Start with Stage 1**: [Stage 1 README](./stage1_insecure/README.md)
-2. **Read Quick Reference**: [QUICK_REFERENCE.md](./QUICK_REFERENCE.md)
+2. **Read Quick Reference**: [QUICK_REFERENCE.md](../a2a_credit_report_example/QUICK_REFERENCE.md)
 3. **Study Security Patterns**: [Session Security Cheat Sheet](./A2A_SESSION_SECURITY_CHEAT_SHEET.md)
 4. **Join the Discussion**: Open an issue for questions
 

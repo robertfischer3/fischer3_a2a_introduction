@@ -375,7 +375,7 @@ This project includes three progressive implementations:
 ### Presentations & Slides
 - [Live Slides](https://robertfischer3.github.io/fischer3_a2a_introduction)
 - [PDF Version](../docs/slides.pdf)
-- [Markdown Source](../docs/SLIDES.md)
+- [Markdown Source](../presentations/eight-layer-validation/slides.md)
 
 ### Code Examples
 - [Crypto Agent Examples](../examples/) - All three security levels

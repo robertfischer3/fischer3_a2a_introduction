@@ -304,7 +304,7 @@ After understanding these vulnerabilities:
 
 - [SECURITY_ANALYSIS.md](./SECURITY_ANALYSIS.md) - Detailed vulnerability analysis
 - [Stage 2 - Improved](../improved/README.md) - Partial security fixes
-- [Stage 3 - Secure](../secure/README.md) - Production-ready implementation
+- [Stage 3 - Secure](../../../README.md) - Production-ready implementation
 
 ---
 

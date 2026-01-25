@@ -415,7 +415,7 @@ Continue to Stage 5 if you:
 **Begin with**:
 1. Read the main [PROJECT_PLAN.md](./task_collab_project_plan.md)
 2. Review the [comparison document](./task_collab_comparison.md)
-3. Check out the [Session Security documentation](./06_session_state_security.md)
+3. Check out the [Session Security documentation](../../docs/a2a/03_SECURITY/06_session_state_security.md)
 4. Start Stage 1 when ready!
 
 ---

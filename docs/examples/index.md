@@ -420,7 +420,7 @@ Found an issue or want to add an example?
 4. Add attack demonstrations
 5. Submit a pull request
 
-See [Contributing Guidelines](../../CONTRIBUTING.md) for details.
+See [Contributing Guidelines](../about/contributing.md) for details.
 
 ---
 

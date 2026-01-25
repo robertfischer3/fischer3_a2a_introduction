@@ -102,7 +102,7 @@ marp SLIDES.md -o index.html
 
 **[▶ View Live Slides](https://your-username.github.io/your-repo/)**
 
-- [Markdown Source](SLIDES.md)
+- [Markdown Source](../presentations/eight-layer-validation/slides.md)
 - [Download PDF](slides.pdf)
 ```
 

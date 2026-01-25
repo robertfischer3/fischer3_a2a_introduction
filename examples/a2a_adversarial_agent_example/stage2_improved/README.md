@@ -544,9 +544,9 @@ Preview of complete security in Stage 3:
 ## 📚 Additional Resources
 
 ### Documentation
-- [SECURITY_ANALYSIS.md](./SECURITY_ANALYSIS.md) - Detailed vulnerability analysis
+- [SECURITY_ANALYSIS.md](../../a2a_crypto_example/SECURITY_ANALYSIS.md) - Detailed vulnerability analysis
 - [Stage 1 README](../stage1_insecure/README.md) - Completely vulnerable baseline
-- [Stage 3 README](../stage3_secure/README.md) - Production security (coming soon)
+- [Stage 3 README](../../../README.md) - Production security (coming soon)
 
 ### External Resources
 - [JWT Introduction](https://jwt.io/introduction)

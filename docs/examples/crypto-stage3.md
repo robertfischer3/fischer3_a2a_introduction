@@ -1416,17 +1416,17 @@ Ready to deploy? Here's your checklist:
 
 ### Related Documentation
 
-- [A2A Security Best Practices](/docs/a2a/03_SECURITY/04_security_best_practices.md)
-- [Authentication Deep Dive](/docs/a2a/03_SECURITY/01_authentication_overview.md)
-- [Threat Model](/docs/a2a/03_SECURITY/03_threat_model.md)
-- [Protocol Messages](/docs/a2a/04_COMMUNICATION/01_protocol_messages.md)
+- [A2A Security Best Practices](../a2a/03_SECURITY/04_security_best_practices.md)
+- [Authentication Deep Dive](../a2a/03_SECURITY/01_authentication_overview.md)
+- [Threat Model](../a2a/03_SECURITY/03_threat_model.md)
+- [Protocol Messages](../a2a/04_COMMUNICATION/01_protocol_messages.md)
 
 ### Code Files
 
 - [Secure Server](/examples/a2a_crypto_example/security/secure_crypto_server.py)
-- [Authentication Module](/examples/a2a_crypto_example/security/authentication.py)
+- [Authentication Module](../../.venv-1/lib/python3.12/site-packages/starlette/authentication.py)
 - [Replay Protection](/examples/a2a_crypto_example/security/replay_protection.py)
-- [Validation Module](/examples/a2a_crypto_example/security/validation.py)
+- [Validation Module](../../examples/a2a_credit_report_example/stage4_ai/security/validation.py)
 - [Rate Limiter](/examples/a2a_crypto_example/security/rate_limit.py)
 
 ---
@@ -1528,12 +1528,12 @@ The security principles are language-agnostic.
 **Explore Other Examples**:
 - [Credit Report Example](./credit_report_example.md) - File upload security + PII
 - [Task Collaboration Example](./task_collaboration_example.md) - Session management
-- [MCP Integration](./integration_summary.md) - Combine A2A + MCP
+- [MCP Integration](../integration_summary.md) - Combine A2A + MCP
 
 **Deepen Your Knowledge**:
-- [A2A Security Best Practices](/docs/a2a/03_SECURITY/04_security_best_practices.md)
-- [Authentication Tags](/docs/a2a/03_SECURITY/02_authentication_tags.md)
-- [Threat Modeling](/docs/a2a/03_SECURITY/03_threat_model.md)
+- [A2A Security Best Practices](../a2a/03_SECURITY/04_security_best_practices.md)
+- [Authentication Tags](../a2a/03_SECURITY/02_authentication_tags.md)
+- [Threat Modeling](../a2a/03_SECURITY/03_threat_model.md)
 
 **Share Your Knowledge**:
 - Teach others using these stages
