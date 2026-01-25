@@ -153,28 +153,6 @@ The project includes **three comprehensive examples**, each focusing on differen
 [View Task Collaboration README](./examples/a2a_task_collab_example/README.md)  
 [View Quick Reference Guide](./examples/a2a_task_collab_example/task_collab_quickstart.md)
 
----
-# Examples Overview
-
-## TEST
-
-We have **{{ example_count() }}** comprehensive examples covering different security domains.
-
-**Total Study Time**: {{ total_study_hours() }} hours
-
-## 🎯 Quick Navigation
-
-{{ example_quick_nav() }}
-
-## 📊 Example Comparison Matrix
-
-{{ example_comparison_table() }}
-
-## 📚 All Examples
-
-{{ example_list_bullets() }}
-
----
 
 ## 📊 Example Comparison Matrix
 
