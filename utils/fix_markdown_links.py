@@ -111,9 +111,9 @@ def main():
     print("\n" + "="*80)
     print("To use this script programmatically:")
     print("="*80)
-    print("""
-from check_markdown_links import LinkChecker
-from fix_markdown_links import LinkFixSuggester
+    
+    from check_markdown_links import LinkChecker
+    from fix_markdown_links import LinkFixSuggester
 
 # Check links
 checker = LinkChecker('.')
@@ -127,8 +127,6 @@ suggester.scan_files()
 for file_path, links in checker.broken_links.items():
     for link in links:
         suggester.suggest_fix(link)
-""")
-
 
 if __name__ == "__main__":
     main()
