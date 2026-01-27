@@ -4,10 +4,10 @@ MARKDOWN LINK CHECKER - DETAILED REPORT
 
 📊 SUMMARY
 --------------------------------------------------------------------------------
-Total markdown files scanned: 153
-Total links found: 1101
-  ✓ Working links: 551
-  ✗ Broken links: 321
+Total markdown files scanned: 154
+Total links found: 1106
+  ✓ Working links: 687
+  ✗ Broken links: 190
   ⚠ External links (not checked): 229
 
 ================================================================================
@@ -31,21 +31,6 @@ Total links found: 1101
         3. Use: (docs/a2a/03_SECURITY/06_session_securiity_quick_reference.md)
            File: docs/a2a/03_SECURITY/06_session_securiity_quick_reference.md
            Match: 68%
-
-  ❌ Line 380: [UV Python Environment Guide](./side_topic_guidance/uv/UV_COMPLETE_GUIDE.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/side_topic_guidance/uv/UV_COMPLETE_GUIDE.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (docs/supplementary/tools/UV_COMPLETE_GUIDE.md)
-           File: docs/supplementary/tools/UV_COMPLETE_GUIDE.md
-           Match: 100%
-        2. Use: (docs/supplementary/tools/uv_guide.md)
-           File: docs/supplementary/tools/uv_guide.md
-           Match: 71%
-        3. Use: (mcp_examples/your_first_mcp_server/README_COMPLETE.md)
-           File: mcp_examples/your_first_mcp_server/README_COMPLETE.md
-           Match: 63%
 
   ❌ Line 577: [Adversarial Agent Example](./examples/a2a_adversarial_agent_example/)
      Reason: Directory link without index.md or README.md
@@ -130,7 +115,16 @@ Total links found: 1101
 📄 File: docs/a2a/00_A2A_OVERVIEW.md
 --------------------------------------------------------------------------------
 
-  ❌ Line 372: [A2A + MCP Integration](../a2a_mcp_integration.md)
+  ❌ Line 27: ["The Big Picture"](/docs/images/diagrams/orchestrator_image.jpg "The Big Picture")
+     Reason: File not found
+     Attempted: /docs/images/diagrams/orchestrator_image.jpg "The Big Picture"
+
+     💡 ACTIONS:
+        • Create the missing file
+        • Remove the broken link
+        • Update to correct path
+
+  ❌ Line 354: [A2A + MCP Integration](../a2a_mcp_integration.md)
      Reason: File not found
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a_mcp_integration.md
 
@@ -145,7 +139,7 @@ Total links found: 1101
            File: docs/integration_summary.md
            Match: 64%
 
-  ❌ Line 373: [Implementation Patterns](../implementation_patterns.md)
+  ❌ Line 355: [Implementation Patterns](../implementation_patterns.md)
      Reason: File not found
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/implementation_patterns.md
 
@@ -160,7 +154,7 @@ Total links found: 1101
            File: .venv-1/lib/python3.12/site-packages/grpc/beta/implementations.py
            Match: 73%
 
-  ❌ Line 377: [PDF Version](../docs/slides.pdf)
+  ❌ Line 359: [PDF Version](../docs/slides.pdf)
      Reason: File not found
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/slides.pdf
 
@@ -175,22 +169,7 @@ Total links found: 1101
            File: docs/presentations/adverserial_agent/slides.md
            Match: 84%
 
-  ❌ Line 378: [Markdown Source](../docs/SLIDES.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/SLIDES.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../presentations/eight-layer-validation/slides.md)
-           File: docs/presentations/eight-layer-validation/slides.md
-           Match: 100%
-        2. Use: (../presentations/agent_security_article_enhanced/slides.md)
-           File: docs/presentations/agent_security_article_enhanced/slides.md
-           Match: 100%
-        3. Use: (../presentations/adverserial_agent/slides.md)
-           File: docs/presentations/adverserial_agent/slides.md
-           Match: 100%
-
-  ❌ Line 382: [Security Module](../examples/a2a_crypto_example/security/)
+  ❌ Line 364: [Security Module](../examples/a2a_crypto_example/security/)
      Reason: File not found
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/examples/a2a_crypto_example/security
 
@@ -217,276 +196,6 @@ Total links found: 1101
         • Create the missing file
         • Remove the broken link
         • Update to correct path
-
-  ❌ Line 61: [Core Concepts](./01_FUNDAMENTALS/01_core_concepts.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/01_FUNDAMENTALS/01_core_concepts.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (01_core_concepts.md)
-           File: docs/a2a/01_FUNDAMENTALS/01_core_concepts.md
-           Match: 100%
-        2. Use: (../../references.md)
-           File: docs/references.md
-           Match: 56%
-        3. Use: (../02_DISCOVERY/01_agent_cards.md)
-           File: docs/a2a/02_DISCOVERY/01_agent_cards.md
-           Match: 56%
-
-  ❌ Line 66: [Agent Identity](./01_FUNDAMENTALS/02_agent_identity.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/01_FUNDAMENTALS/02_agent_identity.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (02_agent_identity.md)
-           File: docs/a2a/01_FUNDAMENTALS/02_agent_identity.md
-           Match: 100%
-        2. Use: (../02_DISCOVERY/02_agent_registry.md)
-           File: docs/a2a/02_DISCOVERY/02_agent_registry.md
-           Match: 75%
-        3. Use: (../../../agent2agent_intro.md)
-           File: agent2agent_intro.md
-           Match: 65%
-
-  ❌ Line 71: [Message Types](./01_FUNDAMENTALS/03_message_types.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/01_FUNDAMENTALS/03_message_types.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (03_message_types.md)
-           File: docs/a2a/01_FUNDAMENTALS/03_message_types.md
-           Match: 100%
-        2. Use: (../05_REFERENCE/01_message_schemas.md)
-           File: docs/a2a/05_REFERENCE/01_message_schemas.md
-           Match: 75%
-        3. Use: (../04_COMMUNICATION/04_message_validation_patterns.md)
-           File: docs/a2a/04_COMMUNICATION/04_message_validation_patterns.md
-           Match: 65%
-
-  ❌ Line 76: [Conversation Flows](./01_FUNDAMENTALS/04_conversation_flows.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/01_FUNDAMENTALS/04_conversation_flows.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (04_conversation_flows.md)
-           File: docs/a2a/01_FUNDAMENTALS/04_conversation_flows.md
-           Match: 100%
-        2. Use: (../05_REFERENCE/03_protocol_versions.md)
-           File: docs/a2a/05_REFERENCE/03_protocol_versions.md
-           Match: 64%
-        3. Use: (../05_REFERENCE/protocol_versions.md)
-           File: docs/a2a/05_REFERENCE/protocol_versions.md
-           Match: 59%
-
-  ❌ Line 86: [Agent Cards](./02_DISCOVERY/01_agent_cards.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/02_DISCOVERY/01_agent_cards.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../02_DISCOVERY/01_agent_cards.md)
-           File: docs/a2a/02_DISCOVERY/01_agent_cards.md
-           Match: 100%
-        2. Use: (../02_DISCOVERY/02_agent_registry.md)
-           File: docs/a2a/02_DISCOVERY/02_agent_registry.md
-           Match: 70%
-        3. Use: (../05_REFERENCE/01_message_schemas.md)
-           File: docs/a2a/05_REFERENCE/01_message_schemas.md
-           Match: 68%
-
-  ❌ Line 91: [Agent Registry](./02_DISCOVERY/02_agent_registry.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/02_DISCOVERY/02_agent_registry.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../02_DISCOVERY/02_agent_registry.md)
-           File: docs/a2a/02_DISCOVERY/02_agent_registry.md
-           Match: 100%
-        2. Use: (02_agent_identity.md)
-           File: docs/a2a/01_FUNDAMENTALS/02_agent_identity.md
-           Match: 80%
-        3. Use: (../02_DISCOVERY/01_agent_cards.md)
-           File: docs/a2a/02_DISCOVERY/01_agent_cards.md
-           Match: 70%
-
-  ❌ Line 96: [Capability Matching](./02_DISCOVERY/03_capability_matching.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/02_DISCOVERY/03_capability_matching.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../02_DISCOVERY/03_capability_matching.md)
-           File: docs/a2a/02_DISCOVERY/03_capability_matching.md
-           Match: 100%
-        2. Use: (../05_REFERENCE/02_capability_vocabulary.md)
-           File: docs/a2a/05_REFERENCE/02_capability_vocabulary.md
-           Match: 65%
-        3. Use: (../../../.venv-1/lib/python3.12/site-packages/pip/_internal/utils/compatibility_tags.py)
-           File: .venv-1/lib/python3.12/site-packages/pip/_internal/utils/compatibility_tags.py
-           Match: 57%
-
-  ❌ Line 113: [Authentication Overview](./03_SECURITY/01_authentication_overview.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/03_SECURITY/01_authentication_overview.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 100%
-        2. Use: (../03_SECURITY/02_authentication_tags.md)
-           File: docs/a2a/03_SECURITY/02_authentication_tags.md
-           Match: 74%
-        3. Use: (../05_REFERENCE/04_authentication_tags_references.md)
-           File: docs/a2a/05_REFERENCE/04_authentication_tags_references.md
-           Match: 71%
-
-  ❌ Line 118: [Authentication Tags](./03_SECURITY/02_authentication_tags.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/03_SECURITY/02_authentication_tags.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../03_SECURITY/02_authentication_tags.md)
-           File: docs/a2a/03_SECURITY/02_authentication_tags.md
-           Match: 100%
-        2. Use: (../05_REFERENCE/04_authentication_tags_references.md)
-           File: docs/a2a/05_REFERENCE/04_authentication_tags_references.md
-           Match: 79%
-        3. Use: (../03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 74%
-
-  ❌ Line 123: [Threat Model](./03_SECURITY/03_threat_model.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/03_SECURITY/03_threat_model.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../03_SECURITY/03_threat_model.md)
-           File: docs/a2a/03_SECURITY/03_threat_model.md
-           Match: 100%
-        2. Use: (../../../.venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py)
-           File: .venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py
-           Match: 65%
-        3. Use: (../../../README.md)
-           File: README.md
-           Match: 59%
-
-  ❌ Line 128: [Security Best Practices](./03_SECURITY/04_security_best_practices.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/03_SECURITY/04_security_best_practices.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../03_SECURITY/04_security_best_practices.md)
-           File: docs/a2a/03_SECURITY/04_security_best_practices.md
-           Match: 100%
-        2. Use: (../../../examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 61%
-        3. Use: (../../../examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 61%
-
-  ❌ Line 139: [Protocol Messages](./04_COMMUNICATION/01_protocol_messages.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/04_COMMUNICATION/01_protocol_messages.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../04_COMMUNICATION/01_protocol_messages.md)
-           File: docs/a2a/04_COMMUNICATION/01_protocol_messages.md
-           Match: 100%
-        2. Use: (../05_REFERENCE/03_protocol_versions.md)
-           File: docs/a2a/05_REFERENCE/03_protocol_versions.md
-           Match: 74%
-        3. Use: (../05_REFERENCE/protocol_versions.md)
-           File: docs/a2a/05_REFERENCE/protocol_versions.md
-           Match: 70%
-
-  ❌ Line 144: [Streaming & Events](./04_COMMUNICATION/02_streaming_events.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/04_COMMUNICATION/02_streaming_events.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../04_COMMUNICATION/02_streaming_events.md)
-           File: docs/a2a/04_COMMUNICATION/02_streaming_events.md
-           Match: 100%
-        2. Use: (../../../.venv-1/lib/python3.12/site-packages/pyasn1/codec/streaming.py)
-           File: .venv-1/lib/python3.12/site-packages/pyasn1/codec/streaming.py
-           Match: 59%
-        3. Use: (../../../.venv-1/lib/python3.12/site-packages/google/api_core/rest_streaming_async.py)
-           File: .venv-1/lib/python3.12/site-packages/google/api_core/rest_streaming_async.py
-           Match: 58%
-
-  ❌ Line 149: [Error Handling](./04_COMMUNICATION/03_error_handling.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/04_COMMUNICATION/03_error_handling.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../04_COMMUNICATION/03_error_handling.md)
-           File: docs/a2a/04_COMMUNICATION/03_error_handling.md
-           Match: 100%
-        2. Use: (../04_COMMUNICATION/ERROR_HANDLING_QUICK_REFERENCE.md)
-           File: docs/a2a/04_COMMUNICATION/ERROR_HANDLING_QUICK_REFERENCE.md
-           Match: 64%
-        3. Use: (../03_SECURITY/03_threat_model.md)
-           File: docs/a2a/03_SECURITY/03_threat_model.md
-           Match: 53%
-
-  ❌ Line 159: [Message Schemas](./05_REFERENCE/01_message_schemas.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/05_REFERENCE/01_message_schemas.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../05_REFERENCE/01_message_schemas.md)
-           File: docs/a2a/05_REFERENCE/01_message_schemas.md
-           Match: 100%
-        2. Use: (03_message_types.md)
-           File: docs/a2a/01_FUNDAMENTALS/03_message_types.md
-           Match: 75%
-        3. Use: (../02_DISCOVERY/01_agent_cards.md)
-           File: docs/a2a/02_DISCOVERY/01_agent_cards.md
-           Match: 68%
-
-  ❌ Line 164: [Capability Vocabulary](./05_REFERENCE/02_capability_vocabulary.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/05_REFERENCE/02_capability_vocabulary.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../05_REFERENCE/02_capability_vocabulary.md)
-           File: docs/a2a/05_REFERENCE/02_capability_vocabulary.md
-           Match: 100%
-        2. Use: (../02_DISCOVERY/03_capability_matching.md)
-           File: docs/a2a/02_DISCOVERY/03_capability_matching.md
-           Match: 65%
-        3. Use: (../../../.venv-1/lib/python3.12/site-packages/pip/_internal/utils/compatibility_tags.py)
-           File: .venv-1/lib/python3.12/site-packages/pip/_internal/utils/compatibility_tags.py
-           Match: 50%
-
-  ❌ Line 169: [Protocol Versions](./05_REFERENCE/protocol_versions.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/05_REFERENCE/protocol_versions.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../05_REFERENCE/protocol_versions.md)
-           File: docs/a2a/05_REFERENCE/protocol_versions.md
-           Match: 100%
-        2. Use: (../05_REFERENCE/03_protocol_versions.md)
-           File: docs/a2a/05_REFERENCE/03_protocol_versions.md
-           Match: 93%
-        3. Use: (../04_COMMUNICATION/01_protocol_messages.md)
-           File: docs/a2a/04_COMMUNICATION/01_protocol_messages.md
-           Match: 70%
-
-  ❌ Line 352: [Current README](../index.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/index.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../index.md)
-           File: docs/index.md
-           Match: 100%
-        2. Use: (../../guides/index.md)
-           File: docs/guides/index.md
-           Match: 100%
-        3. Use: (../../supplementary/index.md)
-           File: docs/supplementary/index.md
-           Match: 100%
 
   ❌ Line 353: [A2A + MCP Integration](../a2a_mcp_integration.md)
      Reason: File not found
@@ -533,21 +242,6 @@ Total links found: 1101
            File: docs/presentations/adverserial_agent/slides.md
            Match: 84%
 
-  ❌ Line 359: [Markdown Source](../docs/SLIDES.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/docs/SLIDES.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../presentations/eight-layer-validation/slides.md)
-           File: docs/presentations/eight-layer-validation/slides.md
-           Match: 100%
-        2. Use: (../../presentations/agent_security_article_enhanced/slides.md)
-           File: docs/presentations/agent_security_article_enhanced/slides.md
-           Match: 100%
-        3. Use: (../../presentations/adverserial_agent/slides.md)
-           File: docs/presentations/adverserial_agent/slides.md
-           Match: 100%
-
   ❌ Line 362: [Crypto Agent Examples](../examples/)
      Reason: File not found
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/examples
@@ -576,96 +270,6 @@ Total links found: 1101
            Match: 73%
         3. Use: (../../../.venv-1/lib/python3.12/site-packages/backrefs/uniprops/unidata/script.py)
            File: .venv-1/lib/python3.12/site-packages/backrefs/uniprops/unidata/script.py
-           Match: 71%
-
-  ❌ Line 396: [Core Concepts](./01_FUNDAMENTALS/01_core_concepts.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/01_FUNDAMENTALS/01_core_concepts.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (01_core_concepts.md)
-           File: docs/a2a/01_FUNDAMENTALS/01_core_concepts.md
-           Match: 100%
-        2. Use: (../../references.md)
-           File: docs/references.md
-           Match: 56%
-        3. Use: (../02_DISCOVERY/01_agent_cards.md)
-           File: docs/a2a/02_DISCOVERY/01_agent_cards.md
-           Match: 56%
-
-  ❌ Line 402: [Security](./03_SECURITY/01_authentication_overview.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/03_SECURITY/01_authentication_overview.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 100%
-        2. Use: (../03_SECURITY/02_authentication_tags.md)
-           File: docs/a2a/03_SECURITY/02_authentication_tags.md
-           Match: 74%
-        3. Use: (../05_REFERENCE/04_authentication_tags_references.md)
-           File: docs/a2a/05_REFERENCE/04_authentication_tags_references.md
-           Match: 71%
-
-  ❌ Line 406: [Threat Model](./03_SECURITY/03_threat_model.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/03_SECURITY/03_threat_model.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../03_SECURITY/03_threat_model.md)
-           File: docs/a2a/03_SECURITY/03_threat_model.md
-           Match: 100%
-        2. Use: (../../../.venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py)
-           File: .venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py
-           Match: 65%
-        3. Use: (../../../README.md)
-           File: README.md
-           Match: 59%
-
-  ❌ Line 415: [References](../references.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/references.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../references.md)
-           File: docs/references.md
-           Match: 100%
-        2. Use: (../../../examples/a2a_credit_report_example/QUICK_REFERENCE.md)
-           File: examples/a2a_credit_report_example/QUICK_REFERENCE.md
-           Match: 77%
-        3. Use: (../../../.venv-1/lib/python3.12/site-packages/pymdownx/superfences.py)
-           File: .venv-1/lib/python3.12/site-packages/pymdownx/superfences.py
-           Match: 59%
-
-  ❌ Line 453: [Start with Fundamentals →](./01_FUNDAMENTALS/01_core_concepts.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/01_FUNDAMENTALS/01_core_concepts.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (01_core_concepts.md)
-           File: docs/a2a/01_FUNDAMENTALS/01_core_concepts.md
-           Match: 100%
-        2. Use: (../../references.md)
-           File: docs/references.md
-           Match: 56%
-        3. Use: (../02_DISCOVERY/01_agent_cards.md)
-           File: docs/a2a/02_DISCOVERY/01_agent_cards.md
-           Match: 56%
-
-  ❌ Line 456: [Jump to Security →](./03_SECURITY/01_authentication_overview.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/01_FUNDAMENTALS/03_SECURITY/01_authentication_overview.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 100%
-        2. Use: (../03_SECURITY/02_authentication_tags.md)
-           File: docs/a2a/03_SECURITY/02_authentication_tags.md
-           Match: 74%
-        3. Use: (../05_REFERENCE/04_authentication_tags_references.md)
-           File: docs/a2a/05_REFERENCE/04_authentication_tags_references.md
            Match: 71%
 
 
@@ -785,21 +389,6 @@ Total links found: 1101
            File: examples/a2a_task_collab_example/stage3_secure/security/crypto_manager.py
            Match: 51%
 
-  ❌ Line 436: [Security Best Practices](../a2a_crypto_example/security/README.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/a2a_crypto_example/security/README.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../../README.md)
-           File: README.md
-           Match: 100%
-        2. Use: (../../non-technical/README.md)
-           File: docs/non-technical/README.md
-           Match: 100%
-        3. Use: (../../presentations/eight-layer-validation/README.md)
-           File: docs/presentations/eight-layer-validation/README.md
-           Match: 100%
-
 
 📄 File: docs/a2a/04_COMMUNICATION/04_message_validation_patterns.md
 --------------------------------------------------------------------------------
@@ -873,261 +462,6 @@ Total links found: 1101
            File: examples/a2a_credit_report_example/VISUAL_OVERVIEW.md
            Match: 58%
 
-  ❌ Line 124: [Core Concepts](./docs/a2a/01_FUNDAMENTALS/01_core_concepts.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/01_FUNDAMENTALS/01_core_concepts.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/01_FUNDAMENTALS/01_core_concepts.md)
-           File: docs/a2a/01_FUNDAMENTALS/01_core_concepts.md
-           Match: 100%
-        2. Use: (references.md)
-           File: docs/references.md
-           Match: 56%
-        3. Use: (a2a/02_DISCOVERY/01_agent_cards.md)
-           File: docs/a2a/02_DISCOVERY/01_agent_cards.md
-           Match: 56%
-
-  ❌ Line 125: [Agent Identity](./docs/a2a/01_FUNDAMENTALS/02_agent_identity.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/01_FUNDAMENTALS/02_agent_identity.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/01_FUNDAMENTALS/02_agent_identity.md)
-           File: docs/a2a/01_FUNDAMENTALS/02_agent_identity.md
-           Match: 100%
-        2. Use: (a2a/02_DISCOVERY/02_agent_registry.md)
-           File: docs/a2a/02_DISCOVERY/02_agent_registry.md
-           Match: 75%
-        3. Use: (../agent2agent_intro.md)
-           File: agent2agent_intro.md
-           Match: 65%
-
-  ❌ Line 126: [Message Types](./docs/a2a/01_FUNDAMENTALS/03_message_types.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/01_FUNDAMENTALS/03_message_types.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/01_FUNDAMENTALS/03_message_types.md)
-           File: docs/a2a/01_FUNDAMENTALS/03_message_types.md
-           Match: 100%
-        2. Use: (a2a/05_REFERENCE/01_message_schemas.md)
-           File: docs/a2a/05_REFERENCE/01_message_schemas.md
-           Match: 75%
-        3. Use: (a2a/04_COMMUNICATION/04_message_validation_patterns.md)
-           File: docs/a2a/04_COMMUNICATION/04_message_validation_patterns.md
-           Match: 65%
-
-  ❌ Line 127: [Conversation Flows](./docs/a2a/01_FUNDAMENTALS/04_conversation_flows.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/01_FUNDAMENTALS/04_conversation_flows.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/01_FUNDAMENTALS/04_conversation_flows.md)
-           File: docs/a2a/01_FUNDAMENTALS/04_conversation_flows.md
-           Match: 100%
-        2. Use: (a2a/05_REFERENCE/03_protocol_versions.md)
-           File: docs/a2a/05_REFERENCE/03_protocol_versions.md
-           Match: 64%
-        3. Use: (a2a/05_REFERENCE/protocol_versions.md)
-           File: docs/a2a/05_REFERENCE/protocol_versions.md
-           Match: 59%
-
-  ❌ Line 132: [Agent Cards](./docs/a2a/02_DISCOVERY/01_agent_cards.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/02_DISCOVERY/01_agent_cards.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/02_DISCOVERY/01_agent_cards.md)
-           File: docs/a2a/02_DISCOVERY/01_agent_cards.md
-           Match: 100%
-        2. Use: (a2a/02_DISCOVERY/02_agent_registry.md)
-           File: docs/a2a/02_DISCOVERY/02_agent_registry.md
-           Match: 70%
-        3. Use: (a2a/05_REFERENCE/01_message_schemas.md)
-           File: docs/a2a/05_REFERENCE/01_message_schemas.md
-           Match: 68%
-
-  ❌ Line 133: [Agent Registry](./docs/a2a/02_DISCOVERY/02_agent_registry.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/02_DISCOVERY/02_agent_registry.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/02_DISCOVERY/02_agent_registry.md)
-           File: docs/a2a/02_DISCOVERY/02_agent_registry.md
-           Match: 100%
-        2. Use: (a2a/01_FUNDAMENTALS/02_agent_identity.md)
-           File: docs/a2a/01_FUNDAMENTALS/02_agent_identity.md
-           Match: 80%
-        3. Use: (a2a/02_DISCOVERY/01_agent_cards.md)
-           File: docs/a2a/02_DISCOVERY/01_agent_cards.md
-           Match: 70%
-
-  ❌ Line 134: [Capability Matching](./docs/a2a/02_DISCOVERY/03_capability_matching.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/02_DISCOVERY/03_capability_matching.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/02_DISCOVERY/03_capability_matching.md)
-           File: docs/a2a/02_DISCOVERY/03_capability_matching.md
-           Match: 100%
-        2. Use: (a2a/05_REFERENCE/02_capability_vocabulary.md)
-           File: docs/a2a/05_REFERENCE/02_capability_vocabulary.md
-           Match: 65%
-        3. Use: (../.venv-1/lib/python3.12/site-packages/pip/_internal/utils/compatibility_tags.py)
-           File: .venv-1/lib/python3.12/site-packages/pip/_internal/utils/compatibility_tags.py
-           Match: 57%
-
-  ❌ Line 139: [Authentication Overview](./docs/a2a/03_SECURITY/01_authentication_overview.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/03_SECURITY/01_authentication_overview.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 100%
-        2. Use: (a2a/03_SECURITY/02_authentication_tags.md)
-           File: docs/a2a/03_SECURITY/02_authentication_tags.md
-           Match: 74%
-        3. Use: (a2a/05_REFERENCE/04_authentication_tags_references.md)
-           File: docs/a2a/05_REFERENCE/04_authentication_tags_references.md
-           Match: 71%
-
-  ❌ Line 140: [Authentication Tags](./docs/a2a/03_SECURITY/02_authentication_tags.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/03_SECURITY/02_authentication_tags.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/03_SECURITY/02_authentication_tags.md)
-           File: docs/a2a/03_SECURITY/02_authentication_tags.md
-           Match: 100%
-        2. Use: (a2a/05_REFERENCE/04_authentication_tags_references.md)
-           File: docs/a2a/05_REFERENCE/04_authentication_tags_references.md
-           Match: 79%
-        3. Use: (a2a/03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 74%
-
-  ❌ Line 141: [Threat Model](./docs/a2a/03_SECURITY/03_threat_model.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/03_SECURITY/03_threat_model.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/03_SECURITY/03_threat_model.md)
-           File: docs/a2a/03_SECURITY/03_threat_model.md
-           Match: 100%
-        2. Use: (../.venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py)
-           File: .venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py
-           Match: 65%
-        3. Use: (../README.md)
-           File: README.md
-           Match: 59%
-
-  ❌ Line 142: [Security Best Practices](./docs/a2a/03_SECURITY/04_security_best_practices.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/03_SECURITY/04_security_best_practices.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/03_SECURITY/04_security_best_practices.md)
-           File: docs/a2a/03_SECURITY/04_security_best_practices.md
-           Match: 100%
-        2. Use: (../examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 61%
-        3. Use: (../examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 61%
-
-  ❌ Line 147: [Protocol Messages](./docs/a2a/04_COMMUNICATION/01_protocol_messages.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/04_COMMUNICATION/01_protocol_messages.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/04_COMMUNICATION/01_protocol_messages.md)
-           File: docs/a2a/04_COMMUNICATION/01_protocol_messages.md
-           Match: 100%
-        2. Use: (a2a/05_REFERENCE/03_protocol_versions.md)
-           File: docs/a2a/05_REFERENCE/03_protocol_versions.md
-           Match: 74%
-        3. Use: (a2a/05_REFERENCE/protocol_versions.md)
-           File: docs/a2a/05_REFERENCE/protocol_versions.md
-           Match: 70%
-
-  ❌ Line 148: [Streaming & Events](./docs/a2a/04_COMMUNICATION/02_streaming_events.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/04_COMMUNICATION/02_streaming_events.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/04_COMMUNICATION/02_streaming_events.md)
-           File: docs/a2a/04_COMMUNICATION/02_streaming_events.md
-           Match: 100%
-        2. Use: (../.venv-1/lib/python3.12/site-packages/pyasn1/codec/streaming.py)
-           File: .venv-1/lib/python3.12/site-packages/pyasn1/codec/streaming.py
-           Match: 59%
-        3. Use: (../.venv-1/lib/python3.12/site-packages/google/api_core/rest_streaming_async.py)
-           File: .venv-1/lib/python3.12/site-packages/google/api_core/rest_streaming_async.py
-           Match: 58%
-
-  ❌ Line 149: [Error Handling](./docs/a2a/04_COMMUNICATION/03_error_handling.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/04_COMMUNICATION/03_error_handling.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/04_COMMUNICATION/03_error_handling.md)
-           File: docs/a2a/04_COMMUNICATION/03_error_handling.md
-           Match: 100%
-        2. Use: (a2a/04_COMMUNICATION/ERROR_HANDLING_QUICK_REFERENCE.md)
-           File: docs/a2a/04_COMMUNICATION/ERROR_HANDLING_QUICK_REFERENCE.md
-           Match: 64%
-        3. Use: (a2a/03_SECURITY/03_threat_model.md)
-           File: docs/a2a/03_SECURITY/03_threat_model.md
-           Match: 53%
-
-  ❌ Line 154: [Message Schemas](./docs/a2a/05_REFERENCE/01_message_schemas.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/05_REFERENCE/01_message_schemas.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/05_REFERENCE/01_message_schemas.md)
-           File: docs/a2a/05_REFERENCE/01_message_schemas.md
-           Match: 100%
-        2. Use: (a2a/01_FUNDAMENTALS/03_message_types.md)
-           File: docs/a2a/01_FUNDAMENTALS/03_message_types.md
-           Match: 75%
-        3. Use: (a2a/02_DISCOVERY/01_agent_cards.md)
-           File: docs/a2a/02_DISCOVERY/01_agent_cards.md
-           Match: 68%
-
-  ❌ Line 155: [Capability Vocabulary](./docs/a2a/05_REFERENCE/02_capability_vocabulary.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/05_REFERENCE/02_capability_vocabulary.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/05_REFERENCE/02_capability_vocabulary.md)
-           File: docs/a2a/05_REFERENCE/02_capability_vocabulary.md
-           Match: 100%
-        2. Use: (a2a/02_DISCOVERY/03_capability_matching.md)
-           File: docs/a2a/02_DISCOVERY/03_capability_matching.md
-           Match: 65%
-        3. Use: (../.venv-1/lib/python3.12/site-packages/pip/_internal/utils/compatibility_tags.py)
-           File: .venv-1/lib/python3.12/site-packages/pip/_internal/utils/compatibility_tags.py
-           Match: 50%
-
-  ❌ Line 156: [Protocol Versions](./docs/a2a/05_REFERENCE/03_protocol_versions.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/05_REFERENCE/03_protocol_versions.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/05_REFERENCE/03_protocol_versions.md)
-           File: docs/a2a/05_REFERENCE/03_protocol_versions.md
-           Match: 100%
-        2. Use: (a2a/05_REFERENCE/protocol_versions.md)
-           File: docs/a2a/05_REFERENCE/protocol_versions.md
-           Match: 93%
-        3. Use: (a2a/04_COMMUNICATION/01_protocol_messages.md)
-           File: docs/a2a/04_COMMUNICATION/01_protocol_messages.md
-           Match: 74%
-
   ❌ Line 184: [Eight-Layer Validation](./docs/presentations/eight-layer-validation/)
      Reason: File not found
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/presentations/eight-layer-validation
@@ -1142,36 +476,6 @@ Total links found: 1101
         3. Use: (../examples/a2a_credit_report_example/ai_integrated/security/validation.py)
            File: examples/a2a_credit_report_example/ai_integrated/security/validation.py
            Match: 57%
-
-  ❌ Line 185: [Presentation Index](./docs/presentations/index.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/presentations/index.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (index.md)
-           File: docs/index.md
-           Match: 100%
-        2. Use: (guides/index.md)
-           File: docs/guides/index.md
-           Match: 100%
-        3. Use: (supplementary/index.md)
-           File: docs/supplementary/index.md
-           Match: 100%
-
-  ❌ Line 238: [Begin with Core Concepts →](./docs/a2a/01_FUNDAMENTALS/01_core_concepts.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/01_FUNDAMENTALS/01_core_concepts.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/01_FUNDAMENTALS/01_core_concepts.md)
-           File: docs/a2a/01_FUNDAMENTALS/01_core_concepts.md
-           Match: 100%
-        2. Use: (references.md)
-           File: docs/references.md
-           Match: 56%
-        3. Use: (a2a/02_DISCOVERY/01_agent_cards.md)
-           File: docs/a2a/02_DISCOVERY/01_agent_cards.md
-           Match: 56%
 
   ❌ Line 243: [Start with Vulnerable Example →](./examples/a2a_crypto_example/)
      Reason: File not found
@@ -1203,36 +507,6 @@ Total links found: 1101
            File: examples/a2a_crypto_simple_registry_example_1/QUICK_START_CHECKLIST.md
            Match: 74%
 
-  ❌ Line 253: [Security Threat Model →](./docs/a2a/03_SECURITY/03_threat_model.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/03_SECURITY/03_threat_model.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/03_SECURITY/03_threat_model.md)
-           File: docs/a2a/03_SECURITY/03_threat_model.md
-           Match: 100%
-        2. Use: (../.venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py)
-           File: .venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py
-           Match: 65%
-        3. Use: (../README.md)
-           File: README.md
-           Match: 59%
-
-  ❌ Line 259: [Full A2A Overview](./docs/a2a/00_A2A_OVERVIEW.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/00_A2A_OVERVIEW.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/00_A2A_OVERVIEW.md)
-           File: docs/a2a/00_A2A_OVERVIEW.md
-           Match: 100%
-        2. Use: (../examples/a2a_credit_report_example/VISUAL_OVERVIEW.md)
-           File: examples/a2a_credit_report_example/VISUAL_OVERVIEW.md
-           Match: 72%
-        3. Use: (a2a/03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 68%
-
   ❌ Line 260: [A2A + MCP Integration](./docs/a2a/a2a_mcp_integration.md)
      Reason: File not found
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/a2a_mcp_integration.md
@@ -1263,88 +537,9 @@ Total links found: 1101
            File: .venv-1/lib/python3.12/site-packages/grpc/beta/implementations.py
            Match: 73%
 
-  ❌ Line 262: [References](./docs/references.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/references.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (references.md)
-           File: docs/references.md
-           Match: 100%
-        2. Use: (../examples/a2a_credit_report_example/QUICK_REFERENCE.md)
-           File: examples/a2a_credit_report_example/QUICK_REFERENCE.md
-           Match: 77%
-        3. Use: (../.venv-1/lib/python3.12/site-packages/pymdownx/superfences.py)
-           File: .venv-1/lib/python3.12/site-packages/pymdownx/superfences.py
-           Match: 59%
-
-
-📄 File: docs/about/CONTRIBUTORS_WANTED.md
---------------------------------------------------------------------------------
-
-  ❌ Line 21: [See CONTRIBUTING.md](/docs/about/contributing.md)
-     Reason: File not found
-     Attempted: /docs/about/contributing.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (contributing.md)
-           File: docs/about/contributing.md
-           Match: 100%
-        2. Use: (CONTRIBUTORS_WANTED.md)
-           File: docs/about/CONTRIBUTORS_WANTED.md
-           Match: 70%
-        3. Use: (../../.venv-1/lib/python3.12/site-packages/pip/_vendor/rich/constrain.py)
-           File: .venv-1/lib/python3.12/site-packages/pip/_vendor/rich/constrain.py
-           Match: 59%
-
 
 📄 File: docs/about/contributing.md
 --------------------------------------------------------------------------------
-
-  ❌ Line 114: [A2A Overview](docs/a2a/00_A2A_OVERVIEW.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/about/docs/a2a/00_A2A_OVERVIEW.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/00_A2A_OVERVIEW.md)
-           File: docs/a2a/00_A2A_OVERVIEW.md
-           Match: 100%
-        2. Use: (../../examples/a2a_credit_report_example/VISUAL_OVERVIEW.md)
-           File: examples/a2a_credit_report_example/VISUAL_OVERVIEW.md
-           Match: 72%
-        3. Use: (../a2a/03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 68%
-
-  ❌ Line 115: [Security Best Practices](docs/a2a/03_SECURITY/04_security_best_practices.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/about/docs/a2a/03_SECURITY/04_security_best_practices.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/04_security_best_practices.md)
-           File: docs/a2a/03_SECURITY/04_security_best_practices.md
-           Match: 100%
-        2. Use: (../../examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 61%
-        3. Use: (../../examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 61%
-
-  ❌ Line 116: [Threat Model](docs/a2a/03_SECURITY/03_threat_model.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/about/docs/a2a/03_SECURITY/03_threat_model.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/03_threat_model.md)
-           File: docs/a2a/03_SECURITY/03_threat_model.md
-           Match: 100%
-        2. Use: (../../.venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py)
-           File: .venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py
-           Match: 65%
-        3. Use: (../../README.md)
-           File: README.md
-           Match: 59%
 
   ❌ Line 119: [Crypto Price Agent](examples/a2a_crypto_example/)
      Reason: File not found
@@ -1421,21 +616,6 @@ Total links found: 1101
            File: .venv-1/lib/python3.12/site-packages/websockets/auth.py
            Match: 71%
 
-  ❌ Line 675: [documentation](docs/a2a/INDEX.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/about/docs/a2a/INDEX.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../index.md)
-           File: docs/index.md
-           Match: 100%
-        2. Use: (../guides/index.md)
-           File: docs/guides/index.md
-           Match: 100%
-        3. Use: (../supplementary/index.md)
-           File: docs/supplementary/index.md
-           Match: 100%
-
   ❌ Line 677: [examples](examples/)
      Reason: File not found
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/about/examples
@@ -1450,66 +630,6 @@ Total links found: 1101
         3. Use: (../../examples/a2a_crypto_simple_registry_example_1/registry/example_registry.py)
            File: examples/a2a_crypto_simple_registry_example_1/registry/example_registry.py
            Match: 59%
-
-  ❌ Line 768: [A2A Overview](docs/a2a/00_A2A_OVERVIEW.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/about/docs/a2a/00_A2A_OVERVIEW.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/00_A2A_OVERVIEW.md)
-           File: docs/a2a/00_A2A_OVERVIEW.md
-           Match: 100%
-        2. Use: (../../examples/a2a_credit_report_example/VISUAL_OVERVIEW.md)
-           File: examples/a2a_credit_report_example/VISUAL_OVERVIEW.md
-           Match: 72%
-        3. Use: (../a2a/03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 68%
-
-  ❌ Line 769: [Security Best Practices](docs/a2a/03_SECURITY/04_security_best_practices.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/about/docs/a2a/03_SECURITY/04_security_best_practices.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/04_security_best_practices.md)
-           File: docs/a2a/03_SECURITY/04_security_best_practices.md
-           Match: 100%
-        2. Use: (../../examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 61%
-        3. Use: (../../examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 61%
-
-  ❌ Line 770: [Threat Model](docs/a2a/03_SECURITY/03_threat_model.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/about/docs/a2a/03_SECURITY/03_threat_model.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/03_threat_model.md)
-           File: docs/a2a/03_SECURITY/03_threat_model.md
-           Match: 100%
-        2. Use: (../../.venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py)
-           File: .venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py
-           Match: 65%
-        3. Use: (../../README.md)
-           File: README.md
-           Match: 59%
-
-  ❌ Line 771: [Code Walkthrough](docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/about/docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/05_code_walkthrough_comparison.md)
-           File: docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md
-           Match: 100%
-        2. Use: (../../examples/a2a_crypto_simple_registry_example_1/BEFORE_AFTER_COMPARISION.md)
-           File: examples/a2a_crypto_simple_registry_example_1/BEFORE_AFTER_COMPARISION.md
-           Match: 67%
-        3. Use: (../../examples/a2a_task_collab_example/task_collab_comparision.md)
-           File: examples/a2a_task_collab_example/task_collab_comparision.md
-           Match: 61%
 
   ❌ Line 774: [Crypto Price Agent](examples/a2a_crypto_example/)
      Reason: File not found
@@ -1557,63 +677,6 @@ Total links found: 1101
            Match: 57%
 
 
-📄 File: docs/about/index.md
---------------------------------------------------------------------------------
-
-  ❌ Line 545: [Adversarial Agents - Vulnerable](examples/stage1-adversarial.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/about/examples/stage1-adversarial.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../examples/stage1-adversarial.md)
-           File: docs/examples/stage1-adversarial.md
-           Match: 100%
-        2. Use: (../examples/stage2-adversarial.md)
-           File: docs/examples/stage2-adversarial.md
-           Match: 95%
-        3. Use: (../examples/stage3-adversarial.md)
-           File: docs/examples/stage3-adversarial.md
-           Match: 95%
-
-
-📄 File: docs/examples/credit-stage2.md
---------------------------------------------------------------------------------
-
-  ❌ Line 476: [8-Layer Validation Framework](../../presentations/eight-layer-validation/article.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/presentations/eight-layer-validation/article.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../presentations/eight-layer-validation/article.md)
-           File: docs/presentations/eight-layer-validation/article.md
-           Match: 100%
-        2. Use: (../presentations/agent_security_article_enhanced/article.md)
-           File: docs/presentations/agent_security_article_enhanced/article.md
-           Match: 100%
-        3. Use: (../../examples/a2a_crypto_simple_registry_example_1/ARCHITECTURE.md)
-           File: examples/a2a_crypto_simple_registry_example_1/ARCHITECTURE.md
-           Match: 64%
-
-
-📄 File: docs/examples/credit-stage3.md
---------------------------------------------------------------------------------
-
-  ❌ Line 648: [8-Layer Validation Details](../../presentations/eight-layer-validation/article.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/presentations/eight-layer-validation/article.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../presentations/eight-layer-validation/article.md)
-           File: docs/presentations/eight-layer-validation/article.md
-           Match: 100%
-        2. Use: (../presentations/agent_security_article_enhanced/article.md)
-           File: docs/presentations/agent_security_article_enhanced/article.md
-           Match: 100%
-        3. Use: (../../examples/a2a_crypto_simple_registry_example_1/ARCHITECTURE.md)
-           File: examples/a2a_crypto_simple_registry_example_1/ARCHITECTURE.md
-           Match: 64%
-
-
 📄 File: docs/examples/crypto-stage1.md
 --------------------------------------------------------------------------------
 
@@ -1631,81 +694,6 @@ Total links found: 1101
         3. Use: (crypto-stage1.md)
            File: docs/examples/crypto-stage1.md
            Match: 62%
-
-  ❌ Line 918: [A2A Overview](/docs/a2a/00_A2A_OVERVIEW.md)
-     Reason: File not found
-     Attempted: /docs/a2a/00_A2A_OVERVIEW.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/00_A2A_OVERVIEW.md)
-           File: docs/a2a/00_A2A_OVERVIEW.md
-           Match: 100%
-        2. Use: (../../examples/a2a_credit_report_example/VISUAL_OVERVIEW.md)
-           File: examples/a2a_credit_report_example/VISUAL_OVERVIEW.md
-           Match: 72%
-        3. Use: (../a2a/03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 68%
-
-  ❌ Line 919: [Security Best Practices](/docs/a2a/03_SECURITY/04_security_best_practices.md)
-     Reason: File not found
-     Attempted: /docs/a2a/03_SECURITY/04_security_best_practices.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/04_security_best_practices.md)
-           File: docs/a2a/03_SECURITY/04_security_best_practices.md
-           Match: 100%
-        2. Use: (../../examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 61%
-        3. Use: (../../examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 61%
-
-  ❌ Line 920: [Threat Model](/docs/a2a/03_SECURITY/03_threat_model.md)
-     Reason: File not found
-     Attempted: /docs/a2a/03_SECURITY/03_threat_model.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/03_threat_model.md)
-           File: docs/a2a/03_SECURITY/03_threat_model.md
-           Match: 100%
-        2. Use: (../../.venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py)
-           File: .venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py
-           Match: 65%
-        3. Use: (../../README.md)
-           File: README.md
-           Match: 59%
-
-  ❌ Line 921: [Authentication Overview](/docs/a2a/03_SECURITY/01_authentication_overview.md)
-     Reason: File not found
-     Attempted: /docs/a2a/03_SECURITY/01_authentication_overview.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 100%
-        2. Use: (../a2a/03_SECURITY/02_authentication_tags.md)
-           File: docs/a2a/03_SECURITY/02_authentication_tags.md
-           Match: 74%
-        3. Use: (../a2a/05_REFERENCE/04_authentication_tags_references.md)
-           File: docs/a2a/05_REFERENCE/04_authentication_tags_references.md
-           Match: 71%
-
-  ❌ Line 925: [Full Security Analysis](/examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
-     Reason: File not found
-     Attempted: /examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 100%
-        2. Use: (../../examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 100%
-        3. Use: (../../examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md
-           Match: 100%
 
   ❌ Line 926: [Stage 1 Server Code](/examples/a2a_crypto_example/insecure/crypto_price_server.py)
      Reason: File not found
@@ -1767,21 +755,6 @@ Total links found: 1101
            File: examples/a2a_task_collab_example/task_collab_project_plan.md
            Match: 68%
 
-  ❌ Line 986: [MCP Fundamentals](/docs/mcp_fundamentals.md)
-     Reason: File not found
-     Attempted: /docs/mcp_fundamentals.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../mcp_fundamentals.md)
-           File: docs/mcp_fundamentals.md
-           Match: 100%
-        2. Use: (../non-technical/01_fundamentals/AI_Collaboration_Fundamentals.md)
-           File: docs/non-technical/01_fundamentals/AI_Collaboration_Fundamentals.md
-           Match: 67%
-        3. Use: (../a2a/02_DISCOVERY/01_agent_cards.md)
-           File: docs/a2a/02_DISCOVERY/01_agent_cards.md
-           Match: 56%
-
 
 📄 File: docs/examples/crypto-stage2.md
 --------------------------------------------------------------------------------
@@ -1800,66 +773,6 @@ Total links found: 1101
         3. Use: (crypto-stage1.md)
            File: docs/examples/crypto-stage1.md
            Match: 62%
-
-  ❌ Line 1090: [A2A Security Best Practices](/docs/a2a/03_SECURITY/04_security_best_practices.md)
-     Reason: File not found
-     Attempted: /docs/a2a/03_SECURITY/04_security_best_practices.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/04_security_best_practices.md)
-           File: docs/a2a/03_SECURITY/04_security_best_practices.md
-           Match: 100%
-        2. Use: (../../examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 61%
-        3. Use: (../../examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 61%
-
-  ❌ Line 1091: [Authentication Deep Dive](/docs/a2a/03_SECURITY/01_authentication_overview.md)
-     Reason: File not found
-     Attempted: /docs/a2a/03_SECURITY/01_authentication_overview.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 100%
-        2. Use: (../a2a/03_SECURITY/02_authentication_tags.md)
-           File: docs/a2a/03_SECURITY/02_authentication_tags.md
-           Match: 74%
-        3. Use: (../a2a/05_REFERENCE/04_authentication_tags_references.md)
-           File: docs/a2a/05_REFERENCE/04_authentication_tags_references.md
-           Match: 71%
-
-  ❌ Line 1092: [Threat Model](/docs/a2a/03_SECURITY/03_threat_model.md)
-     Reason: File not found
-     Attempted: /docs/a2a/03_SECURITY/03_threat_model.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/03_threat_model.md)
-           File: docs/a2a/03_SECURITY/03_threat_model.md
-           Match: 100%
-        2. Use: (../../.venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py)
-           File: .venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py
-           Match: 65%
-        3. Use: (../../README.md)
-           File: README.md
-           Match: 59%
-
-  ❌ Line 1096: [Registry Server](/examples/a2a_crypto_simple_registry_example_1/registry_server.py)
-     Reason: File not found
-     Attempted: /examples/a2a_crypto_simple_registry_example_1/registry_server.py
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../examples/a2a_crypto_simple_registry_example_1/registry/registry_server.py)
-           File: examples/a2a_crypto_simple_registry_example_1/registry/registry_server.py
-           Match: 100%
-        2. Use: (../../mcp_examples/mcp_client_w_sql_lite/test_server.py)
-           File: mcp_examples/mcp_client_w_sql_lite/test_server.py
-           Match: 81%
-        3. Use: (../../mcp_examples/your_first_mcp_server/test_server.py)
-           File: mcp_examples/your_first_mcp_server/test_server.py
-           Match: 81%
 
   ❌ Line 1097: [Authenticated Agent](/examples/a2a_crypto_simple_registry_example_1/crypto_agent_with_auth.py)
      Reason: File not found
@@ -1910,66 +823,6 @@ Total links found: 1101
            File: docs/examples/crypto-stage1.md
            Match: 62%
 
-  ❌ Line 1419: [A2A Security Best Practices](/docs/a2a/03_SECURITY/04_security_best_practices.md)
-     Reason: File not found
-     Attempted: /docs/a2a/03_SECURITY/04_security_best_practices.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/04_security_best_practices.md)
-           File: docs/a2a/03_SECURITY/04_security_best_practices.md
-           Match: 100%
-        2. Use: (../../examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 61%
-        3. Use: (../../examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 61%
-
-  ❌ Line 1420: [Authentication Deep Dive](/docs/a2a/03_SECURITY/01_authentication_overview.md)
-     Reason: File not found
-     Attempted: /docs/a2a/03_SECURITY/01_authentication_overview.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 100%
-        2. Use: (../a2a/03_SECURITY/02_authentication_tags.md)
-           File: docs/a2a/03_SECURITY/02_authentication_tags.md
-           Match: 74%
-        3. Use: (../a2a/05_REFERENCE/04_authentication_tags_references.md)
-           File: docs/a2a/05_REFERENCE/04_authentication_tags_references.md
-           Match: 71%
-
-  ❌ Line 1421: [Threat Model](/docs/a2a/03_SECURITY/03_threat_model.md)
-     Reason: File not found
-     Attempted: /docs/a2a/03_SECURITY/03_threat_model.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/03_threat_model.md)
-           File: docs/a2a/03_SECURITY/03_threat_model.md
-           Match: 100%
-        2. Use: (../../.venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py)
-           File: .venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py
-           Match: 65%
-        3. Use: (../../README.md)
-           File: README.md
-           Match: 59%
-
-  ❌ Line 1422: [Protocol Messages](/docs/a2a/04_COMMUNICATION/01_protocol_messages.md)
-     Reason: File not found
-     Attempted: /docs/a2a/04_COMMUNICATION/01_protocol_messages.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/04_COMMUNICATION/01_protocol_messages.md)
-           File: docs/a2a/04_COMMUNICATION/01_protocol_messages.md
-           Match: 100%
-        2. Use: (../a2a/05_REFERENCE/03_protocol_versions.md)
-           File: docs/a2a/05_REFERENCE/03_protocol_versions.md
-           Match: 74%
-        3. Use: (../a2a/05_REFERENCE/protocol_versions.md)
-           File: docs/a2a/05_REFERENCE/protocol_versions.md
-           Match: 70%
-
   ❌ Line 1426: [Secure Server](/examples/a2a_crypto_example/security/secure_crypto_server.py)
      Reason: File not found
      Attempted: /examples/a2a_crypto_example/security/secure_crypto_server.py
@@ -1985,21 +838,6 @@ Total links found: 1101
            File: mcp_examples/your_first_mcp_server/simple_mcp_server.py
            Match: 70%
 
-  ❌ Line 1427: [Authentication Module](/examples/a2a_crypto_example/security/authentication.py)
-     Reason: File not found
-     Attempted: /examples/a2a_crypto_example/security/authentication.py
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../.venv-1/lib/python3.12/site-packages/starlette/authentication.py)
-           File: .venv-1/lib/python3.12/site-packages/starlette/authentication.py
-           Match: 100%
-        2. Use: (../../.venv-1/lib/python3.12/site-packages/starlette/middleware/authentication.py)
-           File: .venv-1/lib/python3.12/site-packages/starlette/middleware/authentication.py
-           Match: 100%
-        3. Use: (../../examples/a2a_credit_report_example/stage4_ai/security/authentication.py)
-           File: examples/a2a_credit_report_example/stage4_ai/security/authentication.py
-           Match: 100%
-
   ❌ Line 1428: [Replay Protection](/examples/a2a_crypto_example/security/replay_protection.py)
      Reason: File not found
      Attempted: /examples/a2a_crypto_example/security/replay_protection.py
@@ -2014,21 +852,6 @@ Total links found: 1101
         3. Use: (../../examples/a2a_credit_report_example/ai_integrated/security/protection.py)
            File: examples/a2a_credit_report_example/ai_integrated/security/protection.py
            Match: 79%
-
-  ❌ Line 1429: [Validation Module](/examples/a2a_crypto_example/security/validation.py)
-     Reason: File not found
-     Attempted: /examples/a2a_crypto_example/security/validation.py
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../examples/a2a_credit_report_example/stage4_ai/security/validation.py)
-           File: examples/a2a_credit_report_example/stage4_ai/security/validation.py
-           Match: 100%
-        2. Use: (../../examples/a2a_credit_report_example/secure/security/validation.py)
-           File: examples/a2a_credit_report_example/secure/security/validation.py
-           Match: 100%
-        3. Use: (../../examples/a2a_credit_report_example/ai_integrated/security/validation.py)
-           File: examples/a2a_credit_report_example/ai_integrated/security/validation.py
-           Match: 100%
 
   ❌ Line 1430: [Rate Limiter](/examples/a2a_crypto_example/security/rate_limit.py)
      Reason: File not found
@@ -2074,66 +897,6 @@ Total links found: 1101
         3. Use: (../../examples/a2a_task_collab_example/task_collab_project_plan.md)
            File: examples/a2a_task_collab_example/task_collab_project_plan.md
            Match: 68%
-
-  ❌ Line 1531: [MCP Integration](./integration_summary.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/examples/integration_summary.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../integration_summary.md)
-           File: docs/integration_summary.md
-           Match: 100%
-        2. Use: (../../examples/a2a_crypto_simple_registry_example_1/INTEGRATION_GUIDE.md)
-           File: examples/a2a_crypto_simple_registry_example_1/INTEGRATION_GUIDE.md
-           Match: 76%
-        3. Use: (../integration/mcp-integration.md)
-           File: docs/integration/mcp-integration.md
-           Match: 70%
-
-  ❌ Line 1534: [A2A Security Best Practices](/docs/a2a/03_SECURITY/04_security_best_practices.md)
-     Reason: File not found
-     Attempted: /docs/a2a/03_SECURITY/04_security_best_practices.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/04_security_best_practices.md)
-           File: docs/a2a/03_SECURITY/04_security_best_practices.md
-           Match: 100%
-        2. Use: (../../examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 61%
-        3. Use: (../../examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 61%
-
-  ❌ Line 1535: [Authentication Tags](/docs/a2a/03_SECURITY/02_authentication_tags.md)
-     Reason: File not found
-     Attempted: /docs/a2a/03_SECURITY/02_authentication_tags.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/02_authentication_tags.md)
-           File: docs/a2a/03_SECURITY/02_authentication_tags.md
-           Match: 100%
-        2. Use: (../a2a/05_REFERENCE/04_authentication_tags_references.md)
-           File: docs/a2a/05_REFERENCE/04_authentication_tags_references.md
-           Match: 79%
-        3. Use: (../a2a/03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 74%
-
-  ❌ Line 1536: [Threat Modeling](/docs/a2a/03_SECURITY/03_threat_model.md)
-     Reason: File not found
-     Attempted: /docs/a2a/03_SECURITY/03_threat_model.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a/03_SECURITY/03_threat_model.md)
-           File: docs/a2a/03_SECURITY/03_threat_model.md
-           Match: 100%
-        2. Use: (../../.venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py)
-           File: .venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py
-           Match: 65%
-        3. Use: (../../README.md)
-           File: README.md
-           Match: 59%
 
 
 📄 File: docs/examples/index.md
@@ -2198,59 +961,6 @@ Total links found: 1101
         3. Use: (stage1-adversarial.md)
            File: docs/examples/stage1-adversarial.md
            Match: 67%
-
-  ❌ Line 423: [Contributing Guidelines](../../CONTRIBUTING.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/CONTRIBUTING.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../about/contributing.md)
-           File: docs/about/contributing.md
-           Match: 100%
-        2. Use: (../about/CONTRIBUTORS_WANTED.md)
-           File: docs/about/CONTRIBUTORS_WANTED.md
-           Match: 70%
-        3. Use: (../../.venv-1/lib/python3.12/site-packages/pip/_vendor/rich/constrain.py)
-           File: .venv-1/lib/python3.12/site-packages/pip/_vendor/rich/constrain.py
-           Match: 59%
-
-
-📄 File: docs/examples/stage1-adversarial.md
---------------------------------------------------------------------------------
-
-  ❌ Line 379: [Multi-Agent Security Education Project](../../index.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/index.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../index.md)
-           File: docs/index.md
-           Match: 100%
-        2. Use: (../guides/index.md)
-           File: docs/guides/index.md
-           Match: 100%
-        3. Use: (../supplementary/index.md)
-           File: docs/supplementary/index.md
-           Match: 100%
-
-
-📄 File: docs/examples/stage2-adversarial.md
---------------------------------------------------------------------------------
-
-  ❌ Line 509: [Multi-Agent Security Education Project](../../index.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/index.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../index.md)
-           File: docs/index.md
-           Match: 100%
-        2. Use: (../guides/index.md)
-           File: docs/guides/index.md
-           Match: 100%
-        3. Use: (../supplementary/index.md)
-           File: docs/supplementary/index.md
-           Match: 100%
 
 
 📄 File: docs/examples/stage3-adversarial.md
@@ -2412,21 +1122,6 @@ Total links found: 1101
            File: .venv-1/lib/python3.12/site-packages/grpc/beta/_client_adaptations.py
            Match: 55%
 
-  ❌ Line 436: [Security Best Practices](../a2a_crypto_example/security/README.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a_crypto_example/security/README.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../README.md)
-           File: README.md
-           Match: 100%
-        2. Use: (../non-technical/README.md)
-           File: docs/non-technical/README.md
-           Match: 100%
-        3. Use: (../presentations/eight-layer-validation/README.md)
-           File: docs/presentations/eight-layer-validation/README.md
-           Match: 100%
-
 
 📄 File: docs/guides/first-agent.md
 --------------------------------------------------------------------------------
@@ -2444,25 +1139,6 @@ Total links found: 1101
            Match: 60%
         3. Use: (../../examples/a2a_crypto_simple_registry_example_1/registry/example_registry.py)
            File: examples/a2a_crypto_simple_registry_example_1/registry/example_registry.py
-           Match: 59%
-
-
-📄 File: docs/guides/implementation-patterns.md
---------------------------------------------------------------------------------
-
-  ❌ Line 222: [References & Resources →](./references.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/guides/references.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../references.md)
-           File: docs/references.md
-           Match: 100%
-        2. Use: (../../examples/a2a_credit_report_example/QUICK_REFERENCE.md)
-           File: examples/a2a_credit_report_example/QUICK_REFERENCE.md
-           Match: 77%
-        3. Use: (../../.venv-1/lib/python3.12/site-packages/pymdownx/superfences.py)
-           File: .venv-1/lib/python3.12/site-packages/pymdownx/superfences.py
            Match: 59%
 
 
@@ -2528,21 +1204,6 @@ Total links found: 1101
         3. Use: (../non-technical/README.md)
            File: docs/non-technical/README.md
            Match: 57%
-
-  ❌ Line 194: [Stage 1 Security Analysis](../../examples/a2a_crypto_example/stage1_insecure/SECURITY_ANALYSIS.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_crypto_example/stage1_insecure/SECURITY_ANALYSIS.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 100%
-        2. Use: (../../examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 100%
-        3. Use: (../../examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md
-           Match: 100%
 
   ❌ Line 228: [UV Package Manager Guide](../supplementary/tools/uv-guide.md)
      Reason: File not found
@@ -2624,11 +1285,11 @@ Total links found: 1101
         1. Use: (../../utils/README_LINK_CHECKER.md)
            File: utils/README_LINK_CHECKER.md
            Match: 76%
-        2. Use: (../../utils/markdown_link_checker.py)
+        2. Use: (../../link_check_report.txt)
+           File: link_check_report.txt
+           Match: 67%
+        3. Use: (../../utils/markdown_link_checker.py)
            File: utils/markdown_link_checker.py
-           Match: 62%
-        3. Use: (../../.venv-1/lib/python3.12/site-packages/babel/messages/checkers.py)
-           File: .venv-1/lib/python3.12/site-packages/babel/messages/checkers.py
            Match: 62%
 
   ❌ Line 293: [Running Examples](running-examples.md)
@@ -2680,21 +1341,6 @@ Total links found: 1101
 📄 File: docs/guides/presentation-guide.md
 --------------------------------------------------------------------------------
 
-  ❌ Line 105: [Markdown Source](SLIDES.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/guides/SLIDES.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../presentations/eight-layer-validation/slides.md)
-           File: docs/presentations/eight-layer-validation/slides.md
-           Match: 100%
-        2. Use: (../presentations/agent_security_article_enhanced/slides.md)
-           File: docs/presentations/agent_security_article_enhanced/slides.md
-           Match: 100%
-        3. Use: (../presentations/adverserial_agent/slides.md)
-           File: docs/presentations/adverserial_agent/slides.md
-           Match: 100%
-
   ❌ Line 106: [Download PDF](slides.pdf)
      Reason: File not found
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/guides/slides.pdf
@@ -2713,21 +1359,6 @@ Total links found: 1101
 
 📄 File: docs/guides/protocol-guide.md
 --------------------------------------------------------------------------------
-
-  ❌ Line 483: [Agent2Agent Introduction](./agent2agent_intro.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/guides/agent2agent_intro.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../agent2agent_intro.md)
-           File: agent2agent_intro.md
-           Match: 100%
-        2. Use: (../a2a/01_FUNDAMENTALS/02_agent_identity.md)
-           File: docs/a2a/01_FUNDAMENTALS/02_agent_identity.md
-           Match: 65%
-        3. Use: (../a2a/02_DISCOVERY/02_agent_registry.md)
-           File: docs/a2a/02_DISCOVERY/02_agent_registry.md
-           Match: 65%
 
   ❌ Line 484: [A2A and MCP Integration](./a2a_mcp_integration.md)
      Reason: File not found
@@ -2826,21 +1457,6 @@ Total links found: 1101
         3. Use: (../examples/a2a_crypto_simple_registry_example_1/registry/example_registry.py)
            File: examples/a2a_crypto_simple_registry_example_1/registry/example_registry.py
            Match: 59%
-
-  ❌ Line 146: [Security Analysis](../examples/a2a_crypto_example/stage1_insecure/SECURITY_ANALYSIS.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_crypto_example/stage1_insecure/SECURITY_ANALYSIS.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../examples/a2a_crypto_example/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 100%
-        2. Use: (../examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 100%
-        3. Use: (../examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md
-           Match: 100%
 
   ❌ Line 155: [Security for Non-Technical Audiences](non-technical/02_security/Security_for_Non_Technical_Audiences.md)
      Reason: File not found
@@ -3063,21 +1679,6 @@ Total links found: 1101
            File: examples/a2a_crypto_simple_registry_example_1/registry/example_registry.py
            Match: 52%
 
-  ❌ Line 356: [A2A Security →](./docs/a2a/03_SECURITY/01_authentication_overview.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/03_SECURITY/01_authentication_overview.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 100%
-        2. Use: (a2a/03_SECURITY/02_authentication_tags.md)
-           File: docs/a2a/03_SECURITY/02_authentication_tags.md
-           Match: 74%
-        3. Use: (a2a/05_REFERENCE/04_authentication_tags_references.md)
-           File: docs/a2a/05_REFERENCE/04_authentication_tags_references.md
-           Match: 71%
-
   ❌ Line 357: [Architecture Patterns →](./architecture_patterns.md)
      Reason: File not found
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/architecture_patterns.md
@@ -3092,21 +1693,6 @@ Total links found: 1101
         3. Use: (../.venv-1/lib/python3.12/site-packages/pip/_internal/utils/direct_url_helpers.py)
            File: .venv-1/lib/python3.12/site-packages/pip/_internal/utils/direct_url_helpers.py
            Match: 53%
-
-  ❌ Line 364: [A2A Protocol Documentation](./docs/a2a/00_A2A_OVERVIEW.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/00_A2A_OVERVIEW.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/00_A2A_OVERVIEW.md)
-           File: docs/a2a/00_A2A_OVERVIEW.md
-           Match: 100%
-        2. Use: (../examples/a2a_credit_report_example/VISUAL_OVERVIEW.md)
-           File: examples/a2a_credit_report_example/VISUAL_OVERVIEW.md
-           Match: 72%
-        3. Use: (a2a/03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 68%
 
   ❌ Line 368: [Protocol Relationship](./protocol_relationship.md)
      Reason: File not found
@@ -3153,54 +1739,9 @@ Total links found: 1101
            File: examples/a2a_crypto_simple_registry_example_1/QUICK_START_CHECKLIST.md
            Match: 74%
 
-  ❌ Line 373: [References](./docs/references.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/references.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (references.md)
-           File: docs/references.md
-           Match: 100%
-        2. Use: (../examples/a2a_credit_report_example/QUICK_REFERENCE.md)
-           File: examples/a2a_credit_report_example/QUICK_REFERENCE.md
-           Match: 77%
-        3. Use: (../.venv-1/lib/python3.12/site-packages/pymdownx/superfences.py)
-           File: .venv-1/lib/python3.12/site-packages/pymdownx/superfences.py
-           Match: 59%
-
 
 📄 File: docs/mcp_fundamentals.md
 --------------------------------------------------------------------------------
-
-  ❌ Line 5: [MCP Summary](../mcp_summary.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/mcp_summary.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (mcp_summary.md)
-           File: docs/mcp_summary.md
-           Match: 100%
-        2. Use: (a2a_summary.md)
-           File: docs/a2a_summary.md
-           Match: 79%
-        3. Use: (integration_summary.md)
-           File: docs/integration_summary.md
-           Match: 61%
-
-  ❌ Line 9: [MCP Summary](../mcp_summary.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/mcp_summary.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (mcp_summary.md)
-           File: docs/mcp_summary.md
-           Match: 100%
-        2. Use: (a2a_summary.md)
-           File: docs/a2a_summary.md
-           Match: 79%
-        3. Use: (integration_summary.md)
-           File: docs/integration_summary.md
-           Match: 61%
 
   ❌ Line 9: [MCP Tools Deep Dive](../mcp_tools_deep_dive.md)
      Reason: File not found
@@ -3216,36 +1757,6 @@ Total links found: 1101
         3. Use: (guides/protocol-guide.md)
            File: docs/guides/protocol-guide.md
            Match: 51%
-
-  ❌ Line 10: [Documentation Index](../index.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/index.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (index.md)
-           File: docs/index.md
-           Match: 100%
-        2. Use: (guides/index.md)
-           File: docs/guides/index.md
-           Match: 100%
-        3. Use: (supplementary/index.md)
-           File: docs/supplementary/index.md
-           Match: 100%
-
-  ❌ Line 16: [MCP Summary](../mcp_summary.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/mcp_summary.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (mcp_summary.md)
-           File: docs/mcp_summary.md
-           Match: 100%
-        2. Use: (a2a_summary.md)
-           File: docs/a2a_summary.md
-           Match: 79%
-        3. Use: (integration_summary.md)
-           File: docs/integration_summary.md
-           Match: 61%
 
   ❌ Line 82: ["The Big Picture"](/docs/images/diagrams/mcp_the_big_picture.png "The Big Picture")
      Reason: File not found
@@ -3461,21 +1972,6 @@ Total links found: 1101
            File: .venv-1/lib/python3.12/site-packages/pip/_vendor/dependency_groups/_implementation.py
            Match: 71%
 
-  ❌ Line 129: [Tool Validation Patterns](./docs/a2a/04_COMMUNICATION/04_message_validation_patterns.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/a2a/04_COMMUNICATION/04_message_validation_patterns.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (a2a/04_COMMUNICATION/04_message_validation_patterns.md)
-           File: docs/a2a/04_COMMUNICATION/04_message_validation_patterns.md
-           Match: 100%
-        2. Use: (a2a/01_FUNDAMENTALS/03_message_types.md)
-           File: docs/a2a/01_FUNDAMENTALS/03_message_types.md
-           Match: 65%
-        3. Use: (guides/implementation-patterns.md)
-           File: docs/guides/implementation-patterns.md
-           Match: 61%
-
   ❌ Line 140: [Basic MCP Client & Server](./mcp_examples/mcp_client_w_sql_lite/)
      Reason: File not found
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/mcp_examples/mcp_client_w_sql_lite
@@ -3506,21 +2002,6 @@ Total links found: 1101
            File: examples/a2a_crypto_simple_registry_example_1/registry/registry_server.py
            Match: 56%
 
-  ❌ Line 152: [MCP Server Template](./mcp_examples/your_first_mcp_server/simple_mcp_server.py)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/mcp_examples/your_first_mcp_server/simple_mcp_server.py
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../mcp_examples/your_first_mcp_server/simple_mcp_server.py)
-           File: mcp_examples/your_first_mcp_server/simple_mcp_server.py
-           Match: 100%
-        2. Use: (../mcp_examples/your_first_mcp_server/simple_mcp_test.py)
-           File: mcp_examples/your_first_mcp_server/simple_mcp_test.py
-           Match: 79%
-        3. Use: (../mcp_examples/mcp_client_w_sql_lite/mcp_server.py)
-           File: mcp_examples/mcp_client_w_sql_lite/mcp_server.py
-           Match: 79%
-
   ❌ Line 280: [Your First MCP Server →](./mcp_examples/your_first_mcp_server/)
      Reason: File not found
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/mcp_examples/your_first_mcp_server
@@ -3550,36 +2031,6 @@ Total links found: 1101
         3. Use: (../.venv-1/lib/python3.12/site-packages/pip/_vendor/dependency_groups/_implementation.py)
            File: .venv-1/lib/python3.12/site-packages/pip/_vendor/dependency_groups/_implementation.py
            Match: 71%
-
-  ❌ Line 307: [Ubuntu Quick Start](./docs/supplementary/tools/UBUNTU_QUICKSTART.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/supplementary/tools/UBUNTU_QUICKSTART.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (supplementary/tools/UBUNTU_QUICKSTART.md)
-           File: docs/supplementary/tools/UBUNTU_QUICKSTART.md
-           Match: 100%
-        2. Use: (guides/quickstart.md)
-           File: docs/guides/quickstart.md
-           Match: 79%
-        3. Use: (../examples/a2a_task_collab_example/task_collab_quickstart.md)
-           File: examples/a2a_task_collab_example/task_collab_quickstart.md
-           Match: 67%
-
-  ❌ Line 308: [References](./docs/references.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/docs/references.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (references.md)
-           File: docs/references.md
-           Match: 100%
-        2. Use: (../examples/a2a_credit_report_example/QUICK_REFERENCE.md)
-           File: examples/a2a_credit_report_example/QUICK_REFERENCE.md
-           Match: 77%
-        3. Use: (../.venv-1/lib/python3.12/site-packages/pymdownx/superfences.py)
-           File: .venv-1/lib/python3.12/site-packages/pymdownx/superfences.py
-           Match: 59%
 
 
 📄 File: docs/non-technical/01_fundamentals/AI_Collaboration_Fundamentals.md
@@ -3689,25 +2140,6 @@ Total links found: 1101
         • Update to correct path
 
 
-📄 File: docs/non-technical/README.md
---------------------------------------------------------------------------------
-
-  ❌ Line 209: [Presentation Slides](../SLIDES.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/SLIDES.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../presentations/eight-layer-validation/slides.md)
-           File: docs/presentations/eight-layer-validation/slides.md
-           Match: 100%
-        2. Use: (../presentations/agent_security_article_enhanced/slides.md)
-           File: docs/presentations/agent_security_article_enhanced/slides.md
-           Match: 100%
-        3. Use: (../presentations/adverserial_agent/slides.md)
-           File: docs/presentations/adverserial_agent/slides.md
-           Match: 100%
-
-
 📄 File: docs/presentations/index.md
 --------------------------------------------------------------------------------
 
@@ -3741,36 +2173,6 @@ Total links found: 1101
            File: docs/a2a/a2a_security_cheat_sheet.md
            Match: 62%
 
-  ❌ Line 92: [Checklist](agent-security/security_checklist.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/presentations/agent-security/security_checklist.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (agent_security_article_enhanced/security_checklist.md)
-           File: docs/presentations/agent_security_article_enhanced/security_checklist.md
-           Match: 100%
-        2. Use: (../guides/security-checklist.md)
-           File: docs/guides/security-checklist.md
-           Match: 95%
-        3. Use: (../non-technical/02_security/security_assement_chaecklist.md)
-           File: docs/non-technical/02_security/security_assement_chaecklist.md
-           Match: 81%
-
-  ❌ Line 93: [README](agent-security/README.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/presentations/agent-security/README.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../README.md)
-           File: README.md
-           Match: 100%
-        2. Use: (../non-technical/README.md)
-           File: docs/non-technical/README.md
-           Match: 100%
-        3. Use: (eight-layer-validation/README.md)
-           File: docs/presentations/eight-layer-validation/README.md
-           Match: 100%
-
   ❌ Line 130: [article](agent-security/agent_security_article_enhanced.md)
      Reason: File not found
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/presentations/agent-security/agent_security_article_enhanced.md
@@ -3800,51 +2202,6 @@ Total links found: 1101
         3. Use: (../a2a/a2a_security_cheat_sheet.md)
            File: docs/a2a/a2a_security_cheat_sheet.md
            Match: 62%
-
-  ❌ Line 132: [checklist](agent-security/security_checklist.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/presentations/agent-security/security_checklist.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (agent_security_article_enhanced/security_checklist.md)
-           File: docs/presentations/agent_security_article_enhanced/security_checklist.md
-           Match: 100%
-        2. Use: (../guides/security-checklist.md)
-           File: docs/guides/security-checklist.md
-           Match: 95%
-        3. Use: (../non-technical/02_security/security_assement_chaecklist.md)
-           File: docs/non-technical/02_security/security_assement_chaecklist.md
-           Match: 81%
-
-  ❌ Line 133: [README](agent-security/README.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/presentations/agent-security/README.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../README.md)
-           File: README.md
-           Match: 100%
-        2. Use: (../non-technical/README.md)
-           File: docs/non-technical/README.md
-           Match: 100%
-        3. Use: (eight-layer-validation/README.md)
-           File: docs/presentations/eight-layer-validation/README.md
-           Match: 100%
-
-  ❌ Line 143: [📖 Learn More →](agent-security/README.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/presentations/agent-security/README.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../README.md)
-           File: README.md
-           Match: 100%
-        2. Use: (../non-technical/README.md)
-           File: docs/non-technical/README.md
-           Match: 100%
-        3. Use: (eight-layer-validation/README.md)
-           File: docs/presentations/eight-layer-validation/README.md
-           Match: 100%
 
   ❌ Line 432: [Code Examples](../../examples/)
      Reason: Directory link without index.md or README.md
@@ -3891,36 +2248,6 @@ Total links found: 1101
            File: docs/a2a/a2a_security_cheat_sheet.md
            Match: 62%
 
-  ❌ Line 645: [✅ Checklist](agent_security_artical_enhanced/security_checklist.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/presentations/agent_security_artical_enhanced/security_checklist.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (agent_security_article_enhanced/security_checklist.md)
-           File: docs/presentations/agent_security_article_enhanced/security_checklist.md
-           Match: 100%
-        2. Use: (../guides/security-checklist.md)
-           File: docs/guides/security-checklist.md
-           Match: 95%
-        3. Use: (../non-technical/02_security/security_assement_chaecklist.md)
-           File: docs/non-technical/02_security/security_assement_chaecklist.md
-           Match: 81%
-
-  ❌ Line 646: [📖 README](agent_security_artical_enhanced/README.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/presentations/agent_security_artical_enhanced/README.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../README.md)
-           File: README.md
-           Match: 100%
-        2. Use: (../non-technical/README.md)
-           File: docs/non-technical/README.md
-           Match: 100%
-        3. Use: (eight-layer-validation/README.md)
-           File: docs/presentations/eight-layer-validation/README.md
-           Match: 100%
-
   ❌ Line 655: [🔒 Security](../a2a/03_SECURITY/)
      Reason: Directory link without index.md or README.md
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/a2a/03_SECURITY
@@ -3966,21 +2293,6 @@ Total links found: 1101
            File: examples/a2a_crypto_simple_registry_example_1/registry/example_registry.py
            Match: 59%
 
-  ❌ Line 667: [Securing AI Agent Collaboration package](agent-security/README.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/presentations/agent-security/README.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../README.md)
-           File: README.md
-           Match: 100%
-        2. Use: (../non-technical/README.md)
-           File: docs/non-technical/README.md
-           Match: 100%
-        3. Use: (eight-layer-validation/README.md)
-           File: docs/presentations/eight-layer-validation/README.md
-           Match: 100%
-
 
 📄 File: examples/a2a_adversarial_agent_example/stage2_improved/DEMO_GUIDE.md
 --------------------------------------------------------------------------------
@@ -4014,40 +2326,6 @@ Total links found: 1101
         3. Use: (../../a2a_credit_report_example/ai_integrated/security/validation.py)
            File: examples/a2a_credit_report_example/ai_integrated/security/validation.py
            Match: 57%
-
-
-📄 File: examples/a2a_adversarial_agent_example/stage2_improved/README.md
---------------------------------------------------------------------------------
-
-  ❌ Line 547: [SECURITY_ANALYSIS.md](./SECURITY_ANALYSIS.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_adversarial_agent_example/stage2_improved/SECURITY_ANALYSIS.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../a2a_crypto_example/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 100%
-        2. Use: (../../a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 100%
-        3. Use: (../../a2a_crypto_example/security/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md
-           Match: 100%
-
-  ❌ Line 549: [Stage 3 README](../stage3_secure/README.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_adversarial_agent_example/stage3_secure/README.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../../README.md)
-           File: README.md
-           Match: 100%
-        2. Use: (../../../docs/non-technical/README.md)
-           File: docs/non-technical/README.md
-           Match: 100%
-        3. Use: (../../../docs/presentations/eight-layer-validation/README.md)
-           File: docs/presentations/eight-layer-validation/README.md
-           Match: 100%
 
 
 📄 File: examples/a2a_credit_report_example/QUICK_REFERENCE.md
@@ -4271,21 +2549,6 @@ Total links found: 1101
 📄 File: examples/a2a_credit_report_example/ai_integrated/README.md
 --------------------------------------------------------------------------------
 
-  ❌ Line 525: [Stage 3](../secure/README.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_credit_report_example/secure/README.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../../README.md)
-           File: README.md
-           Match: 100%
-        2. Use: (../../../docs/non-technical/README.md)
-           File: docs/non-technical/README.md
-           Match: 100%
-        3. Use: (../../../docs/presentations/eight-layer-validation/README.md)
-           File: docs/presentations/eight-layer-validation/README.md
-           Match: 100%
-
   ❌ Line 528: [Security Evolution Guide](../../docs/SECURITY_EVOLUTION.md)
      Reason: File not found
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/docs/SECURITY_EVOLUTION.md
@@ -4305,36 +2568,6 @@ Total links found: 1101
 📄 File: examples/a2a_credit_report_example/improved/README.md
 --------------------------------------------------------------------------------
 
-  ❌ Line 370: [SECURITY_ANALYSIS.md](./SECURITY_ANALYSIS.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_credit_report_example/improved/SECURITY_ANALYSIS.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../a2a_crypto_example/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 100%
-        2. Use: (../../a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 100%
-        3. Use: (../../a2a_crypto_example/security/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md
-           Match: 100%
-
-  ❌ Line 374: [Stage 3 - Secure](../secure/README.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_credit_report_example/secure/README.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../../README.md)
-           File: README.md
-           Match: 100%
-        2. Use: (../../../docs/non-technical/README.md)
-           File: docs/non-technical/README.md
-           Match: 100%
-        3. Use: (../../../docs/presentations/eight-layer-validation/README.md)
-           File: docs/presentations/eight-layer-validation/README.md
-           Match: 100%
-
   ❌ Line 377: [Security Evolution Guide](../../docs/SECURITY_EVOLUTION.md)
      Reason: File not found
      Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/docs/SECURITY_EVOLUTION.md
@@ -4351,110 +2584,8 @@ Total links found: 1101
            Match: 68%
 
 
-📄 File: examples/a2a_credit_report_example/insecure/README.md
---------------------------------------------------------------------------------
-
-  ❌ Line 307: [Stage 3 - Secure](../secure/README.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_credit_report_example/secure/README.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../../README.md)
-           File: README.md
-           Match: 100%
-        2. Use: (../../../docs/non-technical/README.md)
-           File: docs/non-technical/README.md
-           Match: 100%
-        3. Use: (../../../docs/presentations/eight-layer-validation/README.md)
-           File: docs/presentations/eight-layer-validation/README.md
-           Match: 100%
-
-
-📄 File: examples/a2a_credit_report_example/insecure/SECURITY_ANALYSIS.md
---------------------------------------------------------------------------------
-
-  ❌ Line 836: [Stage 2 - Improved Implementation](../improved/SECURITY_ANALYSIS.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_credit_report_example/improved/SECURITY_ANALYSIS.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../a2a_crypto_example/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 100%
-        2. Use: (../../a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 100%
-        3. Use: (../../a2a_crypto_example/security/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md
-           Match: 100%
-
-  ❌ Line 837: [Stage 3 - Secure Implementation](../secure/SECURITY_ANALYSIS.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_credit_report_example/secure/SECURITY_ANALYSIS.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../a2a_crypto_example/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 100%
-        2. Use: (../../a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 100%
-        3. Use: (../../a2a_crypto_example/security/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md
-           Match: 100%
-
-
-📄 File: examples/a2a_credit_report_example/stage4_ai/README.md
---------------------------------------------------------------------------------
-
-  ❌ Line 562: [Stage 3 - Secure](../secure/README.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_credit_report_example/secure/README.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../../README.md)
-           File: README.md
-           Match: 100%
-        2. Use: (../../../docs/non-technical/README.md)
-           File: docs/non-technical/README.md
-           Match: 100%
-        3. Use: (../../../docs/presentations/eight-layer-validation/README.md)
-           File: docs/presentations/eight-layer-validation/README.md
-           Match: 100%
-
-
 📄 File: examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md
 --------------------------------------------------------------------------------
-
-  ❌ Line 785: [Example 1 Analysis](../a2a_crypto_example/SECURITY_ANALYSIS.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_crypto_example/a2a_crypto_example/SECURITY_ANALYSIS.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 100%
-        2. Use: (../../a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 100%
-        3. Use: (SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md
-           Match: 100%
-
-  ❌ Line 786: [Example 2 Analysis](../a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_crypto_example/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 100%
-        2. Use: (../../a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 100%
-        3. Use: (SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/security/SECURITY_ANALYSIS.md
-           Match: 100%
 
   ❌ Line 787: [Example 3 Analysis](This document)
      Reason: File not found
@@ -4465,129 +2596,9 @@ Total links found: 1101
            File: .venv-1/lib/python3.12/site-packages/googleapiclient/discovery_cache/documents/documentai.v1.json
            Match: 52%
 
-  ❌ Line 790: [Code Walkthrough Comparison](../../docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../../docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md)
-           File: docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md
-           Match: 100%
-        2. Use: (../../a2a_crypto_simple_registry_example_1/BEFORE_AFTER_COMPARISION.md)
-           File: examples/a2a_crypto_simple_registry_example_1/BEFORE_AFTER_COMPARISION.md
-           Match: 67%
-        3. Use: (../../a2a_task_collab_example/task_collab_comparision.md)
-           File: examples/a2a_task_collab_example/task_collab_comparision.md
-           Match: 61%
-
-  ❌ Line 791: [Authentication Overview](../../docs/a2a/03_SECURITY/01_authentication_overview.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/docs/a2a/03_SECURITY/01_authentication_overview.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../../docs/a2a/03_SECURITY/01_authentication_overview.md)
-           File: docs/a2a/03_SECURITY/01_authentication_overview.md
-           Match: 100%
-        2. Use: (../../../docs/a2a/03_SECURITY/02_authentication_tags.md)
-           File: docs/a2a/03_SECURITY/02_authentication_tags.md
-           Match: 74%
-        3. Use: (../../../docs/a2a/05_REFERENCE/04_authentication_tags_references.md)
-           File: docs/a2a/05_REFERENCE/04_authentication_tags_references.md
-           Match: 71%
-
-  ❌ Line 792: [Threat Model](../../docs/a2a/03_SECURITY/03_threat_model.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/docs/a2a/03_SECURITY/03_threat_model.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../../docs/a2a/03_SECURITY/03_threat_model.md)
-           File: docs/a2a/03_SECURITY/03_threat_model.md
-           Match: 100%
-        2. Use: (../../../.venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py)
-           File: .venv-1/lib/python3.12/site-packages/google/generativeai/notebook/text_model.py
-           Match: 65%
-        3. Use: (../../../README.md)
-           File: README.md
-           Match: 59%
-
-  ❌ Line 793: [Security Best Practices](../../docs/a2a/03_SECURITY/04_security_best_practices.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/docs/a2a/03_SECURITY/04_security_best_practices.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../../docs/a2a/03_SECURITY/04_security_best_practices.md)
-           File: docs/a2a/03_SECURITY/04_security_best_practices.md
-           Match: 100%
-        2. Use: (../SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_example/SECURITY_ANALYSIS.md
-           Match: 61%
-        3. Use: (../../a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md)
-           File: examples/a2a_crypto_simple_registry_example_1/SECURITY_ANALYSIS.md
-           Match: 61%
-
 
 📄 File: examples/a2a_task_collab_example/README.md
 --------------------------------------------------------------------------------
-
-  ❌ Line 151: [📖 Read Stage 3 Documentation](./stage3_secure/README.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_task_collab_example/stage3_secure/README.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../README.md)
-           File: README.md
-           Match: 100%
-        2. Use: (../../docs/non-technical/README.md)
-           File: docs/non-technical/README.md
-           Match: 100%
-        3. Use: (../../docs/presentations/eight-layer-validation/README.md)
-           File: docs/presentations/eight-layer-validation/README.md
-           Match: 100%
-
-  ❌ Line 176: [📖 Read Stage 4 Documentation](./stage4_distributed/README.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_task_collab_example/stage4_distributed/README.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../README.md)
-           File: README.md
-           Match: 100%
-        2. Use: (../../docs/non-technical/README.md)
-           File: docs/non-technical/README.md
-           Match: 100%
-        3. Use: (../../docs/presentations/eight-layer-validation/README.md)
-           File: docs/presentations/eight-layer-validation/README.md
-           Match: 100%
-
-  ❌ Line 204: [📖 Read Stage 5 Documentation](./stage5_web/README.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_task_collab_example/stage5_web/README.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../README.md)
-           File: README.md
-           Match: 100%
-        2. Use: (../../docs/non-technical/README.md)
-           File: docs/non-technical/README.md
-           Match: 100%
-        3. Use: (../../docs/presentations/eight-layer-validation/README.md)
-           File: docs/presentations/eight-layer-validation/README.md
-           Match: 100%
-
-  ❌ Line 465: [Quick Reference Guide](./QUICK_REFERENCE.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_task_collab_example/QUICK_REFERENCE.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a_credit_report_example/QUICK_REFERENCE.md)
-           File: examples/a2a_credit_report_example/QUICK_REFERENCE.md
-           Match: 100%
-        2. Use: (../../docs/references.md)
-           File: docs/references.md
-           Match: 77%
-        3. Use: (stage1_insecure/vulnerability_quick_reference.md)
-           File: examples/a2a_task_collab_example/stage1_insecure/vulnerability_quick_reference.md
-           Match: 72%
 
   ❌ Line 466: [Session Security Cheat Sheet](./A2A_SESSION_SECURITY_CHEAT_SHEET.md)
      Reason: File not found
@@ -4618,36 +2629,6 @@ Total links found: 1101
         3. Use: (../../docs/examples/stage3-adversarial.md)
            File: docs/examples/stage3-adversarial.md
            Match: 52%
-
-  ❌ Line 535: [Contributing Guidelines](../../CONTRIBUTING.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/CONTRIBUTING.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../docs/about/contributing.md)
-           File: docs/about/contributing.md
-           Match: 100%
-        2. Use: (../../docs/about/CONTRIBUTORS_WANTED.md)
-           File: docs/about/CONTRIBUTORS_WANTED.md
-           Match: 70%
-        3. Use: (../../.venv-1/lib/python3.12/site-packages/pip/_vendor/rich/constrain.py)
-           File: .venv-1/lib/python3.12/site-packages/pip/_vendor/rich/constrain.py
-           Match: 59%
-
-  ❌ Line 550: [QUICK_REFERENCE.md](./QUICK_REFERENCE.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_task_collab_example/QUICK_REFERENCE.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../a2a_credit_report_example/QUICK_REFERENCE.md)
-           File: examples/a2a_credit_report_example/QUICK_REFERENCE.md
-           Match: 100%
-        2. Use: (../../docs/references.md)
-           File: docs/references.md
-           Match: 77%
-        3. Use: (stage1_insecure/vulnerability_quick_reference.md)
-           File: examples/a2a_task_collab_example/stage1_insecure/vulnerability_quick_reference.md
-           Match: 72%
 
   ❌ Line 551: [Session Security Cheat Sheet](./A2A_SESSION_SECURITY_CHEAT_SHEET.md)
      Reason: File not found
@@ -4759,25 +2740,6 @@ Total links found: 1101
            Match: 65%
 
 
-📄 File: examples/a2a_task_collab_example/stage1_insecure/vulnerability_quick_reference.md
---------------------------------------------------------------------------------
-
-  ❌ Line 226: [Session Security Docs](../../06_session_state_security.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/06_session_state_security.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../../docs/a2a/03_SECURITY/06_session_state_security.md)
-           File: docs/a2a/03_SECURITY/06_session_state_security.md
-           Match: 100%
-        2. Use: (../../../docs/a2a/03_SECURITY/06_session_securiity_quick_reference.md)
-           File: docs/a2a/03_SECURITY/06_session_securiity_quick_reference.md
-           Match: 66%
-        3. Use: (../../a2a_adversarial_agent_example/stage1_insecure/stage1_security_analysis.md)
-           File: examples/a2a_adversarial_agent_example/stage1_insecure/stage1_security_analysis.md
-           Match: 58%
-
-
 📄 File: examples/a2a_task_collab_example/task_collab_quickstart.md
 --------------------------------------------------------------------------------
 
@@ -4795,21 +2757,6 @@ Total links found: 1101
         3. Use: (task_collab_quickstart.md)
            File: examples/a2a_task_collab_example/task_collab_quickstart.md
            Match: 72%
-
-  ❌ Line 418: [Session Security documentation](./06_session_state_security.md)
-     Reason: File not found
-     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/examples/a2a_task_collab_example/06_session_state_security.md
-
-     💡 SUGGESTED FIXES:
-        1. Use: (../../docs/a2a/03_SECURITY/06_session_state_security.md)
-           File: docs/a2a/03_SECURITY/06_session_state_security.md
-           Match: 100%
-        2. Use: (../../docs/a2a/03_SECURITY/06_session_securiity_quick_reference.md)
-           File: docs/a2a/03_SECURITY/06_session_securiity_quick_reference.md
-           Match: 66%
-        3. Use: (../a2a_adversarial_agent_example/stage1_insecure/stage1_security_analysis.md)
-           File: examples/a2a_adversarial_agent_example/stage1_insecure/stage1_security_analysis.md
-           Match: 58%
 
 
 📄 File: utils/README_LINK_CHECKER.md
@@ -4898,6 +2845,40 @@ Total links found: 1101
         3. Use: (../.venv-1/lib/python3.12/site-packages/material/templates/partials/languages/ur.html)
            File: .venv-1/lib/python3.12/site-packages/material/templates/partials/languages/ur.html
            Match: 60%
+
+
+📄 File: utils/fix_markdown_links_guide.md
+--------------------------------------------------------------------------------
+
+  ❌ Line 51: [Installation](./install.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/utils/install.md
+
+     💡 SUGGESTED FIXES:
+        1. Use: (../docs/guides/installation.md)
+           File: docs/guides/installation.md
+           Match: 80%
+        2. Use: (../.venv-1/lib/python3.12/site-packages/pip/_internal/commands/install.py)
+           File: .venv-1/lib/python3.12/site-packages/pip/_internal/commands/install.py
+           Match: 80%
+        3. Use: (../.venv-1/lib/python3.12/site-packages/pip/_internal/commands/uninstall.py)
+           File: .venv-1/lib/python3.12/site-packages/pip/_internal/commands/uninstall.py
+           Match: 73%
+
+  ❌ Line 67: [Installation](./install.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/utils/install.md
+
+     💡 SUGGESTED FIXES:
+        1. Use: (../docs/guides/installation.md)
+           File: docs/guides/installation.md
+           Match: 80%
+        2. Use: (../.venv-1/lib/python3.12/site-packages/pip/_internal/commands/install.py)
+           File: .venv-1/lib/python3.12/site-packages/pip/_internal/commands/install.py
+           Match: 80%
+        3. Use: (../.venv-1/lib/python3.12/site-packages/pip/_internal/commands/uninstall.py)
+           File: .venv-1/lib/python3.12/site-packages/pip/_internal/commands/uninstall.py
+           Match: 73%
 
 
 ================================================================================

@@ -20,7 +20,7 @@ Key Benefits:
 from typing import Dict, Optional, Tuple
 from datetime import datetime
 
-from .auth_provider import (
+from ..security.auth_provider import (
     AuthProvider,
     AuthenticationError,
     InvalidCredentialsError,
@@ -291,7 +291,7 @@ if __name__ == "__main__":
     Usage:
         python -m security.auth_manager
     """
-    from .simple_auth_provider import create_default_users
+    from ..security.simple_auth_provider import create_default_users
     
     print("=" * 60)
     print("AuthManager Test")
