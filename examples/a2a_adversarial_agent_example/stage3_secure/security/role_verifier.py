@@ -20,7 +20,7 @@ Stage 3 Solution:
 
 import time
 import secrets
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Tuple, Optional
 from enum import Enum
 
 
@@ -80,7 +80,7 @@ class RoleVerifier:
         }
     
     def request_role(self, agent_id: str, requested_role: str, 
-                     justification: str = "") -> Tuple[str, str]:
+                     justification: str = "") -> Tuple[Optional[str], str]:
         """
         Submit role elevation request
         
@@ -344,16 +344,13 @@ class RoleVerifier:
         """Log to audit trail"""
         if self.audit_logger:
             self.audit_logger.log(event_type, agent_id, details)
-        else:
-            # Fallback to print for demo
-            print(f"[AUDIT] {event_type}: {agent_id} - {details}")
     
     def get_statistics(self) -> Dict:
         """Get role verifier statistics"""
         return self.stats.copy()
 
 
-# Example usage and testing
+# Example usage
 if __name__ == "__main__":
     print("=" * 70)
     print("ROLE VERIFIER - ROLE ESCALATION PREVENTION")
@@ -362,15 +359,14 @@ if __name__ == "__main__":
     
     verifier = RoleVerifier()
     
-    # Bootstrap: Create first admin manually (in production, seed from config)
+    # Bootstrap: Create first admin manually
     verifier.approved_roles["bootstrap-admin"] = "admin"
-    print("Bootstrap: Created initial admin 'bootstrap-admin'")
+    print("✅ Bootstrap: Created initial admin 'bootstrap-admin'")
     print()
     
-    # Test 1: Agent requests admin role
-    print("Test 1: Agent requests admin role")
-    print("  Agent: worker-001")
-    print("  Requested role: admin")
+    # Test: Agent requests admin role
+    print("Test: Multi-step role approval workflow")
+    print("  1. Agent requests admin role...")
     
     request_id, message = verifier.request_role(
         "worker-001",
@@ -378,73 +374,39 @@ if __name__ == "__main__":
         justification="Need admin access for system maintenance"
     )
     
-    print(f"  Result: {message}")
-    print(f"  Request ID: {request_id}")
+    print(f"     Result: {message}")
+    print(f"     Request ID: {request_id}")
     print()
     
-    # Test 2: Check request status (should be pending)
-    print("Test 2: Check request status")
-    status = verifier.get_request_status(request_id)
-    print(f"  Status: {status['status']}")
-    print(f"  Identity verified: {status['identity_verified']}")
-    print(f"  Admin reviewed: {status['admin_reviewed']}")
-    print()
-    
-    # Test 3: Verify identity
-    print("Test 3: Verify identity against external IdP")
+    print("  2. Identity verification...")
     success, message = verifier.verify_identity(request_id, True, "LDAP")
-    print(f"  Result: {message}")
+    print(f"     Result: {message}")
     print()
     
-    # Test 4: Try to use role before approval (should fail)
-    print("Test 4: Check if agent has admin role (before approval)")
+    print("  3. Check role before approval...")
     current_role = verifier.get_agent_role("worker-001")
-    print(f"  Current role: {current_role}")
-    print(f"  Has admin: {'✅ YES' if current_role == 'admin' else '❌ NO (correctly blocked)'}")
+    print(f"     Current role: {current_role}")
+    print(f"     Has admin: {'✅ YES' if current_role == 'admin' else '❌ NO (correctly waiting for approval)'}")
     print()
     
-    # Test 5: Admin approves request
-    print("Test 5: Admin approves role request")
+    print("  4. Admin approves request...")
     success, message = verifier.approve_request(
         request_id,
         "bootstrap-admin",
         admin_notes="Verified need for system maintenance tasks"
     )
-    print(f"  Result: {message}")
+    print(f"     Result: {message}")
     print()
     
-    # Test 6: Check role after approval
-    print("Test 6: Check agent role after approval")
+    print("  5. Check role after approval...")
     current_role = verifier.get_agent_role("worker-001")
-    print(f"  Current role: {current_role}")
-    print(f"  Has admin: {'✅ YES' if current_role == 'admin' else '❌ NO'}")
-    print()
-    
-    # Test 7: Agent tries to request again (should be rejected)
-    print("Test 7: Agent tries to request admin again")
-    request_id2, message = verifier.request_role("worker-001", "admin")
-    print(f"  Result: {message}")
-    print()
-    
-    # Statistics
-    print("=" * 70)
-    print("VERIFICATION STATISTICS")
-    print("=" * 70)
-    stats = verifier.get_statistics()
-    for key, value in stats.items():
-        print(f"  {key}: {value}")
+    print(f"     Current role: {current_role}")
+    print(f"     Has admin: {'✅ YES' if current_role == 'admin' else '❌ NO'}")
     print()
     
     print("=" * 70)
-    print("🎓 LESSON: Multi-step role verification")
-    print()
-    print("   Role elevation requires:")
-    print("     1. Agent submits request with justification")
-    print("     2. Identity verified against external IdP")
-    print("     3. Admin reviews and approves")
-    print("     4. Role granted only after all steps complete")
-    print("     5. Complete audit trail maintained")
+    print("🎓 LESSON: Multi-step role verification prevents self-escalation")
     print()
     print("   Stage 2: Trusted requested_role → instant admin")
-    print("   Stage 3: Multi-step approval → prevents self-escalation")
+    print("   Stage 3: Multi-step approval → prevents abuse")
     print("=" * 70)

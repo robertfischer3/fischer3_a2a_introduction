@@ -28,7 +28,7 @@ from datetime import datetime
 from typing import Dict, Optional, Tuple
 from pathlib import Path
 
-from .auth_provider import (
+from ..security.auth_providerovider import (
     AuthProvider,
     InvalidCredentialsError,
     UserNotFoundError,

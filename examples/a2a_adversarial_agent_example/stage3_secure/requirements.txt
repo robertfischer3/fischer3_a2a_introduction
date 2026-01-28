@@ -1,0 +1,27 @@
+# Stage 3: Production Security - Dependencies
+
+# JWT with RS256 support
+PyJWT==2.8.0
+
+# Password hashing
+bcrypt==4.1.2
+
+# Cryptography (RSA, AES, HMAC)
+cryptography==41.0.7
+
+# Redis for nonce storage (optional - can use in-memory dict)
+redis==5.0.1
+
+# Configuration management
+python-dotenv==1.0.0
+
+# Type checking (development)
+mypy==1.7.1
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+
+# Code quality
+pylint==3.0.3
+black==23.12.1
