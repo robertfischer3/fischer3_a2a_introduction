@@ -1,4 +1,4 @@
-# fischer³ A2A Protocol Learning Documentation
+# fischer³ A2A Protocol - Break First Security Learning!
 
 <div class="hero" markdown>
 
