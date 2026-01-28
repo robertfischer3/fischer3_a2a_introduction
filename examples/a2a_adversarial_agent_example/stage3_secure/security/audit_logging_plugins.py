@@ -13,7 +13,7 @@ This file shows how to integrate:
 These are production-ready implementations.
 """
 
-from security.audit_logger import (
+from examples.a2a_adversarial_agent_example.stage3_secure.core.audit_logger import (
     AuditLogger,
     AuditEvent,
     EventCategory,
@@ -899,7 +899,7 @@ if __name__ == "__main__":
             print(f"   Header: {lines[0]}")
         
         print("\n--- Test 4: Composite Logger ---")
-        from security.audit_logger import CompositeAuditLogger
+        from examples.a2a_adversarial_agent_example.stage3_secure.core.audit_logger import CompositeAuditLogger
         
         composite = CompositeAuditLogger([
             file_logger,

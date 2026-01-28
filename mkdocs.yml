@@ -1,12 +1,12 @@
 # A2A Protocol Documentation
-site_name: Agent-to-Agent (A2A) Protocol with Security Best Practices
-site_description: Comprehensive documentation for secure agent-to-agent communication
-site_author: Organized by Robert Fischer (robert@fischer3.net)
+site_name: Agentic AI Security Education - fischer³ A2A and MCP Introduction
+site_description: A break first comprehensive learning path for secure agent-to-agent communication
+site_author: Robert Fischer (robert@fischer3.net)
 site_url: https://learn-a2a-security.fischer3.net/
 
 # Repository
 repo_name: fischer³ A2A Introduction
-repo_url: https://github.com/robertfischer3/fischer3_a2a_introduction
+repo_url: https://github.com/fischer3-net/agentic-security-education.git
 edit_uri: edit/main/docs/
 
 # Copyright

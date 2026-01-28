@@ -23,26 +23,8 @@ The **Agent2Agent (A2A) Protocol** is a high-level orchestration protocol that s
 
 Think of A2A as the "language and etiquette" that agents use to work together:
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    User Request                         │
-│             "What's the Bitcoin price trend?"           │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-         ┌───────────────────────┐
-         │  Orchestrator Agent   │ ◄─┐
-         │  (Coordinates work)   │   │
-         └──────────┬────────────┘   │
-                    │                │ A2A Protocol
-          ┌─────────┼─────────┐      │ (Who talks to whom,
-          │         │         │      │  how they identify,
-          ▼         ▼         ▼      │  what they can do)
-    ┌─────────┐ ┌────────┐ ┌────────┴───┐
-    │ Crypto  │ │ Chart  │ │  Analysis  │
-    │ Agent   │ │ Agent  │ │  Agent     │
-    └─────────┘ └────────┘ └────────────┘
-```
+
+!["The Big Picture"](/docs/images/diagrams/orchestrator_image.jpg "The Big Picture")
 
 **A2A handles the "who"** - Which agents exist? What can they do? How do they find each other? How do they prove their identity?
 
